@@ -11,11 +11,9 @@ class Park < SimpleStruct
 end
 
 class CampSite < SimpleStruct
-  add_attributes :id, :name, :park,
-    :toilets, :flush_toilets, :picnic_tables, :barbecues, :wood_barbecues, :bring_firewood, :gas_electric_barbecues,
-    :showers, :hot_showers, :drinking_water
+  add_attributes :id, :name, :park, :toilets, :picnic_tables, :barbecues, :showers, :drinking_water
   # A long walk or short walk from the car to the camp site?
-  add_attributes :long_walk, :short_walk
+  add_attributes :length_walk
   # Suitable for caravans or trailers or car camping?
   add_attributes :caravans, :trailers, :car
   
@@ -24,48 +22,53 @@ class CampSite < SimpleStruct
   end
   
   def pretty_print
-    if id.nil? || name.nil? || park.nil? || toilets.nil? || flush_toilets.nil? ||
-      picnic_tables.nil? || barbecues.nil? || wood_barbecues.nil? || bring_firewood.nil? || gas_electric_barbecues.nil? ||
-      showers.nil? || hot_showers.nil? || drinking_water.nil? || long_walk.nil? || short_walk.nil? || caravans.nil? ||
-      trailers.nil? || car.nil?
+    if id.nil? || name.nil? || park.nil? || toilets.nil? || picnic_tables.nil? || barbecues.nil? || showers.nil? ||
+      drinking_water.nil? || length_walk.nil? || caravans.nil? || trailers.nil? || car.nil?
       p attributes_get.find_all{|k,v| v.nil?}.map{|k,v| k}
       raise "Attribute is nil"
     end
     
     facilities = []
-    if flush_toilets
-      facilities << "Flush toilets"
-    elsif toilets
-      facilities << "Non-flush toilets"
+    facilities << case toilets
+    when :flush
+      "Flush toilets"
+    when :non_flush
+      "Non-flush toilets"
     else
-      facilities << "No toilets"
+      "No toilets"
     end
     facilities << (picnic_tables ? "Picnic tables" : "No picnic tables")
-    if gas_electric_barbecues
-      facilities << "Gas/Electric barbecues"
-    elsif wood_barbecues && bring_firewood
-      facilities << "Wood barbecues (bring your own firewood)"
-    elsif wood_barbecues
-      facilities << "Wood barbecues (firewood provided)"
+    facilities << case barbecues
+    when :gas_electric
+      "Gas/Electric barbecues"
+    when :wood_bring_your_own
+      "Wood barbecues (bring your own firewood)"
+    when :wood_supplied
+      "Wood barbecues (firewood provided)"
+    when :wood
+      "Wood barbecues"
     else
-      facilities << "No barbecues"
+      "No barbecues"
     end
-    if hot_showers
-      facilities << "Hot showers"
-    elsif showers
-      facilities << "Showers"
+    facilities << case showers
+    when :hot
+      "Hot showers"
+    when :cold
+      "Cold showers"
     else
-      facilities << "No showers"
+      "No showers"
     end
     facilities << (drinking_water ? "Drinking water" : "No drinking water")
     access = []
     access << (caravans ? "Caravan camping" : "No caravan camping")
     access << (trailers ? "Trailer camping" : "No trailer camping")
     access << (car ? "Car camping" : "No car camping")
-    if long_walk
+    if length_walk == :long
       access << "Long walk from car to camp site"
-    elsif short_walk
+    elsif length_walk == :short
       access << "Short walk from car to camp site"
+    else
+      access << "No walk from car to camp site"
     end
     "Name: #{name}, Park: #{park.name}, Facilities: #{facilities.join(', ')}, Access: #{access.join(', ')}"
   end
@@ -112,14 +115,12 @@ campsites = page.search('#SearchResults')[1].search('tr')[1..-1].map do |camp|
     description = camp.search('td')[2].inner_text.strip.downcase
     case description
     when "long walk from car to tent"
-      c.long_walk = true
-      c.short_walk = false
+      c.length_walk = :long
       c.caravans = false
       c.trailers = false
       c.car = false
     when "short walk from car to tent"
-      c.short_walk = true
-      c.long_walk = false
+      c.length_walk = :short
       c.caravans = false
       c.trailers = false
       c.car = false
@@ -127,8 +128,7 @@ campsites = page.search('#SearchResults')[1].search('tr')[1..-1].map do |camp|
       raise "Unexpected text: #{description}"
     end
   else
-    c.short_walk = false
-    c.long_walk = false
+    c.length_walk = :none
     alt_attributes.each do |text|
       case text
       when "suitable for caravans"
@@ -150,54 +150,32 @@ campsites = page.search('#SearchResults')[1].search('tr')[1..-1].map do |camp|
   camp.search('td')[1].search('img').map{|i| i.attributes['alt'].to_s.downcase}.each do |text|
     case text
     when "non-flush toilets"
-      c.toilets = true
-      c.flush_toilets = false
+      c.toilets = :non_flush
     when "flush toilets"
-      c.toilets = true
-      c.flush_toilets = true
+      c.toilets = :flush
     when "no toilets"
       c.toilets = false
-      c.flush_toilets = false
     when "no picnic tables"
       c.picnic_tables = false
     when "picnic tables"
       c.picnic_tables = true
     when "no barbecues"
       c.barbecues = false
-      c.wood_barbecues = false
-      c.gas_electric_barbecues = false
-      c.bring_firewood = false
-    # For these I'm going to assume you don't need to bring your own firewood
-    when "wood barbecues"
-      c.barbecues = true
-      c.wood_barbecues = true
-      c.bring_firewood = false
-      c.gas_electric_barbecues = false
+    when "wood barbecues", 
+      c.barbecues = :wood
+    when "wood barbecues (firewood supplied)"
+      c.barbecues = :wood_supplied
     # Not recording that the BBQs are free
     when "gas/electric barbecues", "gas/electric barbecues (free)"
-      c.barbecues = true
-      c.wood_barbecues = false
-      c.gas_electric_barbecues = true
-      c.bring_firewood = false
+      c.barbecues = :gas_electric
     when "wood barbecues (bring your own firewood)"
-      c.barbecues = true
-      c.wood_barbecues = true
-      c.bring_firewood = true
-      c.gas_electric_barbecues = false
-    when "wood barbecues (firewood supplied)"
-      c.barbecues = true
-      c.wood_barbecues = true
-      c.bring_firewood = false      
-      c.gas_electric_barbecues = false
+      c.barbecues = :wood_bring_your_own
     when "no showers"
       c.showers = false
-      c.hot_showers = false
     when "hot showers"
-      c.showers = true
-      c.hot_showers = true
+      c.showers = :hot
     when "cold showers"
-      c.showers = true
-      c.hot_showers = false
+      c.showers = :cold
     when "no drinking water"
       c.drinking_water = false
     when "drinking water"
