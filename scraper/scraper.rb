@@ -24,6 +24,14 @@ class CampSite < SimpleStruct
   end
   
   def pretty_print
+    if id.nil? || name.nil? || park.nil? || toilets.nil? || flush_toilets.nil? ||
+      picnic_tables.nil? || barbecues.nil? || wood_barbecues.nil? || bring_firewood.nil? || gas_electric_barbecues.nil? ||
+      showers.nil? || hot_showers.nil? || drinking_water.nil? || long_walk.nil? || short_walk.nil? || caravans.nil? ||
+      trailers.nil? || car.nil?
+      p attributes_get.find_all{|k,v| v.nil?}.map{|k,v| k}
+      raise "Attribute is nil"
+    end
+    
     facilities = []
     if flush_toilets
       facilities << "Flush toilets"
@@ -105,12 +113,22 @@ campsites = page.search('#SearchResults')[1].search('tr')[1..-1].map do |camp|
     case description
     when "long walk from car to tent"
       c.long_walk = true
+      c.short_walk = false
+      c.caravans = false
+      c.trailers = false
+      c.car = false
     when "short walk from car to tent"
       c.short_walk = true
+      c.long_walk = false
+      c.caravans = false
+      c.trailers = false
+      c.car = false
     else
       raise "Unexpected text: #{description}"
     end
   else
+    c.short_walk = false
+    c.long_walk = false
     alt_attributes.each do |text|
       case text
       when "suitable for caravans"
@@ -148,27 +166,29 @@ campsites = page.search('#SearchResults')[1].search('tr')[1..-1].map do |camp|
       c.barbecues = false
       c.wood_barbecues = false
       c.gas_electric_barbecues = false
+      c.bring_firewood = false
+    # For these I'm going to assume you don't need to bring your own firewood
     when "wood barbecues"
       c.barbecues = true
       c.wood_barbecues = true
+      c.bring_firewood = false
       c.gas_electric_barbecues = false
-    when "gas/electric barbecues"
+    # Not recording that the BBQs are free
+    when "gas/electric barbecues", "gas/electric barbecues (free)"
       c.barbecues = true
       c.wood_barbecues = false
       c.gas_electric_barbecues = true
-    # Not recording that the BBQs are free
-    when "gas/electric barbecues (free)"
-      c.barbecues = true
-      c.wood_barbecues = false
-      c.gas_electric_barbecues = true      
+      c.bring_firewood = false
     when "wood barbecues (bring your own firewood)"
       c.barbecues = true
       c.wood_barbecues = true
       c.bring_firewood = true
+      c.gas_electric_barbecues = false
     when "wood barbecues (firewood supplied)"
       c.barbecues = true
       c.wood_barbecues = true
       c.bring_firewood = false      
+      c.gas_electric_barbecues = false
     when "no showers"
       c.showers = false
       c.hot_showers = false
