@@ -11,7 +11,7 @@ class Park < SimpleStruct
 end
 
 class CampSite < SimpleStruct
-  add_attributes :name, :id, :park,
+  add_attributes :id, :name, :park,
     :toilets, :flush_toilets, :picnic_tables, :barbecues, :wood_barbecues, :bring_firewood, :gas_electric_barbecues,
     :showers, :hot_showers, :drinking_water
   # A long walk or short walk from the car to the camp site?
@@ -21,6 +21,45 @@ class CampSite < SimpleStruct
   
   def url
     "http://www.environment.nsw.gov.au/NationalParks/parkCamping.aspx?id=#{park.id}##{id}"
+  end
+  
+  def pretty_print
+    facilities = []
+    if flush_toilets
+      facilities << "Flush toilets"
+    elsif toilets
+      facilities << "Non-flush toilets"
+    else
+      facilities << "No toilets"
+    end
+    facilities << (picnic_tables ? "Picnic tables" : "No picnic tables")
+    if gas_electric_barbecues
+      facilities << "Gas/Electric barbecues"
+    elsif wood_barbecues && bring_firewood
+      facilities << "Wood barbecues (bring your own firewood)"
+    elsif wood_barbecues
+      facilities << "Wood barbecues (firewood provided)"
+    else
+      facilities << "No barbecues"
+    end
+    if hot_showers
+      facilities << "Hot showers"
+    elsif showers
+      facilities << "Showers"
+    else
+      facilities << "No showers"
+    end
+    facilities << (drinking_water ? "Drinking water" : "No drinking water")
+    access = []
+    access << (caravans ? "Caravan camping" : "No caravan camping")
+    access << (trailers ? "Trailer camping" : "No trailer camping")
+    access << (car ? "Car camping" : "No car camping")
+    if long_walk
+      access << "Long walk from car to camp site"
+    elsif short_walk
+      access << "Short walk from car to camp site"
+    end
+    "Name: #{name}, Park: #{park.name}, Facilities: #{facilities.join(', ')}, Access: #{access.join(', ')}"
   end
 end
 
@@ -150,4 +189,6 @@ campsites = page.search('#SearchResults')[1].search('tr')[1..-1].map do |camp|
   c
 end
 
-p campsites
+campsites.each do |c|
+  puts c.pretty_print
+end
