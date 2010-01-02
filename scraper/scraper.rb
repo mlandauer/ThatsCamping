@@ -11,13 +11,17 @@ class Park < SimpleStruct
 end
 
 class CampSite < SimpleStruct
-  add_attributes :name, :url, :park,
+  add_attributes :name, :id, :park,
     :toilets, :flush_toilets, :picnic_tables, :barbecues, :wood_barbecues, :bring_firewood, :gas_electric_barbecues,
     :showers, :hot_showers, :drinking_water
   # A long walk or short walk from the car to the camp site?
   add_attributes :long_walk, :short_walk
   # Suitable for caravans or trailers or car camping?
   add_attributes :caravans, :trailers, :car
+  
+  def url
+    "http://www.environment.nsw.gov.au/NationalParks/parkCamping.aspx?id=#{park.id}##{id}"
+  end
 end
 
 agent = WWW::Mechanize.new
@@ -42,9 +46,17 @@ campsites = page.search('#SearchResults')[1].search('tr')[1..-1].map do |camp|
     park = found_park
   end
   
+  url = (page.uri + URI.parse(camp.search('td')[0].at('a').attributes['href'])).to_s
+  if url =~ /^http:\/\/www\.environment\.nsw\.gov\.au\/NationalParks\/parkCamping\.aspx\?id=(\w+)#(\w+)$/
+    raise "park id does not match" unless $~[1] == park.id
+    camp_id = $~[2]
+  else
+    raise "Unexpected form for url: #{url}"
+  end
+  
   c = CampSite.new(
     :name => camp.search('td')[0].inner_text.strip,
-    :url => page.uri + URI.parse(camp.search('td')[0].at('a').attributes['href']),
+    :id => camp_id,
     :park => park
     )
     
