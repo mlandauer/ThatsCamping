@@ -2,8 +2,12 @@ require 'rubygems'
 require 'mechanize'
 require 'simple_struct'
 
+class Park < SimpleStruct
+  add_attributes :name, :url
+end
+
 class CampSite < SimpleStruct
-  add_attributes :name, :url, :park_name, :park_url,
+  add_attributes :name, :url, :park,
     :toilets, :flush_toilets, :picnic_tables, :barbecues, :wood_barbecues, :bring_firewood, :gas_electric_barbecues,
     :showers, :hot_showers, :drinking_water
   # A long walk or short walk from the car to the camp site?
@@ -15,12 +19,24 @@ end
 agent = WWW::Mechanize.new
 page = agent.get("http://www.environment.nsw.gov.au/NationalParks/SearchCampgrounds.aspx")
 page = page.form_with(:name => "campgroundsSearch").submit
+
+parks = []
 campsites = page.search('#SearchResults')[1].search('tr')[1..-1].map do |camp|
+  park_name = camp.search('td')[3].inner_text.strip
+  park_url = page.uri + URI.parse(camp.search('td')[3].at('a').attributes['href'])
+  park = Park.new(:name => park_name, :url => park_url)
+  
+  found_park = parks.find{|p| p.name == park.name}
+  if found_park
+    # Double-check that the url is the same
+    raise "Oops. Multiple parks with the same name" unless found_park == park
+    park = found_park
+  end
+  
   c = CampSite.new(
     :name => camp.search('td')[0].inner_text.strip,
     :url => page.uri + URI.parse(camp.search('td')[0].at('a').attributes['href']),
-    :park_name => camp.search('td')[3].inner_text.strip,
-    :park_url => page.uri + URI.parse(camp.search('td')[3].at('a').attributes['href'])
+    :park => park
     )
     
   alt_attributes = camp.search('td')[2].search('img').map{|i| i.attributes['alt'].to_s.downcase}
