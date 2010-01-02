@@ -3,23 +3,56 @@ require 'mechanize'
 require 'simple_struct'
 
 class CampSite < SimpleStruct
-  add_attributes :name, :url, :type, :park_name, :park_url,
+  add_attributes :name, :url, :park_name, :park_url,
     :toilets, :flush_toilets, :picnic_tables, :barbecues, :wood_barbecues, :bring_firewood, :gas_electric_barbecues,
     :showers, :hot_showers, :drinking_water
+  # A long walk or short walk from the car to the camp site?
+  add_attributes :long_walk, :short_walk
+  # Suitable for caravans or trailers or car camping?
+  add_attributes :caravans, :trailers, :car
 end
 
 agent = WWW::Mechanize.new
 page = agent.get("http://www.environment.nsw.gov.au/NationalParks/SearchCampgrounds.aspx")
 page = page.form_with(:name => "campgroundsSearch").submit
-page.search('#SearchResults')[1].search('tr')[1..-1].each do |camp|
+campsites = page.search('#SearchResults')[1].search('tr')[1..-1].map do |camp|
   c = CampSite.new(
     :name => camp.search('td')[0].inner_text.strip,
     :url => page.uri + URI.parse(camp.search('td')[0].at('a').attributes['href']),
-    :type => camp.search('td')[2].inner_text.strip,
     :park_name => camp.search('td')[3].inner_text.strip,
     :park_url => page.uri + URI.parse(camp.search('td')[3].at('a').attributes['href'])
     )
-
+    
+  alt_attributes = camp.search('td')[2].search('img').map{|i| i.attributes['alt'].to_s.downcase}
+  if alt_attributes.empty?
+    description = camp.search('td')[2].inner_text.strip.downcase
+    case description
+    when "long walk from car to tent"
+      c.long_walk = true
+    when "short walk from car to tent"
+      c.short_walk = true
+    else
+      raise "Unexpected text: #{description}"
+    end
+  else
+    alt_attributes.each do |text|
+      case text
+      when "suitable for caravans"
+        c.caravans = true
+      when "not suitable for caravans"
+        c.caravans = false
+      when "suitable for camper trailers"
+        c.trailers = true
+      when "not suitable for camper trailers"
+        c.trailers = false
+      when "suitable for camping beside your car"
+        c.car = true
+      else
+        raise "Unexpected text: #{text}"
+      end
+    end
+  end
+  
   camp.search('td')[1].search('img').map{|i| i.attributes['alt'].to_s.downcase}.each do |text|
     case text
     when "non-flush toilets"
@@ -77,6 +110,7 @@ page.search('#SearchResults')[1].search('tr')[1..-1].each do |camp|
       raise "Unexpected text description: #{text}"
     end
   end
-  p c
-  puts "****"
+  c
 end
+
+p campsites
