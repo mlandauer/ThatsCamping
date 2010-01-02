@@ -3,7 +3,11 @@ require 'mechanize'
 require 'simple_struct'
 
 class Park < SimpleStruct
-  add_attributes :name, :url
+  add_attributes :name, :id
+  
+  def url
+    "http://www.environment.nsw.gov.au/NationalParks/parkHome.aspx?id=#{id}"
+  end
 end
 
 class CampSite < SimpleStruct
@@ -23,8 +27,13 @@ page = page.form_with(:name => "campgroundsSearch").submit
 parks = []
 campsites = page.search('#SearchResults')[1].search('tr')[1..-1].map do |camp|
   park_name = camp.search('td')[3].inner_text.strip
-  park_url = page.uri + URI.parse(camp.search('td')[3].at('a').attributes['href'])
-  park = Park.new(:name => park_name, :url => park_url)
+  park_url = (page.uri + URI.parse(camp.search('td')[3].at('a').attributes['href'])).to_s
+  if park_url =~ /^http:\/\/www\.environment\.nsw\.gov\.au\/NationalParks\/parkHome\.aspx\?id=(\w+)$/
+    park_id = $~[1]
+  else
+    raise "Unexpected form for park_url: #{park_url}"
+  end
+  park = Park.new(:name => park_name, :id => park_id)
   
   found_park = parks.find{|p| p.name == park.name}
   if found_park
