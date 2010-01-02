@@ -19,59 +19,7 @@ class CampSite < SimpleStruct
   
   def url
     "http://www.environment.nsw.gov.au/NationalParks/parkCamping.aspx?id=#{park.id}##{id}"
-  end
-  
-  def pretty_print
-    if id.nil? || name.nil? || park.nil? || toilets.nil? || picnic_tables.nil? || barbecues.nil? || showers.nil? ||
-      drinking_water.nil? || length_walk.nil? || caravans.nil? || trailers.nil? || car.nil?
-      p attributes_get.find_all{|k,v| v.nil?}.map{|k,v| k}
-      raise "Attribute is nil"
-    end
-    
-    facilities = []
-    facilities << case toilets
-    when :flush
-      "Flush toilets"
-    when :non_flush
-      "Non-flush toilets"
-    else
-      "No toilets"
-    end
-    facilities << (picnic_tables ? "Picnic tables" : "No picnic tables")
-    facilities << case barbecues
-    when :gas_electric
-      "Gas/Electric barbecues"
-    when :wood_bring_your_own
-      "Wood barbecues (bring your own firewood)"
-    when :wood_supplied
-      "Wood barbecues (firewood provided)"
-    when :wood
-      "Wood barbecues"
-    else
-      "No barbecues"
-    end
-    facilities << case showers
-    when :hot
-      "Hot showers"
-    when :cold
-      "Cold showers"
-    else
-      "No showers"
-    end
-    facilities << (drinking_water ? "Drinking water" : "No drinking water")
-    access = []
-    access << (caravans ? "Caravan camping" : "No caravan camping")
-    access << (trailers ? "Trailer camping" : "No trailer camping")
-    access << (car ? "Car camping" : "No car camping")
-    if length_walk == :long
-      access << "Long walk from car to camp site"
-    elsif length_walk == :short
-      access << "Short walk from car to camp site"
-    else
-      access << "No walk from car to camp site"
-    end
-    "Name: #{name}, Park: #{park.name}, Facilities: #{facilities.join(', ')}, Access: #{access.join(', ')}"
-  end
+  end  
 end
 
 agent = WWW::Mechanize.new
@@ -187,6 +135,4 @@ campsites = page.search('#SearchResults')[1].search('tr')[1..-1].map do |camp|
   c
 end
 
-campsites.each do |c|
-  puts c.pretty_print
-end
+pp campsites
