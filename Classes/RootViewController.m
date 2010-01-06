@@ -49,16 +49,22 @@
     return [campsitesArray count];
 }
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+// Returns a nicely formatted version of the distance as a string
+// TODO: Should implement this as a custom formatter (i.e. derived from NSFormatter)
+- (NSString *)distanceInWords:(NSNumber *)distance {
 	static NSNumberFormatter *numberFormatter = nil;
 	if (numberFormatter == nil) {
 		numberFormatter = [[NSNumberFormatter alloc] init];
 		[numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
 		[numberFormatter setMaximumFractionDigits:3];
 	}
-	
+
+	NSString *string = [numberFormatter stringFromNumber:distance];
+	return string;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -72,7 +78,7 @@
 	
 	cell.detailTextLabel.text = [campsite name];
 	
-	NSString *string = [numberFormatter stringFromNumber:[campsite distance]];
+	NSString *string = [self distanceInWords:[campsite distance]];
     cell.textLabel.text = string;
     
 	return cell;
