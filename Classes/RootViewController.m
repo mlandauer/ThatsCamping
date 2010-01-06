@@ -8,7 +8,7 @@
 @implementation RootViewController
 
 
-@synthesize campsitesArray, locationManager;
+@synthesize campsitesArray, locationManager, managedObjectContext;
 
 
 #pragma mark -
@@ -171,6 +171,7 @@
 #pragma mark Memory management
 
 - (void)dealloc {
+	[managedObjectContext release];
 	[campsitesArray release];
     [locationManager release];
     [super dealloc];

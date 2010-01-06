@@ -6,12 +6,13 @@
 	
     NSMutableArray *campsitesArray;
     CLLocationManager *locationManager;
+	NSManagedObjectContext *managedObjectContext;
 }
 
 @property (nonatomic, retain) NSMutableArray *campsitesArray;
 @property (nonatomic, retain) CLLocationManager *locationManager;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;	    
 
-- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation;
 - (NSString *)distanceInWords:(double)distance;
 
 @end
