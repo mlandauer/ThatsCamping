@@ -17,8 +17,8 @@
 		28A9E9330F43CA900016529B /* ThatsCamping.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 28A9E9320F43CA900016529B /* ThatsCamping.xcdatamodel */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
-		28C95C640F4FB4660037F30F /* Campsite.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C95C630F4FB4660037F30F /* Campsite.m */; };
 		6C38653710F542B0001E8154 /* Park.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C38653610F542B0001E8154 /* Park.m */; };
+		6C38655410F54582001E8154 /* Campsite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C38655310F54582001E8154 /* Campsite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +35,11 @@
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		28C95C620F4FB4660037F30F /* Campsite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campsite.h; sourceTree = "<group>"; };
-		28C95C630F4FB4660037F30F /* Campsite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campsite.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6C38653510F542B0001E8154 /* Park.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Park.h; path = Classes/Park.h; sourceTree = "<group>"; };
-		6C38653610F542B0001E8154 /* Park.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Park.m; path = Classes/Park.m; sourceTree = "<group>"; };
+		6C38653510F542B0001E8154 /* Park.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Park.h; sourceTree = "<group>"; };
+		6C38653610F542B0001E8154 /* Park.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Park.m; sourceTree = "<group>"; };
+		6C38655210F54582001E8154 /* Campsite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campsite.h; sourceTree = "<group>"; };
+		6C38655310F54582001E8154 /* Campsite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campsite.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,12 +62,14 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6C38655210F54582001E8154 /* Campsite.h */,
+				6C38655310F54582001E8154 /* Campsite.m */,
+				6C38653610F542B0001E8154 /* Park.m */,
+				6C38653510F542B0001E8154 /* Park.h */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* ThatsCampingAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ThatsCampingAppDelegate.m */,
-				28C95C620F4FB4660037F30F /* Campsite.h */,
-				28C95C630F4FB4660037F30F /* Campsite.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -104,8 +106,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6C38653510F542B0001E8154 /* Park.h */,
-				6C38653610F542B0001E8154 /* Park.m */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				28A9E9320F43CA900016529B /* ThatsCamping.xcdatamodel */,
@@ -189,8 +189,8 @@
 				1D3623260D0F684500981E51 /* ThatsCampingAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				28A9E9330F43CA900016529B /* ThatsCamping.xcdatamodel in Sources */,
-				28C95C640F4FB4660037F30F /* Campsite.m in Sources */,
 				6C38653710F542B0001E8154 /* Park.m in Sources */,
+				6C38655410F54582001E8154 /* Campsite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

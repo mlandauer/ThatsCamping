@@ -3,7 +3,7 @@
 #import "RootViewController.h"
 #import "ThatsCampingAppDelegate.h"
 #import "Campsite.h"
-
+#import "Park.h"
 
 @implementation RootViewController
 
@@ -145,22 +145,28 @@
 // TODO: Probably should do this earlier in the proceedings. I would say the ThatsCampingAppDelegate would be a fairly logical place.
 - (void)initialiseStore {
 	if (![self isStoreInitialised]) {
+		Park *blueMountains = (Park *)[NSEntityDescription insertNewObjectForEntityForName:@"Park" inManagedObjectContext:managedObjectContext];
+		[blueMountains setName:@"Blue Mountains National Park"];
+		
 		Campsite *campsite;
 		
 		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
 		[campsite setName:@"Perrys Lookdown"];
 		[campsite setLatitude:[NSNumber numberWithDouble:-33.598333]];
 		[campsite setLongitude:[NSNumber numberWithDouble:150.351111]];
+		[campsite setPark:blueMountains];
 		
 		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
 		[campsite setName:@"Euroka Clearing"];
 		[campsite setLatitude:[NSNumber numberWithDouble:-33.798333]];
 		[campsite setLongitude:[NSNumber numberWithDouble:150.617778]];
+		[campsite setPark:blueMountains];
 		
 		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
 		[campsite setName:@"Murphys Glen"];
 		[campsite setLatitude:[NSNumber numberWithDouble:-33.765]];
 		[campsite setLongitude:[NSNumber numberWithDouble:150.501111]];
+		[campsite setPark:blueMountains];
 		
 		// Commit the change.
 		NSError *error;

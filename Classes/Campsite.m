@@ -1,10 +1,9 @@
-// A Core Data managed object class to represent an event containing geographical coordinates and a time stamp.
-
 #import "Campsite.h"
 
+#import "Park.h"
 
 @implementation Campsite 
 
-@dynamic latitude, longitude, name, distance;
+@dynamic latitude, longitude, name, distance, park;
 
 @end
