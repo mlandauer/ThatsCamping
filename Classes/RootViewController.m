@@ -134,6 +134,13 @@
 		[loc release];
 	}
 	
+	// Sort the campsites by distance
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"distance" ascending:YES];
+	NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+	[mutableFetchResults sortUsingDescriptors:sortDescriptors];
+	[sortDescriptors release];
+	[sortDescriptor release];
+
 	// Set self's events array to the mutable array, then clean up.
 	[self setCampsitesArray:mutableFetchResults];
 	
