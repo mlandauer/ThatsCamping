@@ -51,15 +51,25 @@
 
 // Returns a nicely formatted version of the distance as a string
 // TODO: Should implement this as a custom formatter (i.e. derived from NSFormatter)
-- (NSString *)distanceInWords:(NSNumber *)distance {
+- (NSString *)distanceInWords:(double)distance {
 	static NSNumberFormatter *numberFormatter = nil;
 	if (numberFormatter == nil) {
 		numberFormatter = [[NSNumberFormatter alloc] init];
 		[numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
-		[numberFormatter setMaximumFractionDigits:3];
+		[numberFormatter setMaximumFractionDigits:0];
 	}
 
-	NSString *string = [numberFormatter stringFromNumber:distance];
+	NSString *units;
+	if (distance >= 1000.0) {
+		distance /= 1000;
+		units = @"km";
+	}
+	else {
+		units = @"m";
+		// TODO: Change the number formatting for distances displayed in metres
+	}
+
+	NSString *string = [NSString stringWithFormat:@"%@ %@", [numberFormatter stringFromNumber:[NSNumber numberWithDouble:distance]], units];
 	return string;
 }
 
@@ -78,7 +88,7 @@
 	
 	cell.detailTextLabel.text = [campsite name];
 	
-	NSString *string = [self distanceInWords:[campsite distance]];
+	NSString *string = [self distanceInWords:[[campsite distance] doubleValue]];
     cell.textLabel.text = string;
     
 	return cell;

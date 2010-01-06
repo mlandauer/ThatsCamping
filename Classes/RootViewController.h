@@ -12,6 +12,6 @@
 @property (nonatomic, retain) CLLocationManager *locationManager;
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation;
-- (NSString *)distanceInWords:(NSNumber *)distance;
+- (NSString *)distanceInWords:(double)distance;
 
 @end
