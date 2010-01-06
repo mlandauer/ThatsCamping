@@ -11,5 +11,6 @@
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSNumber *distance;
 @property (nonatomic, retain) Park *park;
+@property (nonatomic, retain) NSString *webId;
 
 @end

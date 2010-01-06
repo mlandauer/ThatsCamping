@@ -4,6 +4,6 @@
 
 @implementation Campsite 
 
-@dynamic latitude, longitude, name, distance, park;
+@dynamic latitude, longitude, name, distance, park, webId;
 
 @end
