@@ -110,7 +110,8 @@
 	// Get the campsite corresponding to the current index path and configure the table view cell.
 	Campsite *campsite = (Campsite *)[campsitesArray objectAtIndex:indexPath.row];
 	
-	cell.detailTextLabel.text = [campsite name];
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@\n%@", [campsite name], [[campsite park] name]];
+	cell.detailTextLabel.numberOfLines = 2;
 	
 	NSString *string = [self distanceInWords:[[campsite distance] doubleValue]];
     cell.textLabel.text = string;
@@ -146,7 +147,7 @@
 - (void)initialiseStore {
 	if (![self isStoreInitialised]) {
 		Park *blueMountains = (Park *)[NSEntityDescription insertNewObjectForEntityForName:@"Park" inManagedObjectContext:managedObjectContext];
-		[blueMountains setName:@"Blue Mountains National Park"];
+		[blueMountains setName:@"Blue Mountains"];
 		
 		Campsite *campsite;
 		
