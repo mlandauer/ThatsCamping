@@ -117,13 +117,8 @@
 	[persistentStore setMetadata:newMetadata];
 }
 
-- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
-	
-	// If we are running on the simulator provide a fixed location
-	#if TARGET_IPHONE_SIMULATOR
-	newLocation = [[CLLocation alloc] initWithLatitude:-33.772609 longitude:150.624263];
-	#endif
-
+// Load the data store with initial data (if necessary). Will only actually do anything once.
+- (void)initialiseStore {
 	if (![self isStoreInitialised]) {
 		Campsite *campsite;
 		
@@ -152,8 +147,18 @@
 			// Handle the error.
 		}
 	}
+}
 
-	// Now refetch the data from the store
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
+	
+	// If we are running on the simulator provide a fixed location
+	#if TARGET_IPHONE_SIMULATOR
+	newLocation = [[CLLocation alloc] initWithLatitude:-33.772609 longitude:150.624263];
+	#endif
+
+	[self initialiseStore];
+	
+	// Now fetch the data from the store
 	
 	/*
 	 Fetch existing events.
