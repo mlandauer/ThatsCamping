@@ -1,10 +1,6 @@
 // Abstract: A Core Data managed object class to represent an event containing geographical coordinates and a time stamp.
 
-@interface Campsite : NSObject  {
-	NSNumber *latitude, *longitude;
-	NSString *name;
-	// Distance from the current location (in metres)
-	NSNumber *distance;
+@interface Campsite : NSManagedObject  {
 }
 
 @property (nonatomic, retain) NSNumber *latitude;

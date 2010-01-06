@@ -5,6 +5,6 @@
 
 @implementation Campsite 
 
-@synthesize latitude, longitude, name, distance;
+@dynamic latitude, longitude, name, distance;
 
 @end

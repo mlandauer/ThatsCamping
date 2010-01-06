@@ -94,6 +94,29 @@
 	return cell;
 }
 
+- (NSPersistentStore *)persistentStore {
+	NSArray *persistentStores = [[managedObjectContext persistentStoreCoordinator] persistentStores];
+	assert([persistentStores count] == 1);
+	return [persistentStores objectAtIndex:0];
+}
+
+- (BOOL)isStoreInitialised {
+
+	NSDictionary *metadata = [[self persistentStore] metadata];
+	// TODO: Check for metadata == nill
+	return ([[metadata objectForKey:@"loaded"] boolValue] == YES);
+}
+
+- (void)setStoreInitialised {
+	
+	NSPersistentStore *persistentStore = [self persistentStore];
+	NSDictionary *metadata = [persistentStore metadata];
+	// TODO: Check for metadata == nill
+	NSMutableDictionary *newMetadata = [[metadata mutableCopy] autorelease];
+    [newMetadata setObject:[NSNumber numberWithBool:YES] forKey:@"loaded"];
+	[persistentStore setMetadata:newMetadata];
+}
+
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
 	
 	// If we are running on the simulator provide a fixed location
@@ -101,30 +124,51 @@
 	newLocation = [[CLLocation alloc] initWithLatitude:-33.772609 longitude:150.624263];
 	#endif
 
-	// Now that we know the location update the list of campsites
-	NSMutableArray *mutableFetchResults = [NSMutableArray arrayWithCapacity:3];
+	if (![self isStoreInitialised]) {
+		Campsite *campsite;
+		
+		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
+		[campsite setName:@"Perrys Lookdown"];
+		[campsite setLatitude:[NSNumber numberWithDouble:-33.598333]];
+		[campsite setLongitude:[NSNumber numberWithDouble:150.351111]];
+		
+		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
+		[campsite setName:@"Euroka Clearing"];
+		[campsite setLatitude:[NSNumber numberWithDouble:-33.798333]];
+		[campsite setLongitude:[NSNumber numberWithDouble:150.617778]];
+		
+		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
+		[campsite setName:@"Murphys Glen"];
+		[campsite setLatitude:[NSNumber numberWithDouble:-33.765]];
+		[campsite setLongitude:[NSNumber numberWithDouble:150.501111]];
+		
+		// Commit the change.
+		NSError *error;
+		if ([managedObjectContext save:&error]) {
+			// This way we only load the data into the store once
+			[self setStoreInitialised];
+		}
+		else {
+			// Handle the error.
+		}
+	}
+
+	// Now refetch the data from the store
 	
-	Campsite *campsite;
-	campsite = [[Campsite alloc] init];
-	[campsite setName:@"Perrys Lookdown"];
-	[campsite setLatitude:[NSNumber numberWithDouble:-33.598333]];
-	[campsite setLongitude:[NSNumber numberWithDouble:150.351111]];
-	[mutableFetchResults addObject:campsite];
-	[campsite release];
+	/*
+	 Fetch existing events.
+	 Create a fetch request; find the Campsite entity and assign it to the request; add a sort descriptor; then execute the fetch.
+	 */
+	NSFetchRequest *request = [[NSFetchRequest alloc] init];
+	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
+	[request setEntity:entity];
 	
-	campsite = [[Campsite alloc] init];
-	[campsite setName:@"Euroka Clearing"];
-	[campsite setLatitude:[NSNumber numberWithDouble:-33.798333]];
-	[campsite setLongitude:[NSNumber numberWithDouble:150.617778]];
-	[mutableFetchResults addObject:campsite];
-	[campsite release];
-	
-	campsite = [[Campsite alloc] init];
-	[campsite setName:@"Murphys Glen"];
-	[campsite setLatitude:[NSNumber numberWithDouble:-33.765]];
-	[campsite setLongitude:[NSNumber numberWithDouble:150.501111]];
-	[mutableFetchResults addObject:campsite];
-	[campsite release];
+	// Execute the fetch -- create a mutable copy of the result.
+	NSError *error = nil;
+	NSMutableArray *mutableFetchResults = [[managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
+	if (mutableFetchResults == nil) {
+		// Handle the error.
+	}
 	
 	// Loop through the campsites and calculate the distance from our current location
 	for (int i=0; i < [mutableFetchResults count]; i++) {
@@ -134,13 +178,18 @@
 		[loc release];
 	}
 	
+	// Commit the change.
+	if (![managedObjectContext save:&error]) {
+		// Handle the error.
+	}
+	
 	// Sort the campsites by distance
 	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"distance" ascending:YES];
 	NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
 	[mutableFetchResults sortUsingDescriptors:sortDescriptors];
 	[sortDescriptors release];
 	[sortDescriptor release];
-
+	
 	// Set self's events array to the mutable array, then clean up.
 	[self setCampsitesArray:mutableFetchResults];
 	
