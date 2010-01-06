@@ -23,8 +23,32 @@
     
 	// Start the location manager.
 	[[self locationManager] startUpdatingLocation];
-
 	// TODO: Start a spinner to say that we are updating location
+
+	[self initialiseStore];
+	
+	// Fetch the campsites in order of distance (but only for those with distance set)
+	NSFetchRequest *request = [[NSFetchRequest alloc] init];
+	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
+	[request setEntity:entity];
+	
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"distance != NULL"];
+	[request setPredicate:predicate];
+	
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"distance" ascending:YES];
+	NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+	[request setSortDescriptors:sortDescriptors];
+	[sortDescriptors release];
+	[sortDescriptor release];
+
+	// Execute the fetch -- create a mutable copy of the result.
+	NSError *error = nil;
+	NSMutableArray *mutableFetchResults = [[managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
+	if (mutableFetchResults == nil) {
+		// Handle the error.
+	}	
+
+	[self setCampsitesArray:mutableFetchResults];
 }
 
 
@@ -118,6 +142,7 @@
 }
 
 // Load the data store with initial data (if necessary). Will only actually do anything once.
+// TODO: Probably should do this earlier in the proceedings. I would say the ThatsCampingAppDelegate would be a fairly logical place.
 - (void)initialiseStore {
 	if (![self isStoreInitialised]) {
 		Campsite *campsite;
@@ -156,8 +181,6 @@
 	newLocation = [[CLLocation alloc] initWithLatitude:-33.772609 longitude:150.624263];
 	#endif
 
-	[self initialiseStore];
-	
 	// Now fetch the data from the store
 	
 	/*

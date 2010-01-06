@@ -14,5 +14,6 @@
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;	    
 
 - (NSString *)distanceInWords:(double)distance;
+- (void)initialiseStore;
 
 @end
