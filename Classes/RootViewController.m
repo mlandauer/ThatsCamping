@@ -146,31 +146,43 @@
 // TODO: Probably should do this earlier in the proceedings. I would say the ThatsCampingAppDelegate would be a fairly logical place.
 - (void)initialiseStore {
 	if (![self isStoreInitialised]) {
-		Park *blueMountains = (Park *)[NSEntityDescription insertNewObjectForEntityForName:@"Park" inManagedObjectContext:managedObjectContext];
-		[blueMountains setName:@"Blue Mountains"];
-		[blueMountains setWebId:@"foo"];
-		
+		Park *park;
 		Campsite *campsite;
+
+		park = (Park *)[NSEntityDescription insertNewObjectForEntityForName:@"Park" inManagedObjectContext:managedObjectContext];
+		[park setName:@"Blue Mountains"];
+		[park setWebId:@"N1"];
 		
 		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
 		[campsite setName:@"Perrys Lookdown"];
 		[campsite setLatitude:[NSNumber numberWithDouble:-33.598333]];
 		[campsite setLongitude:[NSNumber numberWithDouble:150.351111]];
-		[campsite setPark:blueMountains];
+		[campsite setPark:park];
 		[campsite setWebId:@"foo"];
 		
 		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
 		[campsite setName:@"Euroka Clearing"];
 		[campsite setLatitude:[NSNumber numberWithDouble:-33.798333]];
 		[campsite setLongitude:[NSNumber numberWithDouble:150.617778]];
-		[campsite setPark:blueMountains];
+		[campsite setPark:park];
 		[campsite setWebId:@"foo"];
 		
 		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
 		[campsite setName:@"Murphys Glen"];
 		[campsite setLatitude:[NSNumber numberWithDouble:-33.765]];
 		[campsite setLongitude:[NSNumber numberWithDouble:150.501111]];
-		[campsite setPark:blueMountains];
+		[campsite setPark:park];
+		[campsite setWebId:@"foo"];
+		
+		park = (Park *)[NSEntityDescription insertNewObjectForEntityForName:@"Park" inManagedObjectContext:managedObjectContext];
+		[park setName:@"Kanangra-Boyd"];
+		[park setWebId:@"N2"];
+		
+		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
+		[campsite setName:@"Dingo Dell"];
+		[campsite setLatitude:[NSNumber numberWithDouble:-33.97375]];
+		[campsite setLongitude:[NSNumber numberWithDouble:149.96516]];
+		[campsite setPark:park];
 		[campsite setWebId:@"foo"];
 		
 		// Commit the change.
