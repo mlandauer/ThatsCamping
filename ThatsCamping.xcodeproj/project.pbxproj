@@ -19,13 +19,14 @@
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		6C38653710F542B0001E8154 /* Park.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C38653610F542B0001E8154 /* Park.m */; };
 		6C38655410F54582001E8154 /* Campsite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C38655310F54582001E8154 /* Campsite.m */; };
+		6C38661910F5646E001E8154 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C38661810F5646E001E8154 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* ThatsCampingAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThatsCampingAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* ThatsCampingAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThatsCampingAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* ThatsCamping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThatsCamping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Thats Campin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thats Campin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28A0AAE50D9B0CCF005BE974 /* ThatsCamping_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThatsCamping_Prefix.pch; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		6C38653610F542B0001E8154 /* Park.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Park.m; sourceTree = "<group>"; };
 		6C38655210F54582001E8154 /* Campsite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campsite.h; sourceTree = "<group>"; };
 		6C38655310F54582001E8154 /* Campsite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campsite.m; sourceTree = "<group>"; };
+		6C38661810F5646E001E8154 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +79,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* ThatsCamping.app */,
+				1D6058910D05DD3D006BFB54 /* Thats Campin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +108,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6C38661810F5646E001E8154 /* Icon.png */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				28A9E9320F43CA900016529B /* ThatsCamping.xcdatamodel */,
@@ -142,7 +145,7 @@
 			);
 			name = ThatsCamping;
 			productName = ThatsCamping;
-			productReference = 1D6058910D05DD3D006BFB54 /* ThatsCamping.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Thats Campin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				6C38661910F5646E001E8154 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +211,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ThatsCamping_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = ThatsCamping;
+				PRODUCT_NAME = "Thats Campin";
 			};
 			name = Debug;
 		};
@@ -219,7 +223,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ThatsCamping_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = ThatsCamping;
+				PRODUCT_NAME = "Thats Campin";
 			};
 			name = Release;
 		};
