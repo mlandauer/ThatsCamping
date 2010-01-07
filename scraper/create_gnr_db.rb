@@ -4,6 +4,25 @@
 
 require 'rubygems'
 require 'fastercsv'
+require 'activerecord'
+
+# Establish the connection to the database
+ActiveRecord::Base.establish_connection(
+        :adapter  => "sqlite3",
+        :database => File.join(File.dirname(__FILE__), "data", "thatscampin.db")
+)
+
+# Create the database structure that we want
+ActiveRecord::Schema.define do
+  create_table "names", :force => true do |t|
+    t.column :name, :string
+    t.column :latitude, :float
+    t.column :longitude, :float
+  end
+end
+
+class Name < ActiveRecord::Base
+end
 
 def convert_degrees_mins(text)
   if text.strip =~ /^(-?\d+)\s+(-?\d+)\s+(-?\d+)$/
@@ -47,5 +66,7 @@ rows.each do |row|
   longitude = convert_degrees_mins(row[2])
   if latitude && longitude
     puts "Placename: #{row[0]}, Position: #{latitude}, #{longitude}"
+    name = Name.new(:name => row[0], :latitude => latitude, :longitude => longitude)
+    name.save!
   end
 end
