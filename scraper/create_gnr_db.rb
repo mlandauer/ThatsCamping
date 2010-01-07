@@ -19,22 +19,27 @@ def convert_degrees_mins(text)
   end
 end
 
-rows = File.open("#{File.dirname(__FILE__)}/data/gnr_part1.csv").map do |line|
-  # Parse a line at the time - that gives us a chance to fix up the badly formatted CSV
-  split = line.split(",").map do |value|
-    if value[0..0] == '"' && value[-1..-1] == '"'
-      '"' + value[1..-2].gsub('"', "'") + '"'
-    else
-      value.gsub('"', '')
+def read_csv(file)
+  rows = File.open(file).map do |line|
+    # Parse a line at the time - that gives us a chance to fix up the badly formatted CSV
+    split = line.split(",").map do |value|
+      if value[0..0] == '"' && value[-1..-1] == '"'
+        '"' + value[1..-2].gsub('"', "'") + '"'
+      else
+        value.gsub('"', '')
+      end
     end
+    line = split.join(",")
+    data = FasterCSV.parse_line(line)
+    [data[1], data[11], data[12]]
   end
-  line = split.join(",")
-  data = FasterCSV.parse_line(line)
-  [data[1], data[11], data[12]]
+
+  # Get rid of stuff at the beginning
+  rows[6..-1]
 end
 
-# Get rid of stuff at the beginning
-rows = rows[6..-1]
+rows = read_csv("#{File.dirname(__FILE__)}/data/gnr_part1.csv")
+rows += read_csv("#{File.dirname(__FILE__)}/data/gnr_part2.csv")
 
 rows.each do |row|
   # Convert from degrees, minutes, seconds
