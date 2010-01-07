@@ -20,6 +20,8 @@
 		6C38653710F542B0001E8154 /* Park.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C38653610F542B0001E8154 /* Park.m */; };
 		6C38655410F54582001E8154 /* Campsite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C38655310F54582001E8154 /* Campsite.m */; };
 		6C38661910F5646E001E8154 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C38661810F5646E001E8154 /* Icon.png */; };
+		6C38667110F57C6C001E8154 /* Campsites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C38667010F57C6C001E8154 /* Campsites.plist */; };
+		6C3866DD10F588CF001E8154 /* Parks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C3866DC10F588CF001E8154 /* Parks.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		6C38655210F54582001E8154 /* Campsite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Campsite.h; sourceTree = "<group>"; };
 		6C38655310F54582001E8154 /* Campsite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Campsite.m; sourceTree = "<group>"; };
 		6C38661810F5646E001E8154 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		6C38667010F57C6C001E8154 /* Campsites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Campsites.plist; sourceTree = "<group>"; };
+		6C3866DC10F588CF001E8154 /* Parks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Parks.plist; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +96,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				6C3866DC10F588CF001E8154 /* Parks.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				28A9E9320F43CA900016529B /* ThatsCamping.xcdatamodel */,
+				6C38667010F57C6C001E8154 /* Campsites.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -179,6 +185,8 @@
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				6C38661910F5646E001E8154 /* Icon.png in Resources */,
+				6C38667110F57C6C001E8154 /* Campsites.plist in Resources */,
+				6C3866DD10F588CF001E8154 /* Parks.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

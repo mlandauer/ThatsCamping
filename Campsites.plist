@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Perrys Lookdown</string>
+		<key>latitude</key>
+		<real>-33.598333</real>
+		<key>longitude</key>
+		<real>150.351111</real>
+		<key>webId</key>
+		<string>foo</string>
+		<key>parkWebId</key>
+		<string>BLUE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Euroka Clearing</string>
+		<key>latitude</key>
+		<real>-33.798333</real>
+		<key>longitude</key>
+		<real>150.617778</real>
+		<key>webId</key>
+		<string>foo</string>
+		<key>parkWebId</key>
+		<string>BLUE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Murphys Glen</string>
+		<key>latitude</key>
+		<real>-33.765</real>
+		<key>longitude</key>
+		<real>150.501111</real>
+		<key>webId</key>
+		<string>foo</string>
+		<key>parkWebId</key>
+		<string>BLUE</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dingo Dell</string>
+		<key>latitude</key>
+		<real>-33.97375</real>
+		<key>longitude</key>
+		<real>149.96516</real>
+		<key>webId</key>
+		<string>foo</string>
+		<key>parkWebId</key>
+		<string>KAN</string>
+	</dict>
+</array>
+</plist>

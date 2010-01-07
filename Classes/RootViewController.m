@@ -146,47 +146,44 @@
 // TODO: Probably should do this earlier in the proceedings. I would say the ThatsCampingAppDelegate would be a fairly logical place.
 - (void)initialiseStore {
 	if (![self isStoreInitialised]) {
-		Park *park;
-		Campsite *campsite;
+		// Read the parks data from the property list
+		NSString *parksPath = [[NSBundle mainBundle] pathForResource:@"Parks" ofType:@"plist"];
+		id parksPList;
+		NSEnumerator *enumerator = [[NSArray arrayWithContentsOfFile:parksPath] objectEnumerator];
+		while (parksPList = [enumerator nextObject]) {
+			Park *park = (Park *)[NSEntityDescription insertNewObjectForEntityForName:@"Park" inManagedObjectContext:managedObjectContext];
+			[park setName:[parksPList objectForKey:@"name"]];
+			[park setWebId:[parksPList objectForKey:@"webId"]];
+		}
+		
+		// Now retrieve all the parks from the store
+		NSFetchRequest *request = [[NSFetchRequest alloc] init];
+		NSEntityDescription *entity = [NSEntityDescription entityForName:@"Park" inManagedObjectContext:managedObjectContext];
+		[request setEntity:entity];
+		NSError *error = nil;
+		NSArray *parks = [managedObjectContext executeFetchRequest:request error:&error];
 
-		park = (Park *)[NSEntityDescription insertNewObjectForEntityForName:@"Park" inManagedObjectContext:managedObjectContext];
-		[park setName:@"Blue Mountains"];
-		[park setWebId:@"N1"];
-		
-		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
-		[campsite setName:@"Perrys Lookdown"];
-		[campsite setLatitude:[NSNumber numberWithDouble:-33.598333]];
-		[campsite setLongitude:[NSNumber numberWithDouble:150.351111]];
-		[campsite setPark:park];
-		[campsite setWebId:@"foo"];
-		
-		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
-		[campsite setName:@"Euroka Clearing"];
-		[campsite setLatitude:[NSNumber numberWithDouble:-33.798333]];
-		[campsite setLongitude:[NSNumber numberWithDouble:150.617778]];
-		[campsite setPark:park];
-		[campsite setWebId:@"foo"];
-		
-		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
-		[campsite setName:@"Murphys Glen"];
-		[campsite setLatitude:[NSNumber numberWithDouble:-33.765]];
-		[campsite setLongitude:[NSNumber numberWithDouble:150.501111]];
-		[campsite setPark:park];
-		[campsite setWebId:@"foo"];
-		
-		park = (Park *)[NSEntityDescription insertNewObjectForEntityForName:@"Park" inManagedObjectContext:managedObjectContext];
-		[park setName:@"Kanangra-Boyd"];
-		[park setWebId:@"N2"];
-		
-		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
-		[campsite setName:@"Dingo Dell"];
-		[campsite setLatitude:[NSNumber numberWithDouble:-33.97375]];
-		[campsite setLongitude:[NSNumber numberWithDouble:149.96516]];
-		[campsite setPark:park];
-		[campsite setWebId:@"foo"];
-		
+		// Read the data from the property lists and store it in the datastore
+		NSString *campsitesPath = [[NSBundle mainBundle] pathForResource:@"Campsites" ofType:@"plist"];
+		id campsitePList;
+		enumerator = [[NSArray arrayWithContentsOfFile:campsitesPath] objectEnumerator];
+		while (campsitePList = [enumerator nextObject])
+		{
+			Campsite *campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
+			[campsite setName:[campsitePList objectForKey:@"name"]];
+			[campsite setLatitude:[campsitePList objectForKey:@"latitude"]];
+			[campsite setLongitude:[campsitePList objectForKey:@"longitude"]];
+			[campsite setWebId:[campsitePList objectForKey:@"webId"]];
+			
+			// Now wire up the park (by looking up the park using the webId)
+			NSString *parkWebId = [campsitePList objectForKey:@"parkWebId"];
+			NSPredicate *predicate = [NSPredicate predicateWithFormat:@"webId == %@", parkWebId];
+			NSArray *park = [parks filteredArrayUsingPredicate:predicate];
+			assert([park count] == 1);
+			[campsite setPark:[park lastObject]];
+		}
+				
 		// Commit the change.
-		NSError *error;
 		if ([managedObjectContext save:&error]) {
 			// This way we only load the data into the store once
 			[self setStoreInitialised];
