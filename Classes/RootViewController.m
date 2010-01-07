@@ -148,6 +148,7 @@
 	if (![self isStoreInitialised]) {
 		Park *blueMountains = (Park *)[NSEntityDescription insertNewObjectForEntityForName:@"Park" inManagedObjectContext:managedObjectContext];
 		[blueMountains setName:@"Blue Mountains"];
+		[blueMountains setWebId:@"foo"];
 		
 		Campsite *campsite;
 		
@@ -156,18 +157,21 @@
 		[campsite setLatitude:[NSNumber numberWithDouble:-33.598333]];
 		[campsite setLongitude:[NSNumber numberWithDouble:150.351111]];
 		[campsite setPark:blueMountains];
+		[campsite setWebId:@"foo"];
 		
 		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
 		[campsite setName:@"Euroka Clearing"];
 		[campsite setLatitude:[NSNumber numberWithDouble:-33.798333]];
 		[campsite setLongitude:[NSNumber numberWithDouble:150.617778]];
 		[campsite setPark:blueMountains];
+		[campsite setWebId:@"foo"];
 		
 		campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
 		[campsite setName:@"Murphys Glen"];
 		[campsite setLatitude:[NSNumber numberWithDouble:-33.765]];
 		[campsite setLongitude:[NSNumber numberWithDouble:150.501111]];
 		[campsite setPark:blueMountains];
+		[campsite setWebId:@"foo"];
 		
 		// Commit the change.
 		NSError *error;
@@ -176,7 +180,9 @@
 			[self setStoreInitialised];
 		}
 		else {
-			// Handle the error.
+			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
+			[alert show];
+			[alert release];
 		}
 	}
 }
