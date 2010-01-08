@@ -5,25 +5,9 @@ require 'mechanize'
 require 'simple_struct'
 require "activerecord"
 
-class Park < ActiveRecord::Base
-  has_many :campsites
-  
-  def url
-    "http://www.environment.nsw.gov.au/NationalParks/parkHome.aspx?id=#{web_id}"
-  end
-  
-  def campsites_url
-    "http://www.environment.nsw.gov.au/NationalParks/parkCamping.aspx?id=#{web_id}"
-  end
-end
-
-class Campsite < ActiveRecord::Base
-  has_one :park
-
-  def url
-    "#{park.campsites_url}##{web_id}"
-  end
-end
+require 'park'
+require 'campsite'
+require 'db'
 
 def extract_campsite_content(a_tag)
   finished = false
@@ -41,12 +25,6 @@ end
 def simplify_whitespace(text)
   text.gsub(/[\n\t\r]/, " ").squeeze(" ").strip
 end
-
-# Establish the connection to the database
-ActiveRecord::Base.establish_connection(
-        :adapter  => "sqlite3",
-        :database => File.join(File.dirname(__FILE__), "data", "thatscampin.db")
-)
 
 #ActiveRecord::Base.logger = Logger.new(STDOUT)
 

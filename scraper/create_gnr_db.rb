@@ -6,11 +6,8 @@ require 'rubygems'
 require 'fastercsv'
 require 'activerecord'
 
-# Establish the connection to the database
-ActiveRecord::Base.establish_connection(
-        :adapter  => "sqlite3",
-        :database => File.join(File.dirname(__FILE__), "data", "thatscampin.db")
-)
+require 'name'
+require 'db'
 
 # Create the database structure that we want
 ActiveRecord::Schema.define do
@@ -19,9 +16,6 @@ ActiveRecord::Schema.define do
     t.column :latitude, :float
     t.column :longitude, :float
   end
-end
-
-class Name < ActiveRecord::Base
 end
 
 def convert_degrees_mins(text)
