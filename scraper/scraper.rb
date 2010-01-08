@@ -30,6 +30,10 @@ def simplify_whitespace(text)
   text.gsub(/[\n\t\r]/, " ").squeeze(" ").strip
 end
 
+# First zap all the parks and campsites data
+Park.delete_all
+Campsite.delete_all
+
 #ActiveRecord::Base.logger = Logger.new(STDOUT)
 
 agent = WWW::Mechanize.new
@@ -142,3 +146,38 @@ page.search('#SearchResults')[1].search('tr')[1..-1].each do |camp|
   end
   c.save!
 end
+
+# Now fix up a few problems by hand
+# TODO: It would be good to automate some of this
+
+c = Campsite.find(:first, :conditions => {:name => "Boat-based campgrounds"})
+# This campsite is just a wrapper for a bunch of other campsites. We're going to add these by hand
+
+sites = []
+sites << Campsite.new(:name => "Brambles Green", :no_sites => 2, :toilets => "none")
+sites << Campsite.new(:name => "Rivermouth", :no_sites => 5, :toilets => "non_flush")
+sites << Campsite.new(:name => "Joes Cove", :no_sites => 2, :toilets => "none")
+sites << Campsite.new(:name => "Freshwater", :no_sites => 7, :toilets => "non_flush")
+sites << Campsite.new(:name => "Two Mile Sands", :no_sites => 4, :toilets => "none")
+sites << Campsite.new(:name => "Mackaway Bay", :no_sites => 3, :toilets => "none")
+sites << Campsite.new(:name => "Johnsons Beach", :no_sites => 17, :toilets => "non_flush")
+sites << Campsite.new(:name => "Shelly Beach", :no_sites => 18, :toilets => "non_flush")
+sites << Campsite.new(:name => "Sunny Side", :no_sites => 4, :toilets => "none")
+# Set attributes common to these campsites
+sites.each do |site|
+  site.web_id = c.web_id
+  site.park_id = c.park_id
+  site.drinking_water = false
+  site.picnic_tables = false
+  site.barbecues = "none"
+  site.showers = "none"
+  site.caravans = false
+  site.trailers = false
+  site.car = false
+  site.length_walk = "none"
+  site.road_access = "only accessible by boat"
+  # TODO: Haven't filled in fees
+  site.save!
+end
+
+c.delete
