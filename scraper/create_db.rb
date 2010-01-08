@@ -8,12 +8,12 @@ require 'activerecord'
 require 'db'
 
 ActiveRecord::Schema.define do
-  create_table "parks" do |t|
+  create_table :parks do |t|
     t.column :web_id, :string
     t.column :name, :string
   end
 
-  create_table "campsites" do |t|
+  create_table :campsites do |t|
     t.column :web_id, :string
     t.column :name, :string
     t.column :park_id, :integer
@@ -34,18 +34,19 @@ ActiveRecord::Schema.define do
   end
 
   # Location data (can be sourced from multiple locations)
-  create_table "locations" do |t|
+  create_table :locations do |t|
     t.column :name, :string
     t.column :latitude, :float
     t.column :longitude, :float
     t.column :source_id, :integer
   end
-  
+  add_index :locations, :name
+
   # Describes the source a piece of location data (usually just a website)
-  create_table "sources" do |t|
+  create_table :sources do |t|
     t.column :name, :string
     t.column :url, :string
     t.column :last_updated, :timestamp
-    t.add_index :name, :unique => true
   end
+  add_index :sources, :name, :unique => true
 end
