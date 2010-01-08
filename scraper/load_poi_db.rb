@@ -8,6 +8,8 @@ require 'rubygems'
 require 'fastercsv'
 require 'activerecord'
 require 'mechanize'
+# Using the following for doing bulk inserts into db
+require 'ar-extensions'
 
 require 'db'
 require 'location'
@@ -25,12 +27,8 @@ filename = "#{File.dirname(__FILE__)}/data/poi.csv"
 #page = agent.get("http://www.poidb.com/groups/download_group_poi_new.asp?GroupID=526&format=csv&filter=2_0&EmailAlert=0&titleformat=1&AppendPhone=0")
 #File.open(filename, "w") {|f| f.write(page.body)}
 
-data = FasterCSV.read(filename)
-data.each do |row|
-  l = Location.new(:name => row[2], :latitude => row[1], :longitude => row[0], :source => source)
-  l.save!
-  puts "name: #{l.name}, position: #{l.latitude}, #{l.longitude}"
-end
+Location.import [:longitude, :latitude, :name, :source_id],
+  FasterCSV.read(filename).map {|row| row + [source.id]}
 
 # Update the timestamp on the source
 source.last_updated = Time.now
