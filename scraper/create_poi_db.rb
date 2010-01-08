@@ -26,6 +26,7 @@ ActiveRecord::Schema.define do
   create_table "sources", :force => true do |t|
     t.column :name, :string
     t.column :url, :string
+    t.column :last_updated, :timestamp
     t.add_index :name, :unique => true
   end
 end
@@ -48,3 +49,8 @@ data.each do |row|
   l.save!
   puts "name: #{l.name}, position: #{l.latitude}, #{l.longitude}"
 end
+
+# Update the timestamp on the source
+source.last_updated = Time.now
+source.save!
+
