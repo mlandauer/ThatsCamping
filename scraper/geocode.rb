@@ -43,9 +43,3 @@ Campsite.find(:all).each do |campsite|
 end
 
 puts "\nStatistics on matches: multiple: #{multiple_match_count}, no: #{no_match_count}, match: #{match_count}"
-
-# Problematic looking names that need more investigation:
-# Boat-based campgrounds
-# Bombah Broadwater: campgrounds on the eastern    shore
-# Bradley's/O'Brien's Hut
-# Jounama Creek campground 1

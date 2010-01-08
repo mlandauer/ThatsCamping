@@ -152,7 +152,6 @@ end
 
 c = Campsite.find(:first, :conditions => {:name => "Boat-based campgrounds"})
 # This campsite is just a wrapper for a bunch of other campsites. We're going to add these by hand
-
 sites = []
 sites << Campsite.new(:name => "Brambles Green", :no_sites => 2, :toilets => "none")
 sites << Campsite.new(:name => "Rivermouth", :no_sites => 5, :toilets => "non_flush")
@@ -179,5 +178,33 @@ sites.each do |site|
   # TODO: Haven't filled in fees
   site.save!
 end
+c.delete
 
+c = Campsite.find(:first, :conditions => ["name LIKE ?", "%Bombah Broadwater%"])
+sites = []
+# The barbecue situation is less than clear from the description. This is my best interpretation
+sites << Campsite.new(:name => "Mungo Brush", :no_sites => 78, :barbecues => "gas_electric",
+  :caravans => true, :trailers => true, :car => true)
+sites << Campsite.new(:name => "Dees Corner", :no_sites => 16, :barbecues => "wood_bring_your_own",
+  :caravans => true, :trailers => true, :car => true)
+sites << Campsite.new(:name => "White Tree Bay", :no_sites => 15, :barbecues => "gas_electric",
+  :caravans => true, :trailers => true, :car => true)
+sites << Campsite.new(:name => "The Wells", :no_sites => 12, :barbecues => "wood_bring_your_own",
+  :caravans => true, :trailers => true, :car => true)
+sites << Campsite.new(:name => "Boomeri", :no_sites => 20, :barbecues => "none",
+  :caravans => false, :trailers => false, :car => true)
+sites << Campsite.new(:name => "Banksia Green", :no_sites => 15, :barbecues => "wood_bring_your_own",
+  :caravans => true, :trailers => true, :car => true)
+sites.each do |site|
+  site.web_id = c.web_id
+  site.park_id = c.park_id
+  site.drinking_water = false
+  site.picnic_tables = false
+  site.toilets = "non_flush"
+  site.length_walk = "none"
+  # On the website it says that there aren't showers but I remember the big campsite near the end having showers. Hmm...
+  site.showers = false
+  # TODO: Haven't filled in road_access or fees
+  site.save!
+end
 c.delete
