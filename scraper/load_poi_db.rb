@@ -14,10 +14,9 @@ require 'ar-extensions'
 require 'db'
 require 'location'
 require 'source'
+require 'utils'
 
-# Prepare the source
-source = Source.new(:name => "poidb", :url => "http://www.poidb.com")
-source.save!
+source = prepare_source("poidb", "http://www.poidb.com")
 
 # Filename for csv file
 filename = "#{File.dirname(__FILE__)}/data/poi.csv"

@@ -14,6 +14,7 @@ require 'ar-extensions'
 
 require 'location'
 require 'db'
+require 'utils'
 
 def convert_degrees_mins(text)
   if text.strip =~ /^(-?\d+)\s+(-?\d+)\s+(-?\d+)$/
@@ -67,18 +68,6 @@ def download_data
       entry.extract(entry_path)
     end
   end
-end
-
-def prepare_source(name, url)
-  source = Source.find(:first, :conditions => {:name => name})
-  if source
-    # Zap all the old data
-    Location.delete_all(:source_id => source.id)
-  else
-    source = Source.new(:name => name, :url => url)
-    source.save!
-  end
-  source
 end
 
 download_data
