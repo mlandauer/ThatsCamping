@@ -2,6 +2,8 @@
 
 # Scrapes more details about campsites. This can only be run after "scraper.rb"
 
+$:.unshift "#{File.dirname(__FILE__)}/lib"
+
 require 'rubygems'
 require 'mechanize'
 require 'db'

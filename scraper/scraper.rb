@@ -2,6 +2,8 @@
 
 # TODO: There's a problem here "Bombah Broadwater: campgrounds on the eastern    shore"
 
+$:.unshift "#{File.dirname(__FILE__)}/lib"
+
 require 'rubygems'
 require 'mechanize'
 require 'simple_struct'
