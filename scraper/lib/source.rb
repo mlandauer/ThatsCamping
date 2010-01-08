@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'activerecord'
 
-class PoiLocation < ActiveRecord::Base
+class Source < ActiveRecord::Base
 end
-
