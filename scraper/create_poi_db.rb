@@ -6,9 +6,7 @@ require 'rubygems'
 require 'fastercsv'
 require 'activerecord'
 require 'db'
-
-class PoiLocation < ActiveRecord::Base
-end
+require 'poi_location'
 
 # Create the database structure that we want
 ActiveRecord::Schema.define do
