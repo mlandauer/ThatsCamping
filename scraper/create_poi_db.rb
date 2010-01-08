@@ -13,24 +13,6 @@ require 'db'
 require 'location'
 require 'source'
 
-# Create the database structure that we want
-ActiveRecord::Schema.define do
-  create_table "locations", :force => true do |t|
-    t.column :name, :string
-    t.column :latitude, :float
-    t.column :longitude, :float
-    t.column :source_id, :integer
-  end
-  
-  # Describes the source a piece of location data (usually just a website)
-  create_table "sources", :force => true do |t|
-    t.column :name, :string
-    t.column :url, :string
-    t.column :last_updated, :timestamp
-    t.add_index :name, :unique => true
-  end
-end
-
 # Prepare the source
 source = Source.new(:name => "poidb", :url => "http://www.poidb.com")
 source.save!

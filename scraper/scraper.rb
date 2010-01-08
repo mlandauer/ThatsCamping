@@ -32,31 +32,6 @@ end
 
 #ActiveRecord::Base.logger = Logger.new(STDOUT)
 
-# Create the database structure that we want
-ActiveRecord::Schema.define do
-  create_table "parks", :force => true do |t|
-    t.column :web_id, :string
-    t.column :name, :string
-  end
-
-  create_table "campsites", :force => true do |t|
-    t.column :web_id, :string
-    t.column :name, :string
-    t.column :park_id, :integer
-    t.column :toilets, :string
-    t.column :picnic_tables, :boolean
-    t.column :barbecues, :string
-    t.column :showers, :string
-    t.column :drinking_water, :boolean
-    # A long walk or short walk from the car to the camp site?
-    t.column :length_walk, :string
-    # Suitable for caravans or trailers or car camping?
-    t.column :caravans, :boolean
-    t.column :trailers, :boolean
-    t.column :car, :boolean
-  end
-end
-
 agent = WWW::Mechanize.new
 
 page = agent.get("http://www.environment.nsw.gov.au/NationalParks/SearchCampgrounds.aspx")

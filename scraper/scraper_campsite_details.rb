@@ -10,14 +10,6 @@ require 'db'
 require 'park'
 require 'campsite'
 
-# Create the database columns we need for this script to work
-# Need to comment these out if the columns have already been created. Need a better solution
-ActiveRecord::Schema.define do
-  add_column :campsites, :road_access, :text
-  add_column :campsites, :fees, :text
-  add_column :campsites, :no_sites, :integer
-end
-
 agent = WWW::Mechanize.new
 
 Park.find(:all).each do |park|
