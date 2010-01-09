@@ -203,8 +203,62 @@ sites.each do |site|
   site.toilets = "non_flush"
   site.length_walk = "none"
   # On the website it says that there aren't showers but I remember the big campsite near the end having showers. Hmm...
-  site.showers = false
+  site.showers = "none"
   # TODO: Haven't filled in road_access or fees
   site.save!
 end
 c.delete
+
+# Hmmm.. strange here are a couple of campsites that do not appear in the search yet are on their website in other
+# places. I don't understand at all.
+park = Park.new(:name => "Watagans National Park", :web_id => "N0133")
+park.save!
+
+# TODO: Haven't filled in fees
+Campsite.new(:web_id => "c20080416100014239",
+  :name => "Gap Creek camping ground",
+  :park => park,
+  :toilets => "non_flush",
+  :picnic_tables => true,
+  :barbecues => "gas_electric",
+  :showers => "none",
+  :drinking_water => false,
+  :length_walk => "none",
+  :caravans => false,
+  :trailers => true,
+  :car => true,
+  :road_access => "Unsealed road/trail - 2WD (no long vehicle access). Dry weather only.",
+  :no_sites => 3).save!
+
+Campsite.new(:web_id => "c20080416100014240",
+  :name => "Bangalow campground",
+  :park => park,
+  :toilets => "none",
+  :picnic_tables => false,
+  :barbecues => "wood_bring_your_own",
+  :showers => "none",
+  :drinking_water => false,
+  :length_walk => "none",
+  :caravans => false,
+  :trailers => false,
+  :car => true,
+  :road_access => "Unsealed road/trail - 2WD (no long vehicle access).",
+  :no_sites => 3).save!
+
+park = Park.new(:name => "Abercrombie Karst Conservation Reserve", :web_id => "N0350")
+park.save!
+
+Campsite.new(:web_id => "c20080416100019411",
+  :name => "Abercrombie Caves campground",
+  :park => park,
+  :toilets => "flush",
+  :picnic_tables => false,
+  :barbecues => "gas_electric",
+  :showers => "hot",
+  :drinking_water => true,
+  :length_walk => "none",
+  :caravans => true,
+  :trailers => true,
+  :car => true,
+  :road_access => "Unsealed road/trail - 4WD only.",
+  :no_sites => 60).save!
