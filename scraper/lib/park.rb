@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'activerecord'
+require 'campsite'
 
 class Park < ActiveRecord::Base
   has_many :campsites

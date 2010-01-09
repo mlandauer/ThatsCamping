@@ -7,6 +7,8 @@ $:.unshift "#{File.dirname(__FILE__)}/lib"
 require 'rubygems'
 require 'mechanize'
 require 'utils'
+require 'db'
+require 'park'
 
 agent = WWW::Mechanize.new
 
@@ -72,13 +74,25 @@ data.each do |campsite_data|
   park_name = campsite_data[0]
   campsite_name = campsite_data[1]
   campsite_url = campsite_data[2]
-  
-  data = extract_data_from_campsite_page(agent.get(campsite_url))
-  if data
-    latitude, longitude = parse_latitude_longitude(data[0], data[1])
-    puts "Park: #{park_name}, Campsite: #{campsite_name}, Position: #{latitude}, #{longitude}"
+
+  #puts "Park: #{park_name}, Campsite: #{campsite_name}"
+  park = Park.find(:first, :conditions => {:name => park_name})
+  if park
+    campsite = park.campsites.find(:first, :conditions => {:name => campsite_name})
+    if campsite.nil?
+      names = park.campsites.map{|c| c.name}
+      puts "WARNING: Couldn't find campsite: #{campsite_name}. Possible matches: #{names.join(', ')}"
+    end
   else
-    puts "WARNING: No GPS data found for park: #{park_name}, campsite: #{campsite_name}"
+    puts "WARNING: Couldn't find park: #{park_name}"
   end
+  
+  #data = extract_data_from_campsite_page(agent.get(campsite_url))
+  #if data
+  #  latitude, longitude = parse_latitude_longitude(data[0], data[1])
+  #  puts "Park: #{park_name}, Campsite: #{campsite_name}, Position: #{latitude}, #{longitude}"
+  #else
+  #  puts "WARNING: No GPS data found for park: #{park_name}, campsite: #{campsite_name}"
+  #end
 end
 
