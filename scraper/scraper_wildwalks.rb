@@ -2,8 +2,11 @@
 
 # Scrape http://www.wildwalks.com for the location (latitude / longitude) of campsites
 
+$:.unshift "#{File.dirname(__FILE__)}/lib"
+
 require 'rubygems'
 require 'mechanize'
+require 'utils'
 
 agent = WWW::Mechanize.new
 
@@ -43,6 +46,22 @@ def extract_data_from_campsite_page(page)
   end
 end
 
+def parse_angle(text, positive_char, negative_char)
+  values = text.split(" ").map{|t| t.to_f}
+  case text.strip[-1..-1]
+  when positive_char
+    convert_degrees_mins(values[0], values[1], values[2])
+  when negative_char
+    convert_degrees_mins(-values[0], values[1], values[2])
+  else
+    raise "Unexpected direction in #{text}"    
+  end
+end
+
+def parse_latitude_longitude(lat, long)
+  [parse_angle(lat, "N", "S"), parse_angle(long, "E", "W")]
+end
+
 data = []
 extract_urls_from_areas_page(agent.get("http://www.wildwalks.com/office/office/camping.html")).each do |area_url|
   puts "Scraping data on #{area_url}..."
@@ -56,7 +75,8 @@ data.each do |campsite_data|
   
   data = extract_data_from_campsite_page(agent.get(campsite_url))
   if data
-    puts "Park: #{park_name}, Campsite: #{campsite_name}, Latitude: #{data[0]}, Longitude: #{data[1]}"
+    latitude, longitude = parse_latitude_longitude(data[0], data[1])
+    puts "Park: #{park_name}, Campsite: #{campsite_name}, Position: #{latitude}, #{longitude}"
   else
     puts "WARNING: No GPS data found for park: #{park_name}, campsite: #{campsite_name}"
   end
