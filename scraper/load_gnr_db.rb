@@ -16,17 +16,9 @@ require 'location'
 require 'db'
 require 'utils'
 
-def convert_degrees_mins(text)
+def parse_degrees_mins(text)
   if text.strip =~ /^(-?\d+)\s+(-?\d+)\s+(-?\d+)$/
-    degrees = $~[1].to_f
-    minutes = $~[2].to_f
-    seconds = $~[3].to_f
-    offset = (minutes + seconds / 60.0) / 60.0
-    if degrees < 0
-      degrees - offset
-    else
-      degrees + offset
-    end
+    convert_degrees_mins($~[1].to_f, $~[2].to_f, $~[3].to_f)
   end
 end
 
@@ -79,8 +71,8 @@ puts "Converting latitude and longitude format..."
 converted = []
 rows.each do |row|
   # Convert from degrees, minutes, seconds
-  latitude = convert_degrees_mins(row[1])
-  longitude = convert_degrees_mins(row[2])
+  latitude = parse_degrees_mins(row[1])
+  longitude = parse_degrees_mins(row[2])
   converted << [row[0], latitude, longitude] if latitude && longitude
 end
 

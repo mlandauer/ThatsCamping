@@ -11,3 +11,13 @@ def prepare_source(name, url)
   end
   source
 end
+
+def convert_degrees_mins(degrees, minutes, seconds)
+  offset = (minutes + seconds / 60.0) / 60.0
+  if degrees < 0
+    degrees - offset
+  else
+    degrees + offset
+  end
+end
+
