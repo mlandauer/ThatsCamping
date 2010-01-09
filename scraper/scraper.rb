@@ -180,33 +180,9 @@ sites.each do |site|
 end
 c.delete
 
+# This campsite is just a wrapper of other campsites which exist further down on the same page. So, this really
+# shouldn't be here.
 c = Campsite.find(:first, :conditions => ["name LIKE ?", "%Bombah Broadwater%"])
-sites = []
-# The barbecue situation is less than clear from the description. This is my best interpretation
-sites << Campsite.new(:name => "Mungo Brush", :no_sites => 78, :barbecues => "gas_electric",
-  :caravans => true, :trailers => true, :car => true)
-sites << Campsite.new(:name => "Dees Corner", :no_sites => 16, :barbecues => "wood_bring_your_own",
-  :caravans => true, :trailers => true, :car => true)
-sites << Campsite.new(:name => "White Tree Bay", :no_sites => 15, :barbecues => "gas_electric",
-  :caravans => true, :trailers => true, :car => true)
-sites << Campsite.new(:name => "The Wells", :no_sites => 12, :barbecues => "wood_bring_your_own",
-  :caravans => true, :trailers => true, :car => true)
-sites << Campsite.new(:name => "Boomeri", :no_sites => 20, :barbecues => "none",
-  :caravans => false, :trailers => false, :car => true)
-sites << Campsite.new(:name => "Banksia Green", :no_sites => 15, :barbecues => "wood_bring_your_own",
-  :caravans => true, :trailers => true, :car => true)
-sites.each do |site|
-  site.web_id = c.web_id
-  site.park_id = c.park_id
-  site.drinking_water = false
-  site.picnic_tables = false
-  site.toilets = "non_flush"
-  site.length_walk = "none"
-  # On the website it says that there aren't showers but I remember the big campsite near the end having showers. Hmm...
-  site.showers = "none"
-  # TODO: Haven't filled in road_access or fees
-  site.save!
-end
 c.delete
 
 # Hmmm.. strange here are a couple of campsites that do not appear in the search yet are on their website in other
