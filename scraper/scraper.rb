@@ -151,33 +151,12 @@ end
 # TODO: It would be good to automate some of this
 
 c = Campsite.find(:first, :conditions => {:name => "Boat-based campgrounds"})
-# This campsite is just a wrapper for a bunch of other campsites. We're going to add these by hand
-sites = []
-sites << Campsite.new(:name => "Brambles Green", :no_sites => 2, :toilets => "none")
-sites << Campsite.new(:name => "Rivermouth", :no_sites => 5, :toilets => "non_flush")
-sites << Campsite.new(:name => "Joes Cove", :no_sites => 2, :toilets => "none")
-sites << Campsite.new(:name => "Freshwater", :no_sites => 7, :toilets => "non_flush")
-sites << Campsite.new(:name => "Two Mile Sands", :no_sites => 4, :toilets => "none")
-sites << Campsite.new(:name => "Mackaway Bay", :no_sites => 3, :toilets => "none")
-sites << Campsite.new(:name => "Johnsons Beach", :no_sites => 17, :toilets => "non_flush")
-sites << Campsite.new(:name => "Shelly Beach", :no_sites => 18, :toilets => "non_flush")
-sites << Campsite.new(:name => "Sunny Side", :no_sites => 4, :toilets => "none")
-# Set attributes common to these campsites
-sites.each do |site|
-  site.web_id = c.web_id
-  site.park_id = c.park_id
-  site.drinking_water = false
-  site.picnic_tables = false
-  site.barbecues = "none"
-  site.showers = "none"
-  site.caravans = false
-  site.trailers = false
-  site.car = false
-  site.length_walk = "none"
-  site.road_access = "only accessible by boat"
-  # TODO: Haven't filled in fees
-  site.save!
-end
+# This campsite is just a wrapper for a bunch of other campsites. Most of these (except for Sunny Side) exist elsewhere.
+# So, it's mostly a duplicate
+# TODO: Haven't filled in fees
+Campsite.new(:name => "Sunny Side", :no_sites => 4, :toilets => "none", :web_id => c.web_id, :park_id => c.park_id,
+  :drinking_water => false, :picnic_tables => false, :barbecues => "none", :showers => "none", :caravans => false,
+  :trailers => false, :car => false, :length_walk => "none", :road_access => "only accessible by boat").save!
 c.delete
 
 # This campsite is just a wrapper of other campsites which exist further down on the same page. So, this really
