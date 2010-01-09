@@ -64,6 +64,16 @@ def parse_latitude_longitude(lat, long)
   [parse_angle(lat, "N", "S"), parse_angle(long, "E", "W")]
 end
 
+def remove_campsite_name_ending(name)
+  special_phrases = ["Picnic And Camping Area", "Picnic Camping Ground", "Picnic and camping Grounds",
+    "Camping Ground", "Camping Area", "camping areas", "rest area", "campground"]
+  shorter = name
+  special_phrases.each do |phrase|
+    shorter = shorter.sub(Regexp.new("\\b#{phrase}$", true), "")
+  end
+  shorter.strip
+end
+
 data = []
 extract_urls_from_areas_page(agent.get("http://www.wildwalks.com/office/office/camping.html")).each do |area_url|
   puts "Scraping data on #{area_url}..."
@@ -78,10 +88,39 @@ data.each do |campsite_data|
   #puts "Park: #{park_name}, Campsite: #{campsite_name}"
   park = Park.find(:first, :conditions => {:name => park_name})
   if park
-    campsite = park.campsites.find(:first, :conditions => {:name => campsite_name})
-    if campsite.nil?
-      names = park.campsites.map{|c| c.name}
-      puts "WARNING: Couldn't find campsite: #{campsite_name}. Possible matches: #{names.join(', ')}"
+    short_name = remove_campsite_name_ending(campsite_name)
+    # Now some name translations
+    short_name = case short_name
+    when "Leather Barrel"
+      "Leatherbarrel"
+    when "Dangars Falls and Gorge"
+      "Dangars Gorge"
+    when /Euroka Campground/
+      "Euroka Campground"
+    when "Jacobs River"
+      "Jacob's River"
+    when "OHares"
+      "O'Hares"
+    when "Scotchies Yard"
+      "Scotchie's Yards"
+    when "Yatching Point"
+      "Yachting Point"
+    when "Youdales Hut"
+      "Youdales"
+    when "Geehi"
+      "Old Geehi"
+    else
+      short_name
+    end
+    campsites = park.campsites.find(:all, :conditions => ["name LIKE ?", "%#{short_name}%"])
+    if campsites.empty?
+      names = park.campsites.map{|c| c.name}.join(', ')
+      #puts "WARNING: Couldn't find campsite: #{short_name} in #{park_name}. Possible matches: #{names}"
+      puts "WARNING: Couldn't find campsite: #{short_name} in #{park_name}"
+    elsif campsites.size > 1
+      names = campsites.map{|c| c.name}.join(', ')
+      #puts "WARNING: Multiple matches for campsite #{short_name}. Possible matches: #{names}"
+      puts "WARNING: Multiple matches for campsite #{short_name}"
     end
   else
     puts "WARNING: Couldn't find park: #{park_name}"
@@ -95,4 +134,3 @@ data.each do |campsite_data|
   #  puts "WARNING: No GPS data found for park: #{park_name}, campsite: #{campsite_name}"
   #end
 end
-
