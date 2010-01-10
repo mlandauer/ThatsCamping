@@ -213,6 +213,10 @@
 	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
 	[request setEntity:entity];
 	
+	// Some campsites don't have a location set. For this list of nearest campsites don't include those.
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"latitude != NULL AND longitude != NULL"];
+	[request setPredicate:predicate];
+	
 	// Execute the fetch -- create a mutable copy of the result.
 	NSError *error = nil;
 	NSMutableArray *mutableFetchResults = [[managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
