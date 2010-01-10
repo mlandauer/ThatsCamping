@@ -9,11 +9,12 @@ require 'location'
 require 'park'
 require 'campsite'
 require 'db'
+require 'utils'
 
 # Turn a name like "Smith Campground" into "Smith"
 def remove_name_ending(name)
-  special_phrases = ["picnic and camping area", "campground and picnic area", "camping and picnic area", "large group campground",
-    "camping ground", "campground", "camping area", "camp", "rest area", "tourist park", "campgrounds", "camping grounds"]
+  remove_phrases_at_end(name, ["picnic and camping area", "campground and picnic area", "camping and picnic area", "large group campground",
+    "camping ground", "campground", "camping area", "camp", "rest area", "tourist park", "campgrounds", "camping grounds"])
   shorter = name
   special_phrases.each do |phrase|
     shorter = shorter.sub(Regexp.new("\\b#{phrase}$", true), "")

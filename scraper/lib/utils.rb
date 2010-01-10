@@ -21,3 +21,12 @@ def convert_degrees_mins(degrees, minutes, seconds)
   end
 end
 
+# Remove any of the given special phrases from the end of the given name
+def remove_phrases_at_end(name, special_phrases)
+  shorter = name
+  special_phrases.each do |phrase|
+    shorter = shorter.sub(Regexp.new("\\b#{phrase}$", true), "")
+  end
+  shorter.strip
+end
+

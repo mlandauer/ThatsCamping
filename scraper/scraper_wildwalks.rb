@@ -65,13 +65,8 @@ def parse_latitude_longitude(lat, long)
 end
 
 def remove_campsite_name_ending(name)
-  special_phrases = ["Picnic And Camping Area", "Picnic Camping Ground", "Picnic and camping Grounds",
-    "Camping Ground", "Camping Area", "camping areas", "rest area", "campground"]
-  shorter = name
-  special_phrases.each do |phrase|
-    shorter = shorter.sub(Regexp.new("\\b#{phrase}$", true), "")
-  end
-  shorter.strip
+  remove_phrases_at_end(name, ["Picnic And Camping Area", "Picnic Camping Ground", "Picnic and camping Grounds",
+    "Camping Ground", "Camping Area", "camping areas", "rest area", "campground"])
 end
 
 data = []
