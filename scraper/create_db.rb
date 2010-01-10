@@ -16,6 +16,8 @@ ActiveRecord::Schema.define do
   create_table :campsites do |t|
     t.column :web_id, :string
     t.column :name, :string
+    t.column :latitude, :float
+    t.column :longitude, :float
     t.column :park_id, :integer
     t.column :toilets, :string
     t.column :picnic_tables, :boolean
