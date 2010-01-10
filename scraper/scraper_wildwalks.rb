@@ -95,8 +95,6 @@ data.each do |campsite_data|
       "Leatherbarrel"
     when "Dangars Falls and Gorge"
       "Dangars Gorge"
-    when /Euroka Campground/
-      "Euroka Campground"
     when "Jacobs River"
       "Jacob's River"
     when "OHares"
@@ -121,16 +119,21 @@ data.each do |campsite_data|
       names = campsites.map{|c| c.name}.join(', ')
       #puts "WARNING: Multiple matches for campsite #{short_name}. Possible matches: #{names}"
       puts "WARNING: Multiple matches for campsite #{short_name}"
+    else
+      campsite = campsites.first
+      # Now that we have a match, geocode it
+      data = extract_data_from_campsite_page(agent.get(campsite_url))
+      if data
+        latitude, longitude = parse_latitude_longitude(data[0], data[1])
+        puts "Park: #{park_name}, Campsite: #{campsite_name}, Position: #{latitude}, #{longitude}"
+        campsite.latitude = latitude
+        campsite.longitude = longitude
+        campsite.save!
+      else
+        puts "WARNING: No GPS data found for park: #{park_name}, campsite: #{campsite_name}"
+      end 
     end
   else
     puts "WARNING: Couldn't find park: #{park_name}"
-  end
-  
-  #data = extract_data_from_campsite_page(agent.get(campsite_url))
-  #if data
-  #  latitude, longitude = parse_latitude_longitude(data[0], data[1])
-  #  puts "Park: #{park_name}, Campsite: #{campsite_name}, Position: #{latitude}, #{longitude}"
-  #else
-  #  puts "WARNING: No GPS data found for park: #{park_name}, campsite: #{campsite_name}"
-  #end
+  end  
 end
