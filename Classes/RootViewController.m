@@ -20,6 +20,8 @@
 	
 	// Set the title.
     self.title = @"Campsites near you";
+	
+	self.tableView.allowsSelection = NO;
     
 	// Start the location manager.
 	[[self locationManager] startUpdatingLocation];
