@@ -15,4 +15,6 @@
 @property (nonatomic, retain) NSString *webId;
 
 - (CLLocation *) location;
+- (NSNumber *) distanceFrom:(CLLocation *)location;
+
 @end

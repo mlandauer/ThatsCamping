@@ -10,4 +10,10 @@
 	return [[[CLLocation alloc] initWithLatitude:[[self latitude] doubleValue] longitude:[[self longitude] doubleValue]] autorelease];
 }
 
+// Distance (in metres) to this campsite from the given location
+- (NSNumber *) distanceFrom:(CLLocation *)location
+{
+	[NSNumber numberWithDouble:[location getDistanceFrom:[self location]]];
+}
+
 @end
