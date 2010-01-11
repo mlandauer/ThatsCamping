@@ -30,7 +30,8 @@ File.open("#{File.dirname(__FILE__)}/../Parks.plist", "w") do |f|
     x.array {
       Park.find(:all).each do |park|
         x.dict {
-          x.key "name";   x.string shorten_park_name(park.name)
+          x.key "shortName"; x.string shorten_park_name(park.name)
+          x.key "longName"; x.string park.name
           x.key "webId";  x.string park.web_id
         }        
       end
@@ -46,7 +47,8 @@ File.open("#{File.dirname(__FILE__)}/../Campsites.plist", "w") do |f|
     x.array {
       Campsite.find(:all).each do |campsite|
         x.dict {
-          x.key "name"; x.string shorten_campsite_name(campsite.name)
+          x.key "shortName"; x.string shorten_campsite_name(campsite.name)
+          x.key "longName"; x.string campsite.name
           if campsite.latitude && campsite.longitude
             x.key "latitude"; x.real campsite.latitude
             x.key "longitude"; x.real campsite.longitude

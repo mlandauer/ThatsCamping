@@ -3,7 +3,9 @@
 <plist version="1.0">
   <array>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Acacia Flat</string>
+      <key>longName</key>
       <string>Acacia Flat</string>
       <key>latitude</key>
       <real>-33.6149</real>
@@ -15,7 +17,9 @@
       <string>N0004</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Alexanders Hut</string>
+      <key>longName</key>
       <string>Alexanders Hut</string>
       <key>webId</key>
       <string>c20080416100021755</string>
@@ -23,16 +27,20 @@
       <string>N0111</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Apsley Falls</string>
+      <key>longName</key>
+      <string>Apsley Falls campground</string>
       <key>webId</key>
       <string>c20080416100013451</string>
       <key>parkWebId</key>
       <string>N0043</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Aragunnu</string>
+      <key>longName</key>
+      <string>Aragunnu campground</string>
       <key>latitude</key>
       <real>-36.585</real>
       <key>longitude</key>
@@ -43,8 +51,10 @@
       <string>N0021</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bald Rock</string>
+      <key>longName</key>
+      <string>Bald Rock camping area</string>
       <key>latitude</key>
       <real>-28.84716</real>
       <key>longitude</key>
@@ -55,16 +65,20 @@
       <string>N0001</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Balor Hut</string>
+      <key>longName</key>
+      <string>Balor Hut campground</string>
       <key>webId</key>
       <string>c20080430200010020</string>
       <key>parkWebId</key>
       <string>N0035</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Banksia Green</string>
+      <key>longName</key>
+      <string>Banksia Green campground</string>
       <key>latitude</key>
       <real>-32.55003</real>
       <key>longitude</key>
@@ -75,16 +89,20 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bark Hut</string>
+      <key>longName</key>
+      <string>Bark Hut campground</string>
       <key>webId</key>
       <string>c20080416100011911</string>
       <key>parkWebId</key>
       <string>N0038</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Barokee</string>
+      <key>longName</key>
+      <string>Barokee campground</string>
       <key>latitude</key>
       <real>-30.44392</real>
       <key>longitude</key>
@@ -95,24 +113,30 @@
       <string>N0046</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Behrs Flat</string>
+      <key>longName</key>
+      <string>Behrs Flat campground</string>
       <key>webId</key>
       <string>c20080430200010026</string>
       <key>parkWebId</key>
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Belah</string>
+      <key>longName</key>
+      <string>Belah campground</string>
       <key>webId</key>
       <string>c20080416100011958</string>
       <key>parkWebId</key>
       <string>N0049</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bellbird</string>
+      <key>longName</key>
+      <string>Bellbird campground</string>
       <key>latitude</key>
       <real>-29.47415</real>
       <key>longitude</key>
@@ -123,16 +147,20 @@
       <string>N0061</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Ben Halls</string>
+      <key>longName</key>
+      <string>Ben Halls camping ground</string>
       <key>webId</key>
       <string>c20080416100013512</string>
       <key>parkWebId</key>
       <string>N0036</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bendethera Valley</string>
+      <key>longName</key>
+      <string>Bendethera Valley campground</string>
       <key>latitude</key>
       <real>-35.93862</real>
       <key>longitude</key>
@@ -143,8 +171,10 @@
       <string>N0047</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bents Basin</string>
+      <key>longName</key>
+      <string>Bents Basin campground</string>
       <key>latitude</key>
       <real>-33.93189</real>
       <key>longitude</key>
@@ -155,8 +185,10 @@
       <string>N0618</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Berlang</string>
+      <key>longName</key>
+      <string>Berlang Camping Area</string>
       <key>latitude</key>
       <real>-35.725</real>
       <key>longitude</key>
@@ -167,7 +199,9 @@
       <string>N0047</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Big River Camp</string>
+      <key>longName</key>
       <string>Big River Camp</string>
       <key>webId</key>
       <string>c20080416100013502</string>
@@ -175,8 +209,10 @@
       <string>N0060</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bittangabee</string>
+      <key>longName</key>
+      <string>Bittangabee campground</string>
       <key>latitude</key>
       <real>-37.2171</real>
       <key>longitude</key>
@@ -187,16 +223,20 @@
       <string>N0003</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Black Rocks</string>
+      <key>longName</key>
+      <string>Black Rocks campground</string>
       <key>webId</key>
       <string>c20080416100013428</string>
       <key>parkWebId</key>
       <string>N0041</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Blatherarm</string>
+      <key>longName</key>
+      <string>Blatherarm camping and picnic area</string>
       <key>latitude</key>
       <real>-29.25931</real>
       <key>longitude</key>
@@ -207,16 +247,20 @@
       <string>N0628</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Blue Gums</string>
+      <key>longName</key>
+      <string>Blue Gums large group campground</string>
       <key>webId</key>
       <string>c20080416100017080</string>
       <key>parkWebId</key>
       <string>N0068</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Blue Waterholes</string>
+      <key>longName</key>
+      <string>Blue Waterholes campground</string>
       <key>latitude</key>
       <real>-35.62329</real>
       <key>longitude</key>
@@ -227,8 +271,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bonnie Vale</string>
+      <key>longName</key>
+      <string>Bonnie Vale camping ground</string>
       <key>latitude</key>
       <real>-34.0837</real>
       <key>longitude</key>
@@ -239,7 +285,9 @@
       <string>N0030</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Boolambayte Lake</string>
+      <key>longName</key>
       <string>Boolambayte Lake</string>
       <key>webId</key>
       <string>c20080416100018514</string>
@@ -247,8 +295,10 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Boomeri</string>
+      <key>longName</key>
+      <string>Boomeri campground</string>
       <key>latitude</key>
       <real>-32.50935</real>
       <key>longitude</key>
@@ -259,8 +309,10 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Boorkoom</string>
+      <key>longName</key>
+      <string>Boorkoom campground</string>
       <key>latitude</key>
       <real>-29.8201</real>
       <key>longitude</key>
@@ -271,7 +323,9 @@
       <string>N0040</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Boundary Falls</string>
+      <key>longName</key>
       <string>Boundary Falls</string>
       <key>webId</key>
       <string>c20080416100019785</string>
@@ -279,8 +333,10 @@
       <string>N0012</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Boyd River</string>
+      <key>longName</key>
+      <string>Boyd River campground</string>
       <key>latitude</key>
       <real>-33.9708</real>
       <key>longitude</key>
@@ -291,7 +347,9 @@
       <string>N0016</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Bradley's/O'Brien's Hut</string>
+      <key>longName</key>
       <string>Bradley's/O'Brien's Hut</string>
       <key>webId</key>
       <string>c20080430200010058</string>
@@ -299,8 +357,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bradneys Gap</string>
+      <key>longName</key>
+      <string>Bradneys Gap campground</string>
       <key>latitude</key>
       <real>-36.16506</real>
       <key>longitude</key>
@@ -311,15 +371,19 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Brambles Green</string>
+      <key>longName</key>
+      <string>Brambles Green campground</string>
       <key>webId</key>
       <string>c20080430200010061</string>
       <key>parkWebId</key>
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Brou Lake</string>
+      <key>longName</key>
       <string>Brou Lake</string>
       <key>webId</key>
       <string>c20080416100020858</string>
@@ -327,8 +391,10 @@
       <string>N0095</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Brushy Mountain</string>
+      <key>longName</key>
+      <string>Brushy Mountain campground</string>
       <key>latitude</key>
       <real>-31.14691</real>
       <key>longitude</key>
@@ -339,8 +405,10 @@
       <string>N0042</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Buddong Falls</string>
+      <key>longName</key>
+      <string>Buddong Falls campground</string>
       <key>latitude</key>
       <real>-35.64357</real>
       <key>longitude</key>
@@ -351,24 +419,30 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Budds Mare</string>
+      <key>longName</key>
+      <string>Budds Mare campground</string>
       <key>webId</key>
       <string>c20080416100013452</string>
       <key>parkWebId</key>
       <string>N0043</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bullocks Hill</string>
+      <key>longName</key>
+      <string>Bullocks Hill campground</string>
       <key>webId</key>
       <string>c20080430200010069</string>
       <key>parkWebId</key>
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bummaroo Ford</string>
+      <key>longName</key>
+      <string>Bummaroo Ford camping ground</string>
       <key>latitude</key>
       <real>-34.19388</real>
       <key>longitude</key>
@@ -379,8 +453,10 @@
       <string>N0093</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bungaree Bay</string>
+      <key>longName</key>
+      <string>Bungaree Bay campground</string>
       <key>latitude</key>
       <real>-32.45869</real>
       <key>longitude</key>
@@ -391,8 +467,10 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bungonia</string>
+      <key>longName</key>
+      <string>Bungonia camping ground</string>
       <key>latitude</key>
       <real>-34.80658</real>
       <key>longitude</key>
@@ -403,7 +481,9 @@
       <string>N0612</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Burbie Camp</string>
+      <key>longName</key>
       <string>Burbie Camp</string>
       <key>webId</key>
       <string>c20080430200010074</string>
@@ -411,8 +491,10 @@
       <string>N0035</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Burralow Creek</string>
+      <key>longName</key>
+      <string>Burralow Creek camping ground</string>
       <key>latitude</key>
       <real>-33.5487</real>
       <key>longitude</key>
@@ -423,7 +505,9 @@
       <string>N0004</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Camp Blackman</string>
+      <key>longName</key>
       <string>Camp Blackman</string>
       <key>webId</key>
       <string>c20080416100012076</string>
@@ -431,7 +515,9 @@
       <string>N0035</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Camp Pincham</string>
+      <key>longName</key>
       <string>Camp Pincham</string>
       <key>webId</key>
       <string>c20080430200010081</string>
@@ -439,7 +525,9 @@
       <string>N0035</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Camp Walaay</string>
+      <key>longName</key>
       <string>Camp Walaay</string>
       <key>webId</key>
       <string>c20080416100012073</string>
@@ -447,7 +535,9 @@
       <string>N0035</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Camp Wambelong</string>
+      <key>longName</key>
       <string>Camp Wambelong</string>
       <key>webId</key>
       <string>c20080416100012072</string>
@@ -455,8 +545,10 @@
       <string>N0035</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Cascades</string>
+      <key>longName</key>
+      <string>Cascades camping ground</string>
       <key>latitude</key>
       <real>-36.22371</real>
       <key>longitude</key>
@@ -467,8 +559,10 @@
       <string>N0048</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Cattai</string>
+      <key>longName</key>
+      <string>Cattai camping ground</string>
       <key>latitude</key>
       <real>-33.56056</real>
       <key>longitude</key>
@@ -479,8 +573,10 @@
       <string>N0079</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Chaelundi</string>
+      <key>longName</key>
+      <string>Chaelundi campground</string>
       <key>latitude</key>
       <real>-30.06845</real>
       <key>longitude</key>
@@ -491,8 +587,10 @@
       <string>N0013</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Clover Flat</string>
+      <key>longName</key>
+      <string>Clover Flat campground</string>
       <key>latitude</key>
       <real>-36.07285</real>
       <key>longitude</key>
@@ -503,16 +601,20 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Coach and Horses</string>
+      <key>longName</key>
+      <string>Coach and Horses campground</string>
       <key>webId</key>
       <string>c20080416100021058</string>
       <key>parkWebId</key>
       <string>N0175</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Colo Meroo</string>
+      <key>longName</key>
+      <string>Colo Meroo camping ground</string>
       <key>latitude</key>
       <real>-33.38363</real>
       <key>longitude</key>
@@ -523,8 +625,10 @@
       <string>N0051</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Congo</string>
+      <key>longName</key>
+      <string>Congo camping area</string>
       <key>latitude</key>
       <real>-35.9547</real>
       <key>longitude</key>
@@ -535,8 +639,10 @@
       <string>N0095</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Cooinbil Hut</string>
+      <key>longName</key>
+      <string>Cooinbil Hut campground</string>
       <key>latitude</key>
       <real>-35.63141</real>
       <key>longitude</key>
@@ -547,8 +653,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Cooleman Mountain</string>
+      <key>longName</key>
+      <string>Cooleman Mountain campground</string>
       <key>latitude</key>
       <real>-35.59786</real>
       <key>longitude</key>
@@ -559,8 +667,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Coombadjha</string>
+      <key>longName</key>
+      <string>Coombadjha camping area</string>
       <key>latitude</key>
       <real>-29.47166</real>
       <key>longitude</key>
@@ -571,23 +681,29 @@
       <string>N0061</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Coorongooba</string>
+      <key>longName</key>
+      <string>Coorongooba camping ground</string>
       <key>webId</key>
       <string>c20081009120005256</string>
       <key>parkWebId</key>
       <string>N0051</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Coxs Creek</string>
+      <key>longName</key>
+      <string>Coxs Creek camping ground</string>
       <key>webId</key>
       <string>c20080416100013503</string>
       <key>parkWebId</key>
       <string>N0088</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Culgoa</string>
+      <key>longName</key>
       <string>Culgoa</string>
       <key>webId</key>
       <string>c20080416100015796</string>
@@ -595,7 +711,9 @@
       <string>N0099</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Cutters camp</string>
+      <key>longName</key>
       <string>Cutters camp</string>
       <key>latitude</key>
       <real>-28.44484</real>
@@ -607,24 +725,30 @@
       <string>N0144</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Cypress-pine</string>
+      <key>longName</key>
+      <string>Cypress-pine camping area</string>
       <key>webId</key>
       <string>c20080416100013605</string>
       <key>parkWebId</key>
       <string>N0056</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Dalmorton</string>
+      <key>longName</key>
+      <string>Dalmorton Camping Area</string>
       <key>webId</key>
       <string>c20080416100019802</string>
       <key>parkWebId</key>
       <string>N0669</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Dangars Gorge</string>
+      <key>longName</key>
+      <string>Dangars Gorge campground</string>
       <key>latitude</key>
       <real>-30.6729</real>
       <key>longitude</key>
@@ -635,32 +759,40 @@
       <string>N0043</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Darling River</string>
+      <key>longName</key>
+      <string>Darling River camping grounds</string>
       <key>webId</key>
       <string>c20080416100014880</string>
       <key>parkWebId</key>
       <string>N0017</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Dawsons Spring</string>
+      <key>longName</key>
+      <string>Dawsons Spring campground</string>
       <key>webId</key>
       <string>c20080416100011916</string>
       <key>parkWebId</key>
       <string>N0038</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Dead Horse Gully</string>
+      <key>longName</key>
+      <string>Dead Horse Gully campground</string>
       <key>webId</key>
       <string>c20080416100013430</string>
       <key>parkWebId</key>
       <string>N0032</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Dees Corner</string>
+      <key>longName</key>
+      <string>Dees Corner campground</string>
       <key>latitude</key>
       <real>-32.53832</real>
       <key>longitude</key>
@@ -671,8 +803,10 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Denison</string>
+      <key>longName</key>
+      <string>Denison campground</string>
       <key>latitude</key>
       <real>-35.94512</real>
       <key>longitude</key>
@@ -683,8 +817,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Depot Beach</string>
+      <key>longName</key>
+      <string>Depot Beach campground</string>
       <key>latitude</key>
       <real>-35.6286</real>
       <key>longitude</key>
@@ -695,8 +831,10 @@
       <string>N0025</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Deua River</string>
+      <key>longName</key>
+      <string>Deua River campground</string>
       <key>latitude</key>
       <real>-35.74213</real>
       <key>longitude</key>
@@ -707,8 +845,10 @@
       <string>N0047</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Devils Hole</string>
+      <key>longName</key>
+      <string>Devils Hole campground</string>
       <key>latitude</key>
       <real>-31.9163</real>
       <key>longitude</key>
@@ -719,8 +859,10 @@
       <string>N0002</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Diamond Head</string>
+      <key>longName</key>
+      <string>Diamond Head camping ground</string>
       <key>latitude</key>
       <real>-31.71882</real>
       <key>longitude</key>
@@ -731,8 +873,10 @@
       <string>N0009</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Dingo Dell</string>
+      <key>longName</key>
+      <string>Dingo Dell campground</string>
       <key>latitude</key>
       <real>-33.97375</real>
       <key>longitude</key>
@@ -743,8 +887,10 @@
       <string>N0016</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Dingo Tops</string>
+      <key>longName</key>
+      <string>Dingo Tops camping ground</string>
       <key>latitude</key>
       <real>-31.66617</real>
       <key>longitude</key>
@@ -755,24 +901,30 @@
       <string>N0122</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Doon Goonge</string>
+      <key>longName</key>
+      <string>Doon Goonge Camping Area</string>
       <key>webId</key>
       <string>c20080416100019801</string>
       <key>parkWebId</key>
       <string>N0104</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Double Wharf</string>
+      <key>longName</key>
+      <string>Double Wharf campground</string>
       <key>webId</key>
       <string>c20080416100014367</string>
       <key>parkWebId</key>
       <string>N0744</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Dry Tank</string>
+      <key>longName</key>
+      <string>Dry Tank camping ground</string>
       <key>latitude</key>
       <real>-30.5193</real>
       <key>longitude</key>
@@ -783,8 +935,10 @@
       <string>N0100</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Dunns Swamp</string>
+      <key>longName</key>
+      <string>Dunns Swamp camping ground</string>
       <key>latitude</key>
       <real>-32.83361</real>
       <key>longitude</key>
@@ -795,23 +949,29 @@
       <string>N0051</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Emu Lake</string>
+      <key>longName</key>
+      <string>Emu Lake camping ground</string>
       <key>webId</key>
       <string>c20080416100014879</string>
       <key>parkWebId</key>
       <string>N0017</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Euroka</string>
+      <key>longName</key>
+      <string>Euroka campground</string>
       <key>webId</key>
       <string>c20080416100010044</string>
       <key>parkWebId</key>
       <string>N0004</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Euroka campground - Appletree Flat campervan and camper trailer area</string>
+      <key>longName</key>
       <string>Euroka campground - Appletree Flat campervan and camper trailer area</string>
       <key>latitude</key>
       <real>-33.80002</real>
@@ -823,8 +983,10 @@
       <string>N0004</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Federal Falls</string>
+      <key>longName</key>
+      <string>Federal Falls camping area</string>
       <key>latitude</key>
       <real>-33.34896</real>
       <key>longitude</key>
@@ -835,8 +997,10 @@
       <string>N0636</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Finchley</string>
+      <key>longName</key>
+      <string>Finchley campground</string>
       <key>latitude</key>
       <real>-32.98</real>
       <key>longitude</key>
@@ -847,24 +1011,30 @@
       <string>N0068</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Forest Tops</string>
+      <key>longName</key>
+      <string>Forest Tops campground</string>
       <key>webId</key>
       <string>c20080416100013662</string>
       <key>parkWebId</key>
       <string>N0050</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Fort Grey</string>
+      <key>longName</key>
+      <string>Fort Grey campground</string>
       <key>webId</key>
       <string>c20080416100013434</string>
       <key>parkWebId</key>
       <string>N0032</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Frazer</string>
+      <key>longName</key>
+      <string>Frazer camping ground</string>
       <key>latitude</key>
       <real>-33.1864</real>
       <key>longitude</key>
@@ -875,8 +1045,10 @@
       <string>N0605</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Freemans</string>
+      <key>longName</key>
+      <string>Freemans camping ground</string>
       <key>latitude</key>
       <real>-33.2006</real>
       <key>longitude</key>
@@ -887,8 +1059,10 @@
       <string>N0605</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Freshwater</string>
+      <key>longName</key>
+      <string>Freshwater campground</string>
       <key>latitude</key>
       <real>-32.48671</real>
       <key>longitude</key>
@@ -899,8 +1073,10 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Gambells Rest</string>
+      <key>longName</key>
+      <string>Gambells Rest campground</string>
       <key>latitude</key>
       <real>-34.66914</real>
       <key>longitude</key>
@@ -911,24 +1087,30 @@
       <string>N0022</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Geehi Flats</string>
+      <key>longName</key>
+      <string>Geehi Flats rest area</string>
       <key>webId</key>
       <string>c20080430200010166</string>
       <key>parkWebId</key>
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Gentlemans Halt</string>
+      <key>longName</key>
+      <string>Gentlemans Halt camping ground</string>
       <key>webId</key>
       <string>c20080416100013412</string>
       <key>parkWebId</key>
       <string>N0052</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Ghost Gully</string>
+      <key>longName</key>
+      <string>Ghost Gully campground</string>
       <key>latitude</key>
       <real>-35.6927</real>
       <key>longitude</key>
@@ -939,24 +1121,30 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Gillards</string>
+      <key>longName</key>
+      <string>Gillards campground</string>
       <key>webId</key>
       <string>c20080416100011838</string>
       <key>parkWebId</key>
       <string>N0021</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Glendora</string>
+      <key>longName</key>
+      <string>Glendora campground</string>
       <key>webId</key>
       <string>c20080416100013501</string>
       <key>parkWebId</key>
       <string>N0204</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Gloucester River</string>
+      <key>longName</key>
+      <string>Gloucester River camping ground</string>
       <key>latitude</key>
       <real>-32.0589</real>
       <key>longitude</key>
@@ -967,32 +1155,40 @@
       <string>N0002</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Green Gully</string>
+      <key>longName</key>
+      <string>Green Gully campground</string>
       <key>webId</key>
       <string>c20080416100013443</string>
       <key>parkWebId</key>
       <string>N0043</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Greenbah</string>
+      <key>longName</key>
+      <string>Greenbah camping ground</string>
       <key>webId</key>
       <string>c20080416100015738</string>
       <key>parkWebId</key>
       <string>N0096</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Group</string>
+      <key>longName</key>
+      <string>Group campground</string>
       <key>webId</key>
       <string>c20080416100012108</string>
       <key>parkWebId</key>
       <string>N0037</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Gummi Falls</string>
+      <key>longName</key>
+      <string>Gummi Falls campground</string>
       <key>latitude</key>
       <real>-31.903</real>
       <key>longitude</key>
@@ -1003,32 +1199,40 @@
       <string>N0002</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Gunneemooroo</string>
+      <key>longName</key>
+      <string>Gunneemooroo campground</string>
       <key>webId</key>
       <string>c20080430200010186</string>
       <key>parkWebId</key>
       <string>N0035</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Halls Peak</string>
+      <key>longName</key>
+      <string>Halls Peak campground</string>
       <key>webId</key>
       <string>c20090406091554121</string>
       <key>parkWebId</key>
       <string>N0043</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Heartbreak Hill</string>
+      <key>longName</key>
+      <string>Heartbreak Hill camping area</string>
       <key>webId</key>
       <string>c20080416100014421</string>
       <key>parkWebId</key>
       <string>N0622</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Hobart Beach</string>
+      <key>longName</key>
+      <string>Hobart Beach campground</string>
       <key>latitude</key>
       <real>-36.7969</real>
       <key>longitude</key>
@@ -1039,8 +1243,10 @@
       <string>N0082</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Homestead Creek</string>
+      <key>longName</key>
+      <string>Homestead Creek camping ground</string>
       <key>latitude</key>
       <real>-31.2846</real>
       <key>longitude</key>
@@ -1051,8 +1257,10 @@
       <string>N0113</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Horse Swamp</string>
+      <key>longName</key>
+      <string>Horse Swamp campground</string>
       <key>latitude</key>
       <real>-31.927</real>
       <key>longitude</key>
@@ -1063,8 +1271,10 @@
       <string>N0002</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Humes Crossing</string>
+      <key>longName</key>
+      <string>Humes Crossing campground</string>
       <key>latitude</key>
       <real>-35.47266</real>
       <key>longitude</key>
@@ -1075,8 +1285,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Hungry Gate</string>
+      <key>longName</key>
+      <string>Hungry Gate camping area</string>
       <key>latitude</key>
       <real>-31.07977</real>
       <key>longitude</key>
@@ -1087,8 +1299,10 @@
       <string>N0014</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Illaroo</string>
+      <key>longName</key>
+      <string>Illaroo campground</string>
       <key>latitude</key>
       <real>-29.75692</real>
       <key>longitude</key>
@@ -1099,8 +1313,10 @@
       <string>N0040</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Indian Head</string>
+      <key>longName</key>
+      <string>Indian Head camping ground</string>
       <key>latitude</key>
       <real>-31.73122</real>
       <key>longitude</key>
@@ -1111,8 +1327,10 @@
       <string>N0009</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Ingar</string>
+      <key>longName</key>
+      <string>Ingar campground</string>
       <key>latitude</key>
       <real>-33.771</real>
       <key>longitude</key>
@@ -1123,8 +1341,10 @@
       <string>N0004</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Iron Pot Creek</string>
+      <key>longName</key>
+      <string>Iron Pot Creek camping ground</string>
       <key>latitude</key>
       <real>-28.52166</real>
       <key>longitude</key>
@@ -1135,8 +1355,10 @@
       <string>N0092</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Island Bend</string>
+      <key>longName</key>
+      <string>Island Bend campground</string>
       <key>latitude</key>
       <real>-36.32572</real>
       <key>longitude</key>
@@ -1147,8 +1369,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Jacob's River</string>
+      <key>longName</key>
+      <string>Jacob's River campground</string>
       <key>latitude</key>
       <real>-36.7496</real>
       <key>longitude</key>
@@ -1159,8 +1383,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Joes Cove</string>
+      <key>longName</key>
+      <string>Joes Cove campground</string>
       <key>latitude</key>
       <real>-32.49792</real>
       <key>longitude</key>
@@ -1171,8 +1397,10 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Johnsons Beach</string>
+      <key>longName</key>
+      <string>Johnsons Beach campground</string>
       <key>latitude</key>
       <real>-32.48496</real>
       <key>longitude</key>
@@ -1183,7 +1411,9 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Jounama Creek campground 1</string>
+      <key>longName</key>
       <string>Jounama Creek campground 1</string>
       <key>latitude</key>
       <real>-35.56695</real>
@@ -1195,8 +1425,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Junction Pools</string>
+      <key>longName</key>
+      <string>Junction Pools campground</string>
       <key>latitude</key>
       <real>-32.02746</real>
       <key>longitude</key>
@@ -1207,8 +1439,10 @@
       <string>N0002</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Kingfisher Pool</string>
+      <key>longName</key>
+      <string>Kingfisher Pool camping ground</string>
       <key>latitude</key>
       <real>-34.12665</real>
       <key>longitude</key>
@@ -1219,24 +1453,30 @@
       <string>N0015</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Kings Plains Creek</string>
+      <key>longName</key>
+      <string>Kings Plains Creek camping area</string>
       <key>webId</key>
       <string>c20080416100014370</string>
       <key>parkWebId</key>
       <string>N0067</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Koreelah Creek</string>
+      <key>longName</key>
+      <string>Koreelah Creek camping area</string>
       <key>webId</key>
       <string>c20080416100014378</string>
       <key>parkWebId</key>
       <string>N0141</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Korsmans Landing</string>
+      <key>longName</key>
+      <string>Korsmans Landing campground</string>
       <key>latitude</key>
       <real>-32.47166</real>
       <key>longitude</key>
@@ -1247,16 +1487,20 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Kosciuszko</string>
+      <key>longName</key>
+      <string>Kosciuszko camping grounds</string>
       <key>webId</key>
       <string>c20080416100014535</string>
       <key>parkWebId</key>
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Kylies Beach</string>
+      <key>longName</key>
+      <string>Kylies Beach camping ground</string>
       <key>latitude</key>
       <real>-31.7358</real>
       <key>longitude</key>
@@ -1267,8 +1511,10 @@
       <string>N0009</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Lake Arragan and Red Cliff</string>
+      <key>longName</key>
+      <string>Lake Arragan and Red Cliff campgrounds</string>
       <key>latitude</key>
       <real>-29.5678</real>
       <key>longitude</key>
@@ -1279,24 +1525,30 @@
       <string>N0040</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Lake Cawndilla</string>
+      <key>longName</key>
+      <string>Lake Cawndilla camping ground</string>
       <key>webId</key>
       <string>c20080416100013431</string>
       <key>parkWebId</key>
       <string>N0017</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Lake Creek</string>
+      <key>longName</key>
+      <string>Lake Creek camping ground</string>
       <key>webId</key>
       <string>c20080416100013472</string>
       <key>parkWebId</key>
       <string>N0048</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Lane Cove River</string>
+      <key>longName</key>
+      <string>Lane Cove River tourist park</string>
       <key>latitude</key>
       <real>-33.79077</real>
       <key>longitude</key>
@@ -1307,8 +1559,10 @@
       <string>N0083</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Leatherbarrel Creek</string>
+      <key>longName</key>
+      <string>Leatherbarrel Creek campground</string>
       <key>latitude</key>
       <real>-36.5257</real>
       <key>longitude</key>
@@ -1319,16 +1573,20 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Lemon Tree Flat</string>
+      <key>longName</key>
+      <string>Lemon Tree Flat campground</string>
       <key>webId</key>
       <string>c20080416100014571</string>
       <key>parkWebId</key>
       <string>N0156</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Little Beach</string>
+      <key>longName</key>
+      <string>Little Beach camping area</string>
       <key>latitude</key>
       <real>-33.5103</real>
       <key>longitude</key>
@@ -1339,8 +1597,10 @@
       <string>N0005</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Little Mountain</string>
+      <key>longName</key>
+      <string>Little Mountain campground</string>
       <key>latitude</key>
       <real>-32.60566</real>
       <key>longitude</key>
@@ -1351,8 +1611,10 @@
       <string>N0744</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Little Murray</string>
+      <key>longName</key>
+      <string>Little Murray campground</string>
       <key>latitude</key>
       <real>-31.98269</real>
       <key>longitude</key>
@@ -1363,8 +1625,10 @@
       <string>N0002</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Log Bridge Creek</string>
+      <key>longName</key>
+      <string>Log Bridge Creek campground</string>
       <key>latitude</key>
       <real>-35.41869</real>
       <key>longitude</key>
@@ -1375,8 +1639,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Long Plain Hut</string>
+      <key>longName</key>
+      <string>Long Plain Hut campground</string>
       <key>latitude</key>
       <real>-35.69739</real>
       <key>longitude</key>
@@ -1387,8 +1653,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Long Point</string>
+      <key>longName</key>
+      <string>Long Point campground</string>
       <key>latitude</key>
       <real>-30.66711</real>
       <key>longitude</key>
@@ -1399,8 +1667,10 @@
       <string>N0043</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mackaway Bay</string>
+      <key>longName</key>
+      <string>Mackaway Bay campground</string>
       <key>latitude</key>
       <real>-32.46348</real>
       <key>longitude</key>
@@ -1411,7 +1681,9 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Main camp</string>
+      <key>longName</key>
       <string>Main camp</string>
       <key>webId</key>
       <string>c20080416100011946</string>
@@ -1419,24 +1691,30 @@
       <string>N0049</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mann River</string>
+      <key>longName</key>
+      <string>Mann River picnic and camping area</string>
       <key>webId</key>
       <string>c20080416100014387</string>
       <key>parkWebId</key>
       <string>N0569</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Marramarra Creek</string>
+      <key>longName</key>
+      <string>Marramarra Creek camping ground</string>
       <key>webId</key>
       <string>c20080416100013414</string>
       <key>parkWebId</key>
       <string>N0052</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Melaleuca</string>
+      <key>longName</key>
+      <string>Melaleuca camping ground</string>
       <key>latitude</key>
       <real>-31.27985</real>
       <key>longitude</key>
@@ -1447,8 +1725,10 @@
       <string>N0443</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Middle Beach</string>
+      <key>longName</key>
+      <string>Middle Beach campground</string>
       <key>latitude</key>
       <real>-36.64396</real>
       <key>longitude</key>
@@ -1459,8 +1739,10 @@
       <string>N0021</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mill Creek</string>
+      <key>longName</key>
+      <string>Mill Creek camping ground</string>
       <key>latitude</key>
       <real>-33.4011</real>
       <key>longitude</key>
@@ -1471,8 +1753,10 @@
       <string>N0010</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mogo Creek</string>
+      <key>longName</key>
+      <string>Mogo Creek campground</string>
       <key>latitude</key>
       <real>-33.14483</real>
       <key>longitude</key>
@@ -1483,8 +1767,10 @@
       <string>N0068</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mooraback</string>
+      <key>longName</key>
+      <string>Mooraback campground</string>
       <key>latitude</key>
       <real>-31.14776</real>
       <key>longitude</key>
@@ -1495,24 +1781,30 @@
       <string>N0042</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mount Werong</string>
+      <key>longName</key>
+      <string>Mount Werong campground</string>
       <key>webId</key>
       <string>c20080416100010422</string>
       <key>parkWebId</key>
       <string>N0004</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mount Wood</string>
+      <key>longName</key>
+      <string>Mount Wood campground</string>
       <key>webId</key>
       <string>c20080416100013435</string>
       <key>parkWebId</key>
       <string>N0032</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mulligans</string>
+      <key>longName</key>
+      <string>Mulligans camping area</string>
       <key>latitude</key>
       <real>-29.51623</real>
       <key>longitude</key>
@@ -1523,8 +1815,10 @@
       <string>N0012</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mungo Brush</string>
+      <key>longName</key>
+      <string>Mungo Brush campground</string>
       <key>latitude</key>
       <real>-32.54368</real>
       <key>longitude</key>
@@ -1535,8 +1829,10 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Murphys Glen</string>
+      <key>longName</key>
+      <string>Murphys Glen campground</string>
       <key>latitude</key>
       <real>-33.76975</real>
       <key>longitude</key>
@@ -1547,8 +1843,10 @@
       <string>N0004</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Myall Creek</string>
+      <key>longName</key>
+      <string>Myall Creek camping ground</string>
       <key>latitude</key>
       <real>-31.42941</real>
       <key>longitude</key>
@@ -1559,16 +1857,20 @@
       <string>N0130</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Native Dog</string>
+      <key>longName</key>
+      <string>Native Dog campground</string>
       <key>webId</key>
       <string>c20080416100013439</string>
       <key>parkWebId</key>
       <string>N0046</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Neranie Head</string>
+      <key>longName</key>
+      <string>Neranie Head campground</string>
       <key>latitude</key>
       <real>-32.40867</real>
       <key>longitude</key>
@@ -1579,16 +1881,20 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>New Country Swamp</string>
+      <key>longName</key>
+      <string>New Country Swamp campground</string>
       <key>webId</key>
       <string>c20080416100015752</string>
       <key>parkWebId</key>
       <string>N0129</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Newnes</string>
+      <key>longName</key>
+      <string>Newnes camping ground</string>
       <key>latitude</key>
       <real>-33.17322</real>
       <key>longitude</key>
@@ -1599,8 +1905,10 @@
       <string>N0051</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Ngarigo</string>
+      <key>longName</key>
+      <string>Ngarigo campground</string>
       <key>latitude</key>
       <real>-36.4586</real>
       <key>longitude</key>
@@ -1611,8 +1919,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>North Era</string>
+      <key>longName</key>
+      <string>North Era campground</string>
       <key>latitude</key>
       <real>-34.1772</real>
       <key>longitude</key>
@@ -1623,8 +1933,10 @@
       <string>N0030</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Nunnock</string>
+      <key>longName</key>
+      <string>Nunnock campground</string>
       <key>latitude</key>
       <real>-36.70356</real>
       <key>longitude</key>
@@ -1635,8 +1947,10 @@
       <string>N0111</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Nymboida River</string>
+      <key>longName</key>
+      <string>Nymboida River camping ground</string>
       <key>latitude</key>
       <real>-29.7123</real>
       <key>longitude</key>
@@ -1647,8 +1961,10 @@
       <string>N0055</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>O'Hares</string>
+      <key>longName</key>
+      <string>O'Hares rest area</string>
       <key>latitude</key>
       <real>-35.81827</real>
       <key>longitude</key>
@@ -1659,8 +1975,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Old Geehi</string>
+      <key>longName</key>
+      <string>Old Geehi campground</string>
       <key>latitude</key>
       <real>-36.38312</real>
       <key>longitude</key>
@@ -1671,24 +1989,30 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Old Snowy</string>
+      <key>longName</key>
+      <string>Old Snowy campground</string>
       <key>webId</key>
       <string>c20080430200010336</string>
       <key>parkWebId</key>
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Olive Downs</string>
+      <key>longName</key>
+      <string>Olive Downs campground</string>
       <key>webId</key>
       <string>c20080416100013433</string>
       <key>parkWebId</key>
       <string>N0032</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Peacock Creek</string>
+      <key>longName</key>
+      <string>Peacock Creek camping area</string>
       <key>latitude</key>
       <real>-28.66001</real>
       <key>longitude</key>
@@ -1699,8 +2023,10 @@
       <string>N0110</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Pebbly Beach</string>
+      <key>longName</key>
+      <string>Pebbly Beach campground</string>
       <key>latitude</key>
       <real>-29.94335</real>
       <key>longitude</key>
@@ -1711,8 +2037,10 @@
       <string>N0040</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Pebbly Beach</string>
+      <key>longName</key>
+      <string>Pebbly Beach campground and picnic area</string>
       <key>latitude</key>
       <real>-35.6071</real>
       <key>longitude</key>
@@ -1723,8 +2051,10 @@
       <string>N0025</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Perrys Lookdown</string>
+      <key>longName</key>
+      <string>Perrys Lookdown campground</string>
       <key>latitude</key>
       <real>-33.59935</real>
       <key>longitude</key>
@@ -1735,8 +2065,10 @@
       <string>N0004</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Picnic Point</string>
+      <key>longName</key>
+      <string>Picnic Point campground</string>
       <key>latitude</key>
       <real>-36.6138</real>
       <key>longitude</key>
@@ -1747,8 +2079,10 @@
       <string>N0021</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Pinch River</string>
+      <key>longName</key>
+      <string>Pinch River campground</string>
       <key>latitude</key>
       <real>-36.79352</real>
       <key>longitude</key>
@@ -1759,8 +2093,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Plateau Beech</string>
+      <key>longName</key>
+      <string>Plateau Beech campground</string>
       <key>latitude</key>
       <real>-31.18047</real>
       <key>longitude</key>
@@ -1771,8 +2107,10 @@
       <string>N0042</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Platypus Flat</string>
+      <key>longName</key>
+      <string>Platypus Flat camping ground</string>
       <key>latitude</key>
       <real>-30.25262</real>
       <key>longitude</key>
@@ -1783,8 +2121,10 @@
       <string>N0109</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Point Plomer</string>
+      <key>longName</key>
+      <string>Point Plomer camping ground</string>
       <key>latitude</key>
       <real>-31.31338</real>
       <key>longitude</key>
@@ -1795,8 +2135,10 @@
       <string>N0443</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Polblue</string>
+      <key>longName</key>
+      <string>Polblue campground</string>
       <key>latitude</key>
       <real>-31.957</real>
       <key>longitude</key>
@@ -1807,16 +2149,20 @@
       <string>N0002</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Postman's</string>
+      <key>longName</key>
+      <string>Postman's camping area</string>
       <key>webId</key>
       <string>c20090408101246894</string>
       <key>parkWebId</key>
       <string>N0111</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Pretty Beach</string>
+      <key>longName</key>
+      <string>Pretty Beach campground</string>
       <key>latitude</key>
       <real>-35.5675</real>
       <key>longitude</key>
@@ -1827,8 +2173,10 @@
       <string>N0025</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Putty Beach</string>
+      <key>longName</key>
+      <string>Putty Beach camping area</string>
       <key>latitude</key>
       <real>-33.5273</real>
       <key>longitude</key>
@@ -1839,8 +2187,10 @@
       <string>N0005</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Rivermouth</string>
+      <key>longName</key>
+      <string>Rivermouth campground</string>
       <key>latitude</key>
       <real>-32.51894</real>
       <key>longitude</key>
@@ -1851,16 +2201,20 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Riverside</string>
+      <key>longName</key>
+      <string>Riverside campground</string>
       <key>webId</key>
       <string>c20080416100013444</string>
       <key>parkWebId</key>
       <string>N0043</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Rock Flat</string>
+      <key>longName</key>
+      <string>Rock Flat campground</string>
       <key>latitude</key>
       <real>-35.4002</real>
       <key>longitude</key>
@@ -1871,8 +2225,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Rocky Plain</string>
+      <key>longName</key>
+      <string>Rocky Plain campground</string>
       <key>latitude</key>
       <real>-35.8917</real>
       <key>longitude</key>
@@ -1883,8 +2239,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Rummery Park</string>
+      <key>longName</key>
+      <string>Rummery Park campground</string>
       <key>latitude</key>
       <real>-28.5988</real>
       <key>longitude</key>
@@ -1895,8 +2253,10 @@
       <string>N0699</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Running Waters</string>
+      <key>longName</key>
+      <string>Running Waters campground</string>
       <key>latitude</key>
       <real>-36.81348</real>
       <key>longitude</key>
@@ -1907,8 +2267,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Saltwater Creek</string>
+      <key>longName</key>
+      <string>Saltwater Creek campground</string>
       <key>latitude</key>
       <real>-37.1694</real>
       <key>longitude</key>
@@ -1919,16 +2281,20 @@
       <string>N0003</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Samual Bollard</string>
+      <key>longName</key>
+      <string>Samual Bollard campground</string>
       <key>webId</key>
       <string>c20091008144800583</string>
       <key>parkWebId</key>
       <string>N0159</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Sandon River</string>
+      <key>longName</key>
+      <string>Sandon River campground</string>
       <key>latitude</key>
       <real>-29.6739</real>
       <key>longitude</key>
@@ -1939,8 +2305,10 @@
       <string>N0040</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Scotchie's Yards</string>
+      <key>longName</key>
+      <string>Scotchie's Yards campground</string>
       <key>latitude</key>
       <real>-36.86548</real>
       <key>longitude</key>
@@ -1951,8 +2319,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Sheepstation Creek</string>
+      <key>longName</key>
+      <string>Sheepstation Creek campground</string>
       <key>latitude</key>
       <real>-28.4136</real>
       <key>longitude</key>
@@ -1963,16 +2333,20 @@
       <string>N0050</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Shelley Head</string>
+      <key>longName</key>
+      <string>Shelley Head campground</string>
       <key>webId</key>
       <string>c20080416100013846</string>
       <key>parkWebId</key>
       <string>N0040</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Shelly Beach</string>
+      <key>longName</key>
+      <string>Shelly Beach campground</string>
       <key>latitude</key>
       <real>-32.45604</real>
       <key>longitude</key>
@@ -1983,16 +2357,20 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Silent Creek</string>
+      <key>longName</key>
+      <string>Silent Creek camping ground</string>
       <key>webId</key>
       <string>c20080416100013507</string>
       <key>parkWebId</key>
       <string>N0093</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Six Mile Creek</string>
+      <key>longName</key>
+      <string>Six Mile Creek campground</string>
       <key>latitude</key>
       <real>-36.78646</real>
       <key>longitude</key>
@@ -2003,8 +2381,10 @@
       <string>N0111</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Smoky Cape</string>
+      <key>longName</key>
+      <string>Smoky Cape camping area</string>
       <key>latitude</key>
       <real>-30.9272</real>
       <key>longitude</key>
@@ -2015,7 +2395,9 @@
       <string>N0014</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Spring Gully Camp</string>
+      <key>longName</key>
       <string>Spring Gully Camp</string>
       <key>webId</key>
       <string>c20080416100013504</string>
@@ -2023,8 +2405,10 @@
       <string>N0060</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Station Creek</string>
+      <key>longName</key>
+      <string>Station Creek campground</string>
       <key>latitude</key>
       <real>-29.95094</real>
       <key>longitude</key>
@@ -2035,8 +2419,10 @@
       <string>N0040</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Stewart and Lloyds</string>
+      <key>longName</key>
+      <string>Stewart and Lloyds campground</string>
       <key>latitude</key>
       <real>-32.60498</real>
       <key>longitude</key>
@@ -2047,16 +2433,20 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Sunnyside</string>
+      <key>longName</key>
+      <string>Sunnyside camping area</string>
       <key>webId</key>
       <string>c20080430200010432</string>
       <key>parkWebId</key>
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Tallow Beach</string>
+      <key>longName</key>
+      <string>Tallow Beach camping ground</string>
       <key>latitude</key>
       <real>-33.53652</real>
       <key>longitude</key>
@@ -2067,8 +2457,10 @@
       <string>N0005</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Tattersals</string>
+      <key>longName</key>
+      <string>Tattersals campground</string>
       <key>latitude</key>
       <real>-32.58563</real>
       <key>longitude</key>
@@ -2079,8 +2471,10 @@
       <string>N0744</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Ten Mile Hollow</string>
+      <key>longName</key>
+      <string>Ten Mile Hollow campground</string>
       <key>latitude</key>
       <real>-33.32754</real>
       <key>longitude</key>
@@ -2091,7 +2485,9 @@
       <string>N0010</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Terarra Creek</string>
+      <key>longName</key>
       <string>Terarra Creek</string>
       <key>webId</key>
       <string>c20080416100015973</string>
@@ -2099,16 +2495,20 @@
       <string>N0063</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>The Barracks</string>
+      <key>longName</key>
+      <string>The Barracks camping ground</string>
       <key>webId</key>
       <string>c20080416100013498</string>
       <key>parkWebId</key>
       <string>N0088</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>The Basin</string>
+      <key>longName</key>
+      <string>The Basin campground</string>
       <key>latitude</key>
       <real>-33.60311</real>
       <key>longitude</key>
@@ -2119,7 +2519,9 @@
       <string>N0019</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>The Beach</string>
+      <key>longName</key>
       <string>The Beach</string>
       <key>webId</key>
       <string>c20080416100013500</string>
@@ -2127,16 +2529,20 @@
       <string>N0093</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>The Diggings</string>
+      <key>longName</key>
+      <string>The Diggings campground</string>
       <key>webId</key>
       <string>c20080416100015347</string>
       <key>parkWebId</key>
       <string>N0174</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>The Junction</string>
+      <key>longName</key>
+      <string>The Junction campground</string>
       <key>latitude</key>
       <real>-30.07047</real>
       <key>longitude</key>
@@ -2147,8 +2553,10 @@
       <string>N0109</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>The Pines</string>
+      <key>longName</key>
+      <string>The Pines campground</string>
       <key>latitude</key>
       <real>-35.4483</real>
       <key>longitude</key>
@@ -2159,16 +2567,20 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>The Pines</string>
+      <key>longName</key>
+      <string>The Pines camping ground</string>
       <key>webId</key>
       <string>c20080416100013499</string>
       <key>parkWebId</key>
       <string>N0088</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>The Ruins</string>
+      <key>longName</key>
+      <string>The Ruins campground</string>
       <key>latitude</key>
       <real>-32.3106</real>
       <key>longitude</key>
@@ -2179,7 +2591,9 @@
       <string>N0081</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>The Sink</string>
+      <key>longName</key>
       <string>The Sink</string>
       <key>latitude</key>
       <real>-34.0905</real>
@@ -2191,8 +2605,10 @@
       <string>N0093</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>The Wells</string>
+      <key>longName</key>
+      <string>The Wells campground</string>
       <key>latitude</key>
       <real>-32.52077</real>
       <key>longitude</key>
@@ -2203,8 +2619,10 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Thredbo Diggings</string>
+      <key>longName</key>
+      <string>Thredbo Diggings campground</string>
       <key>latitude</key>
       <real>-36.44679</real>
       <key>longitude</key>
@@ -2215,24 +2633,30 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Three Mile Dam East</string>
+      <key>longName</key>
+      <string>Three Mile Dam East campground</string>
       <key>webId</key>
       <string>c20080430200010452</string>
       <key>parkWebId</key>
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Three Mile Dam West</string>
+      <key>longName</key>
+      <string>Three Mile Dam West campground</string>
       <key>webId</key>
       <string>c20080430200010453</string>
       <key>parkWebId</key>
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Thungutti</string>
+      <key>longName</key>
+      <string>Thungutti camping ground</string>
       <key>latitude</key>
       <real>-30.50426</real>
       <key>longitude</key>
@@ -2243,8 +2667,10 @@
       <string>N0028</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Tia Falls</string>
+      <key>longName</key>
+      <string>Tia Falls campground</string>
       <key>latitude</key>
       <real>-31.16046</real>
       <key>longitude</key>
@@ -2255,16 +2681,20 @@
       <string>N0043</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Tin Mines</string>
+      <key>longName</key>
+      <string>Tin Mines campground</string>
       <key>webId</key>
       <string>c20090818124712397</string>
       <key>parkWebId</key>
       <string>N0159</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Tom Groggin</string>
+      <key>longName</key>
+      <string>Tom Groggin campground</string>
       <key>latitude</key>
       <real>-36.5384</real>
       <key>longitude</key>
@@ -2275,16 +2705,20 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Trial Bay Gaol</string>
+      <key>longName</key>
+      <string>Trial Bay Gaol camping ground</string>
       <key>webId</key>
       <string>c20080416100013449</string>
       <key>parkWebId</key>
       <string>N0601</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Two Mile Sands</string>
+      <key>longName</key>
+      <string>Two Mile Sands campground</string>
       <key>latitude</key>
       <real>-32.48214</real>
       <key>longitude</key>
@@ -2295,8 +2729,10 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Uloola Falls</string>
+      <key>longName</key>
+      <string>Uloola Falls camping ground</string>
       <key>latitude</key>
       <real>-34.1086</real>
       <key>longitude</key>
@@ -2307,16 +2743,20 @@
       <string>N0030</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Village</string>
+      <key>longName</key>
+      <string>Village campground</string>
       <key>webId</key>
       <string>c20080416100013515</string>
       <key>parkWebId</key>
       <string>N0204</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Violet Hill</string>
+      <key>longName</key>
+      <string>Violet Hill campground</string>
       <key>latitude</key>
       <real>-32.4695</real>
       <key>longitude</key>
@@ -2327,8 +2767,10 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Wallingat River</string>
+      <key>longName</key>
+      <string>Wallingat River camping ground</string>
       <key>latitude</key>
       <real>-32.3307</real>
       <key>longitude</key>
@@ -2339,16 +2781,20 @@
       <string>N0132</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Wanda Wandong</string>
+      <key>longName</key>
+      <string>Wanda Wandong camping ground</string>
       <key>webId</key>
       <string>c20080416100015737</string>
       <key>parkWebId</key>
       <string>N0096</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Waratah Gully</string>
+      <key>longName</key>
+      <string>Waratah Gully campground</string>
       <key>latitude</key>
       <real>-37.00248</real>
       <key>longitude</key>
@@ -2359,16 +2805,20 @@
       <string>N0111</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Wards Glen</string>
+      <key>longName</key>
+      <string>Wards Glen camping ground</string>
       <key>webId</key>
       <string>c20080416100014230</string>
       <key>parkWebId</key>
       <string>N0734</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Wares Yards</string>
+      <key>longName</key>
+      <string>Wares Yards campground</string>
       <key>latitude</key>
       <real>-35.8764</real>
       <key>longitude</key>
@@ -2379,16 +2829,20 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Warrabah</string>
+      <key>longName</key>
+      <string>Warrabah camping ground</string>
       <key>webId</key>
       <string>c20080416100013450</string>
       <key>parkWebId</key>
       <string>N0064</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Washpools</string>
+      <key>longName</key>
+      <string>Washpools picnic and camping area</string>
       <key>latitude</key>
       <real>-31.91462</real>
       <key>longitude</key>
@@ -2399,8 +2853,10 @@
       <string>N0112</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Wheeny Creek</string>
+      <key>longName</key>
+      <string>Wheeny Creek camping ground</string>
       <key>latitude</key>
       <real>-33.45663</real>
       <key>longitude</key>
@@ -2411,8 +2867,10 @@
       <string>N0051</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>White Tree Bay</string>
+      <key>longName</key>
+      <string>White Tree Bay campground</string>
       <key>latitude</key>
       <real>-32.52912</real>
       <key>longitude</key>
@@ -2423,32 +2881,40 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Willandra</string>
+      <key>longName</key>
+      <string>Willandra campground</string>
       <key>webId</key>
       <string>c20080416100012109</string>
       <key>parkWebId</key>
       <string>N0037</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Woko</string>
+      <key>longName</key>
+      <string>Woko camping area</string>
       <key>webId</key>
       <string>c20080416100014469</string>
       <key>parkWebId</key>
       <string>N0057</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Wombat Creek</string>
+      <key>longName</key>
+      <string>Wombat Creek campground</string>
       <key>webId</key>
       <string>c20080416100016726</string>
       <key>parkWebId</key>
       <string>N0002</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Wombeyan Caves</string>
+      <key>longName</key>
+      <string>Wombeyan Caves campground</string>
       <key>latitude</key>
       <real>-34.30369</real>
       <key>longitude</key>
@@ -2459,8 +2925,10 @@
       <string>N0352</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Woody Head</string>
+      <key>longName</key>
+      <string>Woody Head campground</string>
       <key>latitude</key>
       <real>-29.3656</real>
       <key>longitude</key>
@@ -2471,16 +2939,20 @@
       <string>N0041</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Woolshed Flat</string>
+      <key>longName</key>
+      <string>Woolshed Flat campground</string>
       <key>webId</key>
       <string>c20080416100011727</string>
       <key>parkWebId</key>
       <string>N0008</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Woolshed Flat</string>
+      <key>longName</key>
+      <string>Woolshed Flat campground</string>
       <key>latitude</key>
       <real>-33.20563</real>
       <key>longitude</key>
@@ -2491,16 +2963,20 @@
       <string>N0174</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Wyanbene Cave</string>
+      <key>longName</key>
+      <string>Wyanbene Cave campground</string>
       <key>webId</key>
       <string>c20080416100011781</string>
       <key>parkWebId</key>
       <string>N0047</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Yachting Point</string>
+      <key>longName</key>
+      <string>Yachting Point campground</string>
       <key>latitude</key>
       <real>-35.51146</real>
       <key>longitude</key>
@@ -2511,8 +2987,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Yagon</string>
+      <key>longName</key>
+      <string>Yagon campground</string>
       <key>latitude</key>
       <real>-32.4532</real>
       <key>longitude</key>
@@ -2523,8 +3001,10 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Yarrangobilly Village</string>
+      <key>longName</key>
+      <string>Yarrangobilly Village campground</string>
       <key>latitude</key>
       <real>-35.65237</real>
       <key>longitude</key>
@@ -2535,8 +3015,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Yolde</string>
+      <key>longName</key>
+      <string>Yolde campground</string>
       <key>latitude</key>
       <real>-35.53859</real>
       <key>longitude</key>
@@ -2547,8 +3029,10 @@
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Youdales</string>
+      <key>longName</key>
+      <string>Youdales campground</string>
       <key>latitude</key>
       <real>-31.12727</real>
       <key>longitude</key>
@@ -2559,8 +3043,10 @@
       <string>N0043</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Youngville</string>
+      <key>longName</key>
+      <string>Youngville camping area</string>
       <key>latitude</key>
       <real>-32.19967</real>
       <key>longitude</key>
@@ -2571,7 +3057,9 @@
       <string>N0107</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
+      <string>Sunny Side</string>
+      <key>longName</key>
       <string>Sunny Side</string>
       <key>latitude</key>
       <real>-32.45147</real>
@@ -2583,8 +3071,10 @@
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Gap Creek</string>
+      <key>longName</key>
+      <string>Gap Creek camping ground</string>
       <key>latitude</key>
       <real>-33.0136</real>
       <key>longitude</key>
@@ -2595,8 +3085,10 @@
       <string>N0133</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bangalow</string>
+      <key>longName</key>
+      <string>Bangalow campground</string>
       <key>latitude</key>
       <real>-33.0174</real>
       <key>longitude</key>
@@ -2607,8 +3099,10 @@
       <string>N0133</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Abercrombie Caves</string>
+      <key>longName</key>
+      <string>Abercrombie Caves campground</string>
       <key>webId</key>
       <string>c20080416100019411</string>
       <key>parkWebId</key>

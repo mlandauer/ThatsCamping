@@ -3,554 +3,738 @@
 <plist version="1.0">
   <array>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Blue Mountains</string>
+      <key>longName</key>
+      <string>Blue Mountains National Park</string>
       <key>webId</key>
       <string>N0004</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>South East Forest</string>
+      <key>longName</key>
+      <string>South East Forest National Park</string>
       <key>webId</key>
       <string>N0111</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Oxley Wild Rivers</string>
+      <key>longName</key>
+      <string>Oxley Wild Rivers National Park</string>
       <key>webId</key>
       <string>N0043</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mimosa Rocks</string>
+      <key>longName</key>
+      <string>Mimosa Rocks National Park</string>
       <key>webId</key>
       <string>N0021</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bald Rock</string>
+      <key>longName</key>
+      <string>Bald Rock National Park</string>
       <key>webId</key>
       <string>N0001</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Warrumbungle</string>
+      <key>longName</key>
+      <string>Warrumbungle National Park</string>
       <key>webId</key>
       <string>N0035</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Myall Lakes</string>
+      <key>longName</key>
+      <string>Myall Lakes National Park</string>
       <key>webId</key>
       <string>N0026</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mount Kaputar</string>
+      <key>longName</key>
+      <string>Mount Kaputar National Park</string>
       <key>webId</key>
       <string>N0038</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Cathedral Rock</string>
+      <key>longName</key>
+      <string>Cathedral Rock National Park</string>
       <key>webId</key>
       <string>N0046</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Kosciuszko</string>
+      <key>longName</key>
+      <string>Kosciuszko National Park</string>
       <key>webId</key>
       <string>N0018</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mungo</string>
+      <key>longName</key>
+      <string>Mungo National Park</string>
       <key>webId</key>
       <string>N0049</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Washpool</string>
+      <key>longName</key>
+      <string>Washpool National Park</string>
       <key>webId</key>
       <string>N0061</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Weddin Mountains</string>
+      <key>longName</key>
+      <string>Weddin Mountains National Park</string>
       <key>webId</key>
       <string>N0036</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Deua</string>
+      <key>longName</key>
+      <string>Deua National Park</string>
       <key>webId</key>
       <string>N0047</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bents Basin</string>
+      <key>longName</key>
+      <string>Bents Basin State Conservation Area</string>
       <key>webId</key>
       <string>N0618</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Goulburn River</string>
+      <key>longName</key>
+      <string>Goulburn River National Park</string>
       <key>webId</key>
       <string>N0060</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Ben Boyd</string>
+      <key>longName</key>
+      <string>Ben Boyd National Park</string>
       <key>webId</key>
       <string>N0003</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bundjalung</string>
+      <key>longName</key>
+      <string>Bundjalung National Park</string>
       <key>webId</key>
       <string>N0041</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Torrington</string>
+      <key>longName</key>
+      <string>Torrington State Conservation Area</string>
       <key>webId</key>
       <string>N0628</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Yengo</string>
+      <key>longName</key>
+      <string>Yengo National Park</string>
       <key>webId</key>
       <string>N0068</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Royal</string>
+      <key>longName</key>
+      <string>Royal National Park</string>
       <key>webId</key>
       <string>N0030</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Yuraygir</string>
+      <key>longName</key>
+      <string>Yuraygir National Park</string>
       <key>webId</key>
       <string>N0040</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Gibraltar Range</string>
+      <key>longName</key>
+      <string>Gibraltar Range National Park</string>
       <key>webId</key>
       <string>N0012</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Kanangra-Boyd</string>
+      <key>longName</key>
+      <string>Kanangra-Boyd National Park</string>
       <key>webId</key>
       <string>N0016</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Eurobodalla</string>
+      <key>longName</key>
+      <string>Eurobodalla National Park</string>
       <key>webId</key>
       <string>N0095</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Werrikimbe</string>
+      <key>longName</key>
+      <string>Werrikimbe National Park</string>
       <key>webId</key>
       <string>N0042</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Abercrombie River</string>
+      <key>longName</key>
+      <string>Abercrombie River National Park</string>
       <key>webId</key>
       <string>N0093</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bungonia</string>
+      <key>longName</key>
+      <string>Bungonia State Conservation Area</string>
       <key>webId</key>
       <string>N0612</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Wadbilliga</string>
+      <key>longName</key>
+      <string>Wadbilliga National Park</string>
       <key>webId</key>
       <string>N0048</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Cattai</string>
+      <key>longName</key>
+      <string>Cattai National Park</string>
       <key>webId</key>
       <string>N0079</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Guy Fawkes River</string>
+      <key>longName</key>
+      <string>Guy Fawkes River National Park</string>
       <key>webId</key>
       <string>N0013</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Paroo-Darling</string>
+      <key>longName</key>
+      <string>Paroo-Darling National Park</string>
       <key>webId</key>
       <string>N0175</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Wollemi</string>
+      <key>longName</key>
+      <string>Wollemi National Park</string>
       <key>webId</key>
       <string>N0051</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Coolah Tops</string>
+      <key>longName</key>
+      <string>Coolah Tops National Park</string>
       <key>webId</key>
       <string>N0088</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Culgoa</string>
+      <key>longName</key>
+      <string>Culgoa National Park</string>
       <key>webId</key>
       <string>N0099</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mebbin</string>
+      <key>longName</key>
+      <string>Mebbin National Park</string>
       <key>webId</key>
       <string>N0144</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Boonoo Boonoo</string>
+      <key>longName</key>
+      <string>Boonoo Boonoo National Park</string>
       <key>webId</key>
       <string>N0056</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Guy Fawkes River</string>
+      <key>longName</key>
+      <string>Guy Fawkes River State Conservation Area</string>
       <key>webId</key>
       <string>N0669</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Kinchega</string>
+      <key>longName</key>
+      <string>Kinchega National Park</string>
       <key>webId</key>
       <string>N0017</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Sturt</string>
+      <key>longName</key>
+      <string>Sturt National Park</string>
       <key>webId</key>
       <string>N0032</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Murramarang</string>
+      <key>longName</key>
+      <string>Murramarang National Park</string>
       <key>webId</key>
       <string>N0025</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Barrington Tops</string>
+      <key>longName</key>
+      <string>Barrington Tops National Park</string>
       <key>webId</key>
       <string>N0002</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Crowdy Bay</string>
+      <key>longName</key>
+      <string>Crowdy Bay National Park</string>
       <key>webId</key>
       <string>N0009</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Tapin Tops</string>
+      <key>longName</key>
+      <string>Tapin Tops National Park</string>
       <key>webId</key>
       <string>N0122</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Chaelundi</string>
+      <key>longName</key>
+      <string>Chaelundi National Park</string>
       <key>webId</key>
       <string>N0104</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Karuah</string>
+      <key>longName</key>
+      <string>Karuah Nature Reserve</string>
       <key>webId</key>
       <string>N0744</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Gundabooka</string>
+      <key>longName</key>
+      <string>Gundabooka National Park</string>
       <key>webId</key>
       <string>N0100</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mount Canobolas</string>
+      <key>longName</key>
+      <string>Mount Canobolas State Conservation Area</string>
       <key>webId</key>
       <string>N0636</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Border Ranges</string>
+      <key>longName</key>
+      <string>Border Ranges National Park</string>
       <key>webId</key>
       <string>N0050</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Munmorah</string>
+      <key>longName</key>
+      <string>Munmorah State Conservation Area</string>
       <key>webId</key>
       <string>N0605</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Morton</string>
+      <key>longName</key>
+      <string>Morton National Park</string>
       <key>webId</key>
       <string>N0022</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Marramarra</string>
+      <key>longName</key>
+      <string>Marramarra National Park</string>
       <key>webId</key>
       <string>N0052</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Hill End</string>
+      <key>longName</key>
+      <string>Hill End Historic Site</string>
       <key>webId</key>
       <string>N0204</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Goobang</string>
+      <key>longName</key>
+      <string>Goobang National Park</string>
       <key>webId</key>
       <string>N0096</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Willandra</string>
+      <key>longName</key>
+      <string>Willandra National Park</string>
       <key>webId</key>
       <string>N0037</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Parr</string>
+      <key>longName</key>
+      <string>Parr State Conservation Area</string>
       <key>webId</key>
       <string>N0622</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bournda</string>
+      <key>longName</key>
+      <string>Bournda National Park</string>
       <key>webId</key>
       <string>N0082</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mutawintji</string>
+      <key>longName</key>
+      <string>Mutawintji National Park</string>
       <key>webId</key>
       <string>N0113</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Hat Head</string>
+      <key>longName</key>
+      <string>Hat Head National Park</string>
       <key>webId</key>
       <string>N0014</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Toonumbar</string>
+      <key>longName</key>
+      <string>Toonumbar National Park</string>
       <key>webId</key>
       <string>N0092</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Heathcote</string>
+      <key>longName</key>
+      <string>Heathcote National Park</string>
       <key>webId</key>
       <string>N0015</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Kings Plains</string>
+      <key>longName</key>
+      <string>Kings Plains National Park</string>
       <key>webId</key>
       <string>N0067</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Koreelah</string>
+      <key>longName</key>
+      <string>Koreelah National Park</string>
       <key>webId</key>
       <string>N0141</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Lane Cove</string>
+      <key>longName</key>
+      <string>Lane Cove National Park</string>
       <key>webId</key>
       <string>N0083</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Kwiambal</string>
+      <key>longName</key>
+      <string>Kwiambal National Park</string>
       <key>webId</key>
       <string>N0156</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Bouddi</string>
+      <key>longName</key>
+      <string>Bouddi National Park</string>
       <key>webId</key>
       <string>N0005</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mann River</string>
+      <key>longName</key>
+      <string>Mann River Nature Reserve</string>
       <key>webId</key>
       <string>N0569</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Limeburners Creek</string>
+      <key>longName</key>
+      <string>Limeburners Creek Nature Reserve</string>
       <key>webId</key>
       <string>N0443</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Dharug</string>
+      <key>longName</key>
+      <string>Dharug National Park</string>
       <key>webId</key>
       <string>N0010</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Nowendoc</string>
+      <key>longName</key>
+      <string>Nowendoc National Park</string>
       <key>webId</key>
       <string>N0130</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mummel Gulf</string>
+      <key>longName</key>
+      <string>Mummel Gulf National Park</string>
       <key>webId</key>
       <string>N0129</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Nymboida</string>
+      <key>longName</key>
+      <string>Nymboida National Park</string>
       <key>webId</key>
       <string>N0055</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Richmond Range</string>
+      <key>longName</key>
+      <string>Richmond Range National Park</string>
       <key>webId</key>
       <string>N0110</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Nymboi-Binderay</string>
+      <key>longName</key>
+      <string>Nymboi-Binderay National Park</string>
       <key>webId</key>
       <string>N0109</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Whian Whian</string>
+      <key>longName</key>
+      <string>Whian Whian State Conservation Area</string>
       <key>webId</key>
       <string>N0699</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Woomargama</string>
+      <key>longName</key>
+      <string>Woomargama National Park</string>
       <key>webId</key>
       <string>N0159</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Nangar</string>
+      <key>longName</key>
+      <string>Nangar National Park</string>
       <key>webId</key>
       <string>N0063</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Ku-ring-gai Chase</string>
+      <key>longName</key>
+      <string>Ku-ring-gai Chase National Park</string>
       <key>webId</key>
       <string>N0019</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Turon</string>
+      <key>longName</key>
+      <string>Turon National Park</string>
       <key>webId</key>
       <string>N0174</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Booti Booti</string>
+      <key>longName</key>
+      <string>Booti Booti National Park</string>
       <key>webId</key>
       <string>N0081</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>New England</string>
+      <key>longName</key>
+      <string>New England National Park</string>
       <key>webId</key>
       <string>N0028</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Arakoon</string>
+      <key>longName</key>
+      <string>Arakoon State Conservation Area</string>
       <key>webId</key>
       <string>N0601</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Wallingat</string>
+      <key>longName</key>
+      <string>Wallingat National Park</string>
       <key>webId</key>
       <string>N0132</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>The Glen</string>
+      <key>longName</key>
+      <string>The Glen Nature Reserve</string>
       <key>webId</key>
       <string>N0734</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Warrabah</string>
+      <key>longName</key>
+      <string>Warrabah National Park</string>
       <key>webId</key>
       <string>N0064</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Towarri</string>
+      <key>longName</key>
+      <string>Towarri National Park</string>
       <key>webId</key>
       <string>N0112</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Woko</string>
+      <key>longName</key>
+      <string>Woko National Park</string>
       <key>webId</key>
       <string>N0057</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Wombeyan Karst</string>
+      <key>longName</key>
+      <string>Wombeyan Karst Conservation Reserve</string>
       <key>webId</key>
       <string>N0352</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Cocoparra</string>
+      <key>longName</key>
+      <string>Cocoparra National Park</string>
       <key>webId</key>
       <string>N0008</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Mount Royal</string>
+      <key>longName</key>
+      <string>Mount Royal National Park</string>
       <key>webId</key>
       <string>N0107</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Watagans</string>
+      <key>longName</key>
+      <string>Watagans National Park</string>
       <key>webId</key>
       <string>N0133</string>
     </dict>
     <dict>
-      <key>name</key>
+      <key>shortName</key>
       <string>Abercrombie Karst</string>
+      <key>longName</key>
+      <string>Abercrombie Karst Conservation Reserve</string>
       <key>webId</key>
       <string>N0350</string>
     </dict>

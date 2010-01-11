@@ -118,7 +118,7 @@
 	// Get the campsite corresponding to the current index path and configure the table view cell.
 	Campsite *campsite = (Campsite *)[campsitesArray objectAtIndex:indexPath.row];
 	
-	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@\n%@", [campsite name], [[campsite park] name]];
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@\n%@", [campsite shortName], [[campsite park] shortName]];
 	cell.detailTextLabel.numberOfLines = 2;
 	
 	static NSNumberFormatter *numberFormatter = nil;
@@ -169,7 +169,8 @@
 		NSEnumerator *enumerator = [[NSArray arrayWithContentsOfFile:parksPath] objectEnumerator];
 		while (parksPList = [enumerator nextObject]) {
 			Park *park = (Park *)[NSEntityDescription insertNewObjectForEntityForName:@"Park" inManagedObjectContext:managedObjectContext];
-			[park setName:[parksPList objectForKey:@"name"]];
+			[park setShortName:[parksPList objectForKey:@"shortName"]];
+			[park setLongName:[parksPList objectForKey:@"longName"]];
 			[park setWebId:[parksPList objectForKey:@"webId"]];
 		}
 		
@@ -187,7 +188,8 @@
 		while (campsitePList = [enumerator nextObject])
 		{
 			Campsite *campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
-			[campsite setName:[campsitePList objectForKey:@"name"]];
+			[campsite setShortName:[campsitePList objectForKey:@"shortName"]];
+			[campsite setLongName:[campsitePList objectForKey:@"longName"]];
 			[campsite setLatitude:[campsitePList objectForKey:@"latitude"]];
 			[campsite setLongitude:[campsitePList objectForKey:@"longitude"]];
 			[campsite setWebId:[campsitePList objectForKey:@"webId"]];

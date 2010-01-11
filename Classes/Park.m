@@ -3,6 +3,6 @@
 
 @implementation Park 
 
-@dynamic name, longitude, latitude, webId;
+@dynamic shortName, longitude, latitude, webId;
 
 @end
