@@ -4,7 +4,7 @@
   <array>
     <dict>
       <key>shortName</key>
-      <string>Blue Mountains</string>
+      <string>Blue Mountains NP</string>
       <key>longName</key>
       <string>Blue Mountains National Park</string>
       <key>webId</key>
@@ -12,7 +12,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>South East Forest</string>
+      <string>South East Forest NP</string>
       <key>longName</key>
       <string>South East Forest National Park</string>
       <key>webId</key>
@@ -20,7 +20,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Oxley Wild Rivers</string>
+      <string>Oxley Wild Rivers NP</string>
       <key>longName</key>
       <string>Oxley Wild Rivers National Park</string>
       <key>webId</key>
@@ -28,7 +28,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Mimosa Rocks</string>
+      <string>Mimosa Rocks NP</string>
       <key>longName</key>
       <string>Mimosa Rocks National Park</string>
       <key>webId</key>
@@ -36,7 +36,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Bald Rock</string>
+      <string>Bald Rock NP</string>
       <key>longName</key>
       <string>Bald Rock National Park</string>
       <key>webId</key>
@@ -44,7 +44,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Warrumbungle</string>
+      <string>Warrumbungle NP</string>
       <key>longName</key>
       <string>Warrumbungle National Park</string>
       <key>webId</key>
@@ -52,7 +52,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Myall Lakes</string>
+      <string>Myall Lakes NP</string>
       <key>longName</key>
       <string>Myall Lakes National Park</string>
       <key>webId</key>
@@ -60,7 +60,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Mount Kaputar</string>
+      <string>Mount Kaputar NP</string>
       <key>longName</key>
       <string>Mount Kaputar National Park</string>
       <key>webId</key>
@@ -68,7 +68,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Cathedral Rock</string>
+      <string>Cathedral Rock NP</string>
       <key>longName</key>
       <string>Cathedral Rock National Park</string>
       <key>webId</key>
@@ -76,7 +76,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Kosciuszko</string>
+      <string>Kosciuszko NP</string>
       <key>longName</key>
       <string>Kosciuszko National Park</string>
       <key>webId</key>
@@ -84,7 +84,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Mungo</string>
+      <string>Mungo NP</string>
       <key>longName</key>
       <string>Mungo National Park</string>
       <key>webId</key>
@@ -92,7 +92,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Washpool</string>
+      <string>Washpool NP</string>
       <key>longName</key>
       <string>Washpool National Park</string>
       <key>webId</key>
@@ -100,7 +100,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Weddin Mountains</string>
+      <string>Weddin Mountains NP</string>
       <key>longName</key>
       <string>Weddin Mountains National Park</string>
       <key>webId</key>
@@ -108,7 +108,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Deua</string>
+      <string>Deua NP</string>
       <key>longName</key>
       <string>Deua National Park</string>
       <key>webId</key>
@@ -116,7 +116,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Bents Basin</string>
+      <string>Bents Basin SCA</string>
       <key>longName</key>
       <string>Bents Basin State Conservation Area</string>
       <key>webId</key>
@@ -124,7 +124,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Goulburn River</string>
+      <string>Goulburn River NP</string>
       <key>longName</key>
       <string>Goulburn River National Park</string>
       <key>webId</key>
@@ -132,7 +132,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Ben Boyd</string>
+      <string>Ben Boyd NP</string>
       <key>longName</key>
       <string>Ben Boyd National Park</string>
       <key>webId</key>
@@ -140,7 +140,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Bundjalung</string>
+      <string>Bundjalung NP</string>
       <key>longName</key>
       <string>Bundjalung National Park</string>
       <key>webId</key>
@@ -148,7 +148,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Torrington</string>
+      <string>Torrington SCA</string>
       <key>longName</key>
       <string>Torrington State Conservation Area</string>
       <key>webId</key>
@@ -156,7 +156,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Yengo</string>
+      <string>Yengo NP</string>
       <key>longName</key>
       <string>Yengo National Park</string>
       <key>webId</key>
@@ -164,7 +164,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Royal</string>
+      <string>Royal NP</string>
       <key>longName</key>
       <string>Royal National Park</string>
       <key>webId</key>
@@ -172,7 +172,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Yuraygir</string>
+      <string>Yuraygir NP</string>
       <key>longName</key>
       <string>Yuraygir National Park</string>
       <key>webId</key>
@@ -180,7 +180,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Gibraltar Range</string>
+      <string>Gibraltar Range NP</string>
       <key>longName</key>
       <string>Gibraltar Range National Park</string>
       <key>webId</key>
@@ -188,7 +188,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Kanangra-Boyd</string>
+      <string>Kanangra-Boyd NP</string>
       <key>longName</key>
       <string>Kanangra-Boyd National Park</string>
       <key>webId</key>
@@ -196,7 +196,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Eurobodalla</string>
+      <string>Eurobodalla NP</string>
       <key>longName</key>
       <string>Eurobodalla National Park</string>
       <key>webId</key>
@@ -204,7 +204,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Werrikimbe</string>
+      <string>Werrikimbe NP</string>
       <key>longName</key>
       <string>Werrikimbe National Park</string>
       <key>webId</key>
@@ -212,7 +212,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Abercrombie River</string>
+      <string>Abercrombie River NP</string>
       <key>longName</key>
       <string>Abercrombie River National Park</string>
       <key>webId</key>
@@ -220,7 +220,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Bungonia</string>
+      <string>Bungonia SCA</string>
       <key>longName</key>
       <string>Bungonia State Conservation Area</string>
       <key>webId</key>
@@ -228,7 +228,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Wadbilliga</string>
+      <string>Wadbilliga NP</string>
       <key>longName</key>
       <string>Wadbilliga National Park</string>
       <key>webId</key>
@@ -236,7 +236,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Cattai</string>
+      <string>Cattai NP</string>
       <key>longName</key>
       <string>Cattai National Park</string>
       <key>webId</key>
@@ -244,7 +244,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Guy Fawkes River</string>
+      <string>Guy Fawkes River NP</string>
       <key>longName</key>
       <string>Guy Fawkes River National Park</string>
       <key>webId</key>
@@ -252,7 +252,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Paroo-Darling</string>
+      <string>Paroo-Darling NP</string>
       <key>longName</key>
       <string>Paroo-Darling National Park</string>
       <key>webId</key>
@@ -260,7 +260,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Wollemi</string>
+      <string>Wollemi NP</string>
       <key>longName</key>
       <string>Wollemi National Park</string>
       <key>webId</key>
@@ -268,7 +268,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Coolah Tops</string>
+      <string>Coolah Tops NP</string>
       <key>longName</key>
       <string>Coolah Tops National Park</string>
       <key>webId</key>
@@ -276,7 +276,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Culgoa</string>
+      <string>Culgoa NP</string>
       <key>longName</key>
       <string>Culgoa National Park</string>
       <key>webId</key>
@@ -284,7 +284,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Mebbin</string>
+      <string>Mebbin NP</string>
       <key>longName</key>
       <string>Mebbin National Park</string>
       <key>webId</key>
@@ -292,7 +292,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Boonoo Boonoo</string>
+      <string>Boonoo Boonoo NP</string>
       <key>longName</key>
       <string>Boonoo Boonoo National Park</string>
       <key>webId</key>
@@ -300,7 +300,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Guy Fawkes River</string>
+      <string>Guy Fawkes River SCA</string>
       <key>longName</key>
       <string>Guy Fawkes River State Conservation Area</string>
       <key>webId</key>
@@ -308,7 +308,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Kinchega</string>
+      <string>Kinchega NP</string>
       <key>longName</key>
       <string>Kinchega National Park</string>
       <key>webId</key>
@@ -316,7 +316,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Sturt</string>
+      <string>Sturt NP</string>
       <key>longName</key>
       <string>Sturt National Park</string>
       <key>webId</key>
@@ -324,7 +324,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Murramarang</string>
+      <string>Murramarang NP</string>
       <key>longName</key>
       <string>Murramarang National Park</string>
       <key>webId</key>
@@ -332,7 +332,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Barrington Tops</string>
+      <string>Barrington Tops NP</string>
       <key>longName</key>
       <string>Barrington Tops National Park</string>
       <key>webId</key>
@@ -340,7 +340,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Crowdy Bay</string>
+      <string>Crowdy Bay NP</string>
       <key>longName</key>
       <string>Crowdy Bay National Park</string>
       <key>webId</key>
@@ -348,7 +348,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Tapin Tops</string>
+      <string>Tapin Tops NP</string>
       <key>longName</key>
       <string>Tapin Tops National Park</string>
       <key>webId</key>
@@ -356,7 +356,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Chaelundi</string>
+      <string>Chaelundi NP</string>
       <key>longName</key>
       <string>Chaelundi National Park</string>
       <key>webId</key>
@@ -364,7 +364,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Karuah</string>
+      <string>Karuah NR</string>
       <key>longName</key>
       <string>Karuah Nature Reserve</string>
       <key>webId</key>
@@ -372,7 +372,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Gundabooka</string>
+      <string>Gundabooka NP</string>
       <key>longName</key>
       <string>Gundabooka National Park</string>
       <key>webId</key>
@@ -380,7 +380,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Mount Canobolas</string>
+      <string>Mount Canobolas SCA</string>
       <key>longName</key>
       <string>Mount Canobolas State Conservation Area</string>
       <key>webId</key>
@@ -388,7 +388,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Border Ranges</string>
+      <string>Border Ranges NP</string>
       <key>longName</key>
       <string>Border Ranges National Park</string>
       <key>webId</key>
@@ -396,7 +396,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Munmorah</string>
+      <string>Munmorah SCA</string>
       <key>longName</key>
       <string>Munmorah State Conservation Area</string>
       <key>webId</key>
@@ -404,7 +404,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Morton</string>
+      <string>Morton NP</string>
       <key>longName</key>
       <string>Morton National Park</string>
       <key>webId</key>
@@ -412,7 +412,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Marramarra</string>
+      <string>Marramarra NP</string>
       <key>longName</key>
       <string>Marramarra National Park</string>
       <key>webId</key>
@@ -428,7 +428,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Goobang</string>
+      <string>Goobang NP</string>
       <key>longName</key>
       <string>Goobang National Park</string>
       <key>webId</key>
@@ -436,7 +436,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Willandra</string>
+      <string>Willandra NP</string>
       <key>longName</key>
       <string>Willandra National Park</string>
       <key>webId</key>
@@ -444,7 +444,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Parr</string>
+      <string>Parr SCA</string>
       <key>longName</key>
       <string>Parr State Conservation Area</string>
       <key>webId</key>
@@ -452,7 +452,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Bournda</string>
+      <string>Bournda NP</string>
       <key>longName</key>
       <string>Bournda National Park</string>
       <key>webId</key>
@@ -460,7 +460,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Mutawintji</string>
+      <string>Mutawintji NP</string>
       <key>longName</key>
       <string>Mutawintji National Park</string>
       <key>webId</key>
@@ -468,7 +468,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Hat Head</string>
+      <string>Hat Head NP</string>
       <key>longName</key>
       <string>Hat Head National Park</string>
       <key>webId</key>
@@ -476,7 +476,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Toonumbar</string>
+      <string>Toonumbar NP</string>
       <key>longName</key>
       <string>Toonumbar National Park</string>
       <key>webId</key>
@@ -484,7 +484,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Heathcote</string>
+      <string>Heathcote NP</string>
       <key>longName</key>
       <string>Heathcote National Park</string>
       <key>webId</key>
@@ -492,7 +492,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Kings Plains</string>
+      <string>Kings Plains NP</string>
       <key>longName</key>
       <string>Kings Plains National Park</string>
       <key>webId</key>
@@ -500,7 +500,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Koreelah</string>
+      <string>Koreelah NP</string>
       <key>longName</key>
       <string>Koreelah National Park</string>
       <key>webId</key>
@@ -508,7 +508,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Lane Cove</string>
+      <string>Lane Cove NP</string>
       <key>longName</key>
       <string>Lane Cove National Park</string>
       <key>webId</key>
@@ -516,7 +516,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Kwiambal</string>
+      <string>Kwiambal NP</string>
       <key>longName</key>
       <string>Kwiambal National Park</string>
       <key>webId</key>
@@ -524,7 +524,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Bouddi</string>
+      <string>Bouddi NP</string>
       <key>longName</key>
       <string>Bouddi National Park</string>
       <key>webId</key>
@@ -532,7 +532,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Mann River</string>
+      <string>Mann River NR</string>
       <key>longName</key>
       <string>Mann River Nature Reserve</string>
       <key>webId</key>
@@ -540,7 +540,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Limeburners Creek</string>
+      <string>Limeburners Creek NR</string>
       <key>longName</key>
       <string>Limeburners Creek Nature Reserve</string>
       <key>webId</key>
@@ -548,7 +548,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Dharug</string>
+      <string>Dharug NP</string>
       <key>longName</key>
       <string>Dharug National Park</string>
       <key>webId</key>
@@ -556,7 +556,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Nowendoc</string>
+      <string>Nowendoc NP</string>
       <key>longName</key>
       <string>Nowendoc National Park</string>
       <key>webId</key>
@@ -564,7 +564,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Mummel Gulf</string>
+      <string>Mummel Gulf NP</string>
       <key>longName</key>
       <string>Mummel Gulf National Park</string>
       <key>webId</key>
@@ -572,7 +572,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Nymboida</string>
+      <string>Nymboida NP</string>
       <key>longName</key>
       <string>Nymboida National Park</string>
       <key>webId</key>
@@ -580,7 +580,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Richmond Range</string>
+      <string>Richmond Range NP</string>
       <key>longName</key>
       <string>Richmond Range National Park</string>
       <key>webId</key>
@@ -588,7 +588,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Nymboi-Binderay</string>
+      <string>Nymboi-Binderay NP</string>
       <key>longName</key>
       <string>Nymboi-Binderay National Park</string>
       <key>webId</key>
@@ -596,7 +596,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Whian Whian</string>
+      <string>Whian Whian SCA</string>
       <key>longName</key>
       <string>Whian Whian State Conservation Area</string>
       <key>webId</key>
@@ -604,7 +604,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Woomargama</string>
+      <string>Woomargama NP</string>
       <key>longName</key>
       <string>Woomargama National Park</string>
       <key>webId</key>
@@ -612,7 +612,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Nangar</string>
+      <string>Nangar NP</string>
       <key>longName</key>
       <string>Nangar National Park</string>
       <key>webId</key>
@@ -620,7 +620,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Ku-ring-gai Chase</string>
+      <string>Ku-ring-gai Chase NP</string>
       <key>longName</key>
       <string>Ku-ring-gai Chase National Park</string>
       <key>webId</key>
@@ -628,7 +628,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Turon</string>
+      <string>Turon NP</string>
       <key>longName</key>
       <string>Turon National Park</string>
       <key>webId</key>
@@ -636,7 +636,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Booti Booti</string>
+      <string>Booti Booti NP</string>
       <key>longName</key>
       <string>Booti Booti National Park</string>
       <key>webId</key>
@@ -644,7 +644,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>New England</string>
+      <string>New England NP</string>
       <key>longName</key>
       <string>New England National Park</string>
       <key>webId</key>
@@ -652,7 +652,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Arakoon</string>
+      <string>Arakoon SCA</string>
       <key>longName</key>
       <string>Arakoon State Conservation Area</string>
       <key>webId</key>
@@ -660,7 +660,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Wallingat</string>
+      <string>Wallingat NP</string>
       <key>longName</key>
       <string>Wallingat National Park</string>
       <key>webId</key>
@@ -668,7 +668,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>The Glen</string>
+      <string>The Glen NR</string>
       <key>longName</key>
       <string>The Glen Nature Reserve</string>
       <key>webId</key>
@@ -676,7 +676,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Warrabah</string>
+      <string>Warrabah NP</string>
       <key>longName</key>
       <string>Warrabah National Park</string>
       <key>webId</key>
@@ -684,7 +684,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Towarri</string>
+      <string>Towarri NP</string>
       <key>longName</key>
       <string>Towarri National Park</string>
       <key>webId</key>
@@ -692,7 +692,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Woko</string>
+      <string>Woko NP</string>
       <key>longName</key>
       <string>Woko National Park</string>
       <key>webId</key>
@@ -700,7 +700,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Wombeyan Karst</string>
+      <string>Wombeyan KCR</string>
       <key>longName</key>
       <string>Wombeyan Karst Conservation Reserve</string>
       <key>webId</key>
@@ -708,7 +708,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Cocoparra</string>
+      <string>Cocoparra NP</string>
       <key>longName</key>
       <string>Cocoparra National Park</string>
       <key>webId</key>
@@ -716,7 +716,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Mount Royal</string>
+      <string>Mount Royal NP</string>
       <key>longName</key>
       <string>Mount Royal National Park</string>
       <key>webId</key>
@@ -724,7 +724,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Watagans</string>
+      <string>Watagans NP</string>
       <key>longName</key>
       <string>Watagans National Park</string>
       <key>webId</key>
@@ -732,7 +732,7 @@
     </dict>
     <dict>
       <key>shortName</key>
-      <string>Abercrombie Karst</string>
+      <string>Abercrombie KCR</string>
       <key>longName</key>
       <string>Abercrombie Karst Conservation Reserve</string>
       <key>webId</key>

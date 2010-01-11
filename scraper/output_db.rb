@@ -12,8 +12,9 @@ require 'campsite'
 require 'utils'
 
 def shorten_park_name(name)
-  remove_phrases_at_end(name,
-    ["National Park", "State Conservation Area", "Nature Reserve", "Conservation Reserve", "Historic Site"])
+  substitute_phrases_at_end(name,
+    {"National Park" => "NP", "State Conservation Area" => "SCA", "Nature Reserve" => "NR", "Karst Conservation Reserve" => "KCR",
+      "Historic Site" => ""})
 end
 
 def shorten_campsite_name(name)
@@ -35,6 +36,7 @@ File.open("#{File.dirname(__FILE__)}/../Parks.plist", "w") do |f|
     x.array {
       Park.find(:all).each do |park|
         x.dict {
+          puts shorten_park_name(park.name)
           x.key "shortName"; x.string shorten_park_name(park.name)
           x.key "longName"; x.string park.name
           x.key "webId";  x.string park.web_id

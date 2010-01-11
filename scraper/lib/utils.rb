@@ -23,9 +23,13 @@ end
 
 # Remove any of the given special phrases from the end of the given name
 def remove_phrases_at_end(name, special_phrases)
+  substitute_phrases_at_end(name, special_phrases.map{|p| [p, ""]})
+end
+
+def substitute_phrases_at_end(name, special_phrases)
   shorter = name
-  special_phrases.each do |phrase|
-    shorter = shorter.sub(Regexp.new("\\b#{phrase}$", true), "")
+  special_phrases.each do |phrase, substitute|
+    shorter = shorter.sub(Regexp.new("\\b#{phrase}$", true), substitute)
   end
   shorter.strip
 end
