@@ -117,7 +117,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
 		UITableViewCellStyleValue1;
     }
-	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     
 	// Get the campsite corresponding to the current index path and configure the table view cell.
 	Campsite *campsite = (Campsite *)[campsitesArray objectAtIndex:indexPath.row];
@@ -146,6 +146,11 @@
     //campsiteController.curTrail = [trails objectAtIndex:indexPath.row];
     [[self navigationController] pushViewController:campsiteController animated:YES];
     [campsiteController release];
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+	[self tableView:tableView didSelectRowAtIndexPath:indexPath];
 }
 
 - (NSPersistentStore *)persistentStore {
