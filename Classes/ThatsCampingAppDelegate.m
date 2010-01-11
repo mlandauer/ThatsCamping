@@ -7,7 +7,7 @@
 @implementation ThatsCampingAppDelegate
 
 @synthesize window;
-@synthesize tabBarController;
+@synthesize navigationController;
 
 
 #pragma mark -
@@ -25,16 +25,14 @@
 	}
 	rootViewController.managedObjectContext = context;
 	
+	UINavigationController *aNavigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+	self.navigationController = aNavigationController;
 	
-	tabBarController = [[UITabBarController alloc] init];	
-	NSArray *controllers = [NSArray arrayWithObject:rootViewController];
-	tabBarController.viewControllers = controllers;
-	[controllers release];
-	
-	[window addSubview:tabBarController.view];
+	[window addSubview:[navigationController view]];
 	[window makeKeyAndVisible];
 	
 	[rootViewController release];
+	[aNavigationController release];
 }
 
 /**
@@ -148,7 +146,7 @@
     [managedObjectModel release];
     [persistentStoreCoordinator release];
     
-	[tabBarController release];
+	[navigationController release];
 	[window release];
 	[super dealloc];
 }

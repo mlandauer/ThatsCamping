@@ -3,7 +3,7 @@
 @interface ThatsCampingAppDelegate : NSObject <UIApplicationDelegate> {
     
     UIWindow *window;
-    UINavigationController *tabBarController;
+    UINavigationController *navigationController;
 
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
     NSManagedObjectModel *managedObjectModel;
@@ -11,7 +11,7 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) UINavigationController *tabBarController;
+@property (nonatomic, retain) UINavigationController *navigationController;
 
 - (IBAction)saveAction:sender;
 
