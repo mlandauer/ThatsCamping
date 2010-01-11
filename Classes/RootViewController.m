@@ -97,6 +97,14 @@
 	return string;
 }
 
+- (NSString *)bearingInWords:(float)bearing
+{
+	// Dividing the compass into 8 sectors that are centred on north
+	int sector = fmod(bearing + 22.5, 360.0) / 45.0;
+	NSArray *sectorNames = [NSArray arrayWithObjects:@"N", @"NE", @"E", @"SE", @"S", @"SW", @"W", @"NW", nil];
+	return [sectorNames objectAtIndex:sector];
+}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
@@ -113,7 +121,16 @@
 	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@\n%@", [campsite name], [[campsite park] name]];
 	cell.detailTextLabel.numberOfLines = 2;
 	
-	NSString *string = [self distanceInWords:[[campsite distance] doubleValue]];
+	static NSNumberFormatter *numberFormatter = nil;
+	if (numberFormatter == nil) {
+		numberFormatter = [[NSNumberFormatter alloc] init];
+		[numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+		[numberFormatter setMaximumFractionDigits:0];
+	}
+
+	NSString *string = [NSString stringWithFormat:@"%@ %@",
+						[self distanceInWords:[[campsite distance] doubleValue]],
+						[self bearingInWords:[[campsite bearing] floatValue]]];
     cell.textLabel.text = string;
     
 	return cell;
@@ -224,10 +241,11 @@
 		// Handle the error.
 	}
 	
-	// Loop through the campsites and calculate the distance from our current location
+	// Loop through the campsites and calculate the distance and bearing from our current location
 	for (int i=0; i < [mutableFetchResults count]; i++) {
 		Campsite *campsite = [mutableFetchResults objectAtIndex:i];
-		[campsite setDistance:[campsite distanceFrom:newLocation]];
+		campsite.distance = [campsite distanceFrom:newLocation];
+		campsite.bearing = [campsite bearingFrom:newLocation];
 	}
 	
 	// Commit the change.
