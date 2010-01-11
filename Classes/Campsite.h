@@ -1,4 +1,5 @@
 #import <CoreData/CoreData.h>
+#import <CoreLocation/CoreLocation.h>
 
 @class Park;
 
@@ -13,4 +14,5 @@
 @property (nonatomic, retain) Park *park;
 @property (nonatomic, retain) NSString *webId;
 
+- (CLLocation *) location;
 @end

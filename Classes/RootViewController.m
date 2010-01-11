@@ -227,9 +227,7 @@
 	// Loop through the campsites and calculate the distance from our current location
 	for (int i=0; i < [mutableFetchResults count]; i++) {
 		Campsite *campsite = [mutableFetchResults objectAtIndex:i];
-		CLLocation *loc = [[CLLocation alloc] initWithLatitude:[[campsite latitude] doubleValue] longitude:[[campsite longitude] doubleValue]];
-		[campsite setDistance:[NSNumber numberWithDouble:[newLocation getDistanceFrom:loc]]];
-		[loc release];
+		[campsite setDistance:[NSNumber numberWithDouble:[newLocation getDistanceFrom:[campsite location]]]];
 	}
 	
 	// Commit the change.
