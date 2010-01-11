@@ -17,9 +17,14 @@ def shorten_park_name(name)
 end
 
 def shorten_campsite_name(name)
-  remove_phrases_at_end(name,
-    ["campground and picnic area", "picnic and camping area", "camping and picnic area", "large group campground",
-    "campground", "camping area", "camping ground", "campgrounds", "tourist park", "camping grounds", "rest area"])
+  # Special handling for one campsite name
+  if name == "Euroka campground - Appletree Flat campervan and camper trailer area"
+    "Euroka (trailer area)"
+  else
+    remove_phrases_at_end(name,
+      ["campground and picnic area", "picnic and camping area", "camping and picnic area", "large group campground",
+      "campground", "camping area", "camping ground", "campgrounds", "tourist park", "camping grounds", "rest area"])
+  end
 end
 
 File.open("#{File.dirname(__FILE__)}/../Parks.plist", "w") do |f|
