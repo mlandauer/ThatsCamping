@@ -4,6 +4,7 @@
 #import "ThatsCampingAppDelegate.h"
 #import "Campsite.h"
 #import "Park.h"
+#import "CampsiteViewController.h"
 
 @implementation RootViewController
 
@@ -21,7 +22,7 @@
 	// Set the title.
     self.title = @"Campsites near you";
 	
-	self.tableView.allowsSelection = NO;
+	//self.tableView.allowsSelection = NO;
     
 	// Start the location manager.
 	[[self locationManager] startUpdatingLocation];
@@ -137,6 +138,14 @@
     cell.textLabel.text = string;
     
 	return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CampsiteViewController *campsiteController = [[CampsiteViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    //campsiteController.curTrail = [trails objectAtIndex:indexPath.row];
+    [[self navigationController] pushViewController:campsiteController animated:YES];
+    [campsiteController release];
 }
 
 - (NSPersistentStore *)persistentStore {
