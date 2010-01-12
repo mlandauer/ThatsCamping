@@ -1,7 +1,9 @@
 #import "CampsiteViewController.h"
 
-
 @implementation CampsiteViewController
+
+@synthesize currentCampsite;
+
 
 /*
 - (id)initWithStyle:(UITableViewStyle)style {
@@ -72,7 +74,7 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return 2;
 }
 
 
@@ -83,8 +85,21 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
     }
+	
+	if (indexPath.row == 0) {
+		cell.textLabel.text = @"Name";
+		cell.detailTextLabel.text = [currentCampsite longName];
+	}
+	else if (indexPath.row == 1) {
+		cell.textLabel.text = @"Park";
+		cell.detailTextLabel.text = [[currentCampsite park] longName];
+	}
+	else {
+		cell.textLabel.text = @"Hello!";
+		cell.detailTextLabel.text = @"Details";
+	}
     
     // Set up the cell...
 	

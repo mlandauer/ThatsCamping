@@ -143,7 +143,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CampsiteViewController *campsiteController = [[CampsiteViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    //campsiteController.curTrail = [trails objectAtIndex:indexPath.row];
+    campsiteController.currentCampsite = [campsitesArray objectAtIndex:indexPath.row];
     [[self navigationController] pushViewController:campsiteController animated:YES];
     [campsiteController release];
 }
