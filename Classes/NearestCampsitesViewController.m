@@ -1,12 +1,12 @@
 // The table view controller responsible for displaying the list of events, supporting additional functionality:
 
-#import "RootViewController.h"
+#import "NearestCampsitesViewController.h"
 #import "ThatsCampingAppDelegate.h"
 #import "Campsite.h"
 #import "Park.h"
 #import "CampsiteViewController.h"
 
-@implementation RootViewController
+@implementation NearestCampsitesViewController
 
 
 @synthesize campsitesArray, locationManager, managedObjectContext;

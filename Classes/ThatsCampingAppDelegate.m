@@ -1,7 +1,7 @@
 // Abstract: Application delegate to set up the Core Data stack and configure the view and navigation controllers.
 
 #import "ThatsCampingAppDelegate.h"
-#import "RootViewController.h"
+#import "NearestCampsitesViewController.h"
 
 
 @implementation ThatsCampingAppDelegate
@@ -17,7 +17,7 @@
 	
 	// Configure and show the window.
 	
-	RootViewController *rootViewController = [[RootViewController alloc] initWithStyle:UITableViewStylePlain];
+	NearestCampsitesViewController *rootViewController = [[NearestCampsitesViewController alloc] initWithStyle:UITableViewStylePlain];
 	
 	NSManagedObjectContext *context = [self managedObjectContext];
 	if (!context) {

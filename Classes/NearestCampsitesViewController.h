@@ -2,7 +2,7 @@
 
 #import <CoreLocation/CoreLocation.h>
 
-@interface RootViewController : UITableViewController <CLLocationManagerDelegate, UITableViewDelegate> {
+@interface NearestCampsitesViewController : UITableViewController <CLLocationManagerDelegate, UITableViewDelegate> {
 	
     NSMutableArray *campsitesArray;
     CLLocationManager *locationManager;
