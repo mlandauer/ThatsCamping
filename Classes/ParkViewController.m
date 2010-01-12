@@ -113,6 +113,10 @@
 	[campsiteViewController release];
 }
 
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+	[self tableView:tableView didSelectRowAtIndexPath:indexPath];
+}
 
 /*
 // Override to support conditional editing of the table view.
