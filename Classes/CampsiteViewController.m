@@ -58,13 +58,18 @@
 #pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+	if (section == 0)
+		return 2;
+	else if (section == 1)
+		return 1;
+	// Doing this to avoid compiler warning
+	return -1;
 }
 
 
@@ -78,20 +83,21 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
     }
 	
-	if (indexPath.row == 0) {
-		cell.textLabel.text = @"Name";
-		cell.detailTextLabel.text = [currentCampsite longName];
-	}
-	else if (indexPath.row == 1) {
-		cell.textLabel.text = @"Park";
-		cell.detailTextLabel.text = [[currentCampsite park] longName];
-		if (parkClickable) {
-			cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+	if (indexPath.section == 0) {
+		if (indexPath.row == 0) {
+			cell.textLabel.text = @"Name";
+			cell.detailTextLabel.text = [currentCampsite longName];
+		}
+		else if (indexPath.row == 1) {
+			cell.textLabel.text = @"Park";
+			cell.detailTextLabel.text = [[currentCampsite park] longName];
+			if (parkClickable) {
+				cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+			}
 		}
 	}
-	else {
-		cell.textLabel.text = @"Hello!";
-		cell.detailTextLabel.text = @"Details";
+	else if (indexPath.section == 1) {
+		cell.textLabel.text = @"Directions to campsite";
 	}
     
     // Set up the cell...
@@ -101,11 +107,17 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	if (indexPath.row == 1 && parkClickable) {
+	if (indexPath.section == 0 && indexPath.row == 1 && parkClickable) {
 		ParkViewController *parkViewController = [[ParkViewController alloc] initWithNibName:@"ParkViewController" bundle:nil];
 		parkViewController.currentPark = [currentCampsite park];
 		[self.navigationController pushViewController:parkViewController animated:YES];
 		[parkViewController release];
+	}
+	else if (indexPath.section == 1) {
+		NSString *urlString = [[NSString stringWithFormat:@"http://maps.google.com/maps?daddr=%@@%@,%@)",
+								currentCampsite.shortName, currentCampsite.latitude, currentCampsite.longitude]
+							   stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];		
 	}
 }
 
