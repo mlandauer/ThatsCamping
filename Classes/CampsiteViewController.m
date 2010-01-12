@@ -58,7 +58,7 @@
 #pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 4;
 }
 
 
@@ -68,10 +68,37 @@
 		return 2;
 	else if (section == 1)
 		return 1;
+	else if (section == 2)
+		return 5;
+	else if (section == 3)
+		return 3;
 	// Doing this to avoid compiler warning
-	return -1;
+	return 0;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+	if (section == 2) {
+		return @"Facilities";
+	}
+	else if (section == 3) {
+		return @"Access";
+	}
+	else {
+		return nil;
+	}
+
+}
+
+- (NSString *) boolNumberAsText:(NSNumber *)n
+{
+	if ([n boolValue]) {
+		return @"Yes";
+	}
+	else {
+		return @"No";
+	}
+}
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -83,25 +110,68 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
     }
 	
+	// This is the default unless overridden below
+	cell.accessoryType = UITableViewCellAccessoryNone;
+	
 	if (indexPath.section == 0) {
-		if (indexPath.row == 0) {
-			cell.textLabel.text = @"Name";
-			cell.detailTextLabel.text = [currentCampsite longName];
-		}
-		else if (indexPath.row == 1) {
-			cell.textLabel.text = @"Park";
-			cell.detailTextLabel.text = [[currentCampsite park] longName];
-			if (parkClickable) {
-				cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-			}
+		switch (indexPath.row) {
+			case 0:
+				cell.textLabel.text = @"Name";
+				cell.detailTextLabel.text = [currentCampsite longName];
+				break;
+			case 1:
+				cell.textLabel.text = @"Park";
+				cell.detailTextLabel.text = [[currentCampsite park] longName];
+				if (parkClickable) {
+					cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+				}
+				break;
 		}
 	}
 	else if (indexPath.section == 1) {
 		cell.textLabel.text = @"Directions to campsite";
 	}
+	else if (indexPath.section == 2) {
+		switch (indexPath.row) {
+			case 0:
+				cell.textLabel.text = @"Toilets";
+				cell.detailTextLabel.text = [currentCampsite toilets];
+				break;
+			case 1:
+				cell.textLabel.text = @"Picnic Tables";
+				cell.detailTextLabel.text = [self boolNumberAsText:[currentCampsite picnicTables]];
+				break;
+			case 2:
+				cell.textLabel.text = @"Barbecues";
+				cell.detailTextLabel.text = [currentCampsite barbecues];
+				break;
+			case 3:
+				cell.textLabel.text = @"Showers";
+				cell.detailTextLabel.text = [currentCampsite showers];
+				break;
+			case 4:
+				cell.textLabel.text = @"Drinking Water";
+				cell.detailTextLabel.text = [self boolNumberAsText:[currentCampsite drinkingWater]];
+				break;
+		}
+	}
+	else if (indexPath.section == 3) {
+		switch (indexPath.row) {
+			case 0:
+				cell.textLabel.text = @"Caravans";
+				cell.detailTextLabel.text = [self boolNumberAsText:[currentCampsite caravans]];
+				break;
+			case 1:
+				cell.textLabel.text = @"Trailers";
+				cell.detailTextLabel.text = [self boolNumberAsText:[currentCampsite trailers]];
+				break;
+			case 2:
+				cell.textLabel.text = @"Car";
+				cell.detailTextLabel.text = [self boolNumberAsText:[currentCampsite car]];
+				break;
+		}
+	}
     
-    // Set up the cell...
-	
     return cell;
 }
 
