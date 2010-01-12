@@ -4,7 +4,7 @@
 
 @implementation Campsite 
 
-@dynamic latitude, longitude, shortName, distance, bearing, park, webId;
+@dynamic latitude, longitude, shortName, longName, distance, bearing, park, webId;
 
 - (CLLocation *) location
 {

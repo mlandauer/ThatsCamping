@@ -1,10 +1,9 @@
-#import "CampsiteViewController.h"
 #import "ParkViewController.h"
 
-@implementation CampsiteViewController
 
-@synthesize currentCampsite;
+@implementation ParkViewController
 
+@synthesize currentPark, campsites;
 
 /*
 - (id)initWithStyle:(UITableViewStyle)style {
@@ -17,8 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.title = [currentCampsite shortName];
 
+	self.title = [currentPark shortName];
+	
+	// Create an array out of the set of campsites returned from Core Data
+	// TODO: Sort these alphabetically
+	self.campsites = [[currentPark campsites] allObjects];
+	
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
@@ -74,9 +78,13 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return [campsites count];
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+	return @"Campsites";
+}
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -85,24 +93,12 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
-	
-	if (indexPath.row == 0) {
-		cell.textLabel.text = @"Name";
-		cell.detailTextLabel.text = [currentCampsite longName];
-	}
-	else if (indexPath.row == 1) {
-		cell.textLabel.text = @"Park";
-		cell.detailTextLabel.text = [[currentCampsite park] longName];
-		cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-	}
-	else {
-		cell.textLabel.text = @"Hello!";
-		cell.detailTextLabel.text = @"Details";
-	}
     
-    // Set up the cell...
+	cell.textLabel.text = [[campsites objectAtIndex:indexPath.row] shortName];
+	//cell.textLabel.text = @"Hello!";
+	//cell.detailTextLabel.text = @"Details";
 	
     return cell;
 }
@@ -110,10 +106,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
-	ParkViewController *parkViewController = [[ParkViewController alloc] initWithNibName:@"ParkViewController" bundle:nil];
-	parkViewController.currentPark = [currentCampsite park];
-	[self.navigationController pushViewController:parkViewController animated:YES];
-	[parkViewController release];
+	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
+	// [self.navigationController pushViewController:anotherViewController];
+	// [anotherViewController release];
 }
 
 
