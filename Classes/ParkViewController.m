@@ -1,5 +1,5 @@
 #import "ParkViewController.h"
-
+#import "CampsiteViewController.h"
 
 @implementation ParkViewController
 
@@ -96,7 +96,9 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
-	cell.textLabel.text = [[campsites objectAtIndex:indexPath.row] shortName];
+	cell.textLabel.text = [[campsites objectAtIndex:indexPath.row] longName];
+	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+
 	//cell.textLabel.text = @"Hello!";
 	//cell.detailTextLabel.text = @"Details";
 	
@@ -105,10 +107,10 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
-	// [self.navigationController pushViewController:anotherViewController];
-	// [anotherViewController release];
+	CampsiteViewController *campsiteViewController = [[CampsiteViewController alloc] initWithNibName:@"CampsiteViewController" bundle:nil];
+	campsiteViewController.currentCampsite = [campsites objectAtIndex:indexPath.row];
+	[self.navigationController pushViewController:campsiteViewController animated:YES];
+	[campsiteViewController release];
 }
 
 
