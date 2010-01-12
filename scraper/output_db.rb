@@ -62,6 +62,14 @@ File.open("#{File.dirname(__FILE__)}/../Campsites.plist", "w") do |f|
           end
           x.key "webId"; x.string campsite.web_id
           x.key "parkWebId"; x.string campsite.park.web_id
+          x.key "toilets"; x.string campsite.toilets
+          x.key "picnicTables"; campsite.picnic_tables ? x.true : x.false
+          x.key "barbecues"; x.string campsite.barbecues
+          x.key "showers"; x.string campsite.showers
+          x.key "drinkingWater"; campsite.drinking_water ? x.true : x.false
+          x.key "caravans"; campsite.caravans ? x.true : x.false
+          x.key "trailers"; campsite.trailers ? x.true : x.false
+          x.key "car"; campsite.car ? x.true : x.false
         }
       end
     }

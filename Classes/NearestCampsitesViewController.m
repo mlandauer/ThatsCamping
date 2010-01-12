@@ -205,12 +205,21 @@
 		enumerator = [[NSArray arrayWithContentsOfFile:campsitesPath] objectEnumerator];
 		while (campsitePList = [enumerator nextObject])
 		{
+			// TODO: Hmmm.. Must be a shorthand way of doing this: the names of the attributes match up with the method names
 			Campsite *campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
-			[campsite setShortName:[campsitePList objectForKey:@"shortName"]];
-			[campsite setLongName:[campsitePList objectForKey:@"longName"]];
-			[campsite setLatitude:[campsitePList objectForKey:@"latitude"]];
-			[campsite setLongitude:[campsitePList objectForKey:@"longitude"]];
-			[campsite setWebId:[campsitePList objectForKey:@"webId"]];
+			campsite.shortName = [campsitePList objectForKey:@"shortName"];
+			campsite.longName = [campsitePList objectForKey:@"longName"];
+			campsite.latitude = [campsitePList objectForKey:@"latitude"];
+			campsite.longitude = [campsitePList objectForKey:@"longitude"];
+			campsite.webId = [campsitePList objectForKey:@"webId"];
+			campsite.toilets = [campsitePList objectForKey:@"toilets"];
+			campsite.picnicTables = [campsitePList objectForKey:@"picnicTables"];
+			campsite.barbecues = [campsitePList objectForKey:@"barbecues"];
+			campsite.showers = [campsitePList objectForKey:@"showers"];
+			campsite.drinkingWater = [campsitePList objectForKey:@"drinkingWater"];
+			campsite.caravans = [campsitePList objectForKey:@"caravans"];
+			campsite.trailers = [campsitePList objectForKey:@"trailers"];
+			campsite.car = [campsitePList objectForKey:@"car"];
 			
 			// Now wire up the park (by looking up the park using the webId)
 			NSString *parkWebId = [campsitePList objectForKey:@"parkWebId"];
