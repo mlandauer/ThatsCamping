@@ -109,11 +109,12 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-	ParkViewController *parkViewController = [[ParkViewController alloc] initWithNibName:@"ParkViewController" bundle:nil];
-	parkViewController.currentPark = [currentCampsite park];
-	[self.navigationController pushViewController:parkViewController animated:YES];
-	[parkViewController release];
+	if (indexPath.row == 1) {
+		ParkViewController *parkViewController = [[ParkViewController alloc] initWithNibName:@"ParkViewController" bundle:nil];
+		parkViewController.currentPark = [currentCampsite park];
+		[self.navigationController pushViewController:parkViewController animated:YES];
+		[parkViewController release];
+	}
 }
 
 
