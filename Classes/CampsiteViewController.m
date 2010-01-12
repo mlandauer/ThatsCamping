@@ -3,17 +3,7 @@
 
 @implementation CampsiteViewController
 
-@synthesize currentCampsite;
-
-
-/*
-- (id)initWithStyle:(UITableViewStyle)style {
-    // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-    if (self = [super initWithStyle:style]) {
-    }
-    return self;
-}
-*/
+@synthesize currentCampsite, parkClickable;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -95,7 +85,9 @@
 	else if (indexPath.row == 1) {
 		cell.textLabel.text = @"Park";
 		cell.detailTextLabel.text = [[currentCampsite park] longName];
-		cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+		if (parkClickable) {
+			cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+		}
 	}
 	else {
 		cell.textLabel.text = @"Hello!";
@@ -109,7 +101,7 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	if (indexPath.row == 1) {
+	if (indexPath.row == 1 && parkClickable) {
 		ParkViewController *parkViewController = [[ParkViewController alloc] initWithNibName:@"ParkViewController" bundle:nil];
 		parkViewController.currentPark = [currentCampsite park];
 		[self.navigationController pushViewController:parkViewController animated:YES];
