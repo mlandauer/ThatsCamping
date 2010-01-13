@@ -9,7 +9,7 @@
 @implementation NearestCampsitesViewController
 
 
-@synthesize campsitesArray, locationManager, managedObjectContext;
+@synthesize campsitesArray, locationManager, managedObjectContext, tableView;
 
 
 #pragma mark -

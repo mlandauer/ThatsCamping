@@ -18,7 +18,7 @@
 	
 	// Configure and show the window.
 	
-	NearestCampsitesViewController *rootViewController = [[NearestCampsitesViewController alloc] initWithStyle:UITableViewStylePlain];
+	NearestCampsitesViewController *rootViewController = [[NearestCampsitesViewController alloc] initWithNibName:@"NearestCampsitesViewController" bundle:nil];
 	
 	NSManagedObjectContext *context = [self managedObjectContext];
 	if (!context) {
