@@ -122,25 +122,25 @@
 	return [sectorNames objectAtIndex:sector];
 }
 
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
+- (MKAnnotationView *)mapView:(MKMapView *)thisMapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
 	static NSString *identifier = @"Annotation";
-	MKAnnotationView *view = [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+	MKAnnotationView *view = [thisMapView dequeueReusableAnnotationViewWithIdentifier:identifier];
 	if (view == nil) {
 		view = [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier] autorelease];
 	}
 	// We don't want a chevron on the user's location
-	if (annotation != mapView.userLocation) {
+	if (annotation != thisMapView.userLocation) {
 		view.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
 	}
 	view.canShowCallout = YES;
 	return view;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)thisTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [thisTableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
 		UITableViewCellStyleValue1;
@@ -186,9 +186,9 @@
     [campsiteController release];
 }
 
-- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)thisTableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
-	[self tableView:tableView didSelectRowAtIndexPath:indexPath];
+	[self tableView:thisTableView didSelectRowAtIndexPath:indexPath];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
