@@ -69,6 +69,14 @@
 	return [[[CLLocation alloc] initWithLatitude:[[self latitude] doubleValue] longitude:[[self longitude] doubleValue]] autorelease];
 }
 
+- (CLLocationCoordinate2D) coordinate
+{
+	CLLocationCoordinate2D c;
+	c.latitude = [[self latitude] doubleValue];
+	c.longitude = [[self longitude] doubleValue];
+	return c;
+}
+
 // Distance (in metres) to this campsite from the given location
 - (NSNumber *) distanceFrom:(CLLocation *)location
 {

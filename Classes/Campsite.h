@@ -1,9 +1,10 @@
 #import <CoreData/CoreData.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
 @class Park;
 
-@interface Campsite :  NSManagedObject  
+@interface Campsite :  NSManagedObject <MKAnnotation>
 {
 }
 

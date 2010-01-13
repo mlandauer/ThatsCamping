@@ -9,7 +9,7 @@
 @implementation NearestCampsitesViewController
 
 
-@synthesize campsitesArray, locationManager, managedObjectContext, tableView;
+@synthesize campsitesArray, locationManager, managedObjectContext, tableView, containerView, mapView;
 
 
 #pragma mark -
@@ -53,6 +53,8 @@
 	}	
 
 	[self setCampsitesArray:mutableFetchResults];
+	
+	[mapView addAnnotations:mutableFetchResults];
 }
 
 
