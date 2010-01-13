@@ -21,4 +21,6 @@
 
 @property (nonatomic, readonly) NSString *applicationDocumentsDirectory;
 
+- (void)initialiseStore;
+
 @end

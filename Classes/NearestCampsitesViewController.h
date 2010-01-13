@@ -15,6 +15,5 @@
 
 - (NSString *)distanceInWords:(double)distance;
 - (NSString *)bearingInWords:(float)bearing;
-- (void)initialiseStore;
 
 @end
