@@ -12,6 +12,16 @@ require 'campsite'
 
 agent = WWW::Mechanize.new
 
+def paragraphs_after_heading(result)
+  ret = []
+  current = result.at('h3').next
+  while current
+    ret << current unless current.inner_html.strip == ""
+    current = current.next
+  end
+  ret
+end
+
 Park.find(:all).each do |park|
   puts "Processing page #{park.campsites_url}..."
   page = agent.get(park.campsites_url)
@@ -33,9 +43,18 @@ Park.find(:all).each do |park|
 
   results.each do |web_id, result|
     site = Campsite.find(:first, :conditions => {:web_id => web_id})
+    puts "Campsite: #{site.name}"
+    p result
+    exit
     if site.nil?
-      puts "WARNING: Strange. Can't find campsite with web_id: #{web_id}. So, skipping"
+      #puts "WARNING: Strange. Can't find campsite with web_id: #{web_id}. So, skipping"
     else
+      description = Nokogiri::HTML.fragment(paragraphs_after_heading(result).find_all{|p| p.at('strong').nil?}.map{|p| p.to_s}.join)
+      # Remove images and links associated with them
+      description.search('a > img').each{|i| i.parent.remove}
+      description.search('img').remove
+      p description
+      puts "<h2>#{site.name}</h2>"
       road_access_heading = result.at('#relatedLinks').search('.heading').find{|h| h.inner_text == "Road access"}
       site.road_access = road_access_heading.next.inner_text.strip if road_access_heading
       fees = result.at('#relatedLinks').search('.heading').find{|h| h.inner_text == "Fees"}
