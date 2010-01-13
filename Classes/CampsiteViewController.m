@@ -107,11 +107,12 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:CellIdentifier] autorelease];
     }
 	
-	// This is the default unless overridden below
+	// These are the defaults unless overridden below
 	cell.accessoryType = UITableViewCellAccessoryNone;
+	cell.detailTextLabel.numberOfLines = 1;
 	
 	if (indexPath.section == 0) {
 		switch (indexPath.row) {
@@ -188,15 +189,16 @@
 		
 		switch (indexPath.row) {
 			case 0:
-				cell.textLabel.text = @"Has:";
+				cell.textLabel.text = @"Has";
 				cell.detailTextLabel.text = [present componentsJoinedByString:@", "];
 				break;
 			case 1:
-				cell.textLabel.text = @"Doesn't have:";
+				cell.textLabel.text = @"But no";
 				cell.detailTextLabel.text = [notPresent componentsJoinedByString:@", "];
 				break;
 
 		}
+		cell.detailTextLabel.numberOfLines = 2;
 	}
 	else if (indexPath.section == 3) {
 		switch (indexPath.row) {
