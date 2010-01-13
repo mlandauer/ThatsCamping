@@ -122,6 +122,20 @@
 	return [sectorNames objectAtIndex:sector];
 }
 
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
+{
+	static NSString *identifier = @"Annotation";
+	MKAnnotationView *view = [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+	if (view == nil) {
+		view = [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier] autorelease];
+	}
+	// We don't want a chevron on the user's location
+	if (annotation != mapView.userLocation) {
+		view.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+	}
+	view.canShowCallout = YES;
+	return view;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
@@ -152,6 +166,15 @@
     cell.textLabel.text = string;
     
 	return cell;
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+	CampsiteViewController *campsiteController = [[CampsiteViewController alloc] initWithNibName:@"CampsiteViewController" bundle:nil];
+    campsiteController.campsite = view.annotation;
+	campsiteController.parkClickable = YES;
+    [[self navigationController] pushViewController:campsiteController animated:YES];
+    [campsiteController release];	
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

@@ -69,14 +69,6 @@
 	return [[[CLLocation alloc] initWithLatitude:[[self latitude] doubleValue] longitude:[[self longitude] doubleValue]] autorelease];
 }
 
-- (CLLocationCoordinate2D) coordinate
-{
-	CLLocationCoordinate2D c;
-	c.latitude = [[self latitude] doubleValue];
-	c.longitude = [[self longitude] doubleValue];
-	return c;
-}
-
 // Distance (in metres) to this campsite from the given location
 - (NSNumber *) distanceFrom:(CLLocation *)location
 {
@@ -98,6 +90,25 @@
 	// This is a number between 0 and 360
 	double bearing = fmod(atan2(y, x) * 180.0 / M_PI + 360.0, 360.0);
 	return [NSNumber numberWithDouble:bearing];
+}
+
+// Methods to support of displaying this data in a map
+- (CLLocationCoordinate2D) coordinate
+{
+	CLLocationCoordinate2D c;
+	c.latitude = [[self latitude] doubleValue];
+	c.longitude = [[self longitude] doubleValue];
+	return c;
+}
+
+- (NSString *) title
+{
+	return self.shortName;
+}
+
+- (NSString *) subtitle
+{
+	return self.park.shortName;
 }
 
 @end

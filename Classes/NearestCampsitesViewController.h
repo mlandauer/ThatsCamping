@@ -3,7 +3,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import	<MapKit/MapKit.h>
 
-@interface NearestCampsitesViewController : UIViewController <CLLocationManagerDelegate, UITableViewDelegate> {
+@interface NearestCampsitesViewController : UIViewController <CLLocationManagerDelegate, UITableViewDelegate, MKMapViewDelegate> {
 	
     NSMutableArray *campsitesArray;
     CLLocationManager *locationManager;
