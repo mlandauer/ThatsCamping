@@ -2,11 +2,12 @@
 #import "Campsite.h"
 
 @interface CampsiteViewController : UITableViewController {
-	Campsite *currentCampsite;
+	// The current campsite that is being displayed by this controller
+	Campsite *campsite;
 	BOOL parkClickable;
 }
 
-@property (nonatomic, retain) Campsite * currentCampsite;
+@property (nonatomic, retain) Campsite * campsite;
 @property BOOL parkClickable;
 
 @end

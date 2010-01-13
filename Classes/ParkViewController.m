@@ -108,7 +108,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	CampsiteViewController *campsiteViewController = [[CampsiteViewController alloc] initWithNibName:@"CampsiteViewController" bundle:nil];
-	campsiteViewController.currentCampsite = [campsites objectAtIndex:indexPath.row];
+	campsiteViewController.campsite = [campsites objectAtIndex:indexPath.row];
 	[self.navigationController pushViewController:campsiteViewController animated:YES];
 	[campsiteViewController release];
 }

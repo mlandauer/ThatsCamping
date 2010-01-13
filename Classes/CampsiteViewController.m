@@ -3,11 +3,11 @@
 
 @implementation CampsiteViewController
 
-@synthesize currentCampsite, parkClickable;
+@synthesize campsite, parkClickable;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	self.title = [currentCampsite shortName];
+	self.title = [campsite shortName];
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -117,11 +117,11 @@
 		switch (indexPath.row) {
 			case 0:
 				cell.textLabel.text = @"Name";
-				cell.detailTextLabel.text = [currentCampsite longName];
+				cell.detailTextLabel.text = [campsite longName];
 				break;
 			case 1:
 				cell.textLabel.text = @"Park";
-				cell.detailTextLabel.text = [[currentCampsite park] longName];
+				cell.detailTextLabel.text = [[campsite park] longName];
 				if (parkClickable) {
 					cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 				}
@@ -135,19 +135,19 @@
 		// Split the facilities into two list: those that this campsite has and those it doesn't.
 		NSMutableArray *present = [NSMutableArray arrayWithCapacity:3];
 		NSMutableArray *notPresent = [NSMutableArray arrayWithCapacity:3];
-		if ([currentCampsite hasFlushToilets]) {
+		if ([campsite hasFlushToilets]) {
 			[present addObject:@"flush toilets"];
 		}
-		else if ([currentCampsite hasNonFlushToilets]) {
+		else if ([campsite hasNonFlushToilets]) {
 			[present addObject:@"non-flush toilets"];
 		}
-		else if (![currentCampsite hasToilets]) {
+		else if (![campsite hasToilets]) {
 			[notPresent addObject:@"toilets"];
 		}
 		else {
 			assert(false);
 		}
-		if ([[currentCampsite picnicTables] boolValue]) {
+		if ([[campsite picnicTables] boolValue]) {
 			[present addObject:@"picnic tables"];
 		}
 		else {
@@ -155,31 +155,31 @@
 		}
 		// TODO: show whether you need to bring your own firewood elsewhere
 		// Like "You will need to bring firewood (if you want to use the wood BBQs) and drinking water"
-		if ([currentCampsite hasWoodBarbecues]) {
+		if ([campsite hasWoodBarbecues]) {
 			[present addObject:@"wood BBQs"];
 		}
-		else if	([currentCampsite hasGasElectricBarbecues]) {
+		else if	([campsite hasGasElectricBarbecues]) {
 			[present addObject:@"gas/electric BBQs"];
 		}
-		else if (![currentCampsite hasBarbecues]) {
+		else if (![campsite hasBarbecues]) {
 			[notPresent addObject:@"BBQs"];
 		}
 		else {
 			assert(false);
 		}
-		if ([currentCampsite hasHotShowers]) {
+		if ([campsite hasHotShowers]) {
 			[present addObject:@"hot showers"];
 		}
-		else if ([currentCampsite hasColdShowers]) {
+		else if ([campsite hasColdShowers]) {
 			[present addObject:@"cold showers"];
 		}
-		else if (![currentCampsite hasShowers]) {
+		else if (![campsite hasShowers]) {
 			[notPresent addObject:@"showers"];
 		}
 		else {
 			assert(false);
 		}
-		if ([[currentCampsite drinkingWater] boolValue]) {
+		if ([[campsite drinkingWater] boolValue]) {
 			[present addObject:@"drinking water"];
 		}
 		else {
@@ -202,15 +202,15 @@
 		switch (indexPath.row) {
 			case 0:
 				cell.textLabel.text = @"Caravans";
-				cell.detailTextLabel.text = [self boolNumberAsText:[currentCampsite caravans]];
+				cell.detailTextLabel.text = [self boolNumberAsText:[campsite caravans]];
 				break;
 			case 1:
 				cell.textLabel.text = @"Trailers";
-				cell.detailTextLabel.text = [self boolNumberAsText:[currentCampsite trailers]];
+				cell.detailTextLabel.text = [self boolNumberAsText:[campsite trailers]];
 				break;
 			case 2:
 				cell.textLabel.text = @"Car";
-				cell.detailTextLabel.text = [self boolNumberAsText:[currentCampsite car]];
+				cell.detailTextLabel.text = [self boolNumberAsText:[campsite car]];
 				break;
 		}
 	}
@@ -222,13 +222,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.section == 0 && indexPath.row == 1 && parkClickable) {
 		ParkViewController *parkViewController = [[ParkViewController alloc] initWithNibName:@"ParkViewController" bundle:nil];
-		parkViewController.currentPark = [currentCampsite park];
+		parkViewController.currentPark = [campsite park];
 		[self.navigationController pushViewController:parkViewController animated:YES];
 		[parkViewController release];
 	}
 	else if (indexPath.section == 1) {
 		NSString *urlString = [[NSString stringWithFormat:@"http://maps.google.com/maps?daddr=%@@%@,%@)",
-								currentCampsite.shortName, currentCampsite.latitude, currentCampsite.longitude]
+								campsite.shortName, campsite.latitude, campsite.longitude]
 							   stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
 		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];		
 	}
