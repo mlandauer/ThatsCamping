@@ -27,6 +27,7 @@
 		6C6F9E1110FC01BB008CB360 /* ParkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6F9E0F10FC01BB008CB360 /* ParkViewController.m */; };
 		6C6F9E1210FC01BB008CB360 /* ParkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C6F9E1010FC01BB008CB360 /* ParkViewController.xib */; };
 		6C93D15F10FE3AF400FEF933 /* NearestCampsitesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C93D15E10FE3AF400FEF933 /* NearestCampsitesViewController.xib */; };
+		6C93D17710FE3FCB00FEF933 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C93D17610FE3FCB00FEF933 /* MapKit.framework */; };
 		6CE40C2B10FD6D7F00023412 /* create_db.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1210FD6D7F00023412 /* create_db.rb */; };
 		6CE40C3110FD6D7F00023412 /* geocode.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1910FD6D7F00023412 /* geocode.rb */; };
 		6CE40C3210FD6D7F00023412 /* campsite.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1B10FD6D7F00023412 /* campsite.rb */; };
@@ -74,6 +75,7 @@
 		6C6F9E0F10FC01BB008CB360 /* ParkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkViewController.m; sourceTree = "<group>"; };
 		6C6F9E1010FC01BB008CB360 /* ParkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ParkViewController.xib; path = Classes/ParkViewController.xib; sourceTree = "<group>"; };
 		6C93D15E10FE3AF400FEF933 /* NearestCampsitesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearestCampsitesViewController.xib; sourceTree = "<group>"; };
+		6C93D17610FE3FCB00FEF933 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6CE40C1210FD6D7F00023412 /* create_db.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = create_db.rb; path = scraper/create_db.rb; sourceTree = "<group>"; };
 		6CE40C1910FD6D7F00023412 /* geocode.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = geocode.rb; path = scraper/geocode.rb; sourceTree = "<group>"; };
 		6CE40C1B10FD6D7F00023412 /* campsite.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = campsite.rb; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
 				28A9E88C0F43C7410016529B /* CoreData.framework in Frameworks */,
 				28A9E8BA0F43C7B50016529B /* CoreLocation.framework in Frameworks */,
+				6C93D17710FE3FCB00FEF933 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +180,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C93D17610FE3FCB00FEF933 /* MapKit.framework */,
 				28A9E8B90F43C7B50016529B /* CoreLocation.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,

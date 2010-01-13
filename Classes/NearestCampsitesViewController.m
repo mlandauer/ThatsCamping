@@ -23,7 +23,10 @@
     self.title = @"Campsites near you";
 	
 	//self.tableView.allowsSelection = NO;
-    
+	mapView.hidden = YES;
+    [containerView addSubview:tableView];
+	[containerView addSubview:mapView];
+	
 	// Start the location manager.
 	[[self locationManager] startUpdatingLocation];
 	// TODO: Start a spinner to say that we are updating location
@@ -59,6 +62,17 @@
 	self.locationManager = nil;
 }
 
+- (IBAction)listOrMapChanged:(id)sender
+{
+	if ([sender selectedSegmentIndex] == 0) {
+		tableView.hidden = NO;
+		mapView.hidden = YES;
+	}
+	else {
+		tableView.hidden = YES;
+		mapView.hidden = NO;
+	}
+}
 
 #pragma mark -
 #pragma mark Table view data source methods
