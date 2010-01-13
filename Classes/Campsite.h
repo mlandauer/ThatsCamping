@@ -28,4 +28,17 @@
 - (NSNumber *) distanceFrom:(CLLocation *)location;
 - (NSNumber *) bearingFrom:(CLLocation *)location;
 
+// Convenience methods around Core Data
+- (BOOL) hasFlushToilets;
+- (BOOL) hasNonFlushToilets;
+- (BOOL) hasToilets;
+- (BOOL) hasWoodBarbecuesFirewoodSupplied;
+- (BOOL) hasWoodBarbecuesBringYourOwn;
+- (BOOL) hasWoodBarbecues;
+- (BOOL) hasGasElectricBarbecues;
+- (BOOL) hasBarbecues;
+- (BOOL) hasHotShowers;
+- (BOOL) hasColdShowers;
+- (BOOL) hasShowers;
+
 @end

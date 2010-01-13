@@ -69,7 +69,7 @@
 	else if (section == 1)
 		return 1;
 	else if (section == 2)
-		return 5;
+		return 2;
 	else if (section == 3)
 		return 3;
 	// Doing this to avoid compiler warning
@@ -132,27 +132,70 @@
 		cell.textLabel.text = @"Directions to campsite";
 	}
 	else if (indexPath.section == 2) {
+		// Split the facilities into two list: those that this campsite has and those it doesn't.
+		NSMutableArray *present = [NSMutableArray arrayWithCapacity:3];
+		NSMutableArray *notPresent = [NSMutableArray arrayWithCapacity:3];
+		if ([currentCampsite hasFlushToilets]) {
+			[present addObject:@"flush toilets"];
+		}
+		else if ([currentCampsite hasNonFlushToilets]) {
+			[present addObject:@"non-flush toilets"];
+		}
+		else if (![currentCampsite hasToilets]) {
+			[notPresent addObject:@"toilets"];
+		}
+		else {
+			assert(false);
+		}
+		if ([[currentCampsite picnicTables] boolValue]) {
+			[present addObject:@"picnic tables"];
+		}
+		else {
+			[notPresent addObject:@"picnic tables"];
+		}
+		// TODO: show whether you need to bring your own firewood elsewhere
+		// Like "You will need to bring firewood (if you want to use the wood BBQs) and drinking water"
+		if ([currentCampsite hasWoodBarbecues]) {
+			[present addObject:@"wood BBQs"];
+		}
+		else if	([currentCampsite hasGasElectricBarbecues]) {
+			[present addObject:@"gas/electric BBQs"];
+		}
+		else if (![currentCampsite hasBarbecues]) {
+			[notPresent addObject:@"BBQs"];
+		}
+		else {
+			assert(false);
+		}
+		if ([currentCampsite hasHotShowers]) {
+			[present addObject:@"hot showers"];
+		}
+		else if ([currentCampsite hasColdShowers]) {
+			[present addObject:@"cold showers"];
+		}
+		else if (![currentCampsite hasShowers]) {
+			[notPresent addObject:@"showers"];
+		}
+		else {
+			assert(false);
+		}
+		if ([[currentCampsite drinkingWater] boolValue]) {
+			[present addObject:@"drinking water"];
+		}
+		else {
+			[notPresent addObject:@"drinking water"];
+		}
+		
 		switch (indexPath.row) {
 			case 0:
-				cell.textLabel.text = @"Toilets";
-				cell.detailTextLabel.text = [currentCampsite toilets];
+				cell.textLabel.text = @"Has:";
+				cell.detailTextLabel.text = [present componentsJoinedByString:@", "];
 				break;
 			case 1:
-				cell.textLabel.text = @"Picnic Tables";
-				cell.detailTextLabel.text = [self boolNumberAsText:[currentCampsite picnicTables]];
+				cell.textLabel.text = @"Doesn't have:";
+				cell.detailTextLabel.text = [notPresent componentsJoinedByString:@", "];
 				break;
-			case 2:
-				cell.textLabel.text = @"Barbecues";
-				cell.detailTextLabel.text = [currentCampsite barbecues];
-				break;
-			case 3:
-				cell.textLabel.text = @"Showers";
-				cell.detailTextLabel.text = [currentCampsite showers];
-				break;
-			case 4:
-				cell.textLabel.text = @"Drinking Water";
-				cell.detailTextLabel.text = [self boolNumberAsText:[currentCampsite drinkingWater]];
-				break;
+
 		}
 	}
 	else if (indexPath.section == 3) {
