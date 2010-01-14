@@ -12,6 +12,8 @@
 	UIView *containerView;
 	UITableView *tableView;
 	MKMapView *mapView;
+	
+	UIActivityIndicatorView *activityIndicatorView;
 }
 
 @property (nonatomic, retain) NSMutableArray *campsitesArray;
@@ -20,6 +22,7 @@
 @property (nonatomic, retain) IBOutlet UIView *containerView;
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 @property (nonatomic, retain) IBOutlet MKMapView *mapView;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 
 - (NSString *)distanceInWords:(double)distance;
 - (NSString *)bearingInWords:(float)bearing;

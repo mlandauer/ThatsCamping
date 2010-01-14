@@ -39,7 +39,7 @@
 	
 	// Start the location manager.
 	[[self locationManager] startUpdatingLocation];
-	// TODO: Start a spinner to say that we are updating location
+	[activityIndicatorView startAnimating];
 
 	// Fetch the campsites in order of distance (but only for those with distance set)
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
@@ -205,6 +205,8 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
 	
+	[activityIndicatorView stopAnimating];
+
 	// If we are running on the simulator provide a fixed location
 	#if TARGET_IPHONE_SIMULATOR
 	newLocation = [[CLLocation alloc] initWithLatitude:-33.772609 longitude:150.624263];
