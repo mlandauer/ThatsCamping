@@ -166,7 +166,10 @@
 	indexes[0] = 0;
 	indexes[1] = [campsitesArray indexOfObject:campsite];
 	NSIndexPath *indexPath = [NSIndexPath indexPathWithIndexes:indexes length:2];
-	[tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionMiddle];
+
+	if (![[tableView indexPathForSelectedRow] isEqual:indexPath]) {
+		[tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionMiddle];
+	}
 }
 
 - (UITableViewCell *)tableView:(UITableView *)thisTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -214,8 +217,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+	Campsite *campsite = [campsitesArray objectAtIndex:indexPath.row];
+	// If this campsite is not currently selected on the map
+	if (((Campsite *) [[mapView selectedAnnotations] objectAtIndex:0]) != campsite) {
+		// Center the map on the campsite and select it
+		mapView.centerCoordinate = campsite.coordinate;
+		[mapView selectAnnotation:campsite animated:NO];
+	}
+	
 	CampsiteViewController *campsiteController = [[CampsiteViewController alloc] initWithNibName:@"CampsiteViewController" bundle:nil];
-    campsiteController.campsite = [campsitesArray objectAtIndex:indexPath.row];
+	campsiteController.campsite = campsite;
 	campsiteController.parkClickable = YES;
 	// Really ugly telling the next controller the location like this
 	// TODO: Fix this silly!
