@@ -3,7 +3,7 @@
 
 @implementation CampsiteViewController
 
-@synthesize campsite, parkClickable, locationManager;
+@synthesize campsite, parkClickable, locationManager, tableView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -67,10 +67,8 @@
 	if (section == 0)
 		return 2;
 	else if (section == 1)
-		return 1;
-	else if (section == 2)
 		return 2;
-	else if (section == 3)
+	else if (section == 2)
 		return 3;
 	// Doing this to avoid compiler warning
 	return 0;
@@ -78,10 +76,10 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-	if (section == 2) {
+	if (section == 1) {
 		return @"Facilities";
 	}
-	else if (section == 3) {
+	else if (section == 2) {
 		return @"Access";
 	}
 	else {
@@ -101,13 +99,13 @@
 }
 
 // Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    UITableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:@"Cell"];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"Cell"] autorelease];
     }
-    UITableViewCell *cellDefault = [tableView dequeueReusableCellWithIdentifier:@"CellDefault"];
+    UITableViewCell *cellDefault = [aTableView dequeueReusableCellWithIdentifier:@"CellDefault"];
     if (cellDefault == nil) {
         cellDefault = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellDefault"] autorelease];
     }
@@ -131,11 +129,6 @@
 		}
 	}
 	else if (indexPath.section == 1) {
-		cell = cellDefault;
-		cell.textLabel.text = @"Directions to campsite";
-		cell.textLabel.textAlignment = UITextAlignmentCenter;
-	}
-	else if (indexPath.section == 2) {
 		// Split the facilities into two list: those that this campsite has and those it doesn't.
 		NSMutableArray *present = [NSMutableArray arrayWithCapacity:3];
 		NSMutableArray *notPresent = [NSMutableArray arrayWithCapacity:3];
@@ -203,7 +196,7 @@
 		}
 		cell.detailTextLabel.numberOfLines = 2;
 	}
-	else if (indexPath.section == 3) {
+	else if (indexPath.section == 2) {
 		switch (indexPath.row) {
 			case 0:
 				cell.textLabel.text = @"Caravans";
@@ -223,6 +216,16 @@
     return cell;
 }
 
+- (IBAction) showDirections
+{
+	// Get the current location
+	CLLocationCoordinate2D coordinate = [locationManager location].coordinate;
+	NSString *urlString = [[NSString stringWithFormat:@"http://maps.google.com/maps?saddr=you+are+here@%f,%f&daddr=%@@%@,%@)",
+							coordinate.latitude, coordinate.longitude,
+							campsite.shortName, campsite.latitude, campsite.longitude]
+						   stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];		
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.section == 0 && indexPath.row == 1 && parkClickable) {
@@ -233,20 +236,11 @@
 		[self.navigationController pushViewController:parkViewController animated:YES];
 		[parkViewController release];
 	}
-	else if (indexPath.section == 1) {
-		// Get the current location
-		CLLocationCoordinate2D coordinate = [locationManager location].coordinate;
-		NSString *urlString = [[NSString stringWithFormat:@"http://maps.google.com/maps?saddr=you+are+here@%f,%f&daddr=%@@%@,%@)",
-								coordinate.latitude, coordinate.longitude,
-								campsite.shortName, campsite.latitude, campsite.longitude]
-							   stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
-		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];		
-	}
 }
 
-- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)aTableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
-	[self tableView:tableView didSelectRowAtIndexPath:indexPath];
+	[self tableView:aTableView didSelectRowAtIndexPath:indexPath];
 }
 
 /*
