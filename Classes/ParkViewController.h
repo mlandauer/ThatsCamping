@@ -5,11 +5,11 @@
 @interface ParkViewController : UITableViewController {
 	Park *currentPark;
 	NSArray *campsites;
-	CLLocationCoordinate2D currentCoordinate;
+	CLLocationManager *locationManager;
 }
 
 @property (nonatomic, retain) Park * currentPark;
 @property (nonatomic, retain) NSArray *campsites;
-@property CLLocationCoordinate2D currentCoordinate;
+@property (nonatomic, retain) CLLocationManager *locationManager;
 
 @end

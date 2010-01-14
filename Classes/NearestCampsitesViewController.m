@@ -193,7 +193,7 @@
 	campsiteController.parkClickable = YES;
 	// Really ugly telling the next controller the location like this
 	// TODO: Fix this silly!
-	campsiteController.currentCoordinate = [[locationManager location] coordinate];
+	campsiteController.locationManager = locationManager;
     [[self navigationController] pushViewController:campsiteController animated:YES];
     [campsiteController release];	
 }
@@ -205,7 +205,7 @@
 	campsiteController.parkClickable = YES;
 	// Really ugly telling the next controller the location like this
 	// TODO: Fix this silly!
-	campsiteController.currentCoordinate = [[locationManager location] coordinate];
+	campsiteController.locationManager = locationManager;
     [[self navigationController] pushViewController:campsiteController animated:YES];
     [campsiteController release];
 }

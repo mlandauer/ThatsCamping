@@ -5,11 +5,11 @@
 	// The current campsite that is being displayed by this controller
 	Campsite *campsite;
 	BOOL parkClickable;
-	CLLocationCoordinate2D currentCoordinate;
+	CLLocationManager *locationManager;
 }
 
 @property (nonatomic, retain) Campsite * campsite;
 @property BOOL parkClickable;
-@property CLLocationCoordinate2D currentCoordinate;
+@property (nonatomic, retain) CLLocationManager *locationManager;
 
 @end

@@ -3,7 +3,7 @@
 
 @implementation ParkViewController
 
-@synthesize currentPark, campsites, currentCoordinate;
+@synthesize currentPark, campsites, locationManager;
 
 /*
 - (id)initWithStyle:(UITableViewStyle)style {
@@ -110,7 +110,7 @@
 	CampsiteViewController *campsiteViewController = [[CampsiteViewController alloc] initWithNibName:@"CampsiteViewController" bundle:nil];
 	campsiteViewController.campsite = [campsites objectAtIndex:indexPath.row];
 	// TODO: Get rid of this passing coordinates around nonsense
-	campsiteViewController.currentCoordinate = currentCoordinate;
+	campsiteViewController.locationManager = locationManager;
 	[self.navigationController pushViewController:campsiteViewController animated:YES];
 	[campsiteViewController release];
 }

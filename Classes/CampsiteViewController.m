@@ -3,7 +3,7 @@
 
 @implementation CampsiteViewController
 
-@synthesize campsite, parkClickable, currentCoordinate;
+@synthesize campsite, parkClickable, locationManager;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -226,14 +226,15 @@
 		ParkViewController *parkViewController = [[ParkViewController alloc] initWithNibName:@"ParkViewController" bundle:nil];
 		parkViewController.currentPark = [campsite park];
 		// TODO: Fix (get rid of) this location passing around nonsense
-		parkViewController.currentCoordinate = currentCoordinate;
+		parkViewController.locationManager = locationManager;
 		[self.navigationController pushViewController:parkViewController animated:YES];
 		[parkViewController release];
 	}
 	else if (indexPath.section == 1) {
 		// Get the current location
+		CLLocationCoordinate2D coordinate = [locationManager location].coordinate;
 		NSString *urlString = [[NSString stringWithFormat:@"http://maps.google.com/maps?saddr=you+are+here@%f,%f&daddr=%@@%@,%@)",
-								currentCoordinate.latitude, currentCoordinate.longitude,
+								coordinate.latitude, coordinate.longitude,
 								campsite.shortName, campsite.latitude, campsite.longitude]
 							   stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
 		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];		
