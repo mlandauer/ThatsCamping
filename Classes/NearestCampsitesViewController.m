@@ -287,7 +287,7 @@
 	}
 	
 	locationManager = [[CLLocationManager alloc] init];
-	[locationManager setDesiredAccuracy:kCLLocationAccuracyNearestTenMeters];
+	[locationManager setDesiredAccuracy:kCLLocationAccuracyHundredMeters];
 	[locationManager setDelegate:self];
 	
 	return locationManager;
