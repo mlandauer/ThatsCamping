@@ -191,6 +191,9 @@
 	CampsiteViewController *campsiteController = [[CampsiteViewController alloc] initWithNibName:@"CampsiteViewController" bundle:nil];
     campsiteController.campsite = view.annotation;
 	campsiteController.parkClickable = YES;
+	// Really ugly telling the next controller the location like this
+	// TODO: Fix this silly!
+	campsiteController.currentCoordinate = [[locationManager location] coordinate];
     [[self navigationController] pushViewController:campsiteController animated:YES];
     [campsiteController release];	
 }
@@ -200,6 +203,9 @@
 	CampsiteViewController *campsiteController = [[CampsiteViewController alloc] initWithNibName:@"CampsiteViewController" bundle:nil];
     campsiteController.campsite = [campsitesArray objectAtIndex:indexPath.row];
 	campsiteController.parkClickable = YES;
+	// Really ugly telling the next controller the location like this
+	// TODO: Fix this silly!
+	campsiteController.currentCoordinate = [[locationManager location] coordinate];
     [[self navigationController] pushViewController:campsiteController animated:YES];
     [campsiteController release];
 }
