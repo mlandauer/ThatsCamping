@@ -5,6 +5,7 @@
 #import "Campsite.h"
 #import "Park.h"
 #import "CampsiteViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation NearestCampsitesViewController
 
@@ -76,14 +77,19 @@
 
 - (IBAction)listOrMapChanged:(id)sender
 {
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationDuration:0.75];
 	if ([sender selectedSegmentIndex] == 0) {
 		tableView.hidden = NO;
 		mapView.hidden = YES;
+		[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:containerView cache:TRUE];
 	}
 	else {
 		tableView.hidden = YES;
 		mapView.hidden = NO;
+		[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:containerView cache:TRUE];
 	}
+	[UIView commitAnimations];
 }
 
 #pragma mark -
