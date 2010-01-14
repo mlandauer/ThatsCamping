@@ -124,15 +124,17 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)thisMapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
+	// If this is the current location view then don't change it from the default
+	if (annotation == thisMapView.userLocation) {
+		return nil;
+	}
+
 	static NSString *identifier = @"Annotation";
 	MKAnnotationView *view = [thisMapView dequeueReusableAnnotationViewWithIdentifier:identifier];
 	if (view == nil) {
 		view = [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier] autorelease];
 	}
-	// We don't want a chevron on the user's location
-	if (annotation != thisMapView.userLocation) {
-		view.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-	}
+	view.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
 	view.canShowCallout = YES;
 	return view;
 }
