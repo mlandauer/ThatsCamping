@@ -24,6 +24,16 @@
 	
 	//self.tableView.allowsSelection = NO;
 	mapView.hidden = YES;
+	// Make the default map view show approximately one degree of latitude and longitude (approx 100km)
+	MKCoordinateSpan span;
+	span.latitudeDelta = 1.0;
+	span.longitudeDelta = 1.0;
+	CLLocationCoordinate2D center;
+	center = mapView.region.center;
+	MKCoordinateRegion region;
+	region.span = span;
+	region.center = center;
+	mapView.region = region;
     [containerView addSubview:tableView];
 	[containerView addSubview:mapView];
 	
@@ -200,6 +210,9 @@
 	newLocation = [[CLLocation alloc] initWithLatitude:-33.772609 longitude:150.624263];
 	#endif
 
+	// Set the centre of the map to the current location
+	[mapView setCenterCoordinate:newLocation.coordinate animated:YES];
+	
 	// Now fetch the data from the store
 	
 	/*
