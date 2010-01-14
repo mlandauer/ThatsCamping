@@ -6,6 +6,7 @@
 #import "Park.h"
 #import "CampsiteViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "MyAnnotationView.h"
 
 @implementation NearestCampsitesViewController
 
@@ -146,13 +147,26 @@
 	}
 
 	static NSString *identifier = @"Annotation";
-	MKAnnotationView *view = [thisMapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+	MyAnnotationView *view = (MyAnnotationView *) [thisMapView dequeueReusableAnnotationViewWithIdentifier:identifier];
 	if (view == nil) {
-		view = [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier] autorelease];
+		view = [[[MyAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier] autorelease];
 	}
 	view.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
 	view.canShowCallout = YES;
+	view.delegate = self;
 	return view;
+}
+
+// This is called from MyAnnotationView when a user clicks on a pin on the map
+- (void) annotationSelected:(id <MKAnnotation>)annotation
+{
+	Campsite *campsite = (Campsite *) annotation;
+	// TODO: There must be a more concise way of doing this
+	NSUInteger indexes[2];
+	indexes[0] = 0;
+	indexes[1] = [campsitesArray indexOfObject:campsite];
+	NSIndexPath *indexPath = [NSIndexPath indexPathWithIndexes:indexes length:2];
+	[tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionMiddle];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)thisTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

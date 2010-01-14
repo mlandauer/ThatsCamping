@@ -28,5 +28,6 @@
 - (NSString *)bearingInWords:(float)bearing;
 
 - (IBAction)listOrMapChanged:(id)sender;
+- (void) annotationSelected:(id <MKAnnotation>)annotation;
 
 @end
