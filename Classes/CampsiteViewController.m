@@ -103,11 +103,13 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"Cell"] autorelease];
+    }
+    UITableViewCell *cellDefault = [tableView dequeueReusableCellWithIdentifier:@"CellDefault"];
+    if (cellDefault == nil) {
+        cellDefault = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellDefault"] autorelease];
     }
 	
 	// These are the defaults unless overridden below
@@ -115,14 +117,13 @@
 	cell.detailTextLabel.numberOfLines = 1;
 	
 	if (indexPath.section == 0) {
+		cell = cellDefault;
 		switch (indexPath.row) {
 			case 0:
-				cell.textLabel.text = @"Name";
-				cell.detailTextLabel.text = [campsite longName];
+				cell.textLabel.text = [campsite longName];
 				break;
 			case 1:
-				cell.textLabel.text = @"Park";
-				cell.detailTextLabel.text = [[campsite park] longName];
+				cell.textLabel.text = [[campsite park] longName];
 				if (parkClickable) {
 					cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 				}
@@ -130,7 +131,9 @@
 		}
 	}
 	else if (indexPath.section == 1) {
+		cell = cellDefault;
 		cell.textLabel.text = @"Directions to campsite";
+		cell.textLabel.textAlignment = UITextAlignmentCenter;
 	}
 	else if (indexPath.section == 2) {
 		// Split the facilities into two list: those that this campsite has and those it doesn't.
