@@ -25,6 +25,10 @@
     self.title = @"Campsites near you";
 	
 	//self.tableView.allowsSelection = NO;
+	// Create the map view
+	self.mapView = [[MKMapView alloc] initWithFrame:containerView.frame];
+	self.mapView.delegate = self;
+	
 	mapView.hidden = YES;
 	// Make the default map view show approximately one degree of latitude and longitude (approx 100km)
 	MKCoordinateSpan span;
@@ -68,7 +72,6 @@
 	
 	[mapView addAnnotations:mutableFetchResults];
 }
-
 
 - (void)viewDidUnload {
 	// Release any properties that are loaded in viewDidLoad or can be recreated lazily.
