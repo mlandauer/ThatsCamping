@@ -9,6 +9,10 @@
     [super viewDidLoad];
 	self.title = [campsite shortName];
 
+	// If this campsite doesn't have any location data then disable the "directions to campsite" button
+	if (campsite.latitude == nil || campsite.longitude == nil) {
+		directionsButton.enabled = NO;
+	}
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }

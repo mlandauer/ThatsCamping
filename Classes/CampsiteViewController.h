@@ -7,12 +7,14 @@
 	BOOL parkClickable;
 	CLLocationManager *locationManager;
 	UITableView *tableView;
+	UIBarButtonItem *directionsButton;
 }
 
 @property (nonatomic, retain) Campsite * campsite;
 @property BOOL parkClickable;
 @property (nonatomic, retain) CLLocationManager *locationManager;
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *directionsButton;
 
 - (IBAction) showDirections;
 
