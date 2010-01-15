@@ -32,6 +32,8 @@
 		6C93D3B610FF7FF100FEF933 /* MyAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93D3B510FF7FF100FEF933 /* MyAnnotationView.m */; };
 		6C93D4A410FFEABE00FEF933 /* bg-screen-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C93D4A310FFEABE00FEF933 /* bg-screen-iphone.png */; };
 		6CCB21A91100501900352E20 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CCB21A81100501900352E20 /* Entitlements.plist */; };
+		6CCB21BF110053F600352E20 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 6CCB21BD110053F600352E20 /* iTunesArtwork */; };
+		6CCB21C0110053F600352E20 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CCB21BE110053F600352E20 /* Icon-Small.png */; };
 		6CE40C2B10FD6D7F00023412 /* create_db.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1210FD6D7F00023412 /* create_db.rb */; };
 		6CE40C3110FD6D7F00023412 /* geocode.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1910FD6D7F00023412 /* geocode.rb */; };
 		6CE40C3210FD6D7F00023412 /* campsite.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1B10FD6D7F00023412 /* campsite.rb */; };
@@ -85,6 +87,8 @@
 		6C93D3B510FF7FF100FEF933 /* MyAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotationView.m; sourceTree = "<group>"; };
 		6C93D4A310FFEABE00FEF933 /* bg-screen-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-screen-iphone.png"; sourceTree = "<group>"; };
 		6CCB21A81100501900352E20 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		6CCB21BD110053F600352E20 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		6CCB21BE110053F600352E20 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		6CE40C1210FD6D7F00023412 /* create_db.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = create_db.rb; path = scraper/create_db.rb; sourceTree = "<group>"; };
 		6CE40C1910FD6D7F00023412 /* geocode.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = geocode.rb; path = scraper/geocode.rb; sourceTree = "<group>"; };
 		6CE40C1B10FD6D7F00023412 /* campsite.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = campsite.rb; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 				6CCB21A81100501900352E20 /* Entitlements.plist */,
 				6C93D4A310FFEABE00FEF933 /* bg-screen-iphone.png */,
 				6C38661810F5646E001E8154 /* Icon.png */,
+				6CCB21BD110053F600352E20 /* iTunesArtwork */,
+				6CCB21BE110053F600352E20 /* Icon-Small.png */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				6C6F9D8F10FB1E14008CB360 /* CampsiteViewController.xib */,
 				6C6F9E1010FC01BB008CB360 /* ParkViewController.xib */,
@@ -311,6 +317,8 @@
 				6C93D15F10FE3AF400FEF933 /* NearestCampsitesViewController.xib in Resources */,
 				6C93D4A410FFEABE00FEF933 /* bg-screen-iphone.png in Resources */,
 				6CCB21A91100501900352E20 /* Entitlements.plist in Resources */,
+				6CCB21BF110053F600352E20 /* iTunesArtwork in Resources */,
+				6CCB21C0110053F600352E20 /* Icon-Small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
