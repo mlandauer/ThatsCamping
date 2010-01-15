@@ -3,7 +3,7 @@
 
 @implementation CampsiteViewController
 
-@synthesize campsite, parkClickable, locationManager, tableView;
+@synthesize campsite, parkClickable, locationManager, tableView, directionsButton;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
