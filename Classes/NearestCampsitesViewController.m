@@ -300,11 +300,11 @@
 		// Handle the error.
 	}
 	
-	// Loop through the campsites and calculate the distance and bearing from our current location
-	for (int i=0; i < [mutableFetchResults count]; i++) {
-		Campsite *campsite = [mutableFetchResults objectAtIndex:i];
-		campsite.distance = [campsite distanceFrom:newLocation];
-		campsite.bearing = [campsite bearingFrom:newLocation];
+	NSEnumerator *enumerator = [mutableFetchResults objectEnumerator];
+	id campsite;
+	while ((campsite = [enumerator nextObject])) {
+		[campsite setDistance:[campsite distanceFrom:newLocation]];
+		[campsite setBearing:[campsite bearingFrom:newLocation]];
 	}
 	
 	// Commit the change.
