@@ -25,23 +25,7 @@
     self.title = @"Campsites near you";
 	
 	//self.tableView.allowsSelection = NO;
-	// Create the map view
-	self.mapView = [[MKMapView alloc] initWithFrame:containerView.frame];
-	self.mapView.delegate = self;
-	
-	mapView.hidden = YES;
-	// Make the default map view show approximately one degree of latitude and longitude (approx 100km)
-	MKCoordinateSpan span;
-	span.latitudeDelta = 1.0;
-	span.longitudeDelta = 1.0;
-	CLLocationCoordinate2D center;
-	center = mapView.region.center;
-	MKCoordinateRegion region;
-	region.span = span;
-	region.center = center;
-	mapView.region = region;
     [containerView addSubview:tableView];
-	[containerView addSubview:mapView];
 	
 	// Start the location manager.
 	[[self locationManager] startUpdatingLocation];
@@ -68,9 +52,47 @@
 		// Handle the error.
 	}	
 
-	[self setCampsitesArray:mutableFetchResults];
-	
-	[mapView addAnnotations:mutableFetchResults];
+	[self setCampsitesArray:mutableFetchResults];	
+}
+
+// Returns the map view. Only created when it's needed as it takes up a lot of CPU cycles updating
+- (MKMapView *)mapView
+{
+	if (mapView == nil) {
+		// Create the map view
+		mapView = [[MKMapView alloc] initWithFrame:containerView.frame];
+		mapView.delegate = self;
+		
+		// Make the default map view show approximately one degree of latitude and longitude (approx 100km)
+		MKCoordinateSpan span;
+		span.latitudeDelta = 1.0;
+		span.longitudeDelta = 1.0;
+		MKCoordinateRegion region;
+		region.span = span;
+		region.center = [locationManager location].coordinate;;
+		mapView.region = region;
+		
+		// Fetch all the campsites that have geo data attached
+		NSFetchRequest *request = [[NSFetchRequest alloc] init];
+		NSEntityDescription *entity = [NSEntityDescription entityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
+		[request setEntity:entity];
+		
+		NSPredicate *predicate = [NSPredicate predicateWithFormat:@"latitude != NULL && longitude != NULL"];
+		[request setPredicate:predicate];
+		
+		NSError *error = nil;
+		NSArray *fetchResults = [managedObjectContext executeFetchRequest:request error:&error];
+		if (fetchResults == nil) {
+			// Handle the error.
+		}
+		// Add the campsites to the map
+		[mapView addAnnotations:fetchResults];
+
+		// And finally... add it to the containerView (but hidden)
+		mapView.hidden = YES;
+		[containerView addSubview:mapView];
+	}
+	return mapView;
 }
 
 - (void)viewDidUnload {
@@ -85,12 +107,12 @@
 	[UIView setAnimationDuration:0.75];
 	if ([sender selectedSegmentIndex] == 0) {
 		tableView.hidden = NO;
-		mapView.hidden = YES;
+		self.mapView.hidden = YES;
 		[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:containerView cache:TRUE];
 	}
 	else {
 		tableView.hidden = YES;
-		mapView.hidden = NO;
+		self.mapView.hidden = NO;
 		[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:containerView cache:TRUE];
 	}
 	[UIView commitAnimations];
@@ -222,7 +244,7 @@
 {
 	Campsite *campsite = [campsitesArray objectAtIndex:indexPath.row];
 	// If this campsite is not currently selected on the map
-	if (((Campsite *) [[mapView selectedAnnotations] objectAtIndex:0]) != campsite) {
+	if (mapView != nil && ((Campsite *) [[mapView selectedAnnotations] objectAtIndex:0]) != campsite) {
 		// Center the map on the campsite and select it
 		mapView.centerCoordinate = campsite.coordinate;
 		[mapView selectAnnotation:campsite animated:NO];
@@ -253,7 +275,9 @@
 	#endif
 
 	// Set the centre of the map to the current location
-	[mapView setCenterCoordinate:newLocation.coordinate animated:YES];
+	if (mapView != nil) {
+		[mapView setCenterCoordinate:newLocation.coordinate animated:YES];
+	}
 	
 	// Now fetch the data from the store
 	

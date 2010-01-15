@@ -21,7 +21,7 @@
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) IBOutlet UIView *containerView;
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
-@property (nonatomic, retain) IBOutlet MKMapView *mapView;
+@property (nonatomic, retain) MKMapView *mapView;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 
 - (NSString *)distanceInWords:(double)distance;
@@ -29,5 +29,6 @@
 
 - (IBAction)listOrMapChanged:(id)sender;
 - (void) annotationSelected:(id <MKAnnotation>)annotation;
+- (MKMapView *)mapView;
 
 @end
