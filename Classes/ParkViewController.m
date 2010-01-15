@@ -20,8 +20,9 @@
 	self.title = [currentPark shortName];
 	
 	// Create an array out of the set of campsites returned from Core Data
-	// TODO: Sort these alphabetically
-	self.campsites = [[currentPark campsites] allObjects];
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"longName" ascending:YES];
+	self.campsites = [[[currentPark campsites] allObjects] sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+	[sortDescriptor release];
 	
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
