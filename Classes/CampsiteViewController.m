@@ -69,7 +69,7 @@
 	else if (section == 1)
 		return 2;
 	else if (section == 2)
-		return 3;
+		return 2;
 	// Doing this to avoid compiler warning
 	return 0;
 }
@@ -197,19 +197,39 @@
 		cell.detailTextLabel.numberOfLines = 2;
 	}
 	else if (indexPath.section == 2) {
+		NSMutableArray *access = [NSMutableArray arrayWithCapacity:3];
+		NSMutableArray *noAccess = [NSMutableArray arrayWithCapacity:3];
+		if ([campsite.caravans boolValue]) {
+			[access addObject:@"Caravans"];
+		}
+		else {
+			[noAccess addObject:@"Caravans"];
+		}
+		if ([campsite.trailers boolValue]) {
+			[access addObject:@"Trailers"];
+		}
+		else {
+			[noAccess addObject:@"Trailers"];
+		}
+		if ([campsite.car boolValue]) {
+			[access addObject:@"Car camping"];
+		}
+		else {
+			[noAccess addObject:@"Car camping"];
+		}
+		
 		switch (indexPath.row) {
 			case 0:
-				cell.textLabel.text = @"Caravans";
-				cell.detailTextLabel.text = [self boolNumberAsText:[campsite caravans]];
+				cell.textLabel.text = @"Suits";
+				cell.detailTextLabel.text = [access componentsJoinedByString:@", "];
+				cell.detailTextLabel.numberOfLines = 2;
 				break;
 			case 1:
-				cell.textLabel.text = @"Trailers";
-				cell.detailTextLabel.text = [self boolNumberAsText:[campsite trailers]];
+				cell.textLabel.text = @"But not";
+				cell.detailTextLabel.text = [noAccess componentsJoinedByString:@", "];
+				cell.detailTextLabel.numberOfLines = 2;
 				break;
-			case 2:
-				cell.textLabel.text = @"Car";
-				cell.detailTextLabel.text = [self boolNumberAsText:[campsite car]];
-				break;
+				
 		}
 	}
     
