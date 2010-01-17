@@ -30,5 +30,6 @@
 - (IBAction)listOrMapChanged:(id)sender;
 - (void) annotationSelected:(id <MKAnnotation>)annotation;
 - (MKMapView *)mapView;
+- (void)initialiseStore;
 
 @end
