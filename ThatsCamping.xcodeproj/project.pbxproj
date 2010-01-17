@@ -34,7 +34,7 @@
 		6CCB21A91100501900352E20 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CCB21A81100501900352E20 /* Entitlements.plist */; };
 		6CCB21BF110053F600352E20 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 6CCB21BD110053F600352E20 /* iTunesArtwork */; };
 		6CCB21C0110053F600352E20 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CCB21BE110053F600352E20 /* Icon-Small.png */; };
-		6CD35C19110307CC0063155E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CD35C18110307CC0063155E /* Default.png */; };
+		6CD35C48110311890063155E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CD35C47110311890063155E /* Default.png */; };
 		6CE40C2B10FD6D7F00023412 /* create_db.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1210FD6D7F00023412 /* create_db.rb */; };
 		6CE40C3110FD6D7F00023412 /* geocode.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1910FD6D7F00023412 /* geocode.rb */; };
 		6CE40C3210FD6D7F00023412 /* campsite.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1B10FD6D7F00023412 /* campsite.rb */; };
@@ -90,7 +90,7 @@
 		6CCB21A81100501900352E20 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		6CCB21BD110053F600352E20 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		6CCB21BE110053F600352E20 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
-		6CD35C18110307CC0063155E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6CD35C47110311890063155E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6CE40C1210FD6D7F00023412 /* create_db.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = create_db.rb; path = scraper/create_db.rb; sourceTree = "<group>"; };
 		6CE40C1910FD6D7F00023412 /* geocode.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = geocode.rb; path = scraper/geocode.rb; sourceTree = "<group>"; };
 		6CE40C1B10FD6D7F00023412 /* campsite.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = campsite.rb; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 				28A9E9320F43CA900016529B /* ThatsCamping.xcdatamodel */,
 				6C38667010F57C6C001E8154 /* Campsites.plist */,
 				6C93D15E10FE3AF400FEF933 /* NearestCampsitesViewController.xib */,
-				6CD35C18110307CC0063155E /* Default.png */,
+				6CD35C47110311890063155E /* Default.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -322,7 +322,7 @@
 				6CCB21A91100501900352E20 /* Entitlements.plist in Resources */,
 				6CCB21BF110053F600352E20 /* iTunesArtwork in Resources */,
 				6CCB21C0110053F600352E20 /* Icon-Small.png in Resources */,
-				6CD35C19110307CC0063155E /* Default.png in Resources */,
+				6CD35C48110311890063155E /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

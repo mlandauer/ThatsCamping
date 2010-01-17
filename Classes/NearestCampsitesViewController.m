@@ -22,7 +22,7 @@
     [super viewDidLoad];
 	
 	// Set the title.
-    self.title = @"Campsites near you";
+    self.title = @"Camping near you in NSW";
 	
 	//self.tableView.allowsSelection = NO;
     [containerView addSubview:tableView];
