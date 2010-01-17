@@ -17,5 +17,7 @@
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *directionsButton;
 
 - (IBAction) showDirections;
+- (NSArray *)facilitiesFields;
+- (NSArray *)accessFields;
 
 @end
