@@ -62,17 +62,20 @@
 #pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 4;
+    return 3;
 }
 
+int const NAMES_SECTION_INDEX = 0;
+int const FACILITIES_SECTION_INDEX = 1;
+int const ACCESS_SECTION_INDEX = 2;
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	if (section == 0)
+	if (section == NAMES_SECTION_INDEX)
 		return 2;
-	else if (section == 1)
+	else if (section == FACILITIES_SECTION_INDEX)
 		return [[self facilitiesFields] count];
-	else if (section == 2)
+	else if (section == ACCESS_SECTION_INDEX)
 		return [[self accessFields] count];
 	// Doing this to avoid compiler warning
 	return 0;
@@ -80,10 +83,10 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-	if (section == 1) {
+	if (section == FACILITIES_SECTION_INDEX) {
 		return @"Facilities";
 	}
-	else if (section == 2) {
+	else if (section == ACCESS_SECTION_INDEX) {
 		return @"Access";
 	}
 	else {
@@ -214,7 +217,7 @@
 	cell.accessoryType = UITableViewCellAccessoryNone;
 	cell.detailTextLabel.numberOfLines = 1;
 	
-	if (indexPath.section == 0) {
+	if (indexPath.section == NAMES_SECTION_INDEX) {
 		cell = cellDefault;
 		switch (indexPath.row) {
 			case 0:
@@ -228,35 +231,19 @@
 				break;
 		}
 	}
-	else if (indexPath.section == 1) {
-		NSDictionary *field = [[self facilitiesFields] objectAtIndex:indexPath.row];
-		cell.textLabel.text = [field objectForKey:@"textLabel"];
-		cell.detailTextLabel.text = [field objectForKey:@"detailTextLabel"];
-		cell.detailTextLabel.numberOfLines = 2;
-	}
-	else if (indexPath.section == 2) {
-		NSMutableArray *access = [NSMutableArray arrayWithCapacity:3];
-		NSMutableArray *noAccess = [NSMutableArray arrayWithCapacity:3];
-		if ([campsite.caravans boolValue]) {
-			[access addObject:@"Caravans"];
+	else {
+		NSArray *fields;
+		if (indexPath.section == FACILITIES_SECTION_INDEX) {
+			fields = [self facilitiesFields];
+		}
+		else if (indexPath.section == ACCESS_SECTION_INDEX) {
+			fields = [self accessFields];
 		}
 		else {
-			[noAccess addObject:@"Caravans"];
+			assert(false);
 		}
-		if ([campsite.trailers boolValue]) {
-			[access addObject:@"Trailers"];
-		}
-		else {
-			[noAccess addObject:@"Trailers"];
-		}
-		if ([campsite.car boolValue]) {
-			[access addObject:@"Car camping"];
-		}
-		else {
-			[noAccess addObject:@"Car camping"];
-		}
-		
-		NSDictionary *field = [[self accessFields] objectAtIndex:indexPath.row];
+
+		NSDictionary *field = [fields objectAtIndex:indexPath.row];
 		cell.textLabel.text = [field objectForKey:@"textLabel"];
 		cell.detailTextLabel.text = [field objectForKey:@"detailTextLabel"];
 		cell.detailTextLabel.numberOfLines = 2;

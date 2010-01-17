@@ -20,4 +20,8 @@
 - (NSArray *)facilitiesFields;
 - (NSArray *)accessFields;
 
+int const NAMES_SECTION_INDEX;
+int const FACILITIES_SECTION_INDEX;
+int const ACCESS_SECTION_INDEX;
+
 @end
