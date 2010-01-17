@@ -19,6 +19,7 @@
 - (IBAction) showDirections;
 - (NSArray *)facilitiesFields;
 - (NSArray *)accessFields;
+- (NSString *) textFromList:(NSArray *)list joinWord:(NSString *)joinWord;
 
 int const NAMES_SECTION_INDEX;
 int const FACILITIES_SECTION_INDEX;

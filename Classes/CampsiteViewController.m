@@ -163,11 +163,29 @@ int const ACCESS_SECTION_INDEX = 2;
 	}
 	
 	NSDictionary *presentDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"Has", @"textLabel",
-									[present componentsJoinedByString:@", "], @"detailTextLabel", nil];
+									[self textFromList:present joinWord:@"and"], @"detailTextLabel", nil];
 	NSDictionary *notPresentDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"But no", @"textLabel",
-									   [notPresent componentsJoinedByString:@", "], @"detailTextLabel", nil];
+									   [self textFromList:notPresent joinWord:@"and"], @"detailTextLabel", nil];
 	NSArray	*fields = [NSArray arrayWithObjects:presentDictionary, notPresentDictionary, nil];
 	return fields;
+}
+
+// Turn an array of @"Apples", @"Oranges", @"Bananas" into @"Apples, Oranges and Bananas"
+- (NSString *) textFromList:(NSArray *)list joinWord:(NSString *)joinWord
+{
+	if ([list count] > 1) {
+		// Join together all but the last item with commas
+		NSRange range;
+		range.location = 0;
+		range.length = [list count] - 1;
+		NSArray *first = [list subarrayWithRange:range];
+		NSString *firstString = [first componentsJoinedByString:@", "];
+		NSString *lastString = [list objectAtIndex:([list count] - 1)];
+		return [NSString stringWithFormat:@"%@ %@ %@", firstString, joinWord, lastString];
+	}
+	else {
+		return [list componentsJoinedByString:@", "];
+	}
 }
 
 - (NSArray *)accessFields
@@ -194,9 +212,9 @@ int const ACCESS_SECTION_INDEX = 2;
 	}
 
 	NSDictionary *accessDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"Suits", @"textLabel",
-									   [access componentsJoinedByString:@", "], @"detailTextLabel", nil];
+									   [self textFromList:access joinWord:@"or"], @"detailTextLabel", nil];
 	NSDictionary *noAccessDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"But not", @"textLabel",
-										  [noAccess componentsJoinedByString:@", "], @"detailTextLabel", nil];
+										  [self textFromList:noAccess joinWord:@"or"], @"detailTextLabel", nil];
 	NSArray	*fields = [NSArray arrayWithObjects:accessDictionary, noAccessDictionary, nil];
 	return fields;
 }
