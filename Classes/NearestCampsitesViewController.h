@@ -31,5 +31,6 @@
 - (void) annotationSelected:(id <MKAnnotation>)annotation;
 - (MKMapView *)mapView;
 - (void)initialiseStore;
+- (BOOL)isStoreInitialised;
 
 @end
