@@ -282,7 +282,7 @@ int const ACCESS_SECTION_INDEX = 2;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	if (indexPath.section == 0 && indexPath.row == 1 && parkClickable) {
+	if (indexPath.section == NAMES_SECTION_INDEX && indexPath.row == 1 && parkClickable) {
 		ParkViewController *parkViewController = [[ParkViewController alloc] initWithNibName:@"ParkViewController" bundle:nil];
 		parkViewController.currentPark = [campsite park];
 		// TODO: Fix (get rid of) this location passing around nonsense
