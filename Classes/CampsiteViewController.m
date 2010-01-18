@@ -234,6 +234,8 @@ int const ACCESS_SECTION_INDEX = 2;
 	// These are the defaults unless overridden below
 	cell.accessoryType = UITableViewCellAccessoryNone;
 	cell.detailTextLabel.numberOfLines = 1;
+	cell.selectionStyle = UITableViewCellSelectionStyleNone;
+	cellDefault.selectionStyle = UITableViewCellSelectionStyleNone;
 	
 	if (indexPath.section == NAMES_SECTION_INDEX) {
 		cell = cellDefault;
@@ -245,6 +247,7 @@ int const ACCESS_SECTION_INDEX = 2;
 				cell.textLabel.text = [[campsite park] longName];
 				if (parkClickable) {
 					cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+					cell.selectionStyle = UITableViewCellSelectionStyleBlue;
 				}
 				break;
 		}
