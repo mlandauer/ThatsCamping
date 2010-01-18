@@ -68,15 +68,6 @@
 		mapView = [[MKMapView alloc] initWithFrame:containerView.frame];
 		mapView.delegate = self;
 		
-		// Make the default map view show approximately one degree of latitude and longitude (approx 100km)
-		MKCoordinateSpan span;
-		span.latitudeDelta = 1.0;
-		span.longitudeDelta = 1.0;
-		MKCoordinateRegion region;
-		region.span = span;
-		region.center = [locationManager location].coordinate;;
-		mapView.region = region;
-		
 		// Fetch all the campsites that have geo data attached
 		NSFetchRequest *request = [[NSFetchRequest alloc] init];
 		NSEntityDescription *entity = [NSEntityDescription entityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
@@ -93,6 +84,26 @@
 		// Add the campsites to the map
 		[mapView addAnnotations:fetchResults];
 
+		// Make the default map view show approximately one degree of latitude and longitude (approx 100km)
+		MKCoordinateSpan span;
+		span.latitudeDelta = 1.0;
+		span.longitudeDelta = 1.0;
+		MKCoordinateRegion region;
+		region.span = span;
+		
+		NSIndexPath *selected = [tableView indexPathForSelectedRow];
+		if (selected == nil) {
+			// Use the current location as the centre of the map
+			region.center = [locationManager location].coordinate;;
+		}
+		else {
+			// Use the selected campsite as the centre of the map
+			Campsite *campsite = [campsitesArray objectAtIndex:selected.row];
+			region.center = campsite.coordinate;
+			// TODO: Should select the campsite on the map as well but I can't get this to work
+		}
+		mapView.region = region;
+		
 		// And finally... add it to the containerView (but hidden)
 		mapView.hidden = YES;
 		[containerView addSubview:mapView];
@@ -279,8 +290,8 @@
 	newLocation = [[CLLocation alloc] initWithLatitude:-33.772609 longitude:150.624263];
 	#endif
 
-	// Set the centre of the map to the current location
-	if (mapView != nil) {
+	// Set the centre of the map to the current location (but only if no campsite is selected)
+	if (mapView != nil && [tableView indexPathForSelectedRow] == nil) {
 		[mapView setCenterCoordinate:newLocation.coordinate animated:YES];
 	}
 	
