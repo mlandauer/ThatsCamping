@@ -33,6 +33,7 @@ ActiveRecord::Schema.define do
     t.column :road_access, :text
     t.column :fees, :text
     t.column :no_sites, :integer
+    t.column :description, :text
   end
 
   # Location data (can be sourced from multiple locations)
