@@ -34,3 +34,6 @@ def substitute_phrases_at_end(name, special_phrases)
   shorter.strip
 end
 
+def simplify_whitespace(str)
+  str.gsub(/[\n\t\r]/, " ").squeeze(" ").strip
+end
