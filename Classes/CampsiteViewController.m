@@ -193,22 +193,22 @@ int const ACCESS_SECTION_INDEX = 2;
 	NSMutableArray *access = [NSMutableArray arrayWithCapacity:3];
 	NSMutableArray *noAccess = [NSMutableArray arrayWithCapacity:3];
 	if ([campsite.caravans boolValue]) {
-		[access addObject:@"Caravans"];
+		[access addObject:@"caravans"];
 	}
 	else {
-		[noAccess addObject:@"Caravans"];
+		[noAccess addObject:@"caravans"];
 	}
 	if ([campsite.trailers boolValue]) {
-		[access addObject:@"Trailers"];
+		[access addObject:@"trailers"];
 	}
 	else {
-		[noAccess addObject:@"Trailers"];
+		[noAccess addObject:@"trailers"];
 	}
 	if ([campsite.car boolValue]) {
-		[access addObject:@"Car camping"];
+		[access addObject:@"car camping"];
 	}
 	else {
-		[noAccess addObject:@"Car camping"];
+		[noAccess addObject:@"car camping"];
 	}
 
 	NSDictionary *accessDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"Suits", @"textLabel",
