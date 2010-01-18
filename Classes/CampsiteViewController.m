@@ -164,9 +164,21 @@ int const ACCESS_SECTION_INDEX = 2;
 	
 	NSDictionary *presentDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"Has", @"textLabel",
 									[self textFromList:present joinWord:@"and"], @"detailTextLabel", nil];
-	NSDictionary *notPresentDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"But no", @"textLabel",
-									   [self textFromList:notPresent joinWord:@"and"], @"detailTextLabel", nil];
-	NSArray	*fields = [NSArray arrayWithObjects:presentDictionary, notPresentDictionary, nil];
+	NSMutableDictionary *notPresentDictionary = [NSMutableDictionary dictionaryWithObject:
+												 [self textFromList:notPresent joinWord:@"and"] forKey:@"detailTextLabel"];
+	NSArray	*fields;
+	
+	if ([present count] == 0) {
+		[notPresentDictionary setObject:@"No" forKey:@"textLabel"];
+		fields = [NSArray arrayWithObject:notPresentDictionary];
+	}
+	else if ([notPresent count] == 0) {
+		fields = [NSArray arrayWithObject:presentDictionary];
+	}
+	else {
+		[notPresentDictionary setObject:@"But no" forKey:@"textLabel"];
+		fields = [NSArray arrayWithObjects:presentDictionary, notPresentDictionary, nil];
+	}
 	return fields;
 }
 
@@ -211,11 +223,24 @@ int const ACCESS_SECTION_INDEX = 2;
 		[noAccess addObject:@"car camping"];
 	}
 
-	NSDictionary *accessDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"Suits", @"textLabel",
-									   [self textFromList:access joinWord:@"or"], @"detailTextLabel", nil];
-	NSDictionary *noAccessDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"But not", @"textLabel",
-										  [self textFromList:noAccess joinWord:@"or"], @"detailTextLabel", nil];
-	NSArray	*fields = [NSArray arrayWithObjects:accessDictionary, noAccessDictionary, nil];
+	NSArray	*fields;
+	NSDictionary *accessDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"For", @"textLabel",
+										[self textFromList:access joinWord:@"and"], @"detailTextLabel", nil];
+	NSMutableDictionary *noAccessDictionary = [NSMutableDictionary dictionaryWithObject:[self textFromList:noAccess joinWord:@"and"]
+																		  forKey:@"detailTextLabel"];
+	// Have some special handling when some of the fields are blank
+	if ([access count] == 0) {
+		[noAccessDictionary setObject:@"Not for" forKey:@"textLabel"];
+		fields = [NSArray arrayWithObject:noAccessDictionary];
+	}
+	else if ([noAccess count] == 0) {
+		fields = [NSArray arrayWithObject:accessDictionary];
+	}
+	else {
+		[noAccessDictionary setObject:@"But not for" forKey:@"textLabel"];
+		fields = [NSArray arrayWithObjects:accessDictionary, noAccessDictionary, nil];
+	}
+	
 	return fields;
 }
 
@@ -236,6 +261,8 @@ int const ACCESS_SECTION_INDEX = 2;
 	cell.detailTextLabel.numberOfLines = 1;
 	cell.selectionStyle = UITableViewCellSelectionStyleNone;
 	cellDefault.selectionStyle = UITableViewCellSelectionStyleNone;
+	cell.textLabel.numberOfLines = 1;
+	cellDefault.textLabel.numberOfLines = 1;
 	
 	if (indexPath.section == NAMES_SECTION_INDEX) {
 		cell = cellDefault;
@@ -268,6 +295,7 @@ int const ACCESS_SECTION_INDEX = 2;
 		cell.textLabel.text = [field objectForKey:@"textLabel"];
 		cell.detailTextLabel.text = [field objectForKey:@"detailTextLabel"];
 		cell.detailTextLabel.numberOfLines = 2;
+		cell.textLabel.numberOfLines = 2;
 	}
     
     return cell;
