@@ -31,6 +31,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;Explore the &quot;cradle of conservation&quot;, the Blue Gum Forest. Enjoy birdwatching, long walks and plenty of photogenic flora.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -57,6 +59,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;An historic timber slab hut that was occupied until the 1980s. Today it provides shelter and very basic facilities for bushwalkers and visitors. Camping on the grounds of the hut is also permitted.&lt;/p&gt; &lt;p&gt;Nunnock Swamp walking trail is nearby and there are opportunities for bird-watching and seeing wildflowers. It's an important site for early European cultural heritage. &lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -83,6 +87,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This informal bushland setting, separated from the picnic area, gives easy access to Apsley Gorge Rim Walk and Oxley Walk.&lt;/p&gt; &lt;div id=&quot;deccAppUcUc1_ParkVISError&quot;&gt;&lt;/div&gt; &lt;div id=&quot;deccAppUcUc1_SQL_References&quot;&gt;&lt;/div&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -113,6 +119,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;From this campground you can take a short walk to the Mimosa Rocks volcanic rock formation, Aragunnu Beach and some good fishing spots. &lt;br&gt;&lt;br&gt; Extra information about camping at this campground: in some areas you can park your car on your campsite, but in others you can only park beside your site. You'll need to bring your own drinking water. Maximum length of stay: two weeks during school holiday periods; four weeks at other times.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -143,6 +151,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;From here, you can walk to Bald Rock summit, Little Bald Rock, or north to a viewing area beside the Queensland border.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -169,6 +179,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;Balor Hut is the last remaining walkers hut in the Warrumbungle National Park. The campground is a 'walk-in' area at the base of The Breadknife and Grand High Tops. It's a great starting point for early morning walks to Bluff Mountain or even as far as Mount Exmouth.&lt;/p&gt; &lt;p&gt;There are eight (8) slab bunks in the hut but you will need to bring all your own bedding. There is a solid fuel fire in the hut and fireplace outside but you MUST bring your own firewood and adhere to fire season warnings. &lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -199,6 +211,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is directly behind the park's dunes, with short walking access to the beach. There is good beach fishing, but surf conditions are often rough. The campground is close to Mungo Brush Rainforest Loop and the Tamboi walk.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -225,6 +239,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The Scutts Hut and Euglah Rock Lookout walking tracks start from near this campground. If you're planning to use the wood barbecues, you'll need to bring your own firewood.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -255,6 +271,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;From this campground, you can take an exhilarating walk to Cathedral Rock or relax and enjoy the wildlife around the campsite.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -281,6 +299,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no set campsites at this campground.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -307,6 +327,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is a great overnight spot for people taking their time doing the Mungo Drive Tour, or for those looking for a secluded campsite. No fires are allowed.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -337,6 +359,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -363,6 +387,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground has large, level, grassed campsites just beside the historic Seaton's Farm. Ben Halls Cave, the famous bushranger's hide-out, is a half-hour walk away. You'll need to bring drinking water, and there are no powered sites.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -393,6 +419,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is in an open valley, with river crossings and grassy flats. It's good for walking, swimming, caving and picnicking.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -423,6 +451,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;From this camping ground you can walk to the lookout, dam and basin. Campers under 18 years of age must be accompanied by a person 18 years or over.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -453,6 +483,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campsite is a good spot for caving, walks to the Big Hole and Marble Arch, and swimming. There are 10 to 15 unmarked tent sites.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -479,6 +511,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll need to bring drinking water and firewood. Please take rubbish with you.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -509,6 +543,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The coastal walking track is nearby, as well as places for fishing, swimming, snorkelling and diving. You'll need to bring your own firewood to this camping ground.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -535,6 +571,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground gives easy access to Ten Mile Beach. You'll need to bring your own water and firewood.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -565,6 +603,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Next to Blather Creek, this campground is popular for fossicking topaz and for nature walks.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -591,6 +631,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This is a unique camping area, catering for large groups (up to 100 people) or small vehicle-based bush camping. This area is suitable for 4WD touring, cycling, horseriding and wilderness walks - or just simply relaxing in a remote location.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -621,6 +663,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;From this campground&amp;nbsp;you can&amp;nbsp;access&amp;nbsp;the Jennings walks track heads (Clarke Gorge and Nichols Gorge walking tracks).&amp;nbsp;There are only three adventure caves open to the public.&amp;nbsp;Nichols Gorge walk includes Cooleman and Murray caves and Clarke Gorge walk provides access to Barbers Cave and Cave Creek waterfall.&amp;nbsp; The nearby lookout has excellent views to Cave Creek and&amp;nbsp;spectacular limestone cliffs.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -651,6 +695,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The main feature of Bonnie Vale is its large sand spit, where there's good swimming. Wood fired and solid fuel barbecues are prohibited. There are no powered sites.&lt;br&gt;&lt;br&gt;Download a map of &lt;a href=&quot;http://www.environment.nsw.gov.au/resources/parks/BonnieValeCampground.pdf&quot; target=&quot;_blank&quot;&gt;Bonnie Vale campground&lt;/a&gt; (PDF - 3.2MB).&lt;br&gt;&lt;br&gt;Please note that some campsites are temporarily unavailable and will be allocated according to availability. &lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -677,6 +723,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The following camping areas are located around the Two-mile and Boolambayte Lakes:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Korsmans Landing (26 sites)&lt;/li&gt; &lt;li&gt;Bungaree Bay (7 sites)&lt;/li&gt; &lt;li&gt;Violet Hill (40 sites).&lt;/li&gt; &lt;/ul&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -707,6 +755,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This camping area is set away from the lake shore amongst stunning smooth-barked Angopheras and grass trees. You can walk or cycle along the Old Gibber Track to Johnson's Beach from here. Wood and solid fuel fires are not permitted.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -737,6 +787,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll find swimming and fishing spots close by. Wilsons Headland Walk (3km one way, grade easy) links Boorkoom Camping Area to the Wilsons Headland Picnic Area. Bring your own water.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -763,6 +815,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Boundary Falls picnic and camping area is in a dry forest, on the site of an old sawmill. There are spectacular waterfalls nearby. This is a good starting point for a day walk to Duffer Creek or continuing to do the 60 kilometre circuit called the World Heritage Walk. Signs tell of the local history and wildlife. The Gibraltar Range Waratahs and other shrubs flower here, especially from mid-October to December. Facilities include modern fire and cooking stands, pit toilets and picnic tables. Bring your own drinking water and firewood. No pets are allowed in the park.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -793,6 +847,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This camping ground is set among snow gums. At night you can see greater gliders, sugar gliders, brushtail possums, tawny frogmouths, wombats, wallabies and kangaroos. Please bring firewood with you.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -819,6 +875,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no set campsites at this campground.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -849,6 +907,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no set campsites at this campground.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -875,6 +935,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This boat-based camping area is an ideal overnight stop for kayakers and canoeists paddling the lower Myall River and for hikers on the Brambles Green-Tamboi walk. It is a small grassy area directly beside the river.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -901,6 +963,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Campers at Brou Lake can&amp;nbsp;enjoy beach&amp;nbsp;and lake fishing, surfing and beach walking. Batemans Marine Park is adjacent to Brou Lake camping area, and there is a sanctuary zone where fishing is prohibited from immediately north of the entrance to Brou Lake to Jemisons Point. Parts of Brou Lake are also located within this sanctuary zone.&amp;nbsp;Signs show those areas where fishing is not permitted. Fires are allowed but firewood is not supplied. Campers must bring their own drinking/washing water with them and remove all garbage from the site. The camping area is suitable for small caravans and campervans capable of travelling on unsealed roads.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -931,6 +995,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground offers a tranquil setting amid tall gum trees with active bird life. It's an ideal base for exploring the park's walking tracks or starting a longer trek into the wilderness. Spokes Lookout provides views across Willi Willi National Park to the coast. There is a large shelter shed.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -961,6 +1027,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;The campground is at the track head to Buddong (Upper and Lower) Falls walk and is a small section of the Hume and Hovell walking track. There are&amp;nbsp;basic facilities and&amp;nbsp;no designated sites.&lt;/p&gt; &lt;p&gt;Please respect private property and stay on the formed road.&amp;nbsp;The track is narrow, steep and winding for most of the journey. Use caution as cattle,&amp;nbsp;wild horses and other vehicles may be on the track.&amp;nbsp;There are other access routes from the Elliott Way and Batlow&amp;nbsp;- check with local Tumut Regional Visitor Centre for more details.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -987,6 +1055,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground stands on the edge of the tablelands and has a spectacular lookout over the Apsley River Gorge. From the lookout, a &lt;a href=&quot;/parks.nsf/ParkContentByDistance/N0043?OpenDocument&amp;amp;ParkKey=N0043&amp;amp;Type=I#Budds+Mare+to+Riverside&quot;&gt;walking track&lt;/a&gt; leads down the ridge to Riverside Visitor Area on the Apsley River.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1013,6 +1083,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Vehicle based camping with horses is permitted at this campground. A horse yard is provided on site.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1043,6 +1115,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You can go swimming, fishing and canoeing at this campground (depending on water level). You'll need to bring drinking water.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1073,6 +1147,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This small, secluded camping area is set close to the lake shore and is surrounded by paperbark and casuarina forest. Just minutes down the road, Violet Hill has a boat ramp.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1103,6 +1179,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1129,6 +1207,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This walk-in campground is located along the firetrail to Mount Exmouth. It's&amp;nbsp;very basic&amp;nbsp;with a spring water tap.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1159,6 +1239,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Burralow is a beautiful picnic and camping area - so close to Sydney yet so far away. Set in a grassed open area among the scribbly gums this campground is ideally suited to families or small groups. Look out for the rare giant dragonfly on the Bulcamatta Falls convict walking track (one hour return; easy grade).&lt;/p&gt; &lt;p&gt;You'll need to bring drinking water and firewood with you - gathering native vegetation is strictly prohibited as it is valuable habitat for wildlife. You can buy firewood from local service stations at Richmond, North Richmond or Kurmond. Please take all garbage when you leave.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1185,6 +1267,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;It's a short drive from this campground to the main walking tracks, and there are short walks and cycling routes nearby. There's also a picnic area close by with electric BBQs. There are 32 powered sites at Camp Blackman, suitable for caravans, camper trailers, motor homes and tents.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1211,6 +1295,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This is a walk-in camp from the Pincham carpark and&amp;nbsp;a great place to camp. It&amp;nbsp;was one of the first campgrounds in the Warrumbungles and is a starting point for walks to The Breadknife and Grand High Tops.&lt;/p&gt; &lt;!--End mainContainer02--&gt; &lt;!--Start footer--&gt; &lt;!--End footer--&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1237,6 +1323,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;It's a short drive from this campground to the main walking tracks, and there are short walks and cycling routes nearby. The nearby Canyon Picnic Area has electric BBQs. The camping sites here are large and can accommodate from 30 to 200 people. Motor vehicles must not leave the sealed road and the area is not suitable for caravans or camper trailers. The Camp Blackman amenities block is close by.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1263,6 +1351,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The campground is close to walking tracks that lead to Split Rock, the Grand High Tops and Mount Exmouth.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1293,6 +1383,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;A walking track leads from this campground to a viewing platform overlooking Tuross Falls. There is a new viewing platform 100 m from the carpark overlooking the Cascades and gorge downstream. You'll need to bring drinking water.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1323,6 +1415,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1353,6 +1447,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is set amid a forest of gums and stringybarks, beside the delightful Chaelundi Creek. The creek is home to rare New England tree frogs - please don't pollute the water with soap, toothpaste or detergent. From the campground, you can swim and take easy walks with spectacular views.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1383,6 +1479,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no set campsites at this campground.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1409,6 +1507,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1439,6 +1539,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll need to bring drinking water and firewood with you. Please take all garbage when you leave. Check river levels before your visit - the river can flood.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1469,6 +1571,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is great for beach fishing, surfing and beach walking. Campfires are not permitted at the Congo camping area.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1499,6 +1603,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There is a walk-in and vehicle-based camping area on the northern side of the hut and a vehicle-based camping area with horses to the south.&amp;nbsp;You'll find&amp;nbsp;a loading ramp and horse yards.&amp;nbsp;Historic Cooinbil Hut is adjacent to the camping areas.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1529,6 +1635,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The campground is on the access road to Blue Waterholes and protected by the&amp;nbsp;Cooleman Mountain gums.&amp;nbsp; The Cooleman Plain&amp;nbsp;karst area is adjacent to the mountain.&amp;nbsp;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1559,6 +1667,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;The beautiful Washpool Walk, an 8.5km circuit, heads off into the rainforest from this campground.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1585,6 +1695,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll need to bring drinking water and firewood with you to this secluded campground. There are no toilets at this location. Please take all garbage when you leave.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1611,6 +1723,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;An alternative to The Barracks, this campground is just beside Coxs Creek Falls. You'll need to bring drinking water and firewood.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1637,6 +1751,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Camp among the gidgee trees a short walk from the river. Riverbank Walk and Connellys Walk start here.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1667,6 +1783,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The campground features a walking track to Byrrill Creek. Due to the unsealed road and the layout of the campsite it is only suitable for small camper trailers or small campervans, not for full sized caravans or motor homes.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1693,6 +1811,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are interesting walks along the Boonoo Boonoo River. You'll see excellent wildflower displays in spring, and birds, wallabies and even platypus may be seen along the river.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1719,6 +1839,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;&lt;!--Campground close to river (note camping not right on river as river is part of Travelling Stock Reserve) and visitors can access the river from campground. Canoeing, swimming and fishing are popular activities. Dalmorton is old historic gold mining area and visitors can walk around old township site (interpretation provided) with a linked walking route from campground. Historic Cattlemans Hut can be visited in Pine Creek adjacent to campground. Some oportunities for bushing walking.--&gt;This camping area offers camping along the Boyd River and an opportunity to explore the ghost town of Dalmorton with on-site information provided.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1749,6 +1871,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This is a popular spot. After rain, it has an impressive waterfall, and the wildflowers are spectacular in spring. You can go hiking here and explore Aboriginal and historic sites. &lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1775,6 +1899,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Hot showers and bore water are available at the Shearer's Quarters at the historic woolshed&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1801,6 +1927,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Dawsons Spring Nature Trail loops from the bottom of the camping area. The Summit walk and Bundabulla circuit walk traverse the sub-alpine environments of the plateau.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1827,6 +1955,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This large campground is set among the granite boulders surrounding Tibooburra. A signposted walking track starts at the the campsite and passes through granite outcrops, giving you a chance to see euros, red kangaroos and reptiles. After rain, you may also see Sturt's desert peas. Wood fires are not allowed here.&lt;/p&gt; &lt;div id=&quot;deccAppUcUc1_ParkVISError&quot;&gt;&lt;/div&gt; &lt;div id=&quot;deccAppUcUc1_SQL_References&quot;&gt;&lt;/div&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1857,6 +1987,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The camping area is close to both the lake and the beach. It connects directly with Mungo Brush via the Rainforest walking track. The Mungo 4 wheel drive&amp;nbsp;beach access track is also nearby.&lt;/p&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1887,6 +2019,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The campground provides access to Eucumbene River/Dam.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1917,6 +2051,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;At this campground, you'll be camping beside the kangaroos, under magnificent tall eucalypts. A manager is present 7 days a week, and powered sites are available. There are a variety of walks from Depot Beach, including short 30-minute walks, rock platform walks and more extensive walks. See &lt;a href=&quot;http://www.environment.nsw.gov.au/parkinfo/MurramarangDepotBeachPhotos.htm&quot;&gt;more photos of Depot Beach&lt;/a&gt;.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1947,6 +2083,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;These campgrounds are great spots for canoeing, fishing and swimming. Bakers Flat campground is not suitable for camper trailers - sites are a short walk (70m) from the road.&lt;/p&gt; &lt;div id=&quot;deccAppUcUc1_ParkVISError&quot;&gt;&lt;/div&gt; &lt;div id=&quot;deccAppUcUc1_SQL_References&quot;&gt;&lt;/div&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1977,6 +2115,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This basic campground, at 1400m altitude, offers spectacular views over the Barrington wilderness and nearby farmlands. Toilets, picnic facilities and fireplaces are across the road at Devils Hole Lookout. You can go fishing nearby.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2007,6 +2147,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You can take a loop track from this campground via Indian Head, with panoramic views of the coast, mountains and forests. You'll need to bring drinking water and firewood.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2037,6 +2179,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;The campsite is situated beside Tuglow Hole Creek. This creek is quite small but has some waterholes big enough to cool down in if the weather is hot.If you're planning on cooking, please bring your own fuel stove or firewood. Visitors should camp in designated sites to avoid trespassing on private property.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2067,6 +2211,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is near Dingo Tops forest park, which features relic forestry machinery and walking tracks into the park's variety of forests. You'll need to bring drinking water. &lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2093,6 +2239,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This camping area offers a peaceful and remote, riverside camping experience. Relax and enjoy the tranquillity of the river-bank or set off bushwalking into the Chaelundi Wilderness Area. 10 sites are available for camper trailers.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2119,6 +2267,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2149,6 +2299,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;From this camping ground, you can go on a 2.4km walk through mulga woodlands to nearby Little Mountain. From the top of the mountain, there's an outstanding view of the entire northern escarpment of the Gunderbooka Range.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2179,6 +2331,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll need to bring drinking water with you to this popular campground, and limited firewood is supplied on-site. A self-registration system applies here - please bring correct change. Please take all garbage when you leave.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2205,6 +2359,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Hot showers and bore water are available at the Shearer's Quarters at the historic woolshed.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2231,6 +2387,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This grassy area near the beautiful Nepean River gorge is well known for its population of eastern grey kangaroos. There are five camping areas: Appletree Flat, Redgum, Nioka, Bennets Ridge and Daruk. Each area is suitable for 20 people. See a &lt;a href=&quot;http://www.environment.nsw.gov.au/resources/parks/BlueMountainsNPEurokaMap.pdf&quot;&gt;map of Euroka's camping areas&lt;/a&gt; (PDF - 75KB).&lt;br&gt;&lt;br&gt;There are picnic tables and fireplaces; bring your own gas/fuel stove or firewood.&amp;nbsp; It is forbidden to collect firewood from the bush at Euroka.&lt;br&gt;&lt;br&gt;Flush toilets are available at the rangers station while pit toilets are provided at Euroka campground.&lt;/p&gt; &lt;p&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2261,6 +2419,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;See&amp;nbsp;the general Euroka campground information for facilities and activities. NOTE: Bring your own firewood - collecting firewood from the bush at Euroka is prohibited. &lt;br&gt;&lt;br&gt;&lt;b&gt;Please note&lt;/b&gt; that the campervan sites are suitable for small campervans or campertrailers - the sites are adjacent to the road edge.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2291,6 +2451,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;From this camping ground, you can head off along various walking tracks, including the popular Federal Falls track. Along these walks, you can see how subalpine vegetation gives way to moist forest as the altitude changes. You'll also see heathland among the rocky outcrops. Many different bird species gather in this area. &lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2321,6 +2483,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This campsite is on the Yango Track, and offers excellent 4WD day touring drives. It's a short walk from the campground to Finchley Aboriginal Area. You'll need to bring your own firewood and drinking water.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2347,6 +2511,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;The Booyong walking track starts here.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2373,6 +2539,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is located in the western part of the park among the sand dunes and near the shores of the ephemeral Lake Pinaroo, a &lt;a href=&quot;http://www.environment.nsw.gov.au/wetlands/RamsarWetlands.htm&quot;&gt;Ramsar site&lt;/a&gt;. A walking track with information signs starts at the campground and leads into the lake bed. You may see red and western grey kangaroos, and lots of birds and reptiles. You'll also learn something about the Aboriginal and European history of the area. A visit to Fort Grey and Cameron Corner, at the junction of the Queensland, South Australia and NSW borders, involves at least a 280-km round trip (if backtracking) - a full day's drive. Driving via the Middle Road (4WD only) means the trip will be approximately 330 km. There are informative signs at Cameron Corner, where you can see the dingo fence, the longest fence in the world. Wood fires are not allowed here.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2403,6 +2571,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This small camping ground is set in a quiet, protected pocket of the Frazer Valley a short walk away from Frazer Beach. It has quick, easy access to Snapper Point, a popular fishing spot. Each of the six sites has room for up to six people. You can stay for a maximum of two weeks.&lt;/p&gt; &lt;p&gt;View a&amp;nbsp;&lt;a href=&quot;http://www.environment.nsw.gov.au/resources/parks/campMaps/FraserCampground.pdf&quot;&gt;map of the camp sites&lt;/a&gt;&amp;nbsp;[PDF 30KB].&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2433,6 +2603,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;A few minutes walk from Birdie Beach, this campground offers a peaceful atmosphere with basic facilities. There is limited access for caravans. You can stay for a maximum of two weeks.&lt;/p&gt; &lt;p&gt;View a&amp;nbsp;&lt;a href=&quot;http://www.environment.nsw.gov.au/resources/parks/campMaps/FreemansCamground.pdf&quot;&gt;map of the camp sites&lt;/a&gt; [PDF 230KB]&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2463,6 +2635,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This boat-based camping area is located on Two Mile Lake and features sandy beaches and shallow waters adjacent to the camping area.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2493,6 +2667,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This area offers great bushwalking, with 11 identified walking tracks, plus cycling. Maximum of five people per site. Children under 5 free.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2519,6 +2695,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no set campsites at this campground.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2545,6 +2723,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll need to bring your own drinking water if you're camping here. &lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2575,6 +2755,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Vehicle based camping with horses&amp;nbsp;is permitted at this campground. Loading ramp and horse yards are provided on site.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2601,6 +2783,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;At this campground, you can enjoy fishing from the beach, surfing and beach walking. &lt;br&gt;&lt;br&gt; Extra information about camping at this campground: you'll need to bring your own drinking water. Maximum length of stay: two weeks during school holiday periods; four weeks at other times.&lt;/p&gt; &lt;div id=&quot;deccAppUcUc1_ParkVISError&quot;&gt;&lt;/div&gt; &lt;div id=&quot;deccAppUcUc1_SQL_References&quot;&gt;&lt;/div&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2627,6 +2811,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is mainly used by groups.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2657,6 +2843,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This is a picturesque camping area, providing an ideal base to explore this part of the park. Wildlife includes red-necked pademelons, brush turkeys and lyrebirds. You'll find swimming spots nearby. Walking tracks starting here include Sharpes Creek track and the Gloucester River track. The campground is also close to walking tracks at Gloucester Tops (a short drive away).&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2683,6 +2871,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll find walking tracks and lookouts overlooking the spectacular Chandler and Wollomombi Rivers here.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2709,6 +2899,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is beside Greenbah Creek. It's an excellent spot for birdwatching. You can walk to Burrabadine Peak, or go cycling along the access trail to the campground.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2735,6 +2927,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Here you can enjoy Willandra Creek and a walking track. The homestead precinct is nearby.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2765,6 +2959,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Small secluded camping area with basic facilities.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2791,6 +2987,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;Gunneemooroo is located in the southern side of the Warrumbungle National Park.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2817,6 +3015,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The Halls Peak camping area caters for self-reliant visitors looking to experience the seclusion of remote camping in an idyllic and peaceful setting.&lt;/p&gt; &lt;p&gt;Approximately 45km of the total 90km is on unsealed road, some of which can be quite rough. The road is very steep, descending for almost 700 vertical metres with large adjacent unprotected drops.&amp;nbsp; It is challenging and as a minimum requires the use of high clearance low-range 4WD vehicles with skilled and experienced drivers.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2843,6 +3043,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2873,6 +3075,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is next to several short walks, beaches, the lake and fishing spots.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2903,6 +3107,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This is a large campground, nestled among the tall river red gums of Homestead Creek. You'll need to bring fuel and firewood with you (available in Broken Hill). &lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2933,6 +3139,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Small secluded camping area with basic facilities. Polblue Falls picnic area and Polblue Falls walk&amp;nbsp;are 150m to the north.&lt;/p&gt; &lt;div id=&quot;deccAppUcUc1_ParkVISError&quot;&gt;&lt;/div&gt; &lt;div id=&quot;deccAppUcUc1_SQL_References&quot;&gt;&lt;/div&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2963,6 +3171,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no designated sites at this campground.&lt;br&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Dogs. &lt;/li&gt; &lt;li&gt;Other domestic animals or pets. &lt;/li&gt; &lt;/ul&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2993,6 +3203,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is in a delightful setting, protected by the park's unspoiled sand dunes. The area is surrounded by thick heath and woodland vegetation. You'll need to bring drinking water. There is a recycling station, however,&amp;nbsp;taking all your garbage away is appreciated.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3023,6 +3235,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There's easy access to the beach and a walk-in camp area at Rocky Point with no facilities. Two easy short walks start at Illaroo: the Rocky Point Track (2km return) and the Angophora Grove Walk (1km return) towards Minnie Water village.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3053,6 +3267,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You can take a loop track from this campground via Diamond Head, enjoying panoramic views of the coast, mountains and forests. You'll need to bring drinking water and firewood.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3083,6 +3299,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This camping ground is set among scribbly gums. The dam on Ingar Creek is suitable for paddling and swimming, and you can also walk or ride your mountain bike to Bedford Creek, via Murphy's Fire Trail. The campground is not suitable for caravans or large campervans.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3113,6 +3331,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This camping ground has spacious sites, set among flooded gums beside Iron Pot Creek. Walking tracks lead from the campground into the park. Firewood collection within the park is not permitted. Please bring your own firewood.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3143,6 +3363,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no set campsites at this campground.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3173,6 +3395,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This is a pleasant spot&amp;nbsp;for a picnic and for camping. There are no set campsites at this campground.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3203,6 +3427,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This small, secluded camping area is located at the base of Two Mile Lake.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3233,6 +3459,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This is one of the larger boat-based camping areas. It features sandy beaches and shallow waters adjacent to the camping area. There are a number of walking tracks nearby, including Johnsons Hill track and the Old Gibber track.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3263,6 +3491,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Camping is permitted on the mowed area between the access road and Jounama Creek.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Dogs. &lt;/li&gt; &lt;li&gt;Other domestic animals or pets. &lt;/li&gt; &lt;/ul&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3293,6 +3523,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll find swimming spots at this campground. It's close to walking tracks on the Barrington Tops Plateau, drive touring, lookouts, fishing and 4WD trails.&lt;/p&gt; &lt;!--End mainContainer02--&gt; &lt;!--Start footer--&gt; &lt;!--End footer--&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3323,6 +3555,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This camping ground fits up to 18 campers. You'll need to bring your own drinking water.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3349,6 +3583,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3375,6 +3611,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This is a pleasant&amp;nbsp;camping spot at the small grassy area beside Koreelah Creek.&lt;/p&gt; &lt;p&gt;Firewood collection within the park is not permitted. Please bring your own firewood.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3405,6 +3643,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is set within open eucalypt forest and you might see eastern grey kangaroos grazing nearby. There is a wharf and an unsealed boat ramp.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3431,6 +3671,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are many camping grounds throughout the park, though most have only basic facilities such as pit toilets and fireplaces.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3461,6 +3703,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You can see Kylie Tennant's writing hut on a walk from this campground. There are car-based campsites, but you can also camp at sites that are a 3km walk from the road. You'll need to bring drinking water and firewood.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3491,6 +3735,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Explore isolated beaches or canoe on Lake Arragan. A 10km walking track takes you north to Angourie.&lt;/p&gt; &lt;!--End mainContainer02--&gt; &lt;!--Start footer--&gt; &lt;!--End footer--&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3517,6 +3763,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;From this campground you can enjoy a walk along the shores of the lake - especially recommended in the early morning and towards sunset. The campground is ideal for large groups. You'll need to bring drinking water and firewood with you. Hot showers and bore water are available at the Shearer's Quarters at the historic woolshed. &lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3543,6 +3791,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is in a bushland setting, next to Lake Creek. You'll need to bring drinking water. &lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3573,6 +3823,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This beautiful spot offers bushland camping and caravanning only 10 km from the heart of Sydney. Public transport is available from the tourist park to Sydney CBD. Powered and unpowered sites are available for caravans, campervans, motorhomes and tents. You can choose caravan sites with or without concrete slabs and sullage. The tourist park has a swimming pool, camp kitchen, laundry, TV room and internet access. Enjoy a bushwalk or picnic in the Lane Cove National Park.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3603,6 +3855,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no set campsites at this campground.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3629,6 +3883,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3659,6 +3915,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;Bouddi Coastal Walk, picnicking, and fishing. Wood fires are not permitted.&lt;/p&gt; &lt;p&gt;View a&amp;nbsp;&lt;a href=&quot;http://www.environment.nsw.gov.au/resources/parks/campMaps/TallowPuttyCamping.pdf&quot; title=&quot;map of the camp sites&quot;&gt;map of the camp sites&lt;/a&gt;&amp;nbsp;[PDF 165KB]&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3689,6 +3947,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3719,6 +3979,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;!--End content area--&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;br class=&quot;clear&quot;&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3749,6 +4011,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no designated campsites at this campground.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Dogs. &lt;/li&gt; &lt;li&gt;Other domestic animals or pets. &lt;/li&gt; &lt;/ul&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3779,6 +4043,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Vehicle based camping with horses is permitted in the designated area east of Long Plain Hut (horse yards on site). Walk-in and other vehicle-based camping are provided north of the hut.&amp;nbsp;&lt;/p&gt; &lt;p&gt;&lt;br&gt;&lt;br&gt; &amp;nbsp;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3809,6 +4075,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;Located in a small forest clearing, this campground gives easy access to Cassinia Walk, Chandler View Circuit Walk and the Long Point to Wollomombi overnight bushwalk.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3839,6 +4107,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This small, secluded camping area is located on the narrow stretch of water between Two Mile and Boolambayte lakes. It is often sheltered during windy conditions.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3865,6 +4135,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The Grasslands Nature Trail starts here and there is also a trail leading to the lookout. Mungo Visitor Centre, with flush toilets and hot showers, is only 2 km away. There are&amp;nbsp;free gas barbecues and wood fireplaces available for campers. Wood can be collected from the wood bay near the Mungo Visitor Centre for $5 per 25-litre bin.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3891,6 +4163,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3917,6 +4191,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll need to bring your own drinking water if you're camping here.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3947,6 +4223,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt; You'll need to bring drinking water and firewood with you. You can explore rare rainforests on a short loop track from this campground.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3977,6 +4255,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;From here you can enjoy fishing, surfing, beach walking and canoeing. &lt;br&gt;&lt;br&gt; Extra information about camping at this campground: campsites are around 100m from car parking. You'll need to bring your own drinking water. Maximum length of stay: two weeks during school holiday periods; four weeks at other times.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4007,6 +4287,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This camping area is surrounded by rugged sandstone escarpments and dense eucalypt forests. Wildlife abounds - including wombats, wallaroos, goannas, lyrebirds and tiny sugar gliders. Many animals rely on fallen wood for shelter, so please bring your own firewood. Gas barbecues are available. The camping area is a great base for bushwalking, photography and nature studies. For some sites, you'll need to walk a short distance from your car. There is a large group camping area for up to 30 people, and Mill Creek picnic area is only 500 m down the road. The Grass Tree Circuit Track takes you through rainforest, dry eucalypt forest and past axe grinding sites at creek crossings. The 11km Circuit Track is a hard rugged walk that ascends the escarpment areas (take plenty of water). Autumn, winter and spring are the most pleasant seasons for camping-during summer, the surrounding sandstone escarpments retain and reflect heat into the valleys.&lt;/p&gt; &lt;p&gt;View a&amp;nbsp;&lt;a href=&quot;http://www.environment.nsw.gov.au/resources/parks/campMaps/MillCreekCampground.pdf&quot;&gt;map of the camp sites&lt;/a&gt;&amp;nbsp;[PDF 1.4MB]&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4037,6 +4319,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll be camping at the top of the Old Great North Road here. There are excellent bushwalks around this historic convict-built road. The campground is also a great base for day tour drives into Macdonald Valley (historic buildings), Wollombi Valley (vineyards) and Koolang Observatory.&lt;/p&gt; &lt;p&gt;View a&amp;nbsp;&lt;a href=&quot;http://www.environment.nsw.gov.au/resources/parks/campMaps/MogoCampingArea.pdf&quot;&gt;map of the camp sites&lt;/a&gt;&amp;nbsp;[PDF 87KB]&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4067,6 +4351,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This basic camping area is on the western edge of a clearing and kangaroos commonly visit the area. You can follow the Mooraback Trail, a short loop walk from the campground. The Platypus Pools walk also starts from the camping area and its 6km loop takes you along the upper reaches of the Hastings River where platypus are often seen.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4093,6 +4379,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This camping area surrounds a stone hut which you can use for cooking and temporary shelter. You'll find covered picnic tables and fireplaces here - but bring your own firewood.&lt;/p&gt; &lt;!--End content area--&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;br class=&quot;clear&quot;&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4119,6 +4407,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is set in view of the historic Mount Wood Homestead Complex in the rolling gibber downs on the eastern side of the park. Here you may see red kangaroos, euros and eastern grey kangaroos, plus lots of birds and reptiles. There is small signposted walk around the historic complex.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4149,6 +4439,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This is a forested area near Little Dandahra Creek, suitable for swimming. There are 6 camping areas to suit multi-vehicle groups and 15 individual sites for tents and medium sized caravans and camper trailers. Several walking tracks start from the Mulligans area.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4179,6 +4471,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This popular campground has a boat ramp and a variety of walking tracks, so you can discover the park from both land and water. It has open areas ideal for caravans, as well as secluded tent-based sites. There are walking tracks, including the Rainforest Loop and Tamboi walk. A short walking track opposite the camping area leads to the beach. Wood and solid fuel fires are not permitted. The park's main waste and recycling service is here.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4209,6 +4503,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This is a secluded camping ground in a forest of tall eucalypt, turpentine and angophora trees. A short, steep walk through the rainforest will lead you to Bedford Creek. Fuel stoves can only be used here - no wood fires.&lt;/p&gt; &lt;!--End mainContainer02--&gt; &lt;!--Start footer--&gt; &lt;!--End footer--&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4239,6 +4535,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This basic camping area is situated in a tall eucalypt forest beside Myall Creek, which flows throughout the year. From here, self-reliant bushwalkers can explore nearby waterfalls and rainforest. Contact the Ranger at the Walcha Office for advice on visiting scenic canyons, waterfalls and heritage places that are further from the campground.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4265,6 +4563,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;From this campground you can walk to Woolpack Rocks and beyond to Cathedral Rock.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4295,6 +4595,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground has good access to Myall Lake, and is perfect for lakeside activities. There's a boat ramp at nearby Hearts Point Picnic Area. You can also go on a short walk to the historic cemetery at Neranie Headland. Wood and solid fuel fires are not permitted.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4321,6 +4623,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This is a basic camping ground suitable for small groups. A short walk to the edge of Mummel Gulf offers breathtaking views. The campground is also a good spot for birdwatching and photography.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4351,6 +4655,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll need to bring drinking water and firewood with you to this popular campground. Please take all garbage when you leave. &lt;/p&gt; &lt;!--End content area--&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;br class=&quot;clear&quot;&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4381,6 +4687,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no set campsites at this campground.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4411,6 +4719,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;A maximum of&amp;nbsp;36 people can camp here. You'll need to bring your own drinking water, and wood fires are forbidden.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4441,6 +4751,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This is a small camping area beside Cattleman's Link Trail. Grasslands, frost hollows and a high altitude perched swamp are features nearby. Stroll along an easy 4km loop track from the campground. Stop at lookouts over the swamp along the way.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4471,6 +4783,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4501,6 +4815,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The campground was a former Snowy Mountains Hydro Electric Scheme site and provides boating access to the southern end of Talbingo Reservoir. There are no designated campsites.&lt;br&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Dogs. &lt;/li&gt; &lt;li&gt;Other domestic animals or pets. &lt;/li&gt; &lt;/ul&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4531,6 +4847,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no set campsites at this campground.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4557,6 +4875,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Vehicle based camping with horses is permitted at this campground.&amp;nbsp; Horse yards are provided on site.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4583,6 +4903,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is set amongst mulga trees on top of the 'Jump-Up' Range. A walking track starts at the campground and leads you through the Jump-Up landscape. You may see various species of kangaroos, lots of birds and reptiles, and some relics from the park's pastoral history. Wood fires are prohibited.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4613,6 +4935,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Firewood collection within the park is not permitted. Please bring your own firewood.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4643,6 +4967,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Here you'll find places to swim and fish. You'll need to bring your own water. Freshwater Track is 4km return, grade medium. Corkwood and Scribbly Gum Walking Track follows the creek upstream. It's 1.5km return, easy grade.&lt;/p&gt; &lt;p&gt;This camping area is not suitable for large caravans&amp;nbsp;but is suitable for small caravans and trailers if towed by high clearance 4WD.&lt;/p&gt; &lt;p&gt;Firewood is provided for open fire places.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4673,6 +4999,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You can go on a variety of coastal walks from this campground, which is well known for its kangaroos. There's plenty for you to do from this spot, including fishing, bush walking, swimming, rock platform walks, and canoeing nearby.&lt;/p&gt; &lt;div id=&quot;deccAppUcUc1_ParkVISError&quot;&gt;&lt;/div&gt; &lt;div id=&quot;deccAppUcUc1_SQL_References&quot;&gt;&lt;/div&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4703,6 +5031,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll be pitching your tent on prime real estate here, beside one of the mountains' best lookouts. The camping ground offers spectacular views of the Grose Valley and Mount Banks - together with basic toilet facilities. It's a great base for walking trips in the valley below. You'll need to bring drinking water and a fuel stove: camp fires are forbidden. You can only stay for one night.&lt;/p&gt; &lt;div id=&quot;deccAppUcUc1_ParkVISError&quot;&gt;&lt;/div&gt; &lt;div id=&quot;deccAppUcUc1_SQL_References&quot;&gt;&lt;/div&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4733,6 +5063,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This is a small, flat, grassy area beside sandy beaches and banksia forest. It's a great place for walking, swimming, fishing and picnicking. &lt;br&gt;&lt;br&gt; Extra information about camping at this campground: a limited number of sites are suitable for camper trailers. You'll need to bring your own drinking water. Maximum length of stay: two weeks during school holiday periods; four weeks at other times.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4763,6 +5095,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Pinch River camping and picnic area is on both sides of the road, 59km from Jindabyne at the junction of the Pinch and Snowy rivers. There are no set campsites at this campground.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4793,6 +5127,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;A walking track goes from this campground through Antarctic beech forests and past mountain streams and waterfalls.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4823,6 +5159,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;You can picnic and swim at this campground. It's also a good spot to launch your canoe from. You'll need to bring drinking water.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4853,6 +5191,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This is the more 'luxurious' of the park's camping grounds, though you'll need to bring drinking water and firewood with you.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4883,6 +5223,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This is a roomy campground in pleasant subalpine woodland, at 1450m altitude. It offers short and inspiring walks passing through snow gum woodland, tall eucalypt forest and areas of high-altitude swamp.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4909,6 +5251,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;Camp or picnic near a wide sandy bend of the Tantawangalo Creek. Campsites with fireplaces are provided. The campsite is on the track that was used by the postman delivering mail between the tablelands to Kameruka during the 1800s.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4939,6 +5283,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There is an office at this campground, and a manager is present 7 days a week. Powered sites are available. Limited wood barbecues are available for cooking outside of peak season but it is recommended you bring fuel stoves to use while on the park grounds. &lt;b&gt;NO FIRES are to be lit in the peak seasons (Christmas/Easter or long weekends).&lt;/b&gt;&lt;br&gt;&lt;br&gt; Explore Durras mountain, enjoy the coastal walks or discover sea life on the rock platforms. Fishing, snorkelling, surfing and swimming are also popular pasttimes for campers and day visitors alike.&lt;br&gt;&lt;br&gt; Eastern grey kangaroos, swamp wallabies, brushtail possums and a large variety of bird life can be seen in the campground or on the beach at various times throughout the day and night. When sighting birds and animals please remember they have their own foods and can become sick and/or aggressive once introduced to human foods.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4969,6 +5315,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;The main features are at the eastern end of Putty Beach, which provides good swimming and the start of the Coastal Walk. Wood fires are not permitted. Important note: Showers are open-air.&lt;/p&gt; &lt;p&gt;View a&amp;nbsp;&lt;a href=&quot;http://www.environment.nsw.gov.au/resources/parks/campMaps/PuttyBeachCamping.pdf&quot; title=&quot;map of the camp&amp;amp;nbsp;sites&quot;&gt;map of the camp&amp;nbsp;sites&lt;/a&gt;&amp;nbsp;[PDF 41KB].&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4999,6 +5347,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This boat-based camping area is an ideal overnight stop for kayakers and canoeists paddling the Upper Myall River. Camp sites are nestled into the bush a short distance from the riverbank.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5025,6 +5375,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground lies deep within the Macleay Gorges, immediately adjacent to the Macleay Gorges Wilderness Area.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5055,6 +5407,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no designated sites at this campground.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5085,6 +5439,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Vehicle based camping with horses is permitted at this campground. There is a loading ramp adjacent to the toilet facilities.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5115,6 +5471,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;From this grassy area, you can take a short walk beside Boggy Creek to the beautiful Minyon Falls, in &lt;a href=&quot;/NationalParks/parkHome.aspx?id=N0062&quot;&gt;Nightcap National Park&lt;/a&gt;. You can also go car touring or birdwatching, or just sit back and enjoy the peaceful camping experience. The campground is suitable for small caravans, and it has a communal cooking gallery and wheelchair-accessible toilets.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5145,6 +5503,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no set campsites at this campground.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5175,6 +5535,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The coastal walking track is nearby, plus spots for fishing, swimming, snorkelling and diving. You'll need to bring your own firewood to this camping ground.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5201,6 +5563,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The campground was established primarily for campers treking the Hume and Hovell walking track, however it is open to most visitors.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5231,6 +5595,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This camping ground is close to Sandon River, a popular fishing spot with a boat ramp.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5261,6 +5627,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no set campsites at this campground.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5291,6 +5659,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The Rosewood Loop, Palm Forest Loop and Booyong Walking Track system start here. Firewood collection within the park is not permitted. Please bring your own firewood.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5317,6 +5687,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;Campsites are close to Shelley Caves, Little Shelley Beach and Caves Beach, where you can swim and fish. Bring your own water and fuel stove.&lt;/p&gt; &lt;!--End content area--&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;br class=&quot;clear&quot;&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5347,6 +5719,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This is one of the larger boat-based camping areas. It features sandy beaches with shallow water along the lake shore. There are opportunities for walking nearby along the Old Gibber track.&lt;/p&gt; &lt;!--End mainContainer02--&gt; &lt;!--Start footer--&gt; &lt;!--End footer--&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5373,6 +5747,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is good for large groups. You'll need to bring drinking water and firewood. Silent Creek is often dry.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5403,6 +5779,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Picnic, walk, camp or just sit and relax by the pristine waters of Six Mile Creek. The original Tantawangalo Mountain Road to this site was forged around 1860. &lt;/p&gt; &lt;p&gt;Across the road from the picnic area is the start of an easy 20 minute walk (300m return). A viewing platform overlooks the cascading waters on their way to meet Tantawangalo Creek.&lt;br&gt;&lt;/p&gt; &lt;p&gt;This is a great place for walking and scenic drives.&lt;/p&gt; &lt;!--End content area--&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;br class=&quot;clear&quot;&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5433,6 +5811,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This low-key campground is nestled among the rainforest just below the lighthouse at Smoky Cape, on a beautiful, isolated stretch of the coast. You'll need to bring drinking water. There is a recycling station, however,&amp;nbsp;taking all your garbage away is appreciated.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5459,6 +5839,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll need to bring drinking water and firewood. Please take rubbish with you.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5489,6 +5871,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Swimming and fishing is available very close to this camping area. Canoeists can enjoy Station Creek. Corkwood and Scribbly Gum Walking Track follows the creek upstream. Bring your own water.&lt;/p&gt; &lt;div id=&quot;deccAppUcUc1_ParkVISError&quot;&gt;&lt;/div&gt; &lt;div id=&quot;deccAppUcUc1_SQL_References&quot;&gt;&lt;/div&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5519,6 +5903,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is directly behind the park's extensive sand dunes, and has walking tracks across the dunes to the beach. There is good beach fishing, but surf conditions are often rough.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5545,6 +5931,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This boat-based camping area is located on the narrow stretch of water between Two Mile and Boolambayte Lakes. It is at the site of the former Sunnyside Guesthouse.&lt;/p&gt; &lt;!--End content area--&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;br class=&quot;clear&quot;&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5575,6 +5963,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;Tallow Beach is an unpatrolled beach where you can swim, surf and fish. Box Head walking track and Flannel Flower/Lobster Beach walking tracks are nearby. No barbecues are provided and wood fires are not permitted (fuel stoves only).&lt;/p&gt; &lt;p&gt;View a&amp;nbsp;&lt;a href=&quot;http://www.environment.nsw.gov.au/resources/parks/campMaps/TallowPuttyCamping.pdf&quot; title=&quot;map of the camp sites&quot;&gt;map of the camp sites&lt;/a&gt; [PDF 165KB]&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5605,6 +5995,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5635,6 +6027,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This camping ground is a great place to stop and rest if you're doing the two-day Old Great North Road walk, from Wisemans Ferry to Mangrove Mountain or the three-day walk to Mount Manning. You'll only find fireplaces here, so bring plenty of water.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5661,6 +6055,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The campground's central location makes it a good spot for exploring the park. It's ideal for bird watchers, bushwalkers and mountain bikers. You can also drive to Mount Nangar Lookout from the campground (4WD only).&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5687,6 +6083,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is an ideal base-camp for walking trips. Caravan sites are very limited. You'll need to bring drinking water and firewood. &lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5717,6 +6115,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;The Basin&amp;nbsp;is well known for its sheltered sandy beach and inland lagoon. It's the only place you can camp in Ku-ring-gai Chase National Park, and is also a popular picnic spot for day visitors. It can accommodate 400 people, and has a public telephone and drink vending machine.&lt;/p&gt; &lt;p&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5743,6 +6143,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is in a secluded spot beside the Abercrombie River. You'll need to bring drinking water and firewood.&lt;/p&gt; &lt;div id=&quot;deccAppUcUc1_ParkVISError&quot;&gt;&lt;/div&gt; &lt;div id=&quot;deccAppUcUc1_SQL_References&quot;&gt;&lt;/div&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5769,6 +6171,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This camping ground is beside the Turon River, site of the goldrush from 1851. Panning or digging for gold are not allowed, but you can go bushwalking, fishing (with a &lt;a href=&quot;/Internet/link.nsf/Content/EL382&quot; target=&quot;blank&quot;&gt;fishing licence&lt;/a&gt;) and birdwatching.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5799,6 +6203,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;You can picnic and swim at this campground and it's a good spot to launch your canoe. You'll need to bring drinking water.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5829,6 +6235,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no designated sites at this campground.&lt;br&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Dogs. &lt;/li&gt; &lt;li&gt;Other domestic animals or pets. &lt;/li&gt; &lt;/ul&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5855,6 +6263,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This is a large and open campground near to Norfolk Island Swamp. You'll need to bring drinking water and firewood.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5885,6 +6295,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This large, open camping area is located adjacent to Seven Mile Beach and close to Wallis Lake. Booti Hill walking track and Seven Mile Beach are nearby. The campground is surrounded by coastal forest featuring cabbage tree palms and paperbarks.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5915,6 +6327,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground offers fishing, swimming (depending on water level)&amp;nbsp;and bushwalking. You'll need to bring drinking water and firewood. This campground is beside the Retreat River.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5945,6 +6359,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This camping area is located on the eastern shore of Bombah Broadwater. It is one of the areas around the Broadwater where campfires are permitted.&lt;/p&gt; &lt;div id=&quot;deccAppUcUc1_ParkVISError&quot;&gt;&lt;/div&gt; &lt;div id=&quot;deccAppUcUc1_SQL_References&quot;&gt;&lt;/div&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5975,6 +6391,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no set campsites at this campground.&lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6001,6 +6419,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The eastern side of Three Mile Dam has several clear areas for camping. The most sheltered place is within the tree line, near the public facilities.&amp;nbsp;There are no designated sites at this campground.&lt;/p&gt; &lt;p&gt;Three Mile Dam and the surrounding plains provide a spectacular wildflower display during early to mid-summer.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6027,6 +6447,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is located along&amp;nbsp;the peninsular of&amp;nbsp;Three Mile Dam,&amp;nbsp;sheltered amongst the snow gums.&amp;nbsp;&amp;nbsp;There are basic public facilities and no designated campsites.&lt;/p&gt; &lt;p&gt;The surrounding plains provide a spectacular wildflower display during early to mid-summer.&amp;nbsp;Take Gold&amp;nbsp;Seekers Walk to enjoy the scenery of the&amp;nbsp;snow gums,&amp;nbsp;heath and wildflowers as well as&amp;nbsp;relics of the mining era.&amp;nbsp;Gold Seekers Walk&amp;nbsp;starts adjacent to the carpark next to the Three Mile Dam peninsular access road.&lt;/p&gt; &lt;!--End mainContainer02--&gt; &lt;!--Start footer--&gt; &lt;!--End footer--&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6057,6 +6479,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground&amp;nbsp;offers sites tucked away in small clearings&amp;nbsp;with nearby car parking as well as secluded walk-in bush campsites.&lt;/p&gt; &lt;p&gt;There is an extensive network of walking tracks in the vicinity, and it's&amp;nbsp;only&amp;nbsp;a 4-km&amp;nbsp;drive to Point Lookout to see the sun rise over the New England Wilderness.&lt;/p&gt; &lt;p&gt;Kick back, relax and watch out for spotted-tailed quolls, or explore the many kilometres of spectacular walking tracks. Either way, Thungutti is a great place for a natural escape.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Dogs. &lt;/li&gt; &lt;li&gt;Other domestic animals or pets. Campers with pets can stay at Little Styx River rest area outside the park.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6087,6 +6511,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The campground is situated in quiet, picturesque woodland. Enjoy the Tia Falls and Tiara walking tracks.&lt;/p&gt; &lt;!--End content area--&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;br class=&quot;clear&quot;&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6113,6 +6539,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The&amp;nbsp;campground is a clear grassy area adjacent to Tin Mines Trail. The site has basic camping facilities and is suitable for 4WD vehicle based camping or self reliant backpackers. It's located&amp;nbsp;along the Hume and Hovell walking track which extends from Yass to Albury.&amp;nbsp;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6143,6 +6571,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no set campsites at this campground.&lt;br&gt;&lt;/p&gt; &lt;!--End content area--&gt; &lt;p&gt;&amp;nbsp;&lt;/p&gt; &lt;br class=&quot;clear&quot;&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6169,6 +6599,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Relax on the beach, go for a stroll or a bushwalk (10 minutes to 4 hours) and explore Trial Bay Gaol from this campground. 13 powered and 60 non-powered sites are available, and there's an on-site licensed restaurant. You'll also find a 4WD beach boat ramp here. The hot showers are coin operated. There is a recycle depot. View a map of &lt;a href=&quot;/resources/parks/TrialBayCampsite.pdf&quot; class=&quot;null&quot;&gt;Arakoon Camping Ground&lt;/a&gt; (PDF - 600KB).&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6199,6 +6631,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This boat-based camping area is located on Two Mile Lake and features sandy beaches and shallow waters adjacent to the camping area. A short walking track connects the camp sites.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6229,6 +6663,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;A maximum of 18 people can camp here. You'll need to bring your own drinking water, and wood fires are forbidden.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6255,6 +6691,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This is Hill End's main campground. It includes twelve powered sites for caravans. &lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6285,6 +6723,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This large, open camping area is located at the narrow passage between Boolambayte Lake and Myall Lake. &lt;/p&gt; &lt;p&gt;Vehicles are excluded from the main camping sites but there is an area for caravans and camper trailers.&lt;/p&gt; &lt;p&gt;There is a boat ramp, a wharf and a number of temporary boat moorings nearby.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6315,6 +6755,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Walking tracks lead from this campground into the park.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6341,6 +6783,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is in an open woodland with a grassy understorey. There's lots of open space for kids.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6371,6 +6815,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Camp amidst the towering eucalypts adjacent to the picturesque Waratah Gully. It's an ideal location from which to explore the Coolangubra section of the park, including Pheasants Peak and Myanba Gorge. &lt;/p&gt; &lt;p&gt;The area is renowned for old growth forest and the diverse forest fauna it supports.&lt;br&gt;&lt;/p&gt; &lt;div id=&quot;deccAppUcUc1_ParkVISError&quot;&gt;&lt;/div&gt; &lt;div id=&quot;deccAppUcUc1_SQL_References&quot;&gt;&lt;/div&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6397,6 +6843,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6427,6 +6875,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Vehicle based camping with horses is permitted at this campground.&lt;/p&gt; &lt;div id=&quot;deccAppUcUc1_ParkVISError&quot;&gt;&lt;/div&gt; &lt;div id=&quot;deccAppUcUc1_SQL_References&quot;&gt;&lt;/div&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6453,6 +6903,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is beside the Namoi River. You can go hiking, swimming, canoeing and fishing here. Camping is only permitted at numbered sites, as shown on the plan in the information shelter.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6483,6 +6935,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll need to bring your own fuel stove and water when you camp here.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6513,6 +6967,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll need to bring drinking water and firewood with you. Please take all garbage when you leave.&lt;/p&gt; &lt;div id=&quot;deccAppUcUc1_ParkVISError&quot;&gt;&lt;/div&gt; &lt;div id=&quot;deccAppUcUc1_SQL_References&quot;&gt;&lt;/div&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6543,6 +6999,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This camping area is located on the eastern shore of Bombah Broadwater. It includes a large picnic area and gas barbecue.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6569,6 +7027,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll find a walking track near this campground.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6595,6 +7055,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6621,6 +7083,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;Wombat Creek is one of a number of bushwalking campsites in the park, but it's the only one with toilets. It's a great base for exploring the Barrington Tops plateau, and is only a few kilometres walk from Careys Peak.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6651,6 +7115,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There is an abundance of campsites along the picturesque Wombeyan Creek. There is a communal kithen and dining room with stove, barbecues, fridge, urn, tables and chairs. There are three amenities blocks with hot showers and flush toilets; wheelchair access provided. Fire places are provided, but you will need to bring your own firewood.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6681,6 +7147,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Woody Head offers a superb unspoiled seaside panorama, stretching for 28 km to Evans Head. There is a kiosk, plenty of picnic sites and beach access points nearby, and there's a boat ramp at the camping ground. You can go fishing, snorkelling or look for interesting sea life on the rocky platforms and shallow reefs. Discovery activities are also regularly held. All sites are unpowered. A group camping area is available, with an under cover area and fireplace. Amenities are wheelchair accessible, and there are free outdoor wheelchairs available.&lt;/p&gt; &lt;p&gt;View the &lt;a href=&quot;/resources/parks/brochures/07319WoodyHeadBundjalung.pdf&quot;&gt;Woody Head campground brochure&lt;/a&gt; (07319WoodyHeadBundjalung.pdf - 517KB) for more information about the sites, fees etc. &lt;br&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6707,6 +7175,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string></string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6737,6 +7207,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This peaceful spot is where the Turon River begins. It's a great place for birdwatching and bushwalking.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6763,6 +7235,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;The campground offers caving and bushwalking. There are 5 to 10 unmarked sites.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6793,6 +7267,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground provides access to the Blowering Foreshores&amp;nbsp;which is a popular place for water activities. There are no designated sites at this campground.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Dogs. &lt;/li&gt; &lt;li&gt;Other domestic animals or pets. &lt;/li&gt; &lt;/ul&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6823,6 +7299,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground lies behind the dunes, with close walking access to the beach. Visit nearby Seal Rocks and the Sugarloaf Point Lighthouse. You can also go on overnight walks to Shelly Beach and Mungo Brush from here. Wood and solid fuel fires are not permitted.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6853,6 +7331,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground is&amp;nbsp;close to Yarrangobilly Caves on the Yarrangobilly River.&amp;nbsp;It's an&amp;nbsp;ideal place to camp if visiting the caves,&amp;nbsp;exploring the local area or fishing. There are no designated camping sites.&lt;/p&gt; &lt;p&gt;Yarrangobilly River meanders through the campground before cutting its way through the Yarrangobilly limestone belt heading to the caves,&amp;nbsp;Lobs Hole Ravine and the Talbingo Reservoir.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6883,6 +7363,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are no designated sites at this campground.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Dogs. &lt;/li&gt; &lt;li&gt;Other domestic animals or pets. &lt;/li&gt; &lt;/ul&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6913,6 +7395,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;&lt;font size=&quot;1&quot; face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 9pt; font-family: verdana;&quot;&gt;This campground is adjacent to two wilderness areas on the upper reaches of the picturesque Kunderang Brook. &lt;/span&gt;&lt;/font&gt;It's ideal for picnics, swimming and short walks. You can also visit the historic &lt;a href=&quot;/NationalParks/parkCultExplore.aspx?id=N0043&quot;&gt;Youdales Hut&lt;/a&gt;.&lt;/p&gt; &lt;!--End mainContainer02--&gt; &lt;!--Start footer--&gt; &lt;!--End footer--&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6943,6 +7427,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;This campground offers walking tracks, including the walk to Pieries Peak.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6973,6 +7459,8 @@
       <false/>
       <key>car</key>
       <false/>
+      <key>description</key>
+      <string>&lt;p&gt;You'll find boat-based camping at the following locations:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;div&gt;Brambles Green (2 sites)&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;Rivermouth (5 sites)&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;Joes Cove (2 sites)&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;Freshwater (7 sites)&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;Two Mile Sands (4 sites)&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;Mackaway Bay (3 sites)&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;Johnsons Beach (17 sites)&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;Shelly Beach (18 sites)&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;Sunny Side (4 sites).&lt;/div&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;There are toilets at Rivermouth, Freshwater, Johnsons Beach and Shelly Beach campgrounds only.&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -7003,6 +7491,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Gap Creek camping area is located at the end of Bangalow Road on the eastern side of the Watagans National Park. Campsites are located within tall blue gum and blackbutt forest close to two rainforest walking tracks, one leading down to the impressive Gap Creek Falls.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Gathering firewood. Please bring your own firewood from outside of the reserve.&lt;/li&gt; &lt;li&gt;Dogs. &lt;/li&gt; &lt;li&gt;Horses. &lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -7033,6 +7523,8 @@
       <false/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;Camp amongst tall blue gums and blackbutts. This camping area is&amp;nbsp;a short distance (1km)&amp;nbsp;from Gap Creek camping area.&amp;nbsp;&lt;/p&gt;</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -7059,6 +7551,8 @@
       <true/>
       <key>car</key>
       <true/>
+      <key>description</key>
+      <string>&lt;p&gt;There are plenty of campsites along the picturesque Groves Creek. Facilities include a camp kitchen and dining room with stove, barbecues, urn, tables and chairs. There are three amenities blocks with hot showers and flush toilets with wheelchair access. You will need to bring your own fire wood.&lt;/p&gt;</string>
     </dict>
   </array>
 </plist>

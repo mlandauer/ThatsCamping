@@ -70,6 +70,7 @@ File.open("#{File.dirname(__FILE__)}/../Campsites.plist", "w") do |f|
           x.key "caravans"; campsite.caravans ? x.true : x.false
           x.key "trailers"; campsite.trailers ? x.true : x.false
           x.key "car"; campsite.car ? x.true : x.false
+          x.key "description"; x.string campsite.description
         }
       end
     }
