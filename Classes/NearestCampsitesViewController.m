@@ -410,10 +410,14 @@
 		
 		// Now wire up the park (by looking up the park using the webId)
 		NSString *parkWebId = [campsitePList objectForKey:@"parkWebId"];
-		NSPredicate *predicate = [NSPredicate predicateWithFormat:@"webId == %@", parkWebId];
-		NSArray *park = [parks filteredArrayUsingPredicate:predicate];
-		assert([park count] == 1);
-		[campsite setPark:[park lastObject]];
+		NSEnumerator *enumerator = [parks objectEnumerator];
+		id park;
+		while ((park = [enumerator nextObject])) {
+			if ([[park webId] isEqualToString:parkWebId]) {
+				campsite.park = park;
+				break;
+			}
+		}
 	}
 	
 	// Commit the change.
