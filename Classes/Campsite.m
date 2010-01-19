@@ -5,7 +5,7 @@
 @implementation Campsite 
 
 @dynamic latitude, longitude, shortName, longName, distance, bearing, park, webId, toilets, picnicTables,
-	barbecues, showers, drinkingWater, caravans, trailers, car, description;
+	barbecues, showers, drinkingWater, caravans, trailers, car, textDescription;
 
 // Convenience methods around Core Data
 - (BOOL) hasFlushToilets

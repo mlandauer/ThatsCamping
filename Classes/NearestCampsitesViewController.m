@@ -406,7 +406,7 @@
 		campsite.caravans = [campsitePList objectForKey:@"caravans"];
 		campsite.trailers = [campsitePList objectForKey:@"trailers"];
 		campsite.car = [campsitePList objectForKey:@"car"];
-		campsite.description = [campsitePList objectForKey:@"description"];
+		campsite.textDescription = [campsitePList objectForKey:@"description"];
 		
 		// Now wire up the park (by looking up the park using the webId)
 		NSString *parkWebId = [campsitePList objectForKey:@"parkWebId"];

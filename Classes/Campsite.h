@@ -24,7 +24,7 @@
 @property (nonatomic, retain) NSNumber *caravans;
 @property (nonatomic, retain) NSNumber *trailers;
 @property (nonatomic, retain) NSNumber *car;
-@property (nonatomic, retain) NSString *description;
+@property (nonatomic, retain) NSString *textDescription;
 
 - (CLLocation *) location;
 - (NSNumber *) distanceFrom:(CLLocation *)location;
