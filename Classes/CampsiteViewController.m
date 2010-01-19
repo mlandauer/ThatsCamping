@@ -62,20 +62,17 @@
 #pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 4;
+    return 3;
 }
 
 int const NAMES_SECTION_INDEX = 0;
-int const DESCRIPTION_SECTION_INDEX = 1;
-int const FACILITIES_SECTION_INDEX = 2;
-int const ACCESS_SECTION_INDEX = 3;
+int const FACILITIES_SECTION_INDEX = 1;
+int const ACCESS_SECTION_INDEX = 2;
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	if (section == NAMES_SECTION_INDEX)
-		return 2;
-	else if (section == DESCRIPTION_SECTION_INDEX)
-		return 1;
+		return 3;
 	else if (section == FACILITIES_SECTION_INDEX)
 		return [[self facilitiesFields] count];
 	else if (section == ACCESS_SECTION_INDEX)
@@ -280,6 +277,13 @@ int const ACCESS_SECTION_INDEX = 3;
 					cell.selectionStyle = UITableViewCellSelectionStyleBlue;
 				}
 				break;
+			case 2:
+				cell.textLabel.text = campsite.textDescription;
+				cell.textLabel.numberOfLines = 0;
+				UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:13.0];
+				cell.textLabel.font = cellFont;
+				break;
+
 		}
 	}
 	else if (indexPath.section == FACILITIES_SECTION_INDEX || indexPath.section == ACCESS_SECTION_INDEX) {
@@ -297,21 +301,13 @@ int const ACCESS_SECTION_INDEX = 3;
 		cell.detailTextLabel.numberOfLines = 2;
 		cell.textLabel.numberOfLines = 2;
 	}
-	else if (indexPath.section == DESCRIPTION_SECTION_INDEX) {
-		cell = cellDefault;
-		cell.textLabel.text = campsite.textDescription;
-		cell.textLabel.numberOfLines = 0;
-		NSLog(@"Font currently being used: %@, size: %@", cell.textLabel.font.fontName, cell.textLabel.font.pointSize);
-		UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:13.0];
-		cell.textLabel.font = cellFont;
-	}
     
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)aTableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	if (indexPath.section == DESCRIPTION_SECTION_INDEX) {
+	if (indexPath.section == NAMES_SECTION_INDEX && indexPath.row == 2) {
 		NSString *cellText = campsite.textDescription;
 		UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:13.0];
 		CGSize constraintSize = CGSizeMake(280.0f, MAXFLOAT);
