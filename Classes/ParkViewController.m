@@ -73,18 +73,24 @@
 #pragma mark Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return 2;
 }
 
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [campsites count];
+	if (section == 0)
+		return 1;
+	else
+		return [campsites count];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-	return @"Campsites";
+	if (section == 1)
+		return @"Campsites";
+	else
+		return nil;
 }
 
 // Customize the appearance of table view cells.
@@ -97,15 +103,31 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
-	cell.textLabel.text = [[campsites objectAtIndex:indexPath.row] longName];
-	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-
-	//cell.textLabel.text = @"Hello!";
-	//cell.detailTextLabel.text = @"Details";
-	
+	if (indexPath.section == 0) {
+		cell.textLabel.text = currentPark.textDescription;
+		cell.textLabel.numberOfLines = 0;
+		UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:13.0];
+		cell.textLabel.font = cellFont;
+	}
+	else if (indexPath.section == 1) {
+		cell.textLabel.text = [[campsites objectAtIndex:indexPath.row] longName];
+		cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+	}
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)aTableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	if (indexPath.section == 0) {
+		NSString *cellText = currentPark.textDescription;
+		UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:13.0];
+		CGSize constraintSize = CGSizeMake(280.0f, MAXFLOAT);
+		CGSize labelSize = [cellText sizeWithFont:cellFont constrainedToSize:constraintSize lineBreakMode:UILineBreakModeWordWrap];
+		
+		return labelSize.height + 20;
+	}
+	return aTableView.rowHeight;
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	CampsiteViewController *campsiteViewController = [[CampsiteViewController alloc] initWithNibName:@"CampsiteViewController" bundle:nil];
