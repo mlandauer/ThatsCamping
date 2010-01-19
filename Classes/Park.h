@@ -11,6 +11,7 @@
 @property (nonatomic, retain) NSNumber * latitude;
 @property (nonatomic, retain) NSString * webId;
 @property (nonatomic, retain) NSSet * campsites;
+@property (nonatomic, retain) NSString * textDescription;
 
 @end
 

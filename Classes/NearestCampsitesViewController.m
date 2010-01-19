@@ -373,9 +373,10 @@
 	NSEnumerator *enumerator = [[NSArray arrayWithContentsOfFile:parksPath] objectEnumerator];
 	while (parksPList = [enumerator nextObject]) {
 		Park *park = (Park *)[NSEntityDescription insertNewObjectForEntityForName:@"Park" inManagedObjectContext:managedObjectContext];
-		[park setShortName:[parksPList objectForKey:@"shortName"]];
-		[park setLongName:[parksPList objectForKey:@"longName"]];
-		[park setWebId:[parksPList objectForKey:@"webId"]];
+		park.shortName = [parksPList objectForKey:@"shortName"];
+		park.longName = [parksPList objectForKey:@"longName"];
+		park.webId = [parksPList objectForKey:@"webId"];
+		park.textDescription = [parksPList objectForKey:@"description"];
 	}
 	
 	// Now retrieve all the parks from the store
