@@ -275,6 +275,7 @@ int const ACCESS_SECTION_INDEX = 2;
 		switch (indexPath.row) {
 			case 0:
 				cell.textLabel.text = [campsite longName];
+				cell.textLabel.numberOfLines = 2;
 				break;
 			case 1:
 				cell.textLabel.text = [[campsite park] longName];
