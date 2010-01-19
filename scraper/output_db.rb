@@ -40,6 +40,7 @@ File.open("#{File.dirname(__FILE__)}/../Parks.plist", "w") do |f|
           x.key "shortName"; x.string shorten_park_name(park.name)
           x.key "longName"; x.string park.name
           x.key "webId";  x.string park.web_id
+          x.key "description"; x.string park.description
         }        
       end
     }
