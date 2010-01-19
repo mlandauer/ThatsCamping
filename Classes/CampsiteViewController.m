@@ -71,8 +71,14 @@ int const ACCESS_SECTION_INDEX = 2;
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	if (section == NAMES_SECTION_INDEX)
-		return 3;
+	if (section == NAMES_SECTION_INDEX) {
+		if ([campsite.textDescription isEqualToString:@""]) {
+			return 2;
+		}
+		else {
+			return 3;
+		}
+	}
 	else if (section == FACILITIES_SECTION_INDEX)
 		return [[self facilitiesFields] count];
 	else if (section == ACCESS_SECTION_INDEX)
