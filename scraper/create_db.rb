@@ -11,6 +11,7 @@ ActiveRecord::Schema.define do
   create_table :parks do |t|
     t.column :web_id, :string
     t.column :name, :string
+    t.column :description, :text
   end
 
   create_table :campsites do |t|

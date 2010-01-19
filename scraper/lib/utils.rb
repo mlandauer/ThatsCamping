@@ -38,6 +38,13 @@ def simplify_whitespace(str)
   str.gsub(/[\n\t\r]/, " ").squeeze(" ").strip
 end
 
+def replace_with_inside(a)
+  a.children.each do |c|
+    c.parent = a.parent
+  end
+  a.remove
+end
+
 # Needs to be of the form: "<div><p>foo</p><p>Hello</p></div>" which will become "foo\n\nHello"
 def html_into_plain_text(html)
   description = Nokogiri::HTML.fragment(html)

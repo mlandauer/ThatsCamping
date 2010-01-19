@@ -24,13 +24,6 @@ def paragraphs_after_heading(result)
   ret
 end
 
-def replace_with_inside(a)
-  a.children.each do |c|
-    c.parent = a.parent
-  end
-  a.remove
-end
-
 Park.find(:all).each do |park|
   #puts "Processing page #{park.campsites_url}..."
   page = agent.get(park.campsites_url)
