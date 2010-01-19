@@ -79,8 +79,12 @@
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	if (section == 0)
-		return 1;
+	if (section == 0) {
+		if ([[currentPark textDescription] isEqualToString:@""])
+			return 1;
+		else
+			return 2;
+	}
 	else
 		return [campsites count];
 }
@@ -102,23 +106,35 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
-    
+	
+	// Defaults (unless overridden below)
+	cell.textLabel.numberOfLines = 1;
+	cell.accessoryType = UITableViewCellAccessoryNone;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+	
 	if (indexPath.section == 0) {
-		cell.textLabel.text = currentPark.textDescription;
-		cell.textLabel.numberOfLines = 0;
-		UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:13.0];
-		cell.textLabel.font = cellFont;
+		if (indexPath.row == 0) {
+			cell.textLabel.text = currentPark.longName;
+			cell.textLabel.numberOfLines = 2;
+		}
+		else if (indexPath.row == 1) {
+			cell.textLabel.text = currentPark.textDescription;
+			cell.textLabel.numberOfLines = 0;
+			UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:13.0];
+			cell.textLabel.font = cellFont;
+		}
 	}
 	else if (indexPath.section == 1) {
 		cell.textLabel.text = [[campsites objectAtIndex:indexPath.row] longName];
 		cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+		cell.selectionStyle = UITableViewCellSelectionStyleBlue;
 	}
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)aTableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	if (indexPath.section == 0) {
+	if (indexPath.section == 0 && indexPath.row == 1) {
 		NSString *cellText = currentPark.textDescription;
 		UIFont *cellFont = [UIFont fontWithName:@"Helvetica" size:13.0];
 		CGSize constraintSize = CGSizeMake(280.0f, MAXFLOAT);
@@ -130,12 +146,14 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	CampsiteViewController *campsiteViewController = [[CampsiteViewController alloc] initWithNibName:@"CampsiteViewController" bundle:nil];
-	campsiteViewController.campsite = [campsites objectAtIndex:indexPath.row];
-	// TODO: Get rid of this passing coordinates around nonsense
-	campsiteViewController.locationManager = locationManager;
-	[self.navigationController pushViewController:campsiteViewController animated:YES];
-	[campsiteViewController release];
+	if (indexPath.section == 1) {
+		CampsiteViewController *campsiteViewController = [[CampsiteViewController alloc] initWithNibName:@"CampsiteViewController" bundle:nil];
+		campsiteViewController.campsite = [campsites objectAtIndex:indexPath.row];
+		// TODO: Get rid of this passing coordinates around nonsense
+		campsiteViewController.locationManager = locationManager;
+		[self.navigationController pushViewController:campsiteViewController animated:YES];
+		[campsiteViewController release];
+	}
 }
 
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
