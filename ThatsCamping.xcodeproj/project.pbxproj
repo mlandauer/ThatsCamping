@@ -25,6 +25,15 @@
 		6C573C9111067716005C7C49 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C573C8F11067716005C7C49 /* AboutViewController.m */; };
 		6C573C9211067716005C7C49 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C573C9011067716005C7C49 /* AboutViewController.xib */; };
 		6C573CB111067E73005C7C49 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 6C573CB011067E73005C7C49 /* About.html */; };
+		6C573E491106AC7E005C7C49 /* Park.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C38653610F542B0001E8154 /* Park.m */; };
+		6C573E4A1106AC81005C7C49 /* PopulateStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C573D6511069FF5005C7C49 /* PopulateStore.m */; };
+		6C573E4F1106ACB6005C7C49 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A9E88B0F43C7410016529B /* CoreData.framework */; };
+		6C573E661106AD3E005C7C49 /* ThatsCamping.xcdatamodel in Resources */ = {isa = PBXBuildFile; fileRef = 28A9E9320F43CA900016529B /* ThatsCamping.xcdatamodel */; };
+		6C573E6C1106AD97005C7C49 /* Parks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C3866DC10F588CF001E8154 /* Parks.plist */; };
+		6C573F2F1106B455005C7C49 /* Campsites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C38667010F57C6C001E8154 /* Campsites.plist */; };
+		6C573F3D1106B5CF005C7C49 /* PopulateStore-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C573E441106AC54005C7C49 /* PopulateStore-Info.plist */; };
+		6C573F541106C412005C7C49 /* CampsiteCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C573F531106C412005C7C49 /* CampsiteCore.m */; };
+		6C573F551106C412005C7C49 /* CampsiteCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C573F531106C412005C7C49 /* CampsiteCore.m */; };
 		6C6F9D9010FB1E14008CB360 /* CampsiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6F9D8E10FB1E14008CB360 /* CampsiteViewController.m */; };
 		6C6F9D9110FB1E14008CB360 /* CampsiteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C6F9D8F10FB1E14008CB360 /* CampsiteViewController.xib */; };
 		6C6F9E1110FC01BB008CB360 /* ParkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6F9E0F10FC01BB008CB360 /* ParkViewController.m */; };
@@ -38,22 +47,6 @@
 		6CCB21BF110053F600352E20 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 6CCB21BD110053F600352E20 /* iTunesArtwork */; };
 		6CCB21C0110053F600352E20 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CCB21BE110053F600352E20 /* Icon-Small.png */; };
 		6CD35C48110311890063155E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CD35C47110311890063155E /* Default.png */; };
-		6CE40C2B10FD6D7F00023412 /* create_db.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1210FD6D7F00023412 /* create_db.rb */; };
-		6CE40C3110FD6D7F00023412 /* geocode.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1910FD6D7F00023412 /* geocode.rb */; };
-		6CE40C3210FD6D7F00023412 /* campsite.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1B10FD6D7F00023412 /* campsite.rb */; };
-		6CE40C3310FD6D7F00023412 /* db.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1C10FD6D7F00023412 /* db.rb */; };
-		6CE40C3410FD6D7F00023412 /* location.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1D10FD6D7F00023412 /* location.rb */; };
-		6CE40C3510FD6D7F00023412 /* name.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1E10FD6D7F00023412 /* name.rb */; };
-		6CE40C3610FD6D7F00023412 /* park.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C1F10FD6D7F00023412 /* park.rb */; };
-		6CE40C3710FD6D7F00023412 /* simple_struct.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C2010FD6D7F00023412 /* simple_struct.rb */; };
-		6CE40C3810FD6D7F00023412 /* source.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C2110FD6D7F00023412 /* source.rb */; };
-		6CE40C3910FD6D7F00023412 /* utils.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C2210FD6D7F00023412 /* utils.rb */; };
-		6CE40C3A10FD6D7F00023412 /* load_gnr_db.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C2310FD6D7F00023412 /* load_gnr_db.rb */; };
-		6CE40C3B10FD6D7F00023412 /* load_poi_db.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C2410FD6D7F00023412 /* load_poi_db.rb */; };
-		6CE40C3C10FD6D7F00023412 /* output_db.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C2510FD6D7F00023412 /* output_db.rb */; };
-		6CE40C3E10FD6D7F00023412 /* scraper.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C2710FD6D7F00023412 /* scraper.rb */; };
-		6CE40C3F10FD6D7F00023412 /* scraper_campsite_details.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C2810FD6D7F00023412 /* scraper_campsite_details.rb */; };
-		6CE40C4010FD6D7F00023412 /* scraper_wildwalks.rb in Resources */ = {isa = PBXBuildFile; fileRef = 6CE40C2910FD6D7F00023412 /* scraper_wildwalks.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +75,11 @@
 		6C573C8F11067716005C7C49 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		6C573C9011067716005C7C49 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AboutViewController.xib; path = Classes/AboutViewController.xib; sourceTree = "<group>"; };
 		6C573CB011067E73005C7C49 /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
+		6C573D6511069FF5005C7C49 /* PopulateStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopulateStore.m; sourceTree = "<group>"; };
+		6C573E421106AC54005C7C49 /* PopulateStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopulateStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C573E441106AC54005C7C49 /* PopulateStore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PopulateStore-Info.plist"; sourceTree = "<group>"; };
+		6C573F521106C412005C7C49 /* CampsiteCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampsiteCore.h; sourceTree = "<group>"; };
+		6C573F531106C412005C7C49 /* CampsiteCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampsiteCore.m; sourceTree = "<group>"; };
 		6C6F9D8D10FB1E14008CB360 /* CampsiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampsiteViewController.h; sourceTree = "<group>"; };
 		6C6F9D8E10FB1E14008CB360 /* CampsiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampsiteViewController.m; sourceTree = "<group>"; };
 		6C6F9D8F10FB1E14008CB360 /* CampsiteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CampsiteViewController.xib; path = Classes/CampsiteViewController.xib; sourceTree = "<group>"; };
@@ -132,12 +130,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6C573E401106AC54005C7C49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C573E4F1106ACB6005C7C49 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6C573F521106C412005C7C49 /* CampsiteCore.h */,
+				6C573F531106C412005C7C49 /* CampsiteCore.m */,
 				6C38655210F54582001E8154 /* Campsite.h */,
 				6C38655310F54582001E8154 /* Campsite.m */,
 				6C38653610F542B0001E8154 /* Park.m */,
@@ -162,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* Thats Campin.app */,
+				6C573E421106AC54005C7C49 /* PopulateStore.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +184,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				6C573E441106AC54005C7C49 /* PopulateStore-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -184,6 +194,7 @@
 			children = (
 				28A0AAE50D9B0CCF005BE974 /* ThatsCamping_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
+				6C573D6511069FF5005C7C49 /* PopulateStore.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -201,11 +212,11 @@
 				6C6F9D8F10FB1E14008CB360 /* CampsiteViewController.xib */,
 				6C6F9E1010FC01BB008CB360 /* ParkViewController.xib */,
 				6C3866DC10F588CF001E8154 /* Parks.plist */,
-				8D1107310486CEB800E47090 /* Info.plist */,
 				28A9E9320F43CA900016529B /* ThatsCamping.xcdatamodel */,
 				6C38667010F57C6C001E8154 /* Campsites.plist */,
 				6C93D15E10FE3AF400FEF933 /* NearestCampsitesViewController.xib */,
 				6CD35C47110311890063155E /* Default.png */,
+				8D1107310486CEB800E47090 /* Info.plist */,
 				6C573CB011067E73005C7C49 /* About.html */,
 			);
 			name = Resources;
@@ -277,6 +288,23 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* Thats Campin.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6C573E411106AC54005C7C49 /* PopulateStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C573E481106AC55005C7C49 /* Build configuration list for PBXNativeTarget "PopulateStore" */;
+			buildPhases = (
+				6C573E3E1106AC54005C7C49 /* Resources */,
+				6C573E3F1106AC54005C7C49 /* Sources */,
+				6C573E401106AC54005C7C49 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopulateStore;
+			productName = PopulateStore2;
+			productReference = 6C573E421106AC54005C7C49 /* PopulateStore.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -297,6 +325,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* ThatsCamping */,
+				6C573E411106AC54005C7C49 /* PopulateStore */,
 			);
 		};
 /* End PBXProject section */
@@ -312,22 +341,6 @@
 				6C3866DD10F588CF001E8154 /* Parks.plist in Resources */,
 				6C6F9D9110FB1E14008CB360 /* CampsiteViewController.xib in Resources */,
 				6C6F9E1210FC01BB008CB360 /* ParkViewController.xib in Resources */,
-				6CE40C2B10FD6D7F00023412 /* create_db.rb in Resources */,
-				6CE40C3110FD6D7F00023412 /* geocode.rb in Resources */,
-				6CE40C3210FD6D7F00023412 /* campsite.rb in Resources */,
-				6CE40C3310FD6D7F00023412 /* db.rb in Resources */,
-				6CE40C3410FD6D7F00023412 /* location.rb in Resources */,
-				6CE40C3510FD6D7F00023412 /* name.rb in Resources */,
-				6CE40C3610FD6D7F00023412 /* park.rb in Resources */,
-				6CE40C3710FD6D7F00023412 /* simple_struct.rb in Resources */,
-				6CE40C3810FD6D7F00023412 /* source.rb in Resources */,
-				6CE40C3910FD6D7F00023412 /* utils.rb in Resources */,
-				6CE40C3A10FD6D7F00023412 /* load_gnr_db.rb in Resources */,
-				6CE40C3B10FD6D7F00023412 /* load_poi_db.rb in Resources */,
-				6CE40C3C10FD6D7F00023412 /* output_db.rb in Resources */,
-				6CE40C3E10FD6D7F00023412 /* scraper.rb in Resources */,
-				6CE40C3F10FD6D7F00023412 /* scraper_campsite_details.rb in Resources */,
-				6CE40C4010FD6D7F00023412 /* scraper_wildwalks.rb in Resources */,
 				6C93D15F10FE3AF400FEF933 /* NearestCampsitesViewController.xib in Resources */,
 				6C93D4A410FFEABE00FEF933 /* bg-screen-iphone.png in Resources */,
 				6CCB21A91100501900352E20 /* Entitlements.plist in Resources */,
@@ -336,6 +349,17 @@
 				6CD35C48110311890063155E /* Default.png in Resources */,
 				6C573C9211067716005C7C49 /* AboutViewController.xib in Resources */,
 				6C573CB111067E73005C7C49 /* About.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C573E3E1106AC54005C7C49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C573F2F1106B455005C7C49 /* Campsites.plist in Resources */,
+				6C573F3D1106B5CF005C7C49 /* PopulateStore-Info.plist in Resources */,
+				6C573E6C1106AD97005C7C49 /* Parks.plist in Resources */,
+				6C573E661106AD3E005C7C49 /* ThatsCamping.xcdatamodel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +380,17 @@
 				6C6F9E1110FC01BB008CB360 /* ParkViewController.m in Sources */,
 				6C93D3B610FF7FF100FEF933 /* MyAnnotationView.m in Sources */,
 				6C573C9111067716005C7C49 /* AboutViewController.m in Sources */,
+				6C573F551106C412005C7C49 /* CampsiteCore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C573E3F1106AC54005C7C49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C573E4A1106AC81005C7C49 /* PopulateStore.m in Sources */,
+				6C573E491106AC7E005C7C49 /* Park.m in Sources */,
+				6C573F541106C412005C7C49 /* CampsiteCore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +422,78 @@
 				PRODUCT_NAME = "Thats Campin";
 			};
 			name = Release;
+		};
+		6C573E451106AC55005C7C49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PopulateStore-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PopulateStore;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		6C573E461106AC55005C7C49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PopulateStore-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PopulateStore;
+				SDKROOT = macosx10.6;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		6C573E471106AC55005C7C49 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "PopulateStore-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PopulateStore;
+				SDKROOT = macosx10.6;
+			};
+			name = Distribution;
 		};
 		6CCB21A111004FC300352E20 /* Distribution */ = {
 			isa = XCBuildConfiguration;
@@ -454,6 +561,16 @@
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
 				6CCB21A211004FC300352E20 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C573E481106AC55005C7C49 /* Build configuration list for PBXNativeTarget "PopulateStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C573E451106AC55005C7C49 /* Debug */,
+				6C573E461106AC55005C7C49 /* Release */,
+				6C573E471106AC55005C7C49 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
