@@ -31,11 +31,6 @@
 	//self.tableView.allowsSelection = NO;
     [containerView addSubview:tableView];
 	
-	if (![self isStoreInitialised]) {
-		// This is the first time we're starting the application
-		[self initialiseStore];
-	}
-	
 	// Start the location manager.
 	[[self locationManager] startUpdatingLocation];
 	[activityIndicatorView startAnimating];
@@ -360,96 +355,6 @@
 	[[self tableView] reloadData];
 }
 
-
-- (NSPersistentStore *)persistentStore {
-	NSArray *persistentStores = [[managedObjectContext persistentStoreCoordinator] persistentStores];
-	assert([persistentStores count] == 1);
-	return [persistentStores objectAtIndex:0];
-}
-
-- (BOOL)isStoreInitialised {
-	
-	NSDictionary *metadata = [[self persistentStore] metadata];
-	// TODO: Check for metadata == nill
-	return ([[metadata objectForKey:@"loaded"] boolValue] == YES);
-}
-
-- (void)setStoreInitialised {	
-	NSPersistentStore *persistentStore = [self persistentStore];
-	NSDictionary *metadata = [persistentStore metadata];
-	// TODO: Check for metadata == nill
-	NSMutableDictionary *newMetadata = [[metadata mutableCopy] autorelease];
-    [newMetadata setObject:[NSNumber numberWithBool:YES] forKey:@"loaded"];
-	[persistentStore setMetadata:newMetadata];
-}
-
-// Load the data store with initial data
-- (void)initialiseStore {
-	// Read the parks data from the property list
-	NSString *parksPath = [[NSBundle mainBundle] pathForResource:@"Parks" ofType:@"plist"];
-	id parksPList;
-	NSEnumerator *enumerator = [[NSArray arrayWithContentsOfFile:parksPath] objectEnumerator];
-	while (parksPList = [enumerator nextObject]) {
-		Park *park = (Park *)[NSEntityDescription insertNewObjectForEntityForName:@"Park" inManagedObjectContext:managedObjectContext];
-		park.shortName = [parksPList objectForKey:@"shortName"];
-		park.longName = [parksPList objectForKey:@"longName"];
-		park.webId = [parksPList objectForKey:@"webId"];
-		park.textDescription = [parksPList objectForKey:@"description"];
-	}
-	
-	// Now retrieve all the parks from the store
-	NSFetchRequest *request = [[NSFetchRequest alloc] init];
-	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Park" inManagedObjectContext:managedObjectContext];
-	[request setEntity:entity];
-	NSError *error = nil;
-	NSArray *parks = [managedObjectContext executeFetchRequest:request error:&error];
-	
-	// Read the data from the property lists and store it in the datastore
-	NSString *campsitesPath = [[NSBundle mainBundle] pathForResource:@"Campsites" ofType:@"plist"];
-	id campsitePList;
-	enumerator = [[NSArray arrayWithContentsOfFile:campsitesPath] objectEnumerator];
-	while (campsitePList = [enumerator nextObject])
-	{
-		// TODO: Hmmm.. Must be a shorthand way of doing this: the names of the attributes match up with the method names
-		Campsite *campsite = (Campsite *)[NSEntityDescription insertNewObjectForEntityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
-		campsite.shortName = [campsitePList objectForKey:@"shortName"];
-		campsite.longName = [campsitePList objectForKey:@"longName"];
-		campsite.latitude = [campsitePList objectForKey:@"latitude"];
-		campsite.longitude = [campsitePList objectForKey:@"longitude"];
-		campsite.webId = [campsitePList objectForKey:@"webId"];
-		campsite.toilets = [campsitePList objectForKey:@"toilets"];
-		campsite.picnicTables = [campsitePList objectForKey:@"picnicTables"];
-		campsite.barbecues = [campsitePList objectForKey:@"barbecues"];
-		campsite.showers = [campsitePList objectForKey:@"showers"];
-		campsite.drinkingWater = [campsitePList objectForKey:@"drinkingWater"];
-		campsite.caravans = [campsitePList objectForKey:@"caravans"];
-		campsite.trailers = [campsitePList objectForKey:@"trailers"];
-		campsite.car = [campsitePList objectForKey:@"car"];
-		campsite.textDescription = [campsitePList objectForKey:@"description"];
-		
-		// Now wire up the park (by looking up the park using the webId)
-		NSString *parkWebId = [campsitePList objectForKey:@"parkWebId"];
-		NSEnumerator *enumerator = [parks objectEnumerator];
-		id park;
-		while ((park = [enumerator nextObject])) {
-			if ([[park webId] isEqualToString:parkWebId]) {
-				campsite.park = park;
-				break;
-			}
-		}
-	}
-	
-	// Commit the change.
-	if ([managedObjectContext save:&error]) {
-		// This way we only load the data into the store once
-		[self setStoreInitialised];
-	}
-	else {
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-	}
-}
 
 #pragma mark -
 #pragma mark Location manager

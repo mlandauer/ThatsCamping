@@ -11,8 +11,12 @@ int main(int argc, char *argv[])
 
     NSManagedObjectModel *managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
 	
-    NSURL *storeUrl = [NSURL fileURLWithPath: [applicationDocumentsDirectory stringByAppendingPathComponent: @"ThatsCamping.sqlite"]];
+	NSString *storePath = [applicationDocumentsDirectory stringByAppendingPathComponent: @"ThatsCamping.sqlite"];
+	// If the sqlite database exists blast it away and regenerate it
 	NSError *error;
+	[[NSFileManager defaultManager] removeItemAtPath:storePath error:&error];
+	
+    NSURL *storeUrl = [NSURL fileURLWithPath: storePath];
     NSPersistentStoreCoordinator *persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: managedObjectModel];
 	
 	// Do automatic lightweight migrations

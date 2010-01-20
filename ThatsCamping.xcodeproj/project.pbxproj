@@ -20,8 +20,6 @@
 		6C38653710F542B0001E8154 /* Park.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C38653610F542B0001E8154 /* Park.m */; };
 		6C38655410F54582001E8154 /* Campsite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C38655310F54582001E8154 /* Campsite.m */; };
 		6C38661910F5646E001E8154 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C38661810F5646E001E8154 /* Icon.png */; };
-		6C38667110F57C6C001E8154 /* Campsites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C38667010F57C6C001E8154 /* Campsites.plist */; };
-		6C3866DD10F588CF001E8154 /* Parks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C3866DC10F588CF001E8154 /* Parks.plist */; };
 		6C573C9111067716005C7C49 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C573C8F11067716005C7C49 /* AboutViewController.m */; };
 		6C573C9211067716005C7C49 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C573C9011067716005C7C49 /* AboutViewController.xib */; };
 		6C573CB111067E73005C7C49 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 6C573CB011067E73005C7C49 /* About.html */; };
@@ -31,9 +29,9 @@
 		6C573E661106AD3E005C7C49 /* ThatsCamping.xcdatamodel in Resources */ = {isa = PBXBuildFile; fileRef = 28A9E9320F43CA900016529B /* ThatsCamping.xcdatamodel */; };
 		6C573E6C1106AD97005C7C49 /* Parks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C3866DC10F588CF001E8154 /* Parks.plist */; };
 		6C573F2F1106B455005C7C49 /* Campsites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C38667010F57C6C001E8154 /* Campsites.plist */; };
-		6C573F3D1106B5CF005C7C49 /* PopulateStore-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C573E441106AC54005C7C49 /* PopulateStore-Info.plist */; };
 		6C573F541106C412005C7C49 /* CampsiteCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C573F531106C412005C7C49 /* CampsiteCore.m */; };
 		6C573F551106C412005C7C49 /* CampsiteCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C573F531106C412005C7C49 /* CampsiteCore.m */; };
+		6C573FCA1106CA58005C7C49 /* ThatsCamping.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6C573FC91106CA58005C7C49 /* ThatsCamping.sqlite */; };
 		6C6F9D9010FB1E14008CB360 /* CampsiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6F9D8E10FB1E14008CB360 /* CampsiteViewController.m */; };
 		6C6F9D9110FB1E14008CB360 /* CampsiteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C6F9D8F10FB1E14008CB360 /* CampsiteViewController.xib */; };
 		6C6F9E1110FC01BB008CB360 /* ParkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6F9E0F10FC01BB008CB360 /* ParkViewController.m */; };
@@ -80,6 +78,7 @@
 		6C573E441106AC54005C7C49 /* PopulateStore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PopulateStore-Info.plist"; sourceTree = "<group>"; };
 		6C573F521106C412005C7C49 /* CampsiteCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampsiteCore.h; sourceTree = "<group>"; };
 		6C573F531106C412005C7C49 /* CampsiteCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampsiteCore.m; sourceTree = "<group>"; };
+		6C573FC91106CA58005C7C49 /* ThatsCamping.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThatsCamping.sqlite; sourceTree = "<group>"; };
 		6C6F9D8D10FB1E14008CB360 /* CampsiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampsiteViewController.h; sourceTree = "<group>"; };
 		6C6F9D8E10FB1E14008CB360 /* CampsiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampsiteViewController.m; sourceTree = "<group>"; };
 		6C6F9D8F10FB1E14008CB360 /* CampsiteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CampsiteViewController.xib; path = Classes/CampsiteViewController.xib; sourceTree = "<group>"; };
@@ -202,6 +201,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6C573FC91106CA58005C7C49 /* ThatsCamping.sqlite */,
 				6C573C9011067716005C7C49 /* AboutViewController.xib */,
 				6CCB21A81100501900352E20 /* Entitlements.plist */,
 				6C93D4A310FFEABE00FEF933 /* bg-screen-iphone.png */,
@@ -337,8 +337,6 @@
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				6C38661910F5646E001E8154 /* Icon.png in Resources */,
-				6C38667110F57C6C001E8154 /* Campsites.plist in Resources */,
-				6C3866DD10F588CF001E8154 /* Parks.plist in Resources */,
 				6C6F9D9110FB1E14008CB360 /* CampsiteViewController.xib in Resources */,
 				6C6F9E1210FC01BB008CB360 /* ParkViewController.xib in Resources */,
 				6C93D15F10FE3AF400FEF933 /* NearestCampsitesViewController.xib in Resources */,
@@ -349,6 +347,7 @@
 				6CD35C48110311890063155E /* Default.png in Resources */,
 				6C573C9211067716005C7C49 /* AboutViewController.xib in Resources */,
 				6C573CB111067E73005C7C49 /* About.html in Resources */,
+				6C573FCA1106CA58005C7C49 /* ThatsCamping.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +356,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C573F2F1106B455005C7C49 /* Campsites.plist in Resources */,
-				6C573F3D1106B5CF005C7C49 /* PopulateStore-Info.plist in Resources */,
 				6C573E6C1106AD97005C7C49 /* Parks.plist in Resources */,
 				6C573E661106AD3E005C7C49 /* ThatsCamping.xcdatamodel in Resources */,
 			);
