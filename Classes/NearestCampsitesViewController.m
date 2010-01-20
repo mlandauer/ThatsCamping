@@ -7,6 +7,7 @@
 #import "CampsiteViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "MyAnnotationView.h"
+#import "AboutViewController.h"
 
 @implementation NearestCampsitesViewController
 
@@ -132,6 +133,20 @@
 		[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:containerView cache:TRUE];
 	}
 	[UIView commitAnimations];
+}
+
+- (IBAction)aboutButtonPressed:(id)sender
+{
+	AboutViewController *aboutViewController = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+	aboutViewController.delegate = self;
+	[self presentModalViewController:aboutViewController animated:YES];
+	[aboutViewController release];
+}
+
+// When the about page says it's ready to be closed it calls this (via the delegate)
+- (void)aboutDone
+{
+	[self dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark -

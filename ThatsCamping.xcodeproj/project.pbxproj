@@ -22,6 +22,9 @@
 		6C38661910F5646E001E8154 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C38661810F5646E001E8154 /* Icon.png */; };
 		6C38667110F57C6C001E8154 /* Campsites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C38667010F57C6C001E8154 /* Campsites.plist */; };
 		6C3866DD10F588CF001E8154 /* Parks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C3866DC10F588CF001E8154 /* Parks.plist */; };
+		6C573C9111067716005C7C49 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C573C8F11067716005C7C49 /* AboutViewController.m */; };
+		6C573C9211067716005C7C49 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C573C9011067716005C7C49 /* AboutViewController.xib */; };
+		6C573CB111067E73005C7C49 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 6C573CB011067E73005C7C49 /* About.html */; };
 		6C6F9D9010FB1E14008CB360 /* CampsiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6F9D8E10FB1E14008CB360 /* CampsiteViewController.m */; };
 		6C6F9D9110FB1E14008CB360 /* CampsiteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C6F9D8F10FB1E14008CB360 /* CampsiteViewController.xib */; };
 		6C6F9E1110FC01BB008CB360 /* ParkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6F9E0F10FC01BB008CB360 /* ParkViewController.m */; };
@@ -75,6 +78,10 @@
 		6C38661810F5646E001E8154 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		6C38667010F57C6C001E8154 /* Campsites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Campsites.plist; sourceTree = "<group>"; };
 		6C3866DC10F588CF001E8154 /* Parks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Parks.plist; sourceTree = "<group>"; };
+		6C573C8E11067716005C7C49 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		6C573C8F11067716005C7C49 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		6C573C9011067716005C7C49 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AboutViewController.xib; path = Classes/AboutViewController.xib; sourceTree = "<group>"; };
+		6C573CB011067E73005C7C49 /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
 		6C6F9D8D10FB1E14008CB360 /* CampsiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampsiteViewController.h; sourceTree = "<group>"; };
 		6C6F9D8E10FB1E14008CB360 /* CampsiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampsiteViewController.m; sourceTree = "<group>"; };
 		6C6F9D8F10FB1E14008CB360 /* CampsiteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CampsiteViewController.xib; path = Classes/CampsiteViewController.xib; sourceTree = "<group>"; };
@@ -145,6 +152,8 @@
 				6C6F9E0F10FC01BB008CB360 /* ParkViewController.m */,
 				6C93D3B410FF7FF100FEF933 /* MyAnnotationView.h */,
 				6C93D3B510FF7FF100FEF933 /* MyAnnotationView.m */,
+				6C573C8E11067716005C7C49 /* AboutViewController.h */,
+				6C573C8F11067716005C7C49 /* AboutViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -182,6 +191,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6C573C9011067716005C7C49 /* AboutViewController.xib */,
 				6CCB21A81100501900352E20 /* Entitlements.plist */,
 				6C93D4A310FFEABE00FEF933 /* bg-screen-iphone.png */,
 				6C38661810F5646E001E8154 /* Icon.png */,
@@ -196,6 +206,7 @@
 				6C38667010F57C6C001E8154 /* Campsites.plist */,
 				6C93D15E10FE3AF400FEF933 /* NearestCampsitesViewController.xib */,
 				6CD35C47110311890063155E /* Default.png */,
+				6C573CB011067E73005C7C49 /* About.html */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -323,6 +334,8 @@
 				6CCB21BF110053F600352E20 /* iTunesArtwork in Resources */,
 				6CCB21C0110053F600352E20 /* Icon-Small.png in Resources */,
 				6CD35C48110311890063155E /* Default.png in Resources */,
+				6C573C9211067716005C7C49 /* AboutViewController.xib in Resources */,
+				6C573CB111067E73005C7C49 /* About.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +355,7 @@
 				6C6F9D9010FB1E14008CB360 /* CampsiteViewController.m in Sources */,
 				6C6F9E1110FC01BB008CB360 /* ParkViewController.m in Sources */,
 				6C93D3B610FF7FF100FEF933 /* MyAnnotationView.m in Sources */,
+				6C573C9111067716005C7C49 /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

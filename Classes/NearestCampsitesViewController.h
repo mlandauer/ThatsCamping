@@ -28,6 +28,7 @@
 - (NSString *)bearingInWords:(float)bearing;
 
 - (IBAction)listOrMapChanged:(id)sender;
+- (IBAction)aboutButtonPressed:(id)sender;
 - (void) annotationSelected:(id <MKAnnotation>)annotation;
 - (MKMapView *)mapView;
 - (void)initialiseStore;
