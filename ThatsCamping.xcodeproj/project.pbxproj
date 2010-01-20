@@ -51,7 +51,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* ThatsCampingAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThatsCampingAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* ThatsCampingAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThatsCampingAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* Thats Campin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thats Campin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* ThatsCamping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThatsCamping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28A0AAE50D9B0CCF005BE974 /* ThatsCamping_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThatsCamping_Prefix.pch; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Thats Campin.app */,
+				1D6058910D05DD3D006BFB54 /* ThatsCamping.app */,
 				6C573E421106AC54005C7C49 /* PopulateStore.app */,
 			);
 			name = Products;
@@ -183,7 +183,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				6C573E441106AC54005C7C49 /* PopulateStore-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -215,6 +214,7 @@
 				28A9E9320F43CA900016529B /* ThatsCamping.xcdatamodel */,
 				6C38667010F57C6C001E8154 /* Campsites.plist */,
 				6C93D15E10FE3AF400FEF933 /* NearestCampsitesViewController.xib */,
+				6C573E441106AC54005C7C49 /* PopulateStore-Info.plist */,
 				6CD35C47110311890063155E /* Default.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				6C573CB011067E73005C7C49 /* About.html */,
@@ -285,7 +285,7 @@
 			);
 			name = ThatsCamping;
 			productName = ThatsCamping;
-			productReference = 1D6058910D05DD3D006BFB54 /* Thats Campin.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* ThatsCamping.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6C573E411106AC54005C7C49 /* PopulateStore */ = {
@@ -405,7 +405,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ThatsCamping_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = "Thats Campin";
+				PRODUCT_NAME = ThatsCamping;
 			};
 			name = Debug;
 		};
@@ -417,7 +417,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ThatsCamping_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = "Thats Campin";
+				PRODUCT_NAME = ThatsCamping;
 			};
 			name = Release;
 		};
@@ -518,7 +518,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ThatsCamping_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = "Thats Campin";
+				PRODUCT_NAME = ThatsCamping;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 			};
 			name = Distribution;
