@@ -1,5 +1,8 @@
 # Random bits and bobs
 
+require 'rubygems'
+require 'nokogiri'
+
 def prepare_source(name, url)
   source = Source.find(:first, :conditions => {:name => name})
   if source
@@ -39,8 +42,10 @@ def simplify_whitespace(str)
 end
 
 def replace_with_inside(a)
+  insert_point = a
   a.children.each do |c|
-    c.parent = a.parent
+    insert_point.add_next_sibling(c)
+    insert_point = c
   end
   a.remove
 end
