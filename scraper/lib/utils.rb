@@ -87,5 +87,19 @@ def html_into_plain_text(html)
   description = description.strip
   # Remove comments
   description.gsub!(/<!--.*-->/, "")
+  
+  # Remove all paragraphs with the word 'pdf' in them (because they're just links to maps)
+  # Don't match full stops with pdf after them or full stops in the middle of numbers
+  # This little bit here is a bounty of ugliness. Don't ask me to explain how it works. I can't remember.
+  # And I wrote it three minutes ago...
+  description.gsub!(".pdf", "pdf")
+  description.gsub!(/(\d)\.(\d)/, '\1axax\2')
+  description = description.split("\n\n").map do |s1|
+    temp = s1.split(".").reject{|t| t =~ /pdf/i}.join(".")
+    temp += "." if s1[-1..-1] == "." && temp != ""
+    temp if temp != ""
+  end.compact.join("\n\n")
+  description.gsub!("axax", ".")
+  
   description
 end

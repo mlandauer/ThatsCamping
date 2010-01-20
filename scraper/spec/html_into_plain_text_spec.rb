@@ -35,4 +35,20 @@ describe "html_into_plain_text" do
     #html_into_plain_text("<div><p></p></div>").should == ""
     html_into_plain_text("<div><p>A <link> link should be ignored</p></div>").should == "A link should be ignored"
   end
+  
+  it "should remove a complete paragraph if it has the word pdf in it" do
+    html_into_plain_text("<div><p>A paragraph<br>is pdf not nice.<br>Is good</p></div>").should == "A paragraph\n\nIs good"
+  end
+  
+  it "should remove a sentence with the word pdf in it" do
+    html_into_plain_text("<div><p>A paragraph. pdf is not nice. Is good.</p></div>").should == "A paragraph. Is good."
+  end
+  
+  it "should not split sentences when there's a filename with a dot pdf ending" do
+    html_into_plain_text("<div><p>A paragraph. foo.pdf is silly. Oh yes.</p></div>").should == "A paragraph. Oh yes."
+  end
+  
+  it "should not split sentences when there a number with a decimal point in it" do
+    html_into_plain_text("<div><p>A 1.0 paragraph. pdf 12.0 silly. Oh yes.</p></div>").should == "A 1.0 paragraph. Oh yes."
+  end
 end

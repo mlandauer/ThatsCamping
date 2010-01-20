@@ -702,8 +702,6 @@ There are eight (8) slab bunks in the hut but you will need to bring all your ow
       <key>description</key>
       <string>The main feature of Bonnie Vale is its large sand spit, where there's good swimming. Wood fired and solid fuel barbecues are prohibited. There are no powered sites.
 
-Download a map of Bonnie Vale campground (PDF - 3.2MB).
-
 Please note that some campsites are temporarily unavailable and will be allocated according to availability.</string>
     </dict>
     <dict>
@@ -2400,7 +2398,7 @@ You'll need to bring drinking water and firewood with you - gathering native veg
       <key>car</key>
       <true/>
       <key>description</key>
-      <string>This grassy area near the beautiful Nepean River gorge is well known for its population of eastern grey kangaroos. There are five camping areas: Appletree Flat, Redgum, Nioka, Bennets Ridge and Daruk. Each area is suitable for 20 people. See a map of Euroka's camping areas (PDF - 75KB).
+      <string>This grassy area near the beautiful Nepean River gorge is well known for its population of eastern grey kangaroos. There are five camping areas: Appletree Flat, Redgum, Nioka, Bennets Ridge and Daruk. Each area is suitable for 20 people.
 
 There are picnic tables and fireplaces; bring your own gas/fuel stove or firewood. It is forbidden to collect firewood from the bush at Euroka.
 
@@ -2590,9 +2588,7 @@ Please note that the campervan sites are suitable for small campervans or camper
       <key>car</key>
       <true/>
       <key>description</key>
-      <string>This small camping ground is set in a quiet, protected pocket of the Frazer Valley a short walk away from Frazer Beach. It has quick, easy access to Snapper Point, a popular fishing spot. Each of the six sites has room for up to six people. You can stay for a maximum of two weeks.
-
-View a map of the camp sites [PDF 30KB].</string>
+      <string>This small camping ground is set in a quiet, protected pocket of the Frazer Valley a short walk away from Frazer Beach. It has quick, easy access to Snapper Point, a popular fishing spot. Each of the six sites has room for up to six people. You can stay for a maximum of two weeks.</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3940,9 +3936,7 @@ Firewood collection within the park is not permitted. Please bring your own fire
       <key>car</key>
       <false/>
       <key>description</key>
-      <string>Bouddi Coastal Walk, picnicking, and fishing. Wood fires are not permitted.
-
-View a map of the camp sites [PDF 165KB]</string>
+      <string>Bouddi Coastal Walk, picnicking, and fishing. Wood fires are not permitted.</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4348,9 +4342,7 @@ Extra information about camping at this campground: campsites are around 100m fr
       <key>car</key>
       <false/>
       <key>description</key>
-      <string>You'll be camping at the top of the Old Great North Road here. There are excellent bushwalks around this historic convict-built road. The campground is also a great base for day tour drives into Macdonald Valley (historic buildings), Wollombi Valley (vineyards) and Koolang Observatory.
-
-View a map of the camp sites [PDF 87KB]</string>
+      <string>You'll be camping at the top of the Old Great North Road here. There are excellent bushwalks around this historic convict-built road. The campground is also a great base for day tour drives into Macdonald Valley (historic buildings), Wollombi Valley (vineyards) and Koolang Observatory.</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5354,9 +5346,7 @@ Eastern grey kangaroos, swamp wallabies, brushtail possums and a large variety o
       <key>car</key>
       <false/>
       <key>description</key>
-      <string>The main features are at the eastern end of Putty Beach, which provides good swimming and the start of the Coastal Walk. Wood fires are not permitted. Important note: Showers are open-air.
-
-View a map of the camp sites [PDF 41KB].</string>
+      <string>The main features are at the eastern end of Putty Beach, which provides good swimming and the start of the Coastal Walk. Wood fires are not permitted. Important note: Showers are open-air.</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6008,9 +5998,7 @@ This is a great place for walking and scenic drives.</string>
       <key>car</key>
       <false/>
       <key>description</key>
-      <string>Tallow Beach is an unpatrolled beach where you can swim, surf and fish. Box Head walking track and Flannel Flower/Lobster Beach walking tracks are nearby. No barbecues are provided and wood fires are not permitted (fuel stoves only).
-
-View a map of the camp sites [PDF 165KB]</string>
+      <string>Tallow Beach is an unpatrolled beach where you can swim, surf and fish. Box Head walking track and Flannel Flower/Lobster Beach walking tracks are nearby. No barbecues are provided and wood fires are not permitted (fuel stoves only).</string>
     </dict>
     <dict>
       <key>shortName</key>
