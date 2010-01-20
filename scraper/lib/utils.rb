@@ -55,34 +55,33 @@ def html_into_plain_text(html)
   description = Nokogiri::HTML.fragment(html)
   # Remove images and links associated with them
   description.search('a > img').each{|i| i.parent.remove}
-  description.search('img').remove
-  description.search('div#footer').remove
-  description.search('div.clearRight').remove
-  description.search('script').remove
+  ['img', 'div#footer', 'div.clearRight', 'script', 'h3', 'link'].each do |s|
+    description.search(s).remove
+  end
   # Turn occurences of "<a>foo</a>" into "foo"
-  description.search('a').each {|a| replace_with_inside(a)}
-  description.search('b').each {|a| replace_with_inside(a)}
-  description.search('font').each {|a| replace_with_inside(a)}
-  description.search('span').each {|a| replace_with_inside(a)}
-  description.search('ul').each {|a| replace_with_inside(a)}
-  description.search('li').each {|a| replace_with_inside(a)}
-  description.search('div > div').each {|a| replace_with_inside(a)}
+  ['a', 'b', 'i', 'font', 'span', 'ul', 'li', 'div > div'].each do |s|
+    description.search(s).each {|a| replace_with_inside(a)}
+  end
   
   # Turn all occurences of "<p>Some Text</p>" into "Some Text<br>"
   description.search('p').each do |p|
+    insert_point = p
     p.children.each do |c|
-      c.parent = p.parent
+      insert_point.add_next_sibling(c)
+      insert_point = c
     end
     br = Nokogiri::XML::Node.new "br", description
-    br.parent = p.parent
+    insert_point.add_next_sibling(br)
     p.remove
   end
   description = description.at('div').inner_html
   # replace &nbsp; with a simple space
   description.gsub!("&nbsp;", " ")
+  description.gsub!("&ndash;", "-")
   # Now replace "<br>" by "\n\n"
   description = simplify_whitespace(description)
   description.gsub!("<br>", "\n")
+  description.gsub!(/\n\s+/, "\n")
   description.squeeze!("\n")
   description.gsub!("\n", "\n\n")
   description = description.strip

@@ -702,9 +702,9 @@ There are eight (8) slab bunks in the hut but you will need to bring all your ow
       <key>description</key>
       <string>The main feature of Bonnie Vale is its large sand spit, where there's good swimming. Wood fired and solid fuel barbecues are prohibited. There are no powered sites.
 
-Download a map of (PDF - 3.2MB).
+Download a map of Bonnie Vale campground (PDF - 3.2MB).
 
-Please note that some campsites are temporarily unavailable and will be allocated according to availability. Bonnie Vale campground</string>
+Please note that some campsites are temporarily unavailable and will be allocated according to availability.</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -732,7 +732,9 @@ Please note that some campsites are temporarily unavailable and will be allocate
       <key>car</key>
       <true/>
       <key>description</key>
-      <string>Korsmans Landing (26 sites)Bungaree Bay (7 sites)Violet Hill (40 sites).The following camping areas are located around the Two-mile and Boolambayte Lakes:</string>
+      <string>The following camping areas are located around the Two-mile and Boolambayte Lakes:
+
+Korsmans Landing (26 sites) Bungaree Bay (7 sites) Violet Hill (40 sites).</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -1064,7 +1066,7 @@ Please note that some campsites are temporarily unavailable and will be allocate
       <key>car</key>
       <false/>
       <key>description</key>
-      <string>This campground stands on the edge of the tablelands and has a spectacular lookout over the Apsley River Gorge. From the lookout, a leads down the ridge to Riverside Visitor Area on the Apsley River.walking track</string>
+      <string>This campground stands on the edge of the tablelands and has a spectacular lookout over the Apsley River Gorge. From the lookout, a walking track leads down the ridge to Riverside Visitor Area on the Apsley River.</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2398,11 +2400,11 @@ You'll need to bring drinking water and firewood with you - gathering native veg
       <key>car</key>
       <true/>
       <key>description</key>
-      <string>This grassy area near the beautiful Nepean River gorge is well known for its population of eastern grey kangaroos. There are five camping areas: Appletree Flat, Redgum, Nioka, Bennets Ridge and Daruk. Each area is suitable for 20 people. See a (PDF - 75KB).
+      <string>This grassy area near the beautiful Nepean River gorge is well known for its population of eastern grey kangaroos. There are five camping areas: Appletree Flat, Redgum, Nioka, Bennets Ridge and Daruk. Each area is suitable for 20 people. See a map of Euroka's camping areas (PDF - 75KB).
 
 There are picnic tables and fireplaces; bring your own gas/fuel stove or firewood. It is forbidden to collect firewood from the bush at Euroka.
 
-Flush toilets are available at the rangers station while pit toilets are provided at Euroka campground.map of Euroka's camping areas</string>
+Flush toilets are available at the rangers station while pit toilets are provided at Euroka campground.</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2436,7 +2438,7 @@ Flush toilets are available at the rangers station while pit toilets are provide
       <key>description</key>
       <string>See the general Euroka campground information for facilities and activities. NOTE: Bring your own firewood - collecting firewood from the bush at Euroka is prohibited. 
 
- that the campervan sites are suitable for small campervans or campertrailers - the sites are adjacent to the road edge.Please note</string>
+Please note that the campervan sites are suitable for small campervans or campertrailers - the sites are adjacent to the road edge.</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2590,7 +2592,7 @@ Flush toilets are available at the rangers station while pit toilets are provide
       <key>description</key>
       <string>This small camping ground is set in a quiet, protected pocket of the Frazer Valley a short walk away from Frazer Beach. It has quick, easy access to Snapper Point, a popular fishing spot. Each of the six sites has room for up to six people. You can stay for a maximum of two weeks.
 
-View a [PDF 30KB].map of the camp sites</string>
+View a map of the camp sites [PDF 30KB].</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -2804,7 +2806,7 @@ View a [PDF 30KB].map of the camp sites</string>
       <key>description</key>
       <string>At this campground, you can enjoy fishing from the beach, surfing and beach walking. 
 
- Extra information about camping at this campground: you'll need to bring your own drinking water. Maximum length of stay: two weeks during school holiday periods; four weeks at other times.</string>
+Extra information about camping at this campground: you'll need to bring your own drinking water. Maximum length of stay: two weeks during school holiday periods; four weeks at other times.</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -3940,7 +3942,7 @@ Firewood collection within the park is not permitted. Please bring your own fire
       <key>description</key>
       <string>Bouddi Coastal Walk, picnicking, and fishing. Wood fires are not permitted.
 
-View a [PDF 165KB]map of the camp sites</string>
+View a map of the camp sites [PDF 165KB]</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4282,7 +4284,7 @@ View a [PDF 165KB]map of the camp sites</string>
       <key>description</key>
       <string>From here you can enjoy fishing, surfing, beach walking and canoeing. 
 
- Extra information about camping at this campground: campsites are around 100m from car parking. You'll need to bring your own drinking water. Maximum length of stay: two weeks during school holiday periods; four weeks at other times.</string>
+Extra information about camping at this campground: campsites are around 100m from car parking. You'll need to bring your own drinking water. Maximum length of stay: two weeks during school holiday periods; four weeks at other times.</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -4348,7 +4350,7 @@ View a [PDF 165KB]map of the camp sites</string>
       <key>description</key>
       <string>You'll be camping at the top of the Old Great North Road here. There are excellent bushwalks around this historic convict-built road. The campground is also a great base for day tour drives into Macdonald Valley (historic buildings), Wollombi Valley (vineyards) and Koolang Observatory.
 
-View a [PDF 87KB]map of the camp sites</string>
+View a map of the camp sites [PDF 87KB]</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5316,11 +5318,11 @@ Firewood is provided for open fire places.</string>
       <key>car</key>
       <true/>
       <key>description</key>
-      <string>There is an office at this campground, and a manager is present 7 days a week. Powered sites are available. Limited wood barbecues are available for cooking outside of peak season but it is recommended you bring fuel stoves to use while on the park grounds. 
+      <string>There is an office at this campground, and a manager is present 7 days a week. Powered sites are available. Limited wood barbecues are available for cooking outside of peak season but it is recommended you bring fuel stoves to use while on the park grounds. NO FIRES are to be lit in the peak seasons (Christmas/Easter or long weekends).
 
- Explore Durras mountain, enjoy the coastal walks or discover sea life on the rock platforms. Fishing, snorkelling, surfing and swimming are also popular pasttimes for campers and day visitors alike.
+Explore Durras mountain, enjoy the coastal walks or discover sea life on the rock platforms. Fishing, snorkelling, surfing and swimming are also popular pasttimes for campers and day visitors alike.
 
- Eastern grey kangaroos, swamp wallabies, brushtail possums and a large variety of bird life can be seen in the campground or on the beach at various times throughout the day and night. When sighting birds and animals please remember they have their own foods and can become sick and/or aggressive once introduced to human foods.NO FIRES are to be lit in the peak seasons (Christmas/Easter or long weekends).</string>
+Eastern grey kangaroos, swamp wallabies, brushtail possums and a large variety of bird life can be seen in the campground or on the beach at various times throughout the day and night. When sighting birds and animals please remember they have their own foods and can become sick and/or aggressive once introduced to human foods.</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -5354,7 +5356,7 @@ Firewood is provided for open fire places.</string>
       <key>description</key>
       <string>The main features are at the eastern end of Putty Beach, which provides good swimming and the start of the Coastal Walk. Wood fires are not permitted. Important note: Showers are open-air.
 
-View a [PDF 41KB].map of the camp sites</string>
+View a map of the camp sites [PDF 41KB].</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6008,7 +6010,7 @@ This is a great place for walking and scenic drives.</string>
       <key>description</key>
       <string>Tallow Beach is an unpatrolled beach where you can swim, surf and fish. Box Head walking track and Flannel Flower/Lobster Beach walking tracks are nearby. No barbecues are provided and wood fires are not permitted (fuel stoves only).
 
-View a [PDF 165KB]map of the camp sites</string>
+View a map of the camp sites [PDF 165KB]</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -6216,7 +6218,7 @@ View a [PDF 165KB]map of the camp sites</string>
       <key>car</key>
       <true/>
       <key>description</key>
-      <string>This camping ground is beside the Turon River, site of the goldrush from 1851. Panning or digging for gold are not allowed, but you can go bushwalking, fishing (with a ) and birdwatching.fishing licence</string>
+      <string>This camping ground is beside the Turon River, site of the goldrush from 1851. Panning or digging for gold are not allowed, but you can go bushwalking, fishing (with a fishing licence) and birdwatching.</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -7448,7 +7450,7 @@ Yarrangobilly River meanders through the campground before cutting its way throu
       <key>car</key>
       <true/>
       <key>description</key>
-      <string>It's ideal for picnics, swimming and short walks. You can also visit the historic .Youdales HutThis campground is adjacent to two wilderness areas on the upper reaches of the picturesque Kunderang Brook.</string>
+      <string>This campground is adjacent to two wilderness areas on the upper reaches of the picturesque Kunderang Brook. It's ideal for picnics, swimming and short walks. You can also visit the historic Youdales Hut.</string>
     </dict>
     <dict>
       <key>shortName</key>
@@ -7512,9 +7514,9 @@ Yarrangobilly River meanders through the campground before cutting its way throu
       <key>car</key>
       <false/>
       <key>description</key>
-      <string>Brambles Green (2 sites)Rivermouth (5 sites)Joes Cove (2 sites)Freshwater (7 sites)Two Mile Sands (4 sites)Mackaway Bay (3 sites)Johnsons Beach (17 sites)Shelly Beach (18 sites)Sunny Side (4 sites).You'll find boat-based camping at the following locations:
+      <string>You'll find boat-based camping at the following locations:
 
-There are toilets at Rivermouth, Freshwater, Johnsons Beach and Shelly Beach campgrounds only.</string>
+Brambles Green (2 sites) Rivermouth (5 sites) Joes Cove (2 sites) Freshwater (7 sites) Two Mile Sands (4 sites) Mackaway Bay (3 sites) Johnsons Beach (17 sites) Shelly Beach (18 sites) Sunny Side (4 sites). There are toilets at Rivermouth, Freshwater, Johnsons Beach and Shelly Beach campgrounds only.</string>
     </dict>
     <dict>
       <key>shortName</key>
