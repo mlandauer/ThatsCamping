@@ -59,6 +59,7 @@ Park.find(:all).each do |park|
       description = html_into_plain_text("<div>" + content.children.find_consecutive{|p| p.at('strong').nil? }.join + "</div>")
       puts description
       raise "Found tag" if description =~ /<.*>/
+      raise "Found ampersand" if description =~ /&/
       site.description = description
       site.save!
     end
