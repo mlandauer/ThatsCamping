@@ -1,4 +1,7 @@
 // The table view controller responsible for displaying the list of events, supporting additional functionality:
+//
+// Copyright (C) 2010 Matthew Landauer and Katherine Szuminska
+//
 
 #import <CoreLocation/CoreLocation.h>
 #import	<MapKit/MapKit.h>

@@ -1,5 +1,8 @@
-#import <CoreData/CoreData.h>
+//
+// Copyright (C) 2010 Matthew Landauer and Katherine Szuminska
+//
 
+#import <CoreData/CoreData.h>
 
 @interface Park :  NSManagedObject  
 {

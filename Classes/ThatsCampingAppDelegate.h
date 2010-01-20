@@ -1,4 +1,7 @@
 // Application delegate to set up the Core Data stack and configure the view and navigation controllers.
+//
+// Copyright (C) 2010 Matthew Landauer and Katherine Szuminska
+//
 
 @interface ThatsCampingAppDelegate : NSObject <UIApplicationDelegate> {
     

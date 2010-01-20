@@ -1,5 +1,8 @@
-#import <UIKit/UIKit.h>
+//
+// Copyright (C) 2010 Matthew Landauer and Katherine Szuminska
+//
 
+#import <UIKit/UIKit.h>
 
 @interface AboutViewController : UIViewController
 {

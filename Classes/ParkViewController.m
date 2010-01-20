@@ -1,3 +1,7 @@
+//
+// Copyright (C) 2010 Matthew Landauer and Katherine Szuminska
+//
+
 #import "ParkViewController.h"
 #import "CampsiteViewController.h"
 

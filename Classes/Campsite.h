@@ -1,3 +1,7 @@
+//
+// Copyright (C) 2010 Matthew Landauer and Katherine Szuminska
+//
+
 #import <CoreData/CoreData.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>

@@ -1,5 +1,8 @@
-#import "AboutViewController.h"
+//
+// Copyright (C) 2010 Matthew Landauer and Katherine Szuminska
+//
 
+#import "AboutViewController.h"
 
 @implementation AboutViewController
 
