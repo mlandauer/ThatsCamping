@@ -3,12 +3,15 @@
 //
 
 #import <MapKit/MapKit.h>
-#import "NearestCampsitesViewController.h"
+
+@protocol AnnotationSelectedDelegate <NSObject>
+- (void) annotationSelected:(id <MKAnnotation>)annotation;
+@end
 
 @interface MyAnnotationView : MKPinAnnotationView {
-	NearestCampsitesViewController *delegate;
+	id <AnnotationSelectedDelegate> delegate;
 }
 
-@property (nonatomic, retain) NearestCampsitesViewController *delegate;
+@property (nonatomic, retain) id <AnnotationSelectedDelegate> delegate;
 
 @end

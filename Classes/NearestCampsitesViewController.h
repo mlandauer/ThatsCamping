@@ -6,8 +6,10 @@
 #import <CoreLocation/CoreLocation.h>
 #import	<MapKit/MapKit.h>
 #import "Campsite.h"
+#import "MyAnnotationView.h"
+#import "AboutViewController.h"
 
-@interface NearestCampsitesViewController : UIViewController <CLLocationManagerDelegate, UITableViewDelegate, MKMapViewDelegate> {
+@interface NearestCampsitesViewController : UIViewController <CLLocationManagerDelegate, UITableViewDelegate, MKMapViewDelegate, AnnotationSelectedDelegate, AboutDoneDelegate> {
 	
     NSMutableArray *campsitesArray;
     CLLocationManager *locationManager;

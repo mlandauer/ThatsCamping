@@ -4,14 +4,18 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol AboutDoneDelegate <NSObject>
+- (void) aboutDone;
+@end
+
 @interface AboutViewController : UIViewController
 {
 	UIWebView *webView;
-	UIViewController *delegate;
+	id <AboutDoneDelegate> delegate;
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
-@property (nonatomic, retain) UIViewController *delegate;
+@property (nonatomic, retain) id <AboutDoneDelegate> delegate;
 
 - (IBAction)doneButtonPressed:(id)sender;
 
