@@ -229,15 +229,19 @@
 // This is called from MyAnnotationView when a user clicks on a pin on the map
 - (void) annotationSelected:(id <MKAnnotation>)annotation
 {
-	Campsite *campsite = (Campsite *) annotation;
+	[self selectRowForCampsite:annotation animated:NO scrollPosition:UITableViewScrollPositionMiddle];
+}
+
+- (void) selectRowForCampsite:(Campsite *)campsite animated:(BOOL)animated scrollPosition:(UITableViewScrollPosition)scrollPosition
+{
 	// TODO: There must be a more concise way of doing this
 	NSUInteger indexes[2];
 	indexes[0] = 0;
 	indexes[1] = [campsitesArray indexOfObject:campsite];
 	NSIndexPath *indexPath = [NSIndexPath indexPathWithIndexes:indexes length:2];
-
+	
 	if (![[tableView indexPathForSelectedRow] isEqual:indexPath]) {
-		[tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionMiddle];
+		[tableView selectRowAtIndexPath:indexPath animated:animated scrollPosition:scrollPosition];
 	}
 }
 
@@ -339,6 +343,13 @@
 		[mapView setCenterCoordinate:newLocation.coordinate animated:YES];
 	}
 	
+	// Record the currently selected campsite (so after updating the content) we can reselect it
+	Campsite *selectedCampsite = nil;
+	NSIndexPath *selectedIndexPath = [tableView indexPathForSelectedRow];
+	if (selectedIndexPath != nil) {
+		selectedCampsite = [campsitesArray objectAtIndex:selectedIndexPath.row];
+	}
+	
 	// Now fetch the data from the store
 	
 	/*
@@ -383,7 +394,12 @@
 	[self setCampsitesArray:mutableFetchResults];
 	
 	// Now show the new data
-	[[self tableView] reloadData];
+	[[self tableView] reloadData];	
+
+	// Reselect the campsite
+	if (selectedCampsite != nil) {
+		[self selectRowForCampsite:selectedCampsite animated:NO scrollPosition:UITableViewScrollPositionNone];
+	}
 }
 
 // The user explicitly said, "No, I don't want you to use my location".
@@ -395,6 +411,13 @@
 	[activityIndicatorView stopAnimating];
 	// Enable the location button so we can change our mind
 	locationButton.enabled = YES;
+
+	// Record the currently selected campsite (so after updating the content) we can reselect it
+	Campsite *selectedCampsite = nil;
+	NSIndexPath *selectedIndexPath = [tableView indexPathForSelectedRow];
+	if (selectedIndexPath != nil) {
+		selectedCampsite = [campsitesArray objectAtIndex:selectedIndexPath.row];
+	}
 
 	// Show the campsites in the table in alphabetical order by campsite name
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
@@ -418,6 +441,11 @@
 	
 	// Now show the new data
 	[[self tableView] reloadData];
+	
+	// Reselect the campsite
+	if (selectedCampsite != nil) {
+		[self selectRowForCampsite:selectedCampsite animated:NO scrollPosition:UITableViewScrollPositionNone];
+	}	
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error

@@ -5,6 +5,7 @@
 
 #import <CoreLocation/CoreLocation.h>
 #import	<MapKit/MapKit.h>
+#import "Campsite.h"
 
 @interface NearestCampsitesViewController : UIViewController <CLLocationManagerDelegate, UITableViewDelegate, MKMapViewDelegate> {
 	
@@ -40,5 +41,6 @@
 - (void)doNotUseLocation;
 - (IBAction)locationButtonPressed:(id)sender;
 - (void) updateLocation;
+- (void) selectRowForCampsite:(Campsite *)campsite animated:(BOOL)animated scrollPosition:(UITableViewScrollPosition)scrollPosition;
 
 @end
