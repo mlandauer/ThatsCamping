@@ -40,8 +40,8 @@
 - (CLLocationCoordinate2D) coordinate
 {
 	CLLocationCoordinate2D c;
-	c.latitude = [[self latitude] doubleValue];
-	c.longitude = [[self longitude] doubleValue];
+	c.latitude = [self.latitude doubleValue];
+	c.longitude = [self.longitude doubleValue];
 	return c;
 }
 
