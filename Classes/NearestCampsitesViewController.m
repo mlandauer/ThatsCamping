@@ -32,9 +32,10 @@
     [containerView addSubview:tableView];
 	
 	// Start the location manager.
+	useLocation = YES;
 	[[self locationManager] startUpdatingLocation];
 	[activityIndicatorView startAnimating];
-
+	
 	// Fetch the campsites in order of distance (but only for those with distance set)
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
 	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
@@ -57,6 +58,9 @@
 	}	
 
 	[self setCampsitesArray:mutableFetchResults];	
+
+	// Uncomment the line below if you want to test the situation where the user says "Don't use my location" on the simulator
+	//[self doNotUseLocation];
 }
 
 // Returns the map view. Only created when it's needed as it takes up a lot of CPU cycles updating
@@ -84,23 +88,32 @@
 		[mapView addAnnotations:fetchResults];
 
 		// Make the default map view show approximately one degree of latitude and longitude (approx 100km)
-		MKCoordinateSpan span;
-		span.latitudeDelta = 1.0;
-		span.longitudeDelta = 1.0;
+		MKCoordinateSpan span = {1.0, 1.0};
 		MKCoordinateRegion region;
 		region.span = span;
 		
 		NSIndexPath *selected = [tableView indexPathForSelectedRow];
-		if (selected == nil) {
-			// Use the current location as the centre of the map
-			region.center = [locationManager location].coordinate;;
+		Campsite *campsite = nil;
+		if (selected != nil) {
+			campsite = [campsitesArray objectAtIndex:selected.row];
 		}
-		else {
-			// Use the selected campsite as the centre of the map
-			Campsite *campsite = [campsitesArray objectAtIndex:selected.row];
+
+		// If a campsite is selected and it has position information use it as the centre of the map
+		if (campsite != nil && campsite.longitude != nil && campsite.latitude != nil) {
 			region.center = campsite.coordinate;
 			// TODO: Should select the campsite on the map as well but I can't get this to work
 		}
+		// Otherwise, if the user is allow their location to be used put them at the centre of the map
+		else if (useLocation) {
+			// Use the current location as the centre of the map
+			region.center = [locationManager location].coordinate;;
+		}
+		// Otherwise just show all of NSW
+		else {
+			MKCoordinateRegion nswRegion = {{-32.83, 150.14}, {8.0, 8.0}};
+			region = nswRegion;
+		}
+		
 		mapView.region = region;
 		
 		// And finally... add it to the containerView (but hidden)
@@ -241,19 +254,25 @@
 	
 	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@\n%@", [campsite shortName], [[campsite park] shortName]];
 	cell.detailTextLabel.numberOfLines = 2;
-	
-	static NSNumberFormatter *numberFormatter = nil;
-	if (numberFormatter == nil) {
-		numberFormatter = [[NSNumberFormatter alloc] init];
-		[numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
-		[numberFormatter setMaximumFractionDigits:0];
+
+	// Only show the distance if the user is allowing us to use their location
+	if (useLocation) {
+		static NSNumberFormatter *numberFormatter = nil;
+		if (numberFormatter == nil) {
+			numberFormatter = [[NSNumberFormatter alloc] init];
+			[numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+			[numberFormatter setMaximumFractionDigits:0];
+		}
+
+		NSString *string = [NSString stringWithFormat:@"%@ %@",
+							[self distanceInWords:[[campsite distance] doubleValue]],
+							[self bearingInWords:[[campsite bearing] floatValue]]];
+		cell.textLabel.text = string;
+    }
+	else {
+		cell.textLabel.text = @"";
 	}
 
-	NSString *string = [NSString stringWithFormat:@"%@ %@",
-						[self distanceInWords:[[campsite distance] doubleValue]],
-						[self bearingInWords:[[campsite bearing] floatValue]]];
-    cell.textLabel.text = string;
-    
 	return cell;
 }
 
@@ -274,9 +293,15 @@
 	Campsite *campsite = [campsitesArray objectAtIndex:indexPath.row];
 	// If this campsite is not currently selected on the map
 	if (mapView != nil && ((Campsite *) [[mapView selectedAnnotations] objectAtIndex:0]) != campsite) {
-		// Center the map on the campsite and select it
-		mapView.centerCoordinate = campsite.coordinate;
-		[mapView selectAnnotation:campsite animated:NO];
+		if (campsite.latitude != nil && campsite.longitude != nil) {
+			// Center the map on the campsite and select it
+			mapView.centerCoordinate = campsite.coordinate;
+			[mapView selectAnnotation:campsite animated:NO];
+		}
+		else {
+			// The currently selected campsite has no position, so isn't on the map. So, unselect the previously selected one
+			[mapView deselectAnnotation:[[mapView selectedAnnotations] objectAtIndex:0] animated:NO];
+		}
 	}
 	
 	CampsiteViewController *campsiteController = [[CampsiteViewController alloc] initWithNibName:@"CampsiteViewController" bundle:nil];
@@ -355,6 +380,44 @@
 	[[self tableView] reloadData];
 }
 
+// The user explicitly said, "No, I don't want you to use my location".
+- (void)doNotUseLocation
+{
+	useLocation = NO;
+	self.title = @"Camping in NSW";
+	[[self locationManager] stopUpdatingLocation];
+	[activityIndicatorView stopAnimating];
+
+	// Show the campsites in the table in alphabetical order by campsite name
+	NSFetchRequest *request = [[NSFetchRequest alloc] init];
+	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
+	[request setEntity:entity];
+	
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"shortName" ascending:YES];
+	NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+	[request setSortDescriptors:sortDescriptors];
+	[sortDescriptors release];
+	[sortDescriptor release];
+	
+	// Execute the fetch -- create a mutable copy of the result.
+	NSError *error = nil;
+	NSMutableArray *mutableFetchResults = [[managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
+	if (mutableFetchResults == nil) {
+		// Handle the error.
+	}	
+	
+	[self setCampsitesArray:mutableFetchResults];	
+	
+	// Now show the new data
+	[[self tableView] reloadData];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+	if (error.code == kCLErrorDenied) {
+		[self doNotUseLocation];
+	}
+}
 
 #pragma mark -
 #pragma mark Location manager

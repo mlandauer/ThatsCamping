@@ -17,6 +17,7 @@
 	MKMapView *mapView;
 	
 	UIActivityIndicatorView *activityIndicatorView;
+	BOOL useLocation;
 }
 
 @property (nonatomic, retain) NSMutableArray *campsitesArray;
@@ -34,5 +35,6 @@
 - (IBAction)aboutButtonPressed:(id)sender;
 - (void) annotationSelected:(id <MKAnnotation>)annotation;
 - (MKMapView *)mapView;
+- (void)doNotUseLocation;
 
 @end
