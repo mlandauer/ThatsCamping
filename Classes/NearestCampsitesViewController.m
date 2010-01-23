@@ -71,6 +71,9 @@
 		mapView = [[MKMapView alloc] initWithFrame:containerView.frame];
 		mapView.delegate = self;
 		
+		// Shows the user location
+		mapView.showsUserLocation = YES;
+		
 		// Fetch all the campsites that have geo data attached
 		NSFetchRequest *request = [[NSFetchRequest alloc] init];
 		NSEntityDescription *entity = [NSEntityDescription entityForName:@"Campsite" inManagedObjectContext:managedObjectContext];
