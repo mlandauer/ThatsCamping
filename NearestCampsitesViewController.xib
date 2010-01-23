@@ -12,8 +12,8 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="32"/>
 			<integer value="3"/>
-			<integer value="28"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -87,7 +87,7 @@
 							<object class="IBUISegmentedControl" id="649222113">
 								<reference key="NSNextResponder" ref="644841253"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{86, 8}, {144, 30}}</string>
+								<string key="NSFrame">{{88, 8}, {144, 30}}</string>
 								<reference key="NSSuperview" ref="644841253"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -127,10 +127,14 @@
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<object class="NSMutableArray" key="IBUIItems">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIBarButtonItem" id="257242378">
-								<float key="IBUIWidth">27</float>
+							<object class="IBUIBarButtonItem" id="25767040">
+								<object class="NSCustomResource" key="IBUIImage">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">74-location.png</string>
+								</object>
+								<float key="IBUIWidth">32</float>
+								<int key="IBUIStyle">1</int>
 								<reference key="IBUIToolbar" ref="644841253"/>
-								<int key="IBUISystemItemIdentifier">6</int>
 							</object>
 							<object class="IBUIBarButtonItem" id="819771538">
 								<reference key="IBUIToolbar" ref="644841253"/>
@@ -146,7 +150,7 @@
 							</object>
 							<object class="IBUIBarButtonItem" id="348815634">
 								<string key="IBUITitle">?</string>
-								<float key="IBUIWidth">27</float>
+								<float key="IBUIWidth">32</float>
 								<int key="IBUIStyle">1</int>
 								<reference key="IBUIToolbar" ref="644841253"/>
 							</object>
@@ -155,7 +159,7 @@
 					<object class="IBUIActivityIndicatorView" id="152292176">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">-2147483347</int>
-						<string key="NSFrame">{{10, 384}, {20, 20}}</string>
+						<string key="NSFrame">{{42, 384}, {20, 20}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -260,6 +264,22 @@
 					</object>
 					<int key="connectionID">31</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">locationButton</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="25767040"/>
+					</object>
+					<int key="connectionID">33</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">locationButtonPressed:</string>
+						<reference key="source" ref="25767040"/>
+						<reference key="destination" ref="372490531"/>
+					</object>
+					<int key="connectionID">34</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -331,7 +351,7 @@
 							<reference ref="944496472"/>
 							<reference ref="819771538"/>
 							<reference ref="348815634"/>
-							<reference ref="257242378"/>
+							<reference ref="25767040"/>
 						</object>
 						<reference key="parent" ref="191373211"/>
 					</object>
@@ -365,8 +385,8 @@
 						<reference key="parent" ref="644841253"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">29</int>
-						<reference key="object" ref="257242378"/>
+						<int key="objectID">32</int>
+						<reference key="object" ref="25767040"/>
 						<reference key="parent" ref="644841253"/>
 					</object>
 				</object>
@@ -387,9 +407,9 @@
 					<string>24.IBPluginDependency</string>
 					<string>26.IBPluginDependency</string>
 					<string>28.IBPluginDependency</string>
-					<string>29.IBPluginDependency</string>
 					<string>3.IBEditorWindowLastContentRect</string>
 					<string>3.IBPluginDependency</string>
+					<string>32.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
@@ -406,8 +426,8 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>{{305, 96}, {320, 372}}</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
@@ -428,7 +448,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">31</int>
+			<int key="maxID">34</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -442,9 +462,11 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>aboutButtonPressed:</string>
 							<string>listOrMapChanged:</string>
+							<string>locationButtonPressed:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -455,12 +477,14 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>activityIndicatorView</string>
 							<string>containerView</string>
+							<string>locationButton</string>
 							<string>tableView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UIActivityIndicatorView</string>
 							<string>UIView</string>
+							<string>UIBarButtonItem</string>
 							<string>UITableView</string>
 						</object>
 					</object>

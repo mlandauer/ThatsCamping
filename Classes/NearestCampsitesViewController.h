@@ -17,6 +17,7 @@
 	MKMapView *mapView;
 	
 	UIActivityIndicatorView *activityIndicatorView;
+	UIBarButtonItem *locationButton;
 	BOOL useLocation;
 }
 
@@ -27,6 +28,7 @@
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 @property (nonatomic, retain) MKMapView *mapView;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicatorView;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *locationButton;
 
 - (NSString *)distanceInWords:(double)distance;
 - (NSString *)bearingInWords:(float)bearing;
@@ -36,5 +38,7 @@
 - (void) annotationSelected:(id <MKAnnotation>)annotation;
 - (MKMapView *)mapView;
 - (void)doNotUseLocation;
+- (IBAction)locationButtonPressed:(id)sender;
+- (void) updateLocation;
 
 @end

@@ -36,6 +36,7 @@
 		6C6F9D9110FB1E14008CB360 /* CampsiteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C6F9D8F10FB1E14008CB360 /* CampsiteViewController.xib */; };
 		6C6F9E1110FC01BB008CB360 /* ParkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6F9E0F10FC01BB008CB360 /* ParkViewController.m */; };
 		6C6F9E1210FC01BB008CB360 /* ParkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C6F9E1010FC01BB008CB360 /* ParkViewController.xib */; };
+		6C820CB4110A94C500865C83 /* 74-location.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C820CB3110A94C500865C83 /* 74-location.png */; };
 		6C93D15F10FE3AF400FEF933 /* NearestCampsitesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C93D15E10FE3AF400FEF933 /* NearestCampsitesViewController.xib */; };
 		6C93D17710FE3FCB00FEF933 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C93D17610FE3FCB00FEF933 /* MapKit.framework */; };
 		6C93D2B010FED65000FEF933 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C93D2AF10FED65000FEF933 /* QuartzCore.framework */; };
@@ -85,6 +86,7 @@
 		6C6F9E0E10FC01BB008CB360 /* ParkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkViewController.h; sourceTree = "<group>"; };
 		6C6F9E0F10FC01BB008CB360 /* ParkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkViewController.m; sourceTree = "<group>"; };
 		6C6F9E1010FC01BB008CB360 /* ParkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ParkViewController.xib; path = Classes/ParkViewController.xib; sourceTree = "<group>"; };
+		6C820CB3110A94C500865C83 /* 74-location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "74-location.png"; sourceTree = "<group>"; };
 		6C93D15E10FE3AF400FEF933 /* NearestCampsitesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearestCampsitesViewController.xib; sourceTree = "<group>"; };
 		6C93D17610FE3FCB00FEF933 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6C93D2AF10FED65000FEF933 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -200,6 +202,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6C820CB3110A94C500865C83 /* 74-location.png */,
 				6C573FC91106CA58005C7C49 /* ThatsCamping.sqlite */,
 				6C573C9011067716005C7C49 /* AboutViewController.xib */,
 				6CCB21A81100501900352E20 /* Entitlements.plist */,
@@ -348,6 +351,7 @@
 				6C573C9211067716005C7C49 /* AboutViewController.xib in Resources */,
 				6C573CB111067E73005C7C49 /* About.html in Resources */,
 				6C573FCA1106CA58005C7C49 /* ThatsCamping.sqlite in Resources */,
+				6C820CB4110A94C500865C83 /* 74-location.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

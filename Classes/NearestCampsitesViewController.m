@@ -15,8 +15,8 @@
 @implementation NearestCampsitesViewController
 
 
-@synthesize campsitesArray, locationManager, managedObjectContext, tableView, containerView, mapView, activityIndicatorView;
-
+@synthesize campsitesArray, locationManager, managedObjectContext, tableView, containerView, mapView, activityIndicatorView,
+	locationButton;
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -33,8 +33,7 @@
 	
 	// Start the location manager.
 	useLocation = YES;
-	[[self locationManager] startUpdatingLocation];
-	[activityIndicatorView startAnimating];
+	[self updateLocation];
 	
 	// Fetch the campsites in order of distance (but only for those with distance set)
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
@@ -325,6 +324,10 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
 	
 	[activityIndicatorView stopAnimating];
+	[locationManager stopUpdatingLocation];
+	locationButton.enabled = YES;
+	useLocation = YES;
+    self.title = @"Camping near you in NSW";
 
 	// If we are running on the simulator provide a fixed location
 	#if TARGET_IPHONE_SIMULATOR
@@ -390,6 +393,8 @@
 	self.title = @"Camping in NSW";
 	[[self locationManager] stopUpdatingLocation];
 	[activityIndicatorView stopAnimating];
+	// Enable the location button so we can change our mind
+	locationButton.enabled = YES;
 
 	// Show the campsites in the table in alphabetical order by campsite name
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
@@ -420,6 +425,18 @@
 	if (error.code == kCLErrorDenied) {
 		[self doNotUseLocation];
 	}
+}
+
+- (void) updateLocation
+{
+	[[self locationManager] startUpdatingLocation];
+	[activityIndicatorView startAnimating];
+	locationButton.enabled = NO;	
+}
+
+- (IBAction)locationButtonPressed:(id)sender
+{
+	[self updateLocation];
 }
 
 #pragma mark -
