@@ -4,7 +4,7 @@
 //
 
 #import "NearestCampsitesViewController.h"
-#import "ThatsCampingAppDelegate.h"
+#import "AppDelegate.h"
 #import "Campsite.h"
 #import "Park.h"
 #import "CampsiteViewController.h"

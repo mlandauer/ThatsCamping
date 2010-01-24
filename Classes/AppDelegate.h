@@ -3,7 +3,7 @@
 // Copyright (C) 2010 Matthew Landauer and Katherine Szuminska
 //
 
-@interface ThatsCampingAppDelegate : NSObject <UIApplicationDelegate> {
+@interface AppDelegate : NSObject <UIApplicationDelegate> {
     
     UIWindow *window;
     UINavigationController *navigationController;

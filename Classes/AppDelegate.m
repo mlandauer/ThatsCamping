@@ -3,12 +3,12 @@
 // Copyright (C) 2010 Matthew Landauer and Katherine Szuminska
 //
 
-#import "ThatsCampingAppDelegate.h"
+#import "AppDelegate.h"
 #import "NearestCampsitesViewController.h"
 #import "Park.h"
 #import "Campsite.h"
 
-@implementation ThatsCampingAppDelegate
+@implementation AppDelegate
 
 @synthesize window;
 @synthesize navigationController;
