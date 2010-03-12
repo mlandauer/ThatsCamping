@@ -1,0 +1,13 @@
+h1. "Its raining and my weetbix is wet. _That's Campin!"_
+
+The app's namesake is a yearly event when an extended group of friends leave the city lights of Sydney behind to get together, go camping and see in the new year surrounded by good friends, good food and the delights of the Australian bush.
+
+That's Campin! was made by "Matthew Landauer":http://twitter.com/matthewlandauer and "Kat Szuminska":http://twitter.com/katska
+
+Thanks to fellow enthusiasts at "www.wildwalks.com":http://www.wildwalks.com for the campsite location data and the "NSW Department of Environment, Climate Change and Water":http://www.environment.nsw.gov.au/ (DECCW) for all other campsite and park details. We are in no way affiliated with either DECCW or Wild Walks.
+
+The "That's Campin!" icon design by Gabriel Clark. "Location" icon design by Joseph Wain / "glyphish.com":http://glyphish.com/
+
+When we're not making free things for fun on our holidays, we're making free and useful things for fun with the OpenAustralia Foundation. Oops. Things like the websites "openaustralia.org":http://www.openaustralia.org, which makes it really easy to see what your politicians are doing and saying on your behalf in Federal parliament and "planningalerts.org.au":http://www.planningalerts.org.au, which sends you emails when anyone in your area is planning to build something or knock something down.
+
+This software is licensed under the GPL v2
