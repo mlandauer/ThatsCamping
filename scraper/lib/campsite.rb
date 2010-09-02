@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'activerecord'
+require 'active_record'
 
 class Campsite < ActiveRecord::Base
   belongs_to :park

@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'activerecord'
+require 'active_record'
 
 # Establish the connection to the database
 ActiveRecord::Base.establish_connection(

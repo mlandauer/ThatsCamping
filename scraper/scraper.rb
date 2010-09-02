@@ -7,7 +7,7 @@ $:.unshift "#{File.dirname(__FILE__)}/lib"
 require 'rubygems'
 require 'mechanize'
 require 'simple_struct'
-require "activerecord"
+require "active_record"
 
 require 'park'
 require 'campsite'

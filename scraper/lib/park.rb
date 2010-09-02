@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'activerecord'
+require 'active_record'
 require 'campsite'
 
 class Park < ActiveRecord::Base
