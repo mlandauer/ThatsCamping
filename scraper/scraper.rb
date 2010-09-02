@@ -36,7 +36,7 @@ Campsite.delete_all
 
 #ActiveRecord::Base.logger = Logger.new(STDOUT)
 
-agent = WWW::Mechanize.new
+agent = Mechanize.new
 
 page = agent.get("http://www.environment.nsw.gov.au/NationalParks/SearchCampgrounds.aspx")
 page = page.form_with(:name => "campgroundsSearch").submit

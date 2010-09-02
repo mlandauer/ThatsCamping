@@ -11,7 +11,7 @@ require 'db'
 require 'find_consecutive'
 require 'utils'
 
-agent = WWW::Mechanize.new
+agent = Mechanize.new
 
 Park.find(:all).each do |park|
   page = agent.get("http://www.environment.nsw.gov.au/NationalParks/parkHome.aspx?id=#{park.web_id}")

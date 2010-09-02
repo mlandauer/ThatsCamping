@@ -10,7 +10,7 @@ require 'utils'
 require 'db'
 require 'park'
 
-agent = WWW::Mechanize.new
+agent = Mechanize.new
 
 def extract_urls_from_areas_page(page)
   page.at('table.contentpaneopen').search('a').map{|a| a.attributes['href']}

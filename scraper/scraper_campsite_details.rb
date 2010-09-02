@@ -12,7 +12,7 @@ require 'campsite'
 require 'utils'
 require 'find_consecutive'
 
-agent = WWW::Mechanize.new
+agent = Mechanize.new
 
 def paragraphs_after_heading(result)
   ret = []
