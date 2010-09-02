@@ -64,8 +64,14 @@ page.search('#SearchResults')[1].search('tr')[1..-1].each do |camp|
     raise "Unexpected form for url: #{url}"
   end
 
+  camp_name = camp.search('td')[0].inner_text.strip
+  puts "#{camp_name}, #{park_name}..."
+
+  # North Head Beach campground is missing from the detailed description. Is this a mistake?  
+  next if camp_name == "North Head Beach campground"
+
   c = Campsite.new(
-    :name => camp.search('td')[0].inner_text.strip,
+    :name => camp_name,
     :web_id => camp_web_id,
     :park_id => park.id
     )
@@ -126,7 +132,7 @@ page.search('#SearchResults')[1].search('tr')[1..-1].each do |camp|
     when "wood barbecues (firewood supplied)"
       c.barbecues = "wood_supplied"
     # Not recording that the BBQs are free
-    when "gas/electric barbecues", "gas/electric barbecues (free)"
+    when "gas/electric barbecues", "gas/electric barbecues (free)", "gas/electric barbecues (coin-operated)"
       c.barbecues = "gas_electric"
     when "wood barbecues (bring your own firewood)"
       c.barbecues = "wood_bring_your_own"
