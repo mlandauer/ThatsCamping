@@ -225,13 +225,13 @@ end
 
 # Some very simple minded test code. Just do forward and reverse transform
 
-r = Redfearn.new("GRS80")
-v = {:easting => 454760.918, :northing => 6425080.861, :zone => 56}
-a = r.grid_to_ll(v[:easting], v[:northing], v[:zone])
-b = r.ll_to_grid(a[:latitude], a[:longitude])
+#r = Redfearn.new("GRS80")
+#v = {:easting => 454760.918, :northing => 6425080.861, :zone => 56}
+#a = r.grid_to_ll(v[:easting], v[:northing], v[:zone])
+#b = r.ll_to_grid(a[:latitude], a[:longitude])
 
 # Test that it's accurate to 1 mm
-if (v[:easting] - b[:easting]).abs < 0.001 && (v[:northing] - b[:northing]).abs < 0.001 && v[:zone] == b[:zone]
-    puts "It worked!"
-end
+#if (v[:easting] - b[:easting]).abs < 0.001 && (v[:northing] - b[:northing]).abs < 0.001 && v[:zone] == b[:zone]
+#    puts "It worked!"
+#end
 
