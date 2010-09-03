@@ -10,25 +10,19 @@ def redfearn_ll_to_grid(latitude_degrees, longitude_degrees, ellipsoid_definitio
     when "GRS80" 
         semi_major_axis = 6378137.000
         inverse_flattening = 298.257222101000
-        tm_definition = "GDA-MGA"
     when "WGS84"
         semi_major_axis = 6378137.000
         inverse_flattening = 298.257223563000
-        tm_definition = "GDA-MGA"
     else
         raise "unexpected value for ellipsoid_definition"
     end
-     
-    case tm_definition
-    when "GDA-MGA" 
-        false_easting = 500000.0000
-        false_northing = 10000000.0000
-        central_scale_factor = 0.9996
-        zone_width_degrees = 6.0
-        longitude_of_the_central_meridian_of_zone_1_degrees = -177.0
-    else
-        raise "unexpected value for tm_definition"
-    end 
+    
+    # These constant values only work for GDA-MGA
+    false_easting = 500000.0000
+    false_northing = 10000000.0000
+    central_scale_factor = 0.9996
+    zone_width_degrees = 6.0
+    longitude_of_the_central_meridian_of_zone_1_degrees = -177.0
 
     flattening = 1 / inverse_flattening
     semi_minor_axis = semi_major_axis * (1 - flattening)
@@ -236,10 +230,14 @@ def redfearn_grid_to_ll(easting, northing, zone)
     }
 end
 
+# Some very simple minded test code. Just do forward and reverse transform
+
 v = {:easting => 454760.918, :northing => 6425080.861, :zone => 56}
 a = redfearn_grid_to_ll(v[:easting], v[:northing], v[:zone])
+b = redfearn_ll_to_grid(a[:latitude], a[:longitude], "GRS80")
 
-p v
-#p a
-p redfearn_ll_to_grid(a[:latitude], a[:longitude], "GRS80")
+# Test that it's accurate to 1 mm
+if (v[:easting] - b[:easting]).abs < 0.001 && (v[:northing] - b[:northing]).abs < 0.001 && v[:zone] == b[:zone]
+    puts "It worked!"
+end
 
