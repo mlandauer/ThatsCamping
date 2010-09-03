@@ -32,20 +32,20 @@ class Redfearn
         @n2 = @n ** 2
         @n3 = @n ** 3
         @n4 = @n ** 4
-        @g = @semi_major_axis * (1 - @n) * (1 - @n2) * (1 + (9 * @n2) / 4 + (225 * @n4) / 64) * Math::PI / 180
+        @g = @semi_major_axis * (1 - @n) * (1 - @n2) * (1 + (9 * @n2) / 4 + (225 * @n4) / 64)
 
         @longitude_of_western_edge_of_zone_zero_degrees = @longitude_of_the_central_meridian_of_zone_1_degrees - (1.5 * @zone_width_degrees)
         @central_meridian_of_zone_zero_degrees = @longitude_of_western_edge_of_zone_zero_degrees + (@zone_width_degrees / 2)
     end
 
     def ll_to_grid(latitude_degrees, longitude_degrees)
-        latitude_radians = (latitude_degrees / 180) * Math::PI
+        latitude_radians = deg2rad(latitude_degrees)
         zone_no_real = (longitude_degrees - @longitude_of_western_edge_of_zone_zero_degrees) / @zone_width_degrees
         zone = zone_no_real.floor
         central_meridian = (zone * @zone_width_degrees) + @central_meridian_of_zone_zero_degrees
          
         diff_longitude_degrees =  longitude_degrees - central_meridian
-        diff_longitude_radians =  (diff_longitude_degrees / 180) * Math::PI
+        diff_longitude_radians =  deg2rad(diff_longitude_degrees)
         sin_latitude = Math::sin(latitude_radians)
         sin_latitude2 = Math::sin(2 * latitude_radians)
         sin_latitude4 = Math::sin(4 * latitude_radians)
@@ -115,7 +115,7 @@ class Redfearn
         grid_convergence_term4 = sin_latitude * diff_longitude7 * cos_latitude6 * (17 - 26 * tan_latitude2 + 2 * tan_latitude4) / 315
 
         grid_convergence_radians = grid_convergence_term1 + grid_convergence_term2 + grid_convergence_term3 + grid_convergence_term4
-        grid_convergence_degrees = (grid_convergence_radians / Math::PI) * 180
+        grid_convergence_degrees = rad2deg(grid_convergence_radians)
          
         point_scale_term1 = 1 + (diff_longitude2 * cos_latitude2 * psi1) / 2
         point_scale_term2 = diff_longitude4 * cos_latitude4 * (4 * psi3 * (1 - 6 * tan_latitude2) + psi2 * (1 + 24 * tan_latitude2) - 4 * psi1 * tan_latitude2) / 24
@@ -132,6 +132,16 @@ class Redfearn
         }
     end
 
+    # Convert an angle in degrees to radians
+    def deg2rad(a)
+        a * Math::PI / 180
+    end
+
+    # Convert an angle in radians to degrees
+    def rad2deg(a)
+        a * 180 / Math::PI
+    end
+
     # Zone values in Australia range from 49-56.
     # For a rough guide to which zones relate to which areas see http://www.ga.gov.au/geodesy/datums/aboutdatums.jsp#WhatisaCoordinateSystem 
     # and  
@@ -142,7 +152,8 @@ class Redfearn
         new_E_scaled = new_E / @central_scale_factor
         new_N = (northing - @false_northing)
         new_N_scaled = new_N / @central_scale_factor
-        sigma = (new_N_scaled * Math::PI) / (@g * 180)
+
+        sigma = new_N_scaled / @g
         sigma2 = 2 * sigma
         sigma4 = 4 * sigma
         sigma6 = 6 * sigma
@@ -181,23 +192,23 @@ class Redfearn
         latitude_term3 = -(t1 / (@central_scale_factor * rho)) * (x5 * new_E / 720) * (8 * psi4 * (11 - 24 * t2) - 12 * psi3 * (21 - 71 * t2) + 15 * psi2 * (15 - 98 * t2 + 15 * t4) + 180 * psi1 * (5 * t2 - 3 * t4) + 360 * t4)
         latitude_term4 = (t1 / (@central_scale_factor * rho)) * (x7 * new_E / 40320) * (1385 + 3633 * t2 + 4095 * t4 + 1575 * t6)
         latitude_radians = foot_point_latitude + latitude_term1 + latitude_term2 + latitude_term3 + latitude_term4
-        latitude_degrees = (latitude_radians / Math::PI) * 180
+        latitude_degrees = rad2deg(latitude_radians)
          
         central_meridian_degrees = (zone * @zone_width_degrees) + @longitude_of_the_central_meridian_of_zone_1_degrees - @zone_width_degrees
-        central_meridian_radians = (central_meridian_degrees / 180) * Math::PI
+        central_meridian_radians = deg2rad(central_meridian_degrees)
         longitude_term1 = sec_foot_point_latitude * x1
         longitude_term2 = -sec_foot_point_latitude * (x3 / 6) * (psi1 + 2 * t2)
         longitude_term3 = sec_foot_point_latitude * (x5 / 120) * (-4 * psi3 * (1 - 6 * t2) + psi2 * (9 - 68 * t2) + 72 * psi1 * t2 + 24 * t4)
         longitude_term4 = -sec_foot_point_latitude * (x7 / 5040) * (61 + 662 * t2 + 1320 * t4 + 720 * t6)
         longitude_radians = central_meridian_radians + longitude_term1 + longitude_term2 + longitude_term3 + longitude_term4
-        longitude_degrees = (longitude_radians / Math::PI) * 180
+        longitude_degrees = rad2deg(longitude_radians)
          
         grid_convergence_term1 = -(x1 * t1)
         grid_convergence_term2 = (t1 * x3 / 3) * (-2 * psi2 + 3 * psi1 + t2)
         grid_convergence_term3 = -(t1 * x5 / 15) * (psi4 * (11 - 24 * t2) - 3 * psi3 * (8 - 23 * t2) + 5 * psi2 * (3 - 14 * t2) + 30 * psi1 * t2 + 3 * t4)
         grid_convergence_term4 = (t1 * x7 / 315) * (17 + 77 * t2 + 105 * t4 + 45 * t6)
         grid_convergence_radians = grid_convergence_term1 + grid_convergence_term2 + grid_convergence_term3 + grid_convergence_term4
-        grid_convergence_degrees = (grid_convergence_radians / Math::PI) * 180
+        grid_convergence_degrees = rad2deg(grid_convergence_radians)
          
         point_scale_factor1 = (new_E_scaled ** 2) / (rho*nu)
         point_scale_factor2 = point_scale_factor1 ** 2
