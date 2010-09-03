@@ -44,8 +44,7 @@ class Redfearn
         zone = zone_no_real.floor
         central_meridian = (zone * @zone_width_degrees) + @central_meridian_of_zone_zero_degrees
          
-        diff_longitude_degrees =  longitude_degrees - central_meridian
-        diff_longitude_radians =  deg2rad(diff_longitude_degrees)
+        diff_longitude_radians =  deg2rad(longitude_degrees - central_meridian)
         sin_latitude = Math::sin(latitude_radians)
         sin_latitude2 = Math::sin(2 * latitude_radians)
         sin_latitude4 = Math::sin(4 * latitude_radians)
@@ -191,17 +190,14 @@ class Redfearn
         latitude_term2 = (t1 / (@central_scale_factor * rho)) * (x3 * new_E / 24) * (-4 * psi2 + 9 * psi1 * (1 - t2) + 12 * t2)
         latitude_term3 = -(t1 / (@central_scale_factor * rho)) * (x5 * new_E / 720) * (8 * psi4 * (11 - 24 * t2) - 12 * psi3 * (21 - 71 * t2) + 15 * psi2 * (15 - 98 * t2 + 15 * t4) + 180 * psi1 * (5 * t2 - 3 * t4) + 360 * t4)
         latitude_term4 = (t1 / (@central_scale_factor * rho)) * (x7 * new_E / 40320) * (1385 + 3633 * t2 + 4095 * t4 + 1575 * t6)
-        latitude_radians = foot_point_latitude + latitude_term1 + latitude_term2 + latitude_term3 + latitude_term4
-        latitude_degrees = rad2deg(latitude_radians)
+        latitude_degrees = rad2deg(foot_point_latitude + latitude_term1 + latitude_term2 + latitude_term3 + latitude_term4)
          
-        central_meridian_degrees = (zone * @zone_width_degrees) + @longitude_of_the_central_meridian_of_zone_1_degrees - @zone_width_degrees
-        central_meridian_radians = deg2rad(central_meridian_degrees)
+        central_meridian_radians = deg2rad((zone * @zone_width_degrees) + @longitude_of_the_central_meridian_of_zone_1_degrees - @zone_width_degrees)
         longitude_term1 = sec_foot_point_latitude * x1
         longitude_term2 = -sec_foot_point_latitude * (x3 / 6) * (psi1 + 2 * t2)
         longitude_term3 = sec_foot_point_latitude * (x5 / 120) * (-4 * psi3 * (1 - 6 * t2) + psi2 * (9 - 68 * t2) + 72 * psi1 * t2 + 24 * t4)
         longitude_term4 = -sec_foot_point_latitude * (x7 / 5040) * (61 + 662 * t2 + 1320 * t4 + 720 * t6)
-        longitude_radians = central_meridian_radians + longitude_term1 + longitude_term2 + longitude_term3 + longitude_term4
-        longitude_degrees = rad2deg(longitude_radians)
+        longitude_degrees = rad2deg(central_meridian_radians + longitude_term1 + longitude_term2 + longitude_term3 + longitude_term4)
          
         grid_convergence_term1 = -(x1 * t1)
         grid_convergence_term2 = (t1 * x3 / 3) * (-2 * psi2 + 3 * psi1 + t2)
