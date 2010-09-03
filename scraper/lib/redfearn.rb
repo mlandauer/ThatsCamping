@@ -17,6 +17,14 @@ class Redfearn
         else
             raise "unexpected value for ellipsoid_definition"
         end
+        # These constant values only work for GDA-MGA
+        @false_easting = 500000.0000
+        @false_northing = 10000000.0000
+        @central_scale_factor = 0.9996
+        @zone_width_degrees = 6.0
+        @longitude_of_the_central_meridian_of_zone_1_degrees = -177.0
+
+        # Some intermediate values derived from the constants above
         @flattening = 1 / @inverse_flattening
         @semi_minor_axis = @semi_major_axis * (1 - @flattening)
         @eccentricity = (2 * @flattening) - (@flattening * @flattening)
@@ -25,22 +33,16 @@ class Redfearn
         @n3 = @n ** 3
         @n4 = @n ** 4
         @g = @semi_major_axis * (1 - @n) * (1 - @n2) * (1 + (9 * @n2) / 4 + (225 * @n4) / 64) * Math::PI / 180
+
+        @longitude_of_western_edge_of_zone_zero_degrees = @longitude_of_the_central_meridian_of_zone_1_degrees - (1.5 * @zone_width_degrees)
+        @central_meridian_of_zone_zero_degrees = @longitude_of_western_edge_of_zone_zero_degrees + (@zone_width_degrees / 2)
     end
 
     def ll_to_grid(latitude_degrees, longitude_degrees)
-        # These constant values only work for GDA-MGA
-        false_easting = 500000.0000
-        false_northing = 10000000.0000
-        central_scale_factor = 0.9996
-        zone_width_degrees = 6.0
-        longitude_of_the_central_meridian_of_zone_1_degrees = -177.0
-
-        longitude_of_western_edge_of_zone_zero_degrees = longitude_of_the_central_meridian_of_zone_1_degrees - (1.5 * zone_width_degrees)
-        central_meridian_of_zone_zero_degrees = longitude_of_western_edge_of_zone_zero_degrees + (zone_width_degrees / 2)
         latitude_radians = (latitude_degrees / 180) * Math::PI
-        zone_no_real = (longitude_degrees - longitude_of_western_edge_of_zone_zero_degrees) / zone_width_degrees
+        zone_no_real = (longitude_degrees - @longitude_of_western_edge_of_zone_zero_degrees) / @zone_width_degrees
         zone = zone_no_real.floor
-        central_meridian = (zone * zone_width_degrees) + central_meridian_of_zone_zero_degrees
+        central_meridian = (zone * @zone_width_degrees) + @central_meridian_of_zone_zero_degrees
          
         diff_longitude_degrees =  longitude_degrees - central_meridian
         diff_longitude_radians =  (diff_longitude_degrees / 180) * Math::PI
@@ -92,9 +94,9 @@ class Redfearn
         easting_term4 = nu * diff_longitude7 * cos_latitude7 * (61 - 479 *  tan_latitude2 + 179 * tan_latitude4 - tan_latitude6) / 5400
 
         sum_easting = easting_term1 + easting_term2 + easting_term3 + easting_term4
-        sum_easting_K = central_scale_factor * sum_easting
+        sum_easting_K = @central_scale_factor * sum_easting
 
-        easting = false_easting+sum_easting_K
+        easting = @false_easting+sum_easting_K
 
         northing_meridian_distance = sum_meridian_distances
         northing_term1 = nu * sin_latitude * diff_longitude2 * cos_latitude1 / 2
@@ -103,9 +105,9 @@ class Redfearn
         northing_term4 =  nu * sin_latitude * diff_longitude8 * cos_latitude7 * (1385 - 3111 * tan_latitude2 + 543 * tan_latitude4 - tan_latitude6) / 40320
 
         sum_northing = northing_meridian_distance + northing_term1 + northing_term2 + northing_term3 + northing_term4
-        sum_northing_K = central_scale_factor * sum_northing
+        sum_northing_K = @central_scale_factor * sum_northing
 
-        northing = false_northing + sum_northing_K
+        northing = @false_northing + sum_northing_K
 
         grid_convergence_term1 = -sin_latitude * diff_longitude1
         grid_convergence_term2 = -sin_latitude * diff_longitude3 * cos_latitude2 * (2 * psi2 - psi1) / 3
@@ -119,7 +121,7 @@ class Redfearn
         point_scale_term2 = diff_longitude4 * cos_latitude4 * (4 * psi3 * (1 - 6 * tan_latitude2) + psi2 * (1 + 24 * tan_latitude2) - 4 * psi1 * tan_latitude2) / 24
         point_scale_term3 = diff_longitude6 * cos_latitude6 * (61 - 148 * tan_latitude2 + 16 * tan_latitude4) / 720
         sum_point_scale = point_scale_term1 + point_scale_term2 + point_scale_term3
-        point_scale = central_scale_factor * sum_point_scale
+        point_scale = @central_scale_factor * sum_point_scale
         
         {
             :easting => easting,
@@ -136,20 +138,10 @@ class Redfearn
     # http://www.ga.gov.au/image_cache/GA5111.gif 
      
     def grid_to_ll(easting, northing, zone)
-        # These constant values are for GDA-MGA only
-        false_easting = 500000.0000
-        false_northing = 10000000.0000 
-        central_scale_factor = 0.9996
-        zone_width_degrees = 6.0
-        longitude_of_the_central_meridian_of_zone_1_degrees = -177.0
-         
-        longitude_of_western_edge_of_zone_zero_degrees = longitude_of_the_central_meridian_of_zone_1_degrees - (1.5 * zone_width_degrees)
-        central_meridian_of_zone_zero_degrees = longitude_of_western_edge_of_zone_zero_degrees + (zone_width_degrees / 2)
-         
-        new_E = (easting - false_easting)
-        new_E_scaled = new_E / central_scale_factor
-        new_N = (northing - false_northing)
-        new_N_scaled = new_N / central_scale_factor
+        new_E = (easting - @false_easting)
+        new_E_scaled = new_E / @central_scale_factor
+        new_N = (northing - @false_northing)
+        new_N_scaled = new_N / @central_scale_factor
         sigma = (new_N_scaled * Math::PI) / (@g * 180)
         sigma2 = 2 * sigma
         sigma4 = 4 * sigma
@@ -184,14 +176,14 @@ class Redfearn
         psi3 = psi1 ** 3
         psi4 = psi1 ** 4
          
-        latitude_term1 = -((t1 / (central_scale_factor * rho)) * x1 * new_E / 2)
-        latitude_term2 = (t1 / (central_scale_factor * rho)) * (x3 * new_E / 24) * (-4 * psi2 + 9 * psi1 * (1 - t2) + 12 * t2)
-        latitude_term3 = -(t1 / (central_scale_factor * rho)) * (x5 * new_E / 720) * (8 * psi4 * (11 - 24 * t2) - 12 * psi3 * (21 - 71 * t2) + 15 * psi2 * (15 - 98 * t2 + 15 * t4) + 180 * psi1 * (5 * t2 - 3 * t4) + 360 * t4)
-        latitude_term4 = (t1 / (central_scale_factor * rho)) * (x7 * new_E / 40320) * (1385 + 3633 * t2 + 4095 * t4 + 1575 * t6)
+        latitude_term1 = -((t1 / (@central_scale_factor * rho)) * x1 * new_E / 2)
+        latitude_term2 = (t1 / (@central_scale_factor * rho)) * (x3 * new_E / 24) * (-4 * psi2 + 9 * psi1 * (1 - t2) + 12 * t2)
+        latitude_term3 = -(t1 / (@central_scale_factor * rho)) * (x5 * new_E / 720) * (8 * psi4 * (11 - 24 * t2) - 12 * psi3 * (21 - 71 * t2) + 15 * psi2 * (15 - 98 * t2 + 15 * t4) + 180 * psi1 * (5 * t2 - 3 * t4) + 360 * t4)
+        latitude_term4 = (t1 / (@central_scale_factor * rho)) * (x7 * new_E / 40320) * (1385 + 3633 * t2 + 4095 * t4 + 1575 * t6)
         latitude_radians = foot_point_latitude + latitude_term1 + latitude_term2 + latitude_term3 + latitude_term4
         latitude_degrees = (latitude_radians / Math::PI) * 180
          
-        central_meridian_degrees = (zone * zone_width_degrees) + longitude_of_the_central_meridian_of_zone_1_degrees - zone_width_degrees
+        central_meridian_degrees = (zone * @zone_width_degrees) + @longitude_of_the_central_meridian_of_zone_1_degrees - @zone_width_degrees
         central_meridian_radians = (central_meridian_degrees / 180) * Math::PI
         longitude_term1 = sec_foot_point_latitude * x1
         longitude_term2 = -sec_foot_point_latitude * (x3 / 6) * (psi1 + 2 * t2)
@@ -213,7 +205,7 @@ class Redfearn
         point_scale_term1 = 1 + point_scale_factor1 / 2
         point_scale_term2 = (point_scale_factor2 / 24) * (4 * psi1 * (1 - 6 * t2) - 3 * (1 - 16 * t2) - 24 * t2 / psi1)
         point_scale_term3 = point_scale_factor3 / 720
-        point_scale = central_scale_factor * (point_scale_term1 + point_scale_term2 + point_scale_term3)
+        point_scale = @central_scale_factor * (point_scale_term1 + point_scale_term2 + point_scale_term3)
         
         {
             :latitude => latitude_degrees,
